@@ -27,7 +27,7 @@ public class SkillButton : MonoBehaviour
     
     public void SkillFast()
     {
-        if(Target.tag=="animal")
+       if(Target.tag=="animal")
         {
            var animal = Target.GetComponent<Animal>();//如果碰到的東西TAG為動物，取得動物腳本
             animal.SkillUse(speed);//呼叫動物改變速度的方法

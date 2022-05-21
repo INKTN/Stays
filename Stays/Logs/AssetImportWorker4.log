@@ -1,0 +1,974 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.30f1 (1fb1bf06830e) revision 2077119'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19042) 64bit Core' Language: 'en' Physical Memory: 8034 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+D:\2020.3.30f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker4
+-projectPath
+D:/Unity/Stays/Stays
+-logFile
+Logs/AssetImportWorker4.log
+-srvPort
+60279
+Successfully changed project path to: D:/Unity/Stays/Stays
+D:/Unity/Stays/Stays
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 52.16 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.30f1 (1fb1bf06830e)
+[Subsystems] Discovering subsystems at path D:/2020.3.30f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Unity/Stays/Stays/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1050 (ID=0x1c91)
+    Vendor:   
+    VRAM:     2996 MB
+    Driver:   30.0.15.1165
+Initialize mono
+Mono path[0] = 'D:/2020.3.30f1/Editor/Data/Managed'
+Mono path[1] = 'D:/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/2020.3.30f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56828
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/2020.3.30f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/2020.3.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001576 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 55.17 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.636 seconds
+Domain Reload Profiling:
+	ReloadAssembly (637ms)
+		BeginReloadAssembly (90ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (478ms)
+			LoadAssemblies (89ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (160ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (188ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (55ms)
+				BeforeProcessingInitializeOnLoad (17ms)
+				ProcessInitializeOnLoadAttributes (81ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003161 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 58.55 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.805 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1806ms)
+		BeginReloadAssembly (164ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (1583ms)
+			LoadAssemblies (110ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (485ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (828ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (59ms)
+				BeforeProcessingInitializeOnLoad (68ms)
+				ProcessInitializeOnLoadAttributes (660ms)
+				ProcessInitializeOnLoadMethodAttributes (34ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.70 seconds
+Refreshing native plugins compatible for Editor in 0.55 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2394 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 154.0 MB.
+System memory in use after: 143.1 MB.
+
+Unloading 88 unused Assets to reduce memory usage. Loaded Objects now: 2789.
+Total: 422.138700 ms (FindLiveObjects: 0.352500 ms CreateObjectMapping: 0.121000 ms MarkObjects: 413.818700 ms  DeleteObjects: 7.844900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/素材/第三人稱攝影機
+  artifactKey: Guid(ae14fde992ccfcf47ab9287f5421f2db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/第三人稱攝影機 using Guid(ae14fde992ccfcf47ab9287f5421f2db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd92eb5213e8a95375a4f6ef6a917edcb') in 0.005744 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.029083 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Tractor/Tractor_Blue.fbx
+  artifactKey: Guid(f08aa577bad03cf4b98f5cd52f3e0300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Tractor/Tractor_Blue.fbx using Guid(f08aa577bad03cf4b98f5cd52f3e0300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a37c2295145df86ccdb827f030cef36') in 5.106687 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.021186 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Tractor/Tractor_Red.fbx
+  artifactKey: Guid(dbecf46c684fb9844bdc9b5453bd5606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Tractor/Tractor_Red.fbx using Guid(dbecf46c684fb9844bdc9b5453bd5606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba35589543fdd482f4ec4d237b88ffb9') in 0.086437 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.726491 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Tractor
+  artifactKey: Guid(f488468e2f9d31f418a603c63e9a5983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Tractor using Guid(f488468e2f9d31f418a603c63e9a5983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba26a02c8caa89797a98ff53f0ab5327') in 0.002612 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.372168 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Tree
+  artifactKey: Guid(df714a20a6f7a9440ac47e5fbe30f310) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Tree using Guid(df714a20a6f7a9440ac47e5fbe30f310) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90104caf22cb9d629ebfe7e6b212c440') in 0.001905 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.693946 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Tree/Dry_Tree_01.fbx
+  artifactKey: Guid(0693079450a85844eb8c5d2a7dc64694) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Tree/Dry_Tree_01.fbx using Guid(0693079450a85844eb8c5d2a7dc64694) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c864a3e1335514f530ee2ae4402339d7') in 0.108640 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000387 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Tree/Dry_Tree_02.fbx
+  artifactKey: Guid(e37a1ff3ee9d31a4eaddaae879aee49a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Tree/Dry_Tree_02.fbx using Guid(e37a1ff3ee9d31a4eaddaae879aee49a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f491d7d09163c559d315c8410669d87') in 0.082280 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000406 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Tree/Tree_03.fbx
+  artifactKey: Guid(c8c72a4430ea72949981c541f489d45c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Tree/Tree_03.fbx using Guid(c8c72a4430ea72949981c541f489d45c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3327ecf5f1cba3c9f91da9b0f8aa08b') in 0.067898 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000456 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Tree/Tree_02.fbx
+  artifactKey: Guid(8b3be99950d325f4c8998d0ff5a9136b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Tree/Tree_02.fbx using Guid(8b3be99950d325f4c8998d0ff5a9136b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fef711dc7e16956938ddbd0b70cbe55') in 0.079098 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000478 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Tree/Tree_01.fbx
+  artifactKey: Guid(fbb754b1c3f53e44f86c0dfb7f33ac7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Tree/Tree_01.fbx using Guid(fbb754b1c3f53e44f86c0dfb7f33ac7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2e213123cf3073086ee1b1564f15112') in 0.072573 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.908865 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Stone
+  artifactKey: Guid(3a6d4b7f7dc6dbb48ba4b6bc95d40147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Stone using Guid(3a6d4b7f7dc6dbb48ba4b6bc95d40147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc7918895194fcaf9fc9195cf2ccba65') in 0.001849 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.208023 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Stone/Stone_01.fbx
+  artifactKey: Guid(f13e50b8b08ca5143a5bef5cb8673238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Stone/Stone_01.fbx using Guid(f13e50b8b08ca5143a5bef5cb8673238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0246e304b37aecfff465f404840e4f2b') in 0.085070 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000400 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Stone/Stone_06.fbx
+  artifactKey: Guid(48f5d5c5f587d9b4a996020134539cf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Stone/Stone_06.fbx using Guid(48f5d5c5f587d9b4a996020134539cf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37cec9b920226021ad7079d80fd76468') in 0.078164 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000321 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Stone/Stone_05.fbx
+  artifactKey: Guid(a1d78cbdf9b00d54ebda2ff4b4f9cf57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Stone/Stone_05.fbx using Guid(a1d78cbdf9b00d54ebda2ff4b4f9cf57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13c86ba1c3f1f9924a038726503c4bae') in 0.088895 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000351 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Stone/Stone_02.fbx
+  artifactKey: Guid(f763f62f5490a154abb38c29dbffa501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Stone/Stone_02.fbx using Guid(f763f62f5490a154abb38c29dbffa501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f32153dda7ca9bf7b822277dc4be26f') in 0.080421 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000383 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Stone/Stone_03.fbx
+  artifactKey: Guid(1b14137c1aa5ec146aee7edac60c8d14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Stone/Stone_03.fbx using Guid(1b14137c1aa5ec146aee7edac60c8d14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6061623a5aad1a8432a1e9e7a0ba6afa') in 0.092017 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000455 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Stone/Stone_04.fbx
+  artifactKey: Guid(3587eee609008c842b35f266d77d86fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Stone/Stone_04.fbx using Guid(3587eee609008c842b35f266d77d86fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f137add98f0baae8db34c83d28bd8e5b') in 0.089779 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.302113 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Bank
+  artifactKey: Guid(4a8d31b7c477e87479ccb45fc63856a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Bank using Guid(4a8d31b7c477e87479ccb45fc63856a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08ae3734e9de12e35297c8c0d899ed75') in 0.002079 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.038700 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Bank/Bank_01.fbx
+  artifactKey: Guid(c3c1fe45282b20e48a7d4f6032f3c124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Bank/Bank_01.fbx using Guid(c3c1fe45282b20e48a7d4f6032f3c124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81d36508e27a084a54907ab793aa26e0') in 0.070705 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000362 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Bank/Bank_02.fbx
+  artifactKey: Guid(d995b826105a52a44aa3f2de5602705a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Bank/Bank_02.fbx using Guid(d995b826105a52a44aa3f2de5602705a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30d43fd88500abaa822b394fdc1299cc') in 0.068695 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.750607 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Barn
+  artifactKey: Guid(74bb3fea696edcb4580732c9822b42a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Barn using Guid(74bb3fea696edcb4580732c9822b42a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac5342ab44d5234e97146c5c76f0d46f') in 0.002162 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000702 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Barn/Barn_02.fbx
+  artifactKey: Guid(6cc3f0acf7e31ae44a9210b3695cc2a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Barn/Barn_02.fbx using Guid(6cc3f0acf7e31ae44a9210b3695cc2a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '317abd552fe2d107b02ef2683071fd98') in 0.073821 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000404 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Barn/Barn_03.fbx
+  artifactKey: Guid(07edbf81de4550f46aeb2bd3b2ce6706) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Barn/Barn_03.fbx using Guid(07edbf81de4550f46aeb2bd3b2ce6706) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c08fe3a451eb16ea976e866c660b8f3') in 0.072815 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000336 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Barn/Barn_01.fbx
+  artifactKey: Guid(d7fda846133b8074f94cdc65d9303010) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Barn/Barn_01.fbx using Guid(d7fda846133b8074f94cdc65d9303010) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbfb06f8115afa52d0ecb9c64d45b2e2') in 0.069979 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.679126 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Billet
+  artifactKey: Guid(f09c4e2a918c6a043a13eedf7dc363fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Billet using Guid(f09c4e2a918c6a043a13eedf7dc363fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '224dc214193cfc34b5886480cdea9e9e') in 0.001637 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000442 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Billet/Billet_01.fbx
+  artifactKey: Guid(f7558539144e70c4aae85e2f726ef3a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Billet/Billet_01.fbx using Guid(f7558539144e70c4aae85e2f726ef3a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca76316e9a9e2e39c983f5b834b73d49') in 0.078551 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000385 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Billet/Billet_03.fbx
+  artifactKey: Guid(1d72edbac55a6c749988edb567739bc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Billet/Billet_03.fbx using Guid(1d72edbac55a6c749988edb567739bc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1b5956922bbed54502fc909224ca1b7') in 0.073899 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000336 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Billet/Billet_02.fbx
+  artifactKey: Guid(ea8b986a432fae142b43e08886989597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Billet/Billet_02.fbx using Guid(ea8b986a432fae142b43e08886989597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '705e3a22ed7aeace1bf6efbae05c3f76') in 0.087341 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.520187 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Bushes
+  artifactKey: Guid(9fe1988f9c3247745ad655de1c90c42b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Bushes using Guid(9fe1988f9c3247745ad655de1c90c42b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c978a303831ea533a8122a4639a8b41') in 0.001714 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.075957 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Bushes/Bushes_01.fbx
+  artifactKey: Guid(b7076b3e7b6b0d84aa05a7902d4e22ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Bushes/Bushes_01.fbx using Guid(b7076b3e7b6b0d84aa05a7902d4e22ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1f149d035a3e0766f5ac434417b1c1f') in 0.113250 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000363 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Bushes/Bushes_03.fbx
+  artifactKey: Guid(6581bd0fd56dd0948a8b4253727b9bdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Bushes/Bushes_03.fbx using Guid(6581bd0fd56dd0948a8b4253727b9bdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83a1bded9f7f9626c40bbff4b153a6c2') in 0.081783 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000447 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Bushes/Bushes_02.fbx
+  artifactKey: Guid(ac439c7a8567d07469c159f147f2e34e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Bushes/Bushes_02.fbx using Guid(ac439c7a8567d07469c159f147f2e34e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a0b45854f048da34c877e23ae9a4b6f') in 0.089531 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.098478 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Fence
+  artifactKey: Guid(dc0ef25a89838de489559c9d2a3b068c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Fence using Guid(dc0ef25a89838de489559c9d2a3b068c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d366be0db8af0d7359e02373b60bce2') in 0.020262 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.057833 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Fence/Fence.fbx
+  artifactKey: Guid(ea5299bccb457e5499ab398e850af136) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Fence/Fence.fbx using Guid(ea5299bccb457e5499ab398e850af136) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66eefb0ccb26b84dc7f005c933da0271') in 0.075356 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000369 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Fence/Fence_Bold.fbx
+  artifactKey: Guid(5db15f164b0bc1b41ac6db7d1f56c80b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Fence/Fence_Bold.fbx using Guid(5db15f164b0bc1b41ac6db7d1f56c80b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '838a2a82b23982150d0a76b1836176cf') in 0.075947 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000344 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Fence/Fence_Crack.fbx
+  artifactKey: Guid(fb308743c41c55b4ead555ce1b78f260) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Fence/Fence_Crack.fbx using Guid(fb308743c41c55b4ead555ce1b78f260) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6825ce552028086d008ab5bc50623377') in 0.081161 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000391 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Fence/Fence_Small.fbx
+  artifactKey: Guid(e12eea50f5b5b504f8e74c2bd1d23d0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Fence/Fence_Small.fbx using Guid(e12eea50f5b5b504f8e74c2bd1d23d0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2decfea3b7654f458fc9de4130cd4991') in 0.090785 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.065374 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Field
+  artifactKey: Guid(e7e0b36ff8e60964b93a682615377bf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Field using Guid(e7e0b36ff8e60964b93a682615377bf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe3219554873a7820c863d8fe6c7fb8b') in 0.002359 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.041020 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Field/Corn_Field.fbx
+  artifactKey: Guid(caa08a5e9f8b03341826d967752568f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Field/Corn_Field.fbx using Guid(caa08a5e9f8b03341826d967752568f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80f1425ba851444269e2d87f90b01b4b') in 0.081978 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000388 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Field/Tomatoes_Field.fbx
+  artifactKey: Guid(0f160a855de8e42439bc0bf18c96a986) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Field/Tomatoes_Field.fbx using Guid(0f160a855de8e42439bc0bf18c96a986) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9428c89a17199ed84cf7351f49c3a0bc') in 0.080931 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000516 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Field/Empty_Field.fbx
+  artifactKey: Guid(109bde8a96ed0f145a56ddc2fa5250b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Field/Empty_Field.fbx using Guid(109bde8a96ed0f145a56ddc2fa5250b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b95f548f06e51fadcda6c4e939900d6') in 0.075656 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000367 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Field/Sunflower_Field.fbx
+  artifactKey: Guid(35d2920043365394181ceff41293baf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Field/Sunflower_Field.fbx using Guid(35d2920043365394181ceff41293baf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f75f89d112c518fd1796145f95e1a084') in 0.086991 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.548639 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Flowers
+  artifactKey: Guid(af2996b1fa9f7694ebf03ae7d59aef25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Flowers using Guid(af2996b1fa9f7694ebf03ae7d59aef25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e5433d6e8c309352da0b185825d3744') in 0.002046 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.054920 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Flowers/Flower_Blue.fbx
+  artifactKey: Guid(56483344c2fc20442b5c3ae019298f7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Flowers/Flower_Blue.fbx using Guid(56483344c2fc20442b5c3ae019298f7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2dc99c15a1b62a006d7fa855357fa2b') in 0.066218 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000460 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Flowers/Flower_Purple.fbx
+  artifactKey: Guid(d12aec1b32524ad47bf27a7e3f963003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Flowers/Flower_Purple.fbx using Guid(d12aec1b32524ad47bf27a7e3f963003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f54a0d631571805a0eae3a73e59ac1c') in 0.070461 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000350 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Flowers/Flower_Yellow.fbx
+  artifactKey: Guid(8e0580e685e6d0c47891726fe619725c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Flowers/Flower_Yellow.fbx using Guid(8e0580e685e6d0c47891726fe619725c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c910007ea34dda03c33303a813b0ad1') in 0.068291 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.446821 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/House
+  artifactKey: Guid(8669a86f132df404a8557144603ce8d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/House using Guid(8669a86f132df404a8557144603ce8d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13c289d867578a190c728ce54f7622dd') in 0.002086 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.059562 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/House/House_01.fbx
+  artifactKey: Guid(84e8cd7ad90e36640a7622f29c47d853) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/House/House_01.fbx using Guid(84e8cd7ad90e36640a7622f29c47d853) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26e4034967bf8b300f7ff384f1e01ec0') in 0.080804 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000423 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/House/House_02.fbx
+  artifactKey: Guid(bf0f0fecac8996a4f8ca155ec31902ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/House/House_02.fbx using Guid(bf0f0fecac8996a4f8ca155ec31902ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c3a7391155e199def24eb76d26769ea') in 0.077216 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000425 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/House/House_05.fbx
+  artifactKey: Guid(6f3c96e1c8fb50946899c94eb00593cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/House/House_05.fbx using Guid(6f3c96e1c8fb50946899c94eb00593cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '779af77e1d4109ef320fe00118b6d908') in 0.077705 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000423 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/House/House_04.fbx
+  artifactKey: Guid(9a4b13afacf5c724280336406d2fe990) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/House/House_04.fbx using Guid(9a4b13afacf5c724280336406d2fe990) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21ee6276100c840fded91a92968d9622') in 0.089776 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000363 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/House/House_06.fbx
+  artifactKey: Guid(97f960fe472621d45837611e2d974afd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/House/House_06.fbx using Guid(97f960fe472621d45837611e2d974afd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59f47ff3417ef7c23961fd0a1eb40a52') in 0.072986 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000393 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/House/House_03.fbx
+  artifactKey: Guid(a742103d530ba2143a5a0eb829e89662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/House/House_03.fbx using Guid(a742103d530ba2143a5a0eb829e89662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9877615969d4dac367569eb1b5c52239') in 0.075119 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000433 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/House/House_07.fbx
+  artifactKey: Guid(d46525288bf26e14aba3e9514ab63fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/House/House_07.fbx using Guid(d46525288bf26e14aba3e9514ab63fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05d7febcd7673801f06dcb13487e69f4') in 0.076535 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 113.414986 seconds.
+  path: Assets/素材/建築/LowPolyVillage
+  artifactKey: Guid(7fd4e0cafaa2d324496ccdc6badc06a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage using Guid(7fd4e0cafaa2d324496ccdc6badc06a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd532c6cecefde22bcad340983a811b25') in 0.002956 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.059958 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes
+  artifactKey: Guid(6aa4ecc7177bdbd41aee1e081656477c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes using Guid(6aa4ecc7177bdbd41aee1e081656477c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a27a8828abe8c0e1b73c618dad79b325') in 0.002669 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.050242 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Material
+  artifactKey: Guid(ed0fb60c1d4e55e479c48802a4873373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Material using Guid(ed0fb60c1d4e55e479c48802a4873373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '030af773ddf1803e0a7abe580df3ae13') in 0.002363 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.045242 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Material/HistoryVillage.mat
+  artifactKey: Guid(eb006c95f6053e441bfe07640ce00891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Material/HistoryVillage.mat using Guid(eb006c95f6053e441bfe07640ce00891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e36fefd4af0353cff00e499756b20170') in 0.692308 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.014980 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs
+  artifactKey: Guid(6f0bbde5338384a469ada2ae04cea44b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs using Guid(6f0bbde5338384a469ada2ae04cea44b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98235d1010e7381ef02f729df075bd4d') in 0.001982 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.931354 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Bank
+  artifactKey: Guid(941dbb76eebdc7941b6834115f049273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Bank using Guid(941dbb76eebdc7941b6834115f049273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67bdf6685ed6ce150ab6171edbe6b2ca') in 0.001830 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.323115 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Bank/Bank_01.prefab
+  artifactKey: Guid(c1cad0a248d20c34fada0f5b3279ea88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Bank/Bank_01.prefab using Guid(c1cad0a248d20c34fada0f5b3279ea88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f4402e851c274b64251daeef07d1ed2') in 0.131530 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000404 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Bank/Bank_02.prefab
+  artifactKey: Guid(7a2294f24c802c24e9494529f96a9ca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Bank/Bank_02.prefab using Guid(7a2294f24c802c24e9494529f96a9ca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdb10e0a71f41cb6124da22c4740f6f4') in 0.071466 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.459409 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Texture
+  artifactKey: Guid(030d7f9664f2168489281f86a2466a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Texture using Guid(030d7f9664f2168489281f86a2466a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ad1953edcaa7785807b20820dce86e9') in 0.001888 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.077823 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Texture/historyvillage.png
+  artifactKey: Guid(964753714c42813498e9e7d85e3eb754) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Texture/historyvillage.png using Guid(964753714c42813498e9e7d85e3eb754) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e2bde46dcb0f0467616ad582eaad5f8') in 0.444015 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.693453 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Tree
+  artifactKey: Guid(977243c2e2b9c5549a0962cc1a7746c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Tree using Guid(977243c2e2b9c5549a0962cc1a7746c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06829c8c9164302e93f3d5aff424bcf6') in 0.002093 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.033278 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Tree/Dry_Tree_01.prefab
+  artifactKey: Guid(4e6495ad3cf862c4ebd0fc0898a66f90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Tree/Dry_Tree_01.prefab using Guid(4e6495ad3cf862c4ebd0fc0898a66f90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '710ed8f40624a025008471117dc194a0') in 0.062852 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000513 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Tree/Dry_Tree_02.prefab
+  artifactKey: Guid(85090cda55b45b7498c0466d2eb0758f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Tree/Dry_Tree_02.prefab using Guid(85090cda55b45b7498c0466d2eb0758f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cb8418ef1ad1744614e69e557a2b88f') in 0.062283 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000454 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Tree/Tree_02.prefab
+  artifactKey: Guid(6336931f0dbcfd1448bb2cc42bc9eca9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Tree/Tree_02.prefab using Guid(6336931f0dbcfd1448bb2cc42bc9eca9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '541c0ca145265419c9fb20a134061c09') in 0.071339 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000439 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Tree/Tree_03.prefab
+  artifactKey: Guid(4e869812f3388dd4689f33234315f9e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Tree/Tree_03.prefab using Guid(4e869812f3388dd4689f33234315f9e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5309cd100c55529e5eb2fd344cdf9de') in 0.066881 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000664 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Tree/Tree_01.prefab
+  artifactKey: Guid(c81523bdcafd56f43a67f3ef25a1995c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Tree/Tree_01.prefab using Guid(c81523bdcafd56f43a67f3ef25a1995c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e56307136b1fe5d02e8bb4ea6a6d95f1') in 0.070053 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.794036 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Field
+  artifactKey: Guid(399250c001f19c64b848858e310700a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Field using Guid(399250c001f19c64b848858e310700a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cd770b95e7516a8039c2ecdd6a46eea') in 0.001575 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.074742 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Field/Corn_Field.prefab
+  artifactKey: Guid(0468f27d1edbdac47ac2c1f1af58674a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Field/Corn_Field.prefab using Guid(0468f27d1edbdac47ac2c1f1af58674a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a0689bd0cc7f85b72acaf3f24ba2fd6') in 0.080475 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000454 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Field/Empty_Field.prefab
+  artifactKey: Guid(343d63e58c0d2c14b851888112f2b650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Field/Empty_Field.prefab using Guid(343d63e58c0d2c14b851888112f2b650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d5f9042bb4bdaa6833ee04670999110') in 0.071837 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000843 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Field/Tomatoes_Field.prefab
+  artifactKey: Guid(f09c1da76fc98674ab354a7649fbd3de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Field/Tomatoes_Field.prefab using Guid(f09c1da76fc98674ab354a7649fbd3de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38e642fa2d89f863136bb8537f33ff72') in 0.084282 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000454 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Field/Sunflower_Field.prefab
+  artifactKey: Guid(39522471a34a22d4db16898828703cb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Field/Sunflower_Field.prefab using Guid(39522471a34a22d4db16898828703cb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a1eddf0e3653ad3cb18aba397e2a9f1') in 0.067108 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 122.415794 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Other_Objects
+  artifactKey: Guid(e94d0242558658f4b9c8631ac4680186) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Other_Objects using Guid(e94d0242558658f4b9c8631ac4680186) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94b9a65f93fc5b01f6df273bce4115e5') in 0.002698 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 134.223287 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Other_Objects/Box.fbx
+  artifactKey: Guid(7e21ce70035bc6e4f89e54d244ee1cd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Other_Objects/Box.fbx using Guid(7e21ce70035bc6e4f89e54d244ee1cd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b993870e187dc8f8348d6c3e37f657c0') in 0.079325 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000441 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Other_Objects/Vooden_Barrel.fbx
+  artifactKey: Guid(d560252d43f89104b8eb0cdd16221d6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Other_Objects/Vooden_Barrel.fbx using Guid(d560252d43f89104b8eb0cdd16221d6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cd408528c99b8b16bab6a466260d9bd') in 0.078919 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000448 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Other_Objects/Map.fbx
+  artifactKey: Guid(388e91ebc3a4f59459dd537d83dba43b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Other_Objects/Map.fbx using Guid(388e91ebc3a4f59459dd537d83dba43b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddf378d10e35db83ec7bd69831cf823c') in 0.086142 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000394 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Other_Objects/Windmill.fbx
+  artifactKey: Guid(d6def51f900d30b49881eea9d658c2e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Other_Objects/Windmill.fbx using Guid(d6def51f900d30b49881eea9d658c2e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af7fbc805af3137bd85828725456ce75') in 0.074443 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000403 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Other_Objects/Chest.fbx
+  artifactKey: Guid(d3b5338bd6552e24cb8bdf920b904821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Other_Objects/Chest.fbx using Guid(d3b5338bd6552e24cb8bdf920b904821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f77bc2561d3f9eaa7fc4f2aaea39d00a') in 0.076340 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000428 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Other_Objects/Well.fbx
+  artifactKey: Guid(35bc4e2b408732247aa3c9a8fcd9512f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Other_Objects/Well.fbx using Guid(35bc4e2b408732247aa3c9a8fcd9512f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bbafaa80304efe8a34d28f0590793f6') in 0.085378 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000370 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Other_Objects/Water_Tank.fbx
+  artifactKey: Guid(5bb7948199dc9094aa23dbc0d0f86613) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Other_Objects/Water_Tank.fbx using Guid(5bb7948199dc9094aa23dbc0d0f86613) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c06b5f8df33bede18de8b805a1aa1b44') in 0.083881 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000513 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Other_Objects/Street_Lamp.fbx
+  artifactKey: Guid(359ee090241a9714a8212555d3db9365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Other_Objects/Street_Lamp.fbx using Guid(359ee090241a9714a8212555d3db9365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '877855692e1a48214d886cfbd580647e') in 0.075522 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000423 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Other_Objects/Woods.fbx
+  artifactKey: Guid(8001415a0c2d1ce44b31ddc0f7a7e8fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Other_Objects/Woods.fbx using Guid(8001415a0c2d1ce44b31ddc0f7a7e8fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f3c0eea4ed719bc312b563bfa93fc01') in 0.080257 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000431 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Other_Objects/Watch_Tower.fbx
+  artifactKey: Guid(7c8d9bbd011a1f24182350b5d604b4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Other_Objects/Watch_Tower.fbx using Guid(7c8d9bbd011a1f24182350b5d604b4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c59a9f939e5dde4f223c8770c0b493c') in 0.075760 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000488 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Other_Objects/Wood_02.fbx
+  artifactKey: Guid(291d01b6b8db0cb42bf859b23c3826e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Other_Objects/Wood_02.fbx using Guid(291d01b6b8db0cb42bf859b23c3826e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '918018565e430099d9560d520d4eea2a') in 0.081968 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000404 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Other_Objects/Wood_Car.fbx
+  artifactKey: Guid(3c462c0a1c72f55429c812454ce02d27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Other_Objects/Wood_Car.fbx using Guid(3c462c0a1c72f55429c812454ce02d27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c6304b0d5b2fcd1de51d2cfc5175c9d') in 0.077778 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000438 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Meshes/Other_Objects/Wooden_Case.fbx
+  artifactKey: Guid(7cf919a089029eb4889575c4a7a6033c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Meshes/Other_Objects/Wooden_Case.fbx using Guid(7cf919a089029eb4889575c4a7a6033c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53e721e091ed3db54c82ccaf228a69c7') in 0.097599 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 671.624158 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Bushes
+  artifactKey: Guid(6d95420458a281e48a3344ce49d4bf1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Bushes using Guid(6d95420458a281e48a3344ce49d4bf1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79fd5d9c8602aba57a8ecced50ba7cd2') in 0.002194 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.484650 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Billet
+  artifactKey: Guid(d801c2219a5d3a14db9ab456dfb22608) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Billet using Guid(d801c2219a5d3a14db9ab456dfb22608) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dc979b6f77f593c414ff78084455547') in 0.001600 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.063191 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Billet/Billet_01.prefab
+  artifactKey: Guid(fa8a60abea1cd9446bd9b098babe43bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Billet/Billet_01.prefab using Guid(fa8a60abea1cd9446bd9b098babe43bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '243b4bc250f1476b5ddb296aadfa43d3') in 0.382337 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000439 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Billet/Billet_03.prefab
+  artifactKey: Guid(03a4b6dd68764bf4bb8e193c2daa0e7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Billet/Billet_03.prefab using Guid(03a4b6dd68764bf4bb8e193c2daa0e7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a98e2878b2a3bb965d416c3277b4d1f') in 0.306228 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000386 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Billet/Billet_02.prefab
+  artifactKey: Guid(c650f48a4e81a7e408855add77a63f05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Billet/Billet_02.prefab using Guid(c650f48a4e81a7e408855add77a63f05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84315a1627cb03bbc61af53c1521343a') in 0.153305 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 436.883254 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Fence
+  artifactKey: Guid(fc0a3c2b183422446b287d880d0b339d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Fence using Guid(fc0a3c2b183422446b287d880d0b339d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '583c3ed141602dccaa28df9865886f81') in 0.002053 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.084220 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Fence/Fence.prefab
+  artifactKey: Guid(1bb967a6107cba746abfec6abb84983a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Fence/Fence.prefab using Guid(1bb967a6107cba746abfec6abb84983a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '100c50457e84c324f6cf934305539744') in 0.131355 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000400 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Fence/Fence_Crack.prefab
+  artifactKey: Guid(c9b39dbb5780a124eaf52424cf971832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Fence/Fence_Crack.prefab using Guid(c9b39dbb5780a124eaf52424cf971832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84b3bc93ccce4f5292f6c940babd22df') in 0.117726 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000529 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Fence/Fence_Small.prefab
+  artifactKey: Guid(3f9661d6a38ab6c42815b329dc086bf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Fence/Fence_Small.prefab using Guid(3f9661d6a38ab6c42815b329dc086bf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ffc24a14a6d53e6b989cf1607419b40') in 0.119743 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000330 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Fence/Fence_Bold.prefab
+  artifactKey: Guid(7e33bcda0f4c2ed489139de375e2ab3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Fence/Fence_Bold.prefab using Guid(7e33bcda0f4c2ed489139de375e2ab3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09f20877705f7fb31250a34155fab2f4') in 0.087419 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.615537 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Flower
+  artifactKey: Guid(93c43ddafad034047aeb2bd02fdacb87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Flower using Guid(93c43ddafad034047aeb2bd02fdacb87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edb09c37c0d3fb628f253b74f208639b') in 0.002428 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.030989 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Flower/Flower_Blue.prefab
+  artifactKey: Guid(3c33dd9f8c953874d93f59099fd1d47d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Flower/Flower_Blue.prefab using Guid(3c33dd9f8c953874d93f59099fd1d47d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '907d6abb889cefbb809f014d967db731') in 0.128428 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000403 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Flower/Flower_Yellow.prefab
+  artifactKey: Guid(2697438e5b95a1e40b979fa1f310ed1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Flower/Flower_Yellow.prefab using Guid(2697438e5b95a1e40b979fa1f310ed1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c3088fed0a3e8470fa3d2e6c123c07b') in 0.122660 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000361 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Flower/Flower_Purple.prefab
+  artifactKey: Guid(a46a4f4def640c14e9b3d178716831e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Flower/Flower_Purple.prefab using Guid(a46a4f4def640c14e9b3d178716831e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41194d6256703270b05f50eb842b6a7a') in 0.109933 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.699596 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/House
+  artifactKey: Guid(abf744acc731b214bb62046a595da8d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/House using Guid(abf744acc731b214bb62046a595da8d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06cc513c56344a59e8cd778558d907ff') in 0.004312 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.079938 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/House/House_01.prefab
+  artifactKey: Guid(9ec9a389e33c64a418c1a821a228a8b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/House/House_01.prefab using Guid(9ec9a389e33c64a418c1a821a228a8b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e72f1399856a9e9e2c475ed45bfe2748') in 0.149827 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000388 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/House/House_06.prefab
+  artifactKey: Guid(72604a75170e28a4d9d293a3b853864c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/House/House_06.prefab using Guid(72604a75170e28a4d9d293a3b853864c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b5f928e10d2cb4a985c5a76720d8e61') in 0.105295 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000337 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/House/House_03.prefab
+  artifactKey: Guid(184d205ad7b7e484ca73918442247db1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/House/House_03.prefab using Guid(184d205ad7b7e484ca73918442247db1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '431a87fa981504243d3d03f7d6d97273') in 0.128986 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/House/House_05.prefab
+  artifactKey: Guid(a0929c345d695b446b781829efd07e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/House/House_05.prefab using Guid(a0929c345d695b446b781829efd07e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc138eb671e8209828f7af26dcffdc3d') in 0.167562 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000308 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/House/House_07.prefab
+  artifactKey: Guid(6afd93558491a644aa321f16633b1586) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/House/House_07.prefab using Guid(6afd93558491a644aa321f16633b1586) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1a3d7011333815210a25e10fd531bf3') in 0.143336 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000435 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/House/House_04.prefab
+  artifactKey: Guid(2014f532e36a21e4fa7048bc7e4b60e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/House/House_04.prefab using Guid(2014f532e36a21e4fa7048bc7e4b60e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31f3cc6b97b868c3fdf95fbd0c30fd01') in 0.160242 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000474 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/House/House_02.prefab
+  artifactKey: Guid(def968192fd81424483a976346f52b66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/House/House_02.prefab using Guid(def968192fd81424483a976346f52b66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac2866e7b73ae3a3e28b19696f1a3d23') in 0.129174 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.889492 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Other_Objects
+  artifactKey: Guid(3eeca4c115ae8be4c9d885849a1a19e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Other_Objects using Guid(3eeca4c115ae8be4c9d885849a1a19e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4694f5f85ce6def5c8583b4bc68799f') in 0.002303 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.071781 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Other_Objects/Box.prefab
+  artifactKey: Guid(ad7194aa8031aa74d9226754ef39fadc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Other_Objects/Box.prefab using Guid(ad7194aa8031aa74d9226754ef39fadc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6ccbe68a4e6a51ce07041d08192b97a') in 0.134783 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000444 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Other_Objects/Vooden_Barrel.prefab
+  artifactKey: Guid(1577a51f2ebf155438ad431e44edd054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Other_Objects/Vooden_Barrel.prefab using Guid(1577a51f2ebf155438ad431e44edd054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd975a9f8f6c54635cccb7ef1c309f4ca') in 0.125912 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000343 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Other_Objects/Map.prefab
+  artifactKey: Guid(ebfe282d3f4f1bb418147d0694096aa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Other_Objects/Map.prefab using Guid(ebfe282d3f4f1bb418147d0694096aa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c444449e6e70ea38dc2d5c0bd91ad7f5') in 0.184161 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000608 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Other_Objects/Well.prefab
+  artifactKey: Guid(0224e7bbe5b06f74fa47bed3adcde6cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Other_Objects/Well.prefab using Guid(0224e7bbe5b06f74fa47bed3adcde6cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd450642d7956902a7fef6b9fb726152f') in 0.352030 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000364 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Other_Objects/Water_Tank.prefab
+  artifactKey: Guid(1b9e59d5bb6f48643b2067fd21e8c7b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Other_Objects/Water_Tank.prefab using Guid(1b9e59d5bb6f48643b2067fd21e8c7b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '636a69df764d16cf935d4d55cbfdcc3c') in 0.092930 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000381 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Other_Objects/Woods.prefab
+  artifactKey: Guid(1ecf13f524bb9f24f8865999c4720fce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Other_Objects/Woods.prefab using Guid(1ecf13f524bb9f24f8865999c4720fce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eebbac3f878bd407c53633f6154d726') in 0.137157 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000464 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Other_Objects/Wood_Car.prefab
+  artifactKey: Guid(9acd46bf5bf85774e88502a8be84d200) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Other_Objects/Wood_Car.prefab using Guid(9acd46bf5bf85774e88502a8be84d200) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bacce46b721f0513be9b3534ebd80949') in 0.142644 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000350 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Other_Objects/Street_Lamp.prefab
+  artifactKey: Guid(ee21998f11acbec418dff52eb5ecfde4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Other_Objects/Street_Lamp.prefab using Guid(ee21998f11acbec418dff52eb5ecfde4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddb36d2fb6c3dd63197ed0f9969a336d') in 0.112906 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000476 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Other_Objects/Watch_Tower.prefab
+  artifactKey: Guid(958ebaba05daaea408218354ec7b8995) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Other_Objects/Watch_Tower.prefab using Guid(958ebaba05daaea408218354ec7b8995) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c33f38391232ac624ce7f9f69afb035c') in 0.108006 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000314 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Other_Objects/Chest.prefab
+  artifactKey: Guid(5284e19d79f18ca43b024510c85409e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Other_Objects/Chest.prefab using Guid(5284e19d79f18ca43b024510c85409e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cb2fff249870c43bba01a81363e26f2') in 0.102363 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000393 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Other_Objects/Windmill.prefab
+  artifactKey: Guid(dadc5d356bf1d214bb2e29c57c636430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Other_Objects/Windmill.prefab using Guid(dadc5d356bf1d214bb2e29c57c636430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '195d14dad4b525ae9ae6a0a7cc4adfe2') in 0.105139 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000378 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Other_Objects/Wood_02.prefab
+  artifactKey: Guid(5c3bd99615643bd4c93c3866cb13d40b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Other_Objects/Wood_02.prefab using Guid(5c3bd99615643bd4c93c3866cb13d40b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36a285eb8fde82f74cc76c9f302904b3') in 0.079583 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000328 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Other_Objects/Wooden_Case.prefab
+  artifactKey: Guid(3ee41b4affb3dc94586979509002914b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Other_Objects/Wooden_Case.prefab using Guid(3ee41b4affb3dc94586979509002914b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a507a2c81f78339f9674f93e0724d94') in 0.095969 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 96.408590 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Stand
+  artifactKey: Guid(b8e1f3e7208d603479174d0a0ca5cb6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Stand using Guid(b8e1f3e7208d603479174d0a0ca5cb6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0061961f296656d7d96d1a42ea7ea1e') in 0.003710 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.064058 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Stand/Stand_Empty_Wood.prefab
+  artifactKey: Guid(918ca8ce04e69de4c953d61ff03bd365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Stand/Stand_Empty_Wood.prefab using Guid(918ca8ce04e69de4c953d61ff03bd365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6817fc43563bfdbaa9e0077ccf0d69e') in 0.152158 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000342 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Stand/Stand_Purple.prefab
+  artifactKey: Guid(29ef9a712a6f84541a21a423a1e1bbd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Stand/Stand_Purple.prefab using Guid(29ef9a712a6f84541a21a423a1e1bbd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffc997e651efc76e9755e8fc5c54eb1d') in 0.229720 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000371 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Stand/Stand_Wood.prefab
+  artifactKey: Guid(c357c9df5bbccec4b829a6e9dc3759c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Stand/Stand_Wood.prefab using Guid(c357c9df5bbccec4b829a6e9dc3759c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6a99eb9092e9d6accdabdc4619eb468') in 0.113177 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000476 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Stand/Stand_Orange.prefab
+  artifactKey: Guid(f2a879fb0ab02e24091b2ade1c8d3ce8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Stand/Stand_Orange.prefab using Guid(f2a879fb0ab02e24091b2ade1c8d3ce8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f98045757f3f37eeb75db8cec2a6ddf') in 0.148609 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 43.200212 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Stone
+  artifactKey: Guid(dba34c5062f2efc498af81fe9d764308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Stone using Guid(dba34c5062f2efc498af81fe9d764308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b8574c695e192893a727ee5b20f3ed4') in 0.002673 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.206201 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Stone/Stone_01.prefab
+  artifactKey: Guid(e7567d1b4fd032a42b27ce11f5e7373f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Stone/Stone_01.prefab using Guid(e7567d1b4fd032a42b27ce11f5e7373f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f4bc4e55edeb3cf6f45efd833e98445') in 0.105774 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000348 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Stone/Stone_06.prefab
+  artifactKey: Guid(a6274c7f5e2fcaa409c4bffae9b2f2f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Stone/Stone_06.prefab using Guid(a6274c7f5e2fcaa409c4bffae9b2f2f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8de69adfe1468a109827410c4c46e456') in 0.096623 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000324 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Stone/Stone_04.prefab
+  artifactKey: Guid(6982e096de037394b958f92a1218fbb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Stone/Stone_04.prefab using Guid(6982e096de037394b958f92a1218fbb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f29eaf07b07bff825895f72b923ae05f') in 0.117304 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000444 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Stone/Stone_02.prefab
+  artifactKey: Guid(1cfaadf5461a2834a954d1204e5a634b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Stone/Stone_02.prefab using Guid(1cfaadf5461a2834a954d1204e5a634b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31daa972834b1cbb0cd41d291cc045c5') in 0.107905 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000472 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Stone/Stone_05.prefab
+  artifactKey: Guid(362fec71bbd77ae45a2dab264844e7c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Stone/Stone_05.prefab using Guid(362fec71bbd77ae45a2dab264844e7c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '262951311680812cd8dbadf20288eda9') in 0.084597 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000408 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Stone/Stone_03.prefab
+  artifactKey: Guid(423db82826ea3564895adb8f00f48633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Stone/Stone_03.prefab using Guid(423db82826ea3564895adb8f00f48633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ab1fb66a970d2a6813fe18b61c1f43f') in 0.094973 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.263189 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Tractor
+  artifactKey: Guid(d0a9b6e9a35fe264fae3eae995727b1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Tractor using Guid(d0a9b6e9a35fe264fae3eae995727b1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca5be2550b637a6fed48d512b8bab407') in 0.001855 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.067270 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Tractor/Tractor_Blue.prefab
+  artifactKey: Guid(be7d324adfdcc204aaecbde339973775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Tractor/Tractor_Blue.prefab using Guid(be7d324adfdcc204aaecbde339973775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91150c9e4be47dc59ff960833e489753') in 0.039455 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000324 seconds.
+  path: Assets/素材/建築/LowPolyVillage/Prefabs/Tractor/Tractor_Red.prefab
+  artifactKey: Guid(7b49a02daa39e0041826bab1cd740999) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築/LowPolyVillage/Prefabs/Tractor/Tractor_Red.prefab using Guid(7b49a02daa39e0041826bab1cd740999) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e274dc4a998df4d8f3ac89cb7ffe74d2') in 0.025659 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

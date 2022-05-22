@@ -92,7 +92,7 @@ public class TouchS : MonoBehaviour
                     _salaction = selection;
                 }
                 #region 地板
-                if (Physics.Raycast(ray, out hit) && hit.collider.tag == "area"&& !skillUI.skillOpen)//技能UI不是開的才能換地板
+                if (Physics.Raycast(ray, out hit) && hit.collider.tag == "ground" && !skillUI.skillOpen)//技能UI不是開的才能換地板
                 {
                     var selection = hit.transform;
                     //print(selection.name);

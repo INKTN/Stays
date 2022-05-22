@@ -15,11 +15,11 @@ D:/Unity/Stays/Stays
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-60279
+50794
 Successfully changed project path to: D:/Unity/Stays/Stays
 D:/Unity/Stays/Stays
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 57.97 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 78.30 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.30f1 (1fb1bf06830e)
 [Subsystems] Discovering subsystems at path D:/2020.3.30f1/Editor/Data/Resources/UnitySubsystems
@@ -35,44 +35,531 @@ Initialize mono
 Mono path[0] = 'D:/2020.3.30f1/Editor/Data/Managed'
 Mono path[1] = 'D:/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/2020.3.30f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56212
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56964
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/2020.3.30f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: D:/2020.3.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001600 seconds.
+Registered in 0.001758 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 62.48 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 71.72 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.186 seconds
+- Completed reload, in  0.885 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1186ms)
-		BeginReloadAssembly (621ms)
+	ReloadAssembly (886ms)
+		BeginReloadAssembly (148ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (496ms)
-			LoadAssemblies (621ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (651ms)
+			LoadAssemblies (146ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (147ms)
+			SetupTypeCache (203ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (32ms)
-			SetupLoadedEditorAssemblies (210ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (249ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (63ms)
-				BeforeProcessingInitializeOnLoad (19ms)
-				ProcessInitializeOnLoadAttributes (92ms)
-				ProcessInitializeOnLoadMethodAttributes (31ms)
+				RefreshPlugins (72ms)
+				BeforeProcessingInitializeOnLoad (21ms)
+				ProcessInitializeOnLoadAttributes (107ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003506 seconds.
+Registered in 0.004773 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 63.71 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.221 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4222ms)
+		BeginReloadAssembly (269ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (25ms)
+		EndReloadAssembly (3877ms)
+			LoadAssemblies (2750ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (357ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (63ms)
+			SetupLoadedEditorAssemblies (634ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (64ms)
+				BeforeProcessingInitializeOnLoad (93ms)
+				ProcessInitializeOnLoadAttributes (342ms)
+				ProcessInitializeOnLoadMethodAttributes (126ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.55 seconds
+Refreshing native plugins compatible for Editor in 0.62 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2395 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 154.0 MB.
+System memory in use after: 143.1 MB.
+
+Unloading 88 unused Assets to reduce memory usage. Loaded Objects now: 2790.
+Total: 12.789400 ms (FindLiveObjects: 0.251300 ms CreateObjectMapping: 0.104000 ms MarkObjects: 2.848600 ms  DeleteObjects: 9.584800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Scenes/關卡5 回家.unity
+  artifactKey: Guid(7253c3dcd05eb014db88f1f2036febef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/關卡5 回家.unity using Guid(7253c3dcd05eb014db88f1f2036febef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33cf1f515c5aab018c005dd0ae721cd0') in 0.013832 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 159.581538 seconds.
+  path: Assets/預製件/技能.prefab
+  artifactKey: Guid(0a56125b4cd8f8d4e83c7a288221c071) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/技能.prefab using Guid(0a56125b4cd8f8d4e83c7a288221c071) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1dcc7fdf7937171cfee459841c2d23f') in 0.280228 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.481356 seconds.
+  path: Assets/預製件/UI
+  artifactKey: Guid(202c4fd9c7bcb3244a500cc151021078) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI using Guid(202c4fd9c7bcb3244a500cc151021078) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d823a5d6dcfd2ca406ed21df3d52237') in 0.003096 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.954146 seconds.
+  path: Assets/預製件/UI/提示氣泡框.prefab
+  artifactKey: Guid(d089b342d033b41428c7117cd25de892) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/提示氣泡框.prefab using Guid(d089b342d033b41428c7117cd25de892) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21a44a14751af2670a14cc819d38d1e9') in 0.005569 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 134.884491 seconds.
+  path: Assets/預製件/UI/NPC問號氣泡框.prefab
+  artifactKey: Guid(679653c1e5f840f4e984abd50cf24b41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/NPC問號氣泡框.prefab using Guid(679653c1e5f840f4e984abd50cf24b41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7be972be979ffc5aafe174f8dd571c98') in 0.006425 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 47.855040 seconds.
+  path: Assets/素材/建築
+  artifactKey: Guid(33e75f05e446a2840bf428dfb3dd7ab0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/建築 using Guid(33e75f05e446a2840bf428dfb3dd7ab0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '193babe4aada85c469a410498021956c') in 0.002715 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.473309 seconds.
+  path: Assets/素材/Unity-Chan_角色/Models/Parts/Costume_02.fbx
+  artifactKey: Guid(dd4802cc7972ecb4699ed0b29916793f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Models/Parts/Costume_02.fbx using Guid(dd4802cc7972ecb4699ed0b29916793f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23be27e0eec430f9dc5012b23f5fd24f') in 1.069921 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000416 seconds.
+  path: Assets/素材/Unity-Chan_角色/Models/Parts/EyeLight_02_L.fbx
+  artifactKey: Guid(040243e6c1a99954f8f374657c13f19d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Models/Parts/EyeLight_02_L.fbx using Guid(040243e6c1a99954f8f374657c13f19d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d14caf81c8ff5afe8d98bc720ddba98') in 0.079391 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000393 seconds.
+  path: Assets/素材/Unity-Chan_角色/Models/Parts/EyeLight_00_R.fbx
+  artifactKey: Guid(d0d3992b3ab5d664f86ebedbc2f7f32c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Models/Parts/EyeLight_00_R.fbx using Guid(d0d3992b3ab5d664f86ebedbc2f7f32c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '119bef015ba914d38543b5b4fecc2582') in 0.033465 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000508 seconds.
+  path: Assets/素材/Unity-Chan_角色/Models/Parts/EyeLight_02_R.fbx
+  artifactKey: Guid(9c92d641718bd7944bc1c13062d8a562) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Models/Parts/EyeLight_02_R.fbx using Guid(9c92d641718bd7944bc1c13062d8a562) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08bff45841cac7fdcee3b636fcc570a8') in 0.036338 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000473 seconds.
+  path: Assets/素材/Unity-Chan_角色/Models/Parts/Face_01.fbx
+  artifactKey: Guid(19b3520048fec7345982be6761526df3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Models/Parts/Face_01.fbx using Guid(19b3520048fec7345982be6761526df3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35f112c15aba81cce1ec3886695dbcb5') in 0.374200 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000475 seconds.
+  path: Assets/素材/Unity-Chan_角色/Models/Parts/Eye_01_R.fbx
+  artifactKey: Guid(3c36a19694fa33d4f8972df9cab583c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Models/Parts/Eye_01_R.fbx using Guid(3c36a19694fa33d4f8972df9cab583c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a45edde64c15d5f405a14f60fd8b61d') in 0.090110 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000416 seconds.
+  path: Assets/素材/Unity-Chan_角色/Models/Parts/Costume_03.fbx
+  artifactKey: Guid(e2425d323ad15a14db2323ecd7b462ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Models/Parts/Costume_03.fbx using Guid(e2425d323ad15a14db2323ecd7b462ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96e867e48fddebefcb79b032c7d3681d') in 0.101204 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000446 seconds.
+  path: Assets/素材/Unity-Chan_角色/Models/Parts/Eye_00_R.fbx
+  artifactKey: Guid(1916394ce5d6072439e502357a407567) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Models/Parts/Eye_00_R.fbx using Guid(1916394ce5d6072439e502357a407567) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f93f8dd9f531614d4749bf6b585449ae') in 0.124854 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000407 seconds.
+  path: Assets/素材/Unity-Chan_角色/Models/Parts/Hair_01_Base.fbx
+  artifactKey: Guid(0001e8f856c67ce4cbd40fee65534082) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Models/Parts/Hair_01_Base.fbx using Guid(0001e8f856c67ce4cbd40fee65534082) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a728227fb8c3c46f8557fe52c4686f53') in 0.159765 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000431 seconds.
+  path: Assets/素材/Unity-Chan_角色/Models/Parts/Eye_02_L.fbx
+  artifactKey: Guid(9ce156784ef209045be338a368e13d9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Models/Parts/Eye_02_L.fbx using Guid(9ce156784ef209045be338a368e13d9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0a72de90e1a09792497d0b11118c94f') in 0.089510 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000470 seconds.
+  path: Assets/素材/Unity-Chan_角色/Models/Parts/EyeLight_00_L.fbx
+  artifactKey: Guid(6131178e2a1e42242b6d58f6ba6aa6d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Models/Parts/EyeLight_00_L.fbx using Guid(6131178e2a1e42242b6d58f6ba6aa6d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4064abbae8eceb4f2450c05398e2f47c') in 0.082086 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000414 seconds.
+  path: Assets/素材/Unity-Chan_角色/Models/Parts/EyeLight_01_L.fbx
+  artifactKey: Guid(a5ef0863cbef51144b0d036586e669ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Models/Parts/EyeLight_01_L.fbx using Guid(a5ef0863cbef51144b0d036586e669ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93a1cd3c8b863d62f8c2e99b43f765cd') in 0.055105 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000504 seconds.
+  path: Assets/素材/Unity-Chan_角色/Models/Parts/Eye_00_L.fbx
+  artifactKey: Guid(ddd8fa7b3e90f5a47ac055791c33cd33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Models/Parts/Eye_00_L.fbx using Guid(ddd8fa7b3e90f5a47ac055791c33cd33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48afad460730747875c62e47e5334e36') in 0.067612 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000432 seconds.
+  path: Assets/素材/Unity-Chan_角色/Models/Parts/Eye_02_R.fbx
+  artifactKey: Guid(bd27e7964625c84449f2ac3e445385f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Models/Parts/Eye_02_R.fbx using Guid(bd27e7964625c84449f2ac3e445385f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f039ed629ed4dc5412d21763fda2f0e8') in 0.115919 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000446 seconds.
+  path: Assets/素材/Unity-Chan_角色/Models/Parts/EyeLight_01_R.fbx
+  artifactKey: Guid(9f5f7a3051964b14d8eb48a0ba574e3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Models/Parts/EyeLight_01_R.fbx using Guid(9f5f7a3051964b14d8eb48a0ba574e3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0e476aba62abf62b0ee3b52d2c8f920') in 0.060458 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000475 seconds.
+  path: Assets/素材/Unity-Chan_角色/Models/Parts/Hair_01_Front.fbx
+  artifactKey: Guid(731ecf5991c41524e81af48795bf9092) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Models/Parts/Hair_01_Front.fbx using Guid(731ecf5991c41524e81af48795bf9092) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c8f3bcdc2731faf55a80ce1f34f9875') in 0.094762 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000440 seconds.
+  path: Assets/素材/Unity-Chan_角色/Models/Parts/Eye_01_L.fbx
+  artifactKey: Guid(2f676b8f712ef0f40825ad6df2132f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Models/Parts/Eye_01_L.fbx using Guid(2f676b8f712ef0f40825ad6df2132f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dc310d14707a5a9e6547bd140917d5d') in 0.065209 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.667348 seconds.
+  path: Assets/素材/Unity-Chan_角色/Texture
+  artifactKey: Guid(4cc0cfc5cea57204db5c3488b1962a14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Texture using Guid(4cc0cfc5cea57204db5c3488b1962a14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dd982b797ce4a947ea93c069e1a4c9e') in 0.002982 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.862459 seconds.
+  path: Assets/素材/Unity-Chan_角色/Texture/Faceskin
+  artifactKey: Guid(6511e8c01bea32e469a56cb7c7864013) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Texture/Faceskin using Guid(6511e8c01bea32e469a56cb7c7864013) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9fd64fa0b1d7287648f746c8c90cd11') in 0.002022 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.834890 seconds.
+  path: Assets/素材/Unity-Chan_角色/Texture/accessory
+  artifactKey: Guid(d575a20d8640d05419203a00d84d1ac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Texture/accessory using Guid(d575a20d8640d05419203a00d84d1ac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b4c245d2b876131aa85bf687e9c18c5') in 0.002603 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.618869 seconds.
+  path: Assets/素材/Unity-Chan_角色/Animations/Action Adventure(Adv)
+  artifactKey: Guid(1a30d9affc38eaf429492c992a1ebbee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Animations/Action Adventure(Adv) using Guid(1a30d9affc38eaf429492c992a1ebbee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c4e5c60b4741085ebabda5b2bb79445') in 1.026827 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000421 seconds.
+  path: Assets/素材/Unity-Chan_角色/Animations/Action Adventure(Adv)/Emotion_Clap(StandC).FBX
+  artifactKey: Guid(2034a96044a55af4ea94f86dbef523d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Animations/Action Adventure(Adv)/Emotion_Clap(StandC).FBX using Guid(2034a96044a55af4ea94f86dbef523d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c796e5fc5eaf2816991784c0ba9c10ad') in 0.733594 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.978904 seconds.
+  path: Assets/素材/Unity-Chan_角色/Animation Controller
+  artifactKey: Guid(12abb0fa9374bf94bb1d0dbf65a52886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Animation Controller using Guid(12abb0fa9374bf94bb1d0dbf65a52886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88ddcef4d1f6b27731447fea0335f4b0') in 0.002438 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.710008 seconds.
+  path: Assets/素材/Unity-Chan_角色/Animations/Life Simulation(LS)
+  artifactKey: Guid(12d849e11cb4a7d43809d3123b4f9105) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Animations/Life Simulation(LS) using Guid(12d849e11cb4a7d43809d3123b4f9105) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45cc04d87c6cf7792f57c264bf25cfa9') in 0.025984 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.414505 seconds.
+  path: Assets/素材/Unity-Chan_角色/Animations/WeaponMaster Twin dagger(WTD)
+  artifactKey: Guid(ed71561dfb379c6448d17ca06ecbf5e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Animations/WeaponMaster Twin dagger(WTD) using Guid(ed71561dfb379c6448d17ca06ecbf5e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63c8baab594069253ae4c4e2ff6c8a15') in 0.002665 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.031446 seconds.
+  path: Assets/素材/Unity-Chan_角色/Animations/WeaponMaster Twin dagger(WTD)/WTD_AttackA np.FBX
+  artifactKey: Guid(891784fff7fe3f740a9d0b9d36312870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Animations/WeaponMaster Twin dagger(WTD)/WTD_AttackA np.FBX using Guid(891784fff7fe3f740a9d0b9d36312870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f59b66f68bbdbd81675362ee3c2ef531') in 0.185697 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000434 seconds.
+  path: Assets/素材/Unity-Chan_角色/Animations/WeaponMaster Twin dagger(WTD)/WTD_Stand.FBX
+  artifactKey: Guid(5968b10019d305d4884061c2aeefe623) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Animations/WeaponMaster Twin dagger(WTD)/WTD_Stand.FBX using Guid(5968b10019d305d4884061c2aeefe623) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a916703d1cacefff6716e87e5ed47b55') in 0.152759 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000507 seconds.
+  path: Assets/素材/Unity-Chan_角色/Animations/WeaponMaster Twin dagger(WTD)/WTD_Run_Front.FBX
+  artifactKey: Guid(29cbce5f2f53b804283f3cfba2d9d4d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Animations/WeaponMaster Twin dagger(WTD)/WTD_Run_Front.FBX using Guid(29cbce5f2f53b804283f3cfba2d9d4d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3965e445912720548e870851288b03d1') in 0.146374 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000394 seconds.
+  path: Assets/素材/Unity-Chan_角色/Animations/WeaponMaster Twin dagger(WTD)/WTD_Walk_Front.FBX
+  artifactKey: Guid(da45702fe0cf4f94ea5b6823cd8922d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Animations/WeaponMaster Twin dagger(WTD)/WTD_Walk_Front.FBX using Guid(da45702fe0cf4f94ea5b6823cd8922d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82a23e227a171cae6a0801d4373ac597') in 0.116307 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.992499 seconds.
+  path: Assets/素材/Unity-Chan_角色/Animations/WeaponMaster Greatsword(WGS)
+  artifactKey: Guid(701a745a4b537414a8ec51f527a4955b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Animations/WeaponMaster Greatsword(WGS) using Guid(701a745a4b537414a8ec51f527a4955b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76c789a311d923f3c502253af3832f35') in 0.001945 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.061779 seconds.
+  path: Assets/素材/Unity-Chan_角色/Animations/WeaponMaster Greatsword(WGS)/WGS_AttackA_set.FBX
+  artifactKey: Guid(f3876e8ab78bf1441bf95b398e853fd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Animations/WeaponMaster Greatsword(WGS)/WGS_AttackA_set.FBX using Guid(f3876e8ab78bf1441bf95b398e853fd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f02657ac357eb6ae36b4798c55862659') in 0.172825 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000367 seconds.
+  path: Assets/素材/Unity-Chan_角色/Animations/WeaponMaster Greatsword(WGS)/WGS_Stand.FBX
+  artifactKey: Guid(fecd41a784d0814479fad5085bdac250) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Animations/WeaponMaster Greatsword(WGS)/WGS_Stand.FBX using Guid(fecd41a784d0814479fad5085bdac250) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a62665a3dae0c3bc939ac96073fe96e') in 0.121939 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000380 seconds.
+  path: Assets/素材/Unity-Chan_角色/Animations/WeaponMaster Greatsword(WGS)/WGS_Run_Front.FBX
+  artifactKey: Guid(a546a95fbfe197640804215527ae51a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Animations/WeaponMaster Greatsword(WGS)/WGS_Run_Front.FBX using Guid(a546a95fbfe197640804215527ae51a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c542073de9d3fc7fddfccceefd12a0d6') in 0.365303 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000392 seconds.
+  path: Assets/素材/Unity-Chan_角色/Animations/WeaponMaster Greatsword(WGS)/WGS_Walk_Front.FBX
+  artifactKey: Guid(23b75ffb2afe1894291fa1e7b317adbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Animations/WeaponMaster Greatsword(WGS)/WGS_Walk_Front.FBX using Guid(23b75ffb2afe1894291fa1e7b317adbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c66c5a1a513b4a57657df8cdbab60c9') in 0.125632 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.335964 seconds.
+  path: Assets/素材/Unity-Chan_角色/Animations/Life Simulation(LS)/PropA
+  artifactKey: Guid(4d4a82e21b33cea498dcf69aa25a4fb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Animations/Life Simulation(LS)/PropA using Guid(4d4a82e21b33cea498dcf69aa25a4fb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4f1084cde25b1e92da4dc376c76c02c') in 0.003370 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.013141 seconds.
+  path: Assets/素材/Unity-Chan_角色/Animations/Life Simulation(LS)/PropA/RunA(PropA).FBX
+  artifactKey: Guid(bb910aeba22da6345bd50014ceae9dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Animations/Life Simulation(LS)/PropA/RunA(PropA).FBX using Guid(bb910aeba22da6345bd50014ceae9dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4428cb5b88399c401505b8159af7e5e4') in 0.088434 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000370 seconds.
+  path: Assets/素材/Unity-Chan_角色/Animations/Life Simulation(LS)/PropA/WalkA(PropA).FBX
+  artifactKey: Guid(c5d1001b0c5d42a4c88c2dbeb667a1f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Animations/Life Simulation(LS)/PropA/WalkA(PropA).FBX using Guid(c5d1001b0c5d42a4c88c2dbeb667a1f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b441be5aba32684503c0211e3bd43174') in 0.093905 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000463 seconds.
+  path: Assets/素材/Unity-Chan_角色/Animations/Life Simulation(LS)/PropA/StandB(PropA).FBX
+  artifactKey: Guid(29595b5218b943e4e818f0d87caef249) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Animations/Life Simulation(LS)/PropA/StandB(PropA).FBX using Guid(29595b5218b943e4e818f0d87caef249) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1481c93cae84edc63baf6cfa1d50aed') in 0.157744 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.095432 seconds.
+  path: Assets/素材/Unity-Chan_角色/Animations/Common
+  artifactKey: Guid(d57d6e8bde705a84399a413fdd6bba1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Animations/Common using Guid(d57d6e8bde705a84399a413fdd6bba1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9a2da0c31eda1ab19d072fb85165ecc') in 0.002527 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.046815 seconds.
+  path: Assets/素材/Unity-Chan_角色/Animations/Common/RunA_Curve_FrontLeft.FBX
+  artifactKey: Guid(23416b2e958cfcd4b8947aec2f248a2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Animations/Common/RunA_Curve_FrontLeft.FBX using Guid(23416b2e958cfcd4b8947aec2f248a2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f3f2500406e2e906a0ea075c42719d5') in 0.156433 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000523 seconds.
+  path: Assets/素材/Unity-Chan_角色/Animations/Common/RunA_Curve_FrontRight.FBX
+  artifactKey: Guid(dbac1b2ae755d464692119648275914a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Animations/Common/RunA_Curve_FrontRight.FBX using Guid(dbac1b2ae755d464692119648275914a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8c51e597c20693a43321f3c8c199a71') in 0.526467 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000411 seconds.
+  path: Assets/素材/Unity-Chan_角色/Animations/Common/StandA_idleA.FBX
+  artifactKey: Guid(130326b77ac88174b8c174334b96ea76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Animations/Common/StandA_idleA.FBX using Guid(130326b77ac88174b8c174334b96ea76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a82feac26beb806a61aadc3e74c566c') in 0.116009 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000490 seconds.
+  path: Assets/素材/Unity-Chan_角色/Animations/Common/RunA_Front.FBX
+  artifactKey: Guid(bec5f2e4b09995447a8062cc85a1bfc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Animations/Common/RunA_Front.FBX using Guid(bec5f2e4b09995447a8062cc85a1bfc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb8d6f1b251f670585974692e2794d92') in 0.138935 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000393 seconds.
+  path: Assets/素材/Unity-Chan_角色/Animations/Common/StandA.FBX
+  artifactKey: Guid(77403a2653af63f45b64479a6fc74a38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Animations/Common/StandA.FBX using Guid(77403a2653af63f45b64479a6fc74a38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51cdfe511076c5240cdba3091a812fd4') in 0.085353 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000426 seconds.
+  path: Assets/素材/Unity-Chan_角色/Animations/Common/StandB.FBX
+  artifactKey: Guid(a34c9ff020908b44caff787e4b41bea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Animations/Common/StandB.FBX using Guid(a34c9ff020908b44caff787e4b41bea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3eb017d5bcee7f23bcdce109797fc3c0') in 0.248958 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000436 seconds.
+  path: Assets/素材/Unity-Chan_角色/Animations/Common/WalkA_Curve_FrontLeft.FBX
+  artifactKey: Guid(d7b02a926e2b70d4bb20ca22764d5b36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Animations/Common/WalkA_Curve_FrontLeft.FBX using Guid(d7b02a926e2b70d4bb20ca22764d5b36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af7c43e98246a7ad1a2b94cf54072b17') in 0.119741 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000426 seconds.
+  path: Assets/素材/Unity-Chan_角色/Animations/Common/WalkA_Front.FBX
+  artifactKey: Guid(b1ca9eb47697e8e4883ec4b3782d43bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Animations/Common/WalkA_Front.FBX using Guid(b1ca9eb47697e8e4883ec4b3782d43bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7e0b6f1da0f5b9ff6ee67bb6aef9019') in 0.114504 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000410 seconds.
+  path: Assets/素材/Unity-Chan_角色/Animations/Common/StandC.FBX
+  artifactKey: Guid(a442a3b64511af44db4cede4743c81b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Animations/Common/StandC.FBX using Guid(a442a3b64511af44db4cede4743c81b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d9a84396d4b93ef75f21de25c6feb49') in 0.136608 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000427 seconds.
+  path: Assets/素材/Unity-Chan_角色/Animations/Common/WalkA_Curve_FrontRight.FBX
+  artifactKey: Guid(56e5082b00af0394ea74332691363446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Animations/Common/WalkA_Curve_FrontRight.FBX using Guid(56e5082b00af0394ea74332691363446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c5d05c337403f044ba7071ee4382b1a') in 0.156987 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.080858 seconds.
+  path: Assets/素材/Unity-Chan_角色/Materials
+  artifactKey: Guid(0d7a6209ab012a049971cbea842a9fd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Materials using Guid(0d7a6209ab012a049971cbea842a9fd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09ae56f684dbee829fff2a2dcb12dc0f') in 0.002359 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.819353 seconds.
+  path: Assets/素材/Unity-Chan_角色/Materials/Eye
+  artifactKey: Guid(b191d19df72e63d49a23a6f179af11ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Materials/Eye using Guid(b191d19df72e63d49a23a6f179af11ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '612b55033e0c16bd2d50d8f9e0e6bd39') in 0.002279 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.164989 seconds.
+  path: Assets/素材/Unity-Chan_角色/Prefabs/Hair
+  artifactKey: Guid(b2b89b8750db10443a970de168d0be60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Prefabs/Hair using Guid(b2b89b8750db10443a970de168d0be60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1316c8d280c1d0dd8866d7357f17716f') in 0.002350 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.938860 seconds.
+  path: Assets/素材/Unity-Chan_角色/Prefabs/Set
+  artifactKey: Guid(c46564b9680adb34c9880a57273bb0d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Prefabs/Set using Guid(c46564b9680adb34c9880a57273bb0d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86273d143204de5dc0363a20e462747d') in 0.002237 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000427 seconds.
+  path: Assets/素材/Unity-Chan_角色/Prefabs/Set/Set Costume_02 SD Yuko.prefab
+  artifactKey: Guid(b2dfadfada0fd634ebbfc36909e42c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Prefabs/Set/Set Costume_02 SD Yuko.prefab using Guid(b2dfadfada0fd634ebbfc36909e42c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e96836f0f19c041d3ce625238d46945') in 0.527726 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000460 seconds.
+  path: Assets/素材/Unity-Chan_角色/Prefabs/Set/Set Costume_03 SD Yuko.prefab
+  artifactKey: Guid(2b530a6fa5657a341950a3628aadffda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/素材/Unity-Chan_角色/Prefabs/Set/Set Costume_03 SD Yuko.prefab using Guid(2b530a6fa5657a341950a3628aadffda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb448362a4e0ca1137a18cefe4ec751b') in 0.084176 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 379.663747 seconds.
+  path: Assets/Script/Cameratest.cs
+  artifactKey: Guid(6984ff376340254499150baa828caab3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Cameratest.cs using Guid(6984ff376340254499150baa828caab3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92398a1e2feb25c8c01cb6964d18fb56') in 0.094009 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.387872 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 19.07 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  5.422 seconds
+Domain Reload Profiling:
+	ReloadAssembly (5544ms)
+		BeginReloadAssembly (2891ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (503ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1427ms)
+		EndReloadAssembly (2398ms)
+			LoadAssemblies (737ms)
+			RebuildTransferFunctionScriptingTraits (1ms)
+			SetupTypeCache (547ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (73ms)
+			SetupLoadedEditorAssemblies (716ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (19ms)
+				BeforeProcessingInitializeOnLoad (116ms)
+				ProcessInitializeOnLoadAttributes (528ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.59 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2302 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.1 MB.
+System memory in use after: 149.1 MB.
+
+Unloading 83 unused Assets to reduce memory usage. Loaded Objects now: 2805.
+Total: 2146.354400 ms (FindLiveObjects: 586.836800 ms CreateObjectMapping: 0.195500 ms MarkObjects: 1548.941800 ms  DeleteObjects: 10.379000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

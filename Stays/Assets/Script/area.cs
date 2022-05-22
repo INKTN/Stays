@@ -40,7 +40,7 @@ public class area : MonoBehaviour
         int i = 0;
         while (i < hit.Length)//若i小於hit最大值
         {
-            print(transform.name+"Hit : " + hit[i].name+ hit[i].tag + ",第"+ i+"物件,T判定"+ Array.IndexOf(draggingTag, hit[i]));
+            //print(transform.name+"Hit : " + hit[i].name+ hit[i].tag + ",第"+ i+"物件,T判定"+ Array.IndexOf(draggingTag, hit[i]));
             if (Array.IndexOf(draggingTag, hit[i].tag) > -1) haveObstacle = true;//有障礙物開啟
             else haveObstacle = false;
             i++;

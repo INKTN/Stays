@@ -33,7 +33,7 @@ public class TreeVariation : MonoBehaviour
         {
             convert = true;//開啟改變
             var completion = GameObject.Find("System").GetComponent<TaskList>();//找到任務中心
-            completion.b_completion = true;//向任務中心回傳任務完成
+            //completion.b_completion = true;//向任務中心回傳任務完成
             original.SetActive (false);//關閉初始模型
             Instantiate(wilting[0], transform);//實例化模型0在位置
             cold = 0;//計時歸零

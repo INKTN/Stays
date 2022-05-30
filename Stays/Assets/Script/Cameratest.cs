@@ -10,10 +10,18 @@ public class Cameratest : MonoBehaviour
     public Transform target;
     [Header("觸摸位置")]
     private Vector3 oneTPosition;
+    [Header("邊界範圍")]
+    public float x_borderMax;
+    public float x_borderMin;
+    public float y_borderMax;
+    public float y_borderMin;
+    public float z_borderMax;
+    public float z_borderMin;
     [Header("與目標距離"), Range(0, 50)]
     public float dis = 20f;
     [Header("靈敏度"), Range(0, 50)]
     public float speed = 15;
+    
     #endregion
 
     private void Start()
@@ -25,6 +33,7 @@ public class Cameratest : MonoBehaviour
     private void Update()
     {
         LS();
+        Border();
     }
     #region 方法
     private void LS()//Long Shot
@@ -41,6 +50,11 @@ public class Cameratest : MonoBehaviour
             }
         }
     }
-
+    private void Border()
+    {
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, x_borderMin, x_borderMax),
+            Mathf.Clamp(transform.position.y, y_borderMin, y_borderMax),
+            Mathf.Clamp(transform.position.z, z_borderMin, z_borderMax));
+    }
     #endregion
 }

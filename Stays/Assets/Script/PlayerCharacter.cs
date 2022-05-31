@@ -53,10 +53,9 @@ public class PlayerCharacter : MonoBehaviour
         transform.LookAt(selection.position+startPos);
         //rb.MovePosition(selection.position + startPos);
         var shift = Vector3.Distance(selection.position+startPos, transform.position);//­pºâ¥X¶ZÂ÷
-        while (shift!=0)
-        {
+     
         transform.Translate(Vector3.forward * shift * speed*Time.deltaTime);
-        }
+        
     }
     #endregion
 }

@@ -95,7 +95,7 @@ public class TouchS : MonoBehaviour
                 if (Physics.Raycast(ray, out hit) && hit.collider.tag == "ground" && !skillUI.skillOpen)//技能UI不是開的才能換地板
                 {
                     var selection = hit.transform;
-                    //print(selection.name);
+                    print(selection.name);
                     orimaterial = selection.GetComponent<Renderer>().material;
                     ground.OnGround(selection);
                     _salaction = selection;

@@ -10,19 +10,22 @@ public class PlayerCharacter : MonoBehaviour
     [Header("動畫控制")]
     private Animator an;
     [Header("偵測範圍")]
-    public Vector3 detectionRange;
+    private Vector3 detectionRange = new Vector3(0, 0, 0);
     [Range(0,50)]
     public float detectionSize;
-    [Header("位置調整")]
+    [Header("偵測位置調整")]
     public Vector3 startPos;
     [Header("移動速度"), Range(0, 50)]
     public float speed;
+
     #endregion
     private void Start()
     {
         #region 取得相關元件
         rb = GetComponent<Rigidbody>();
         an = GetComponent<Animator>();
+
+
         #endregion
         SetStartPosition();
 
@@ -47,7 +50,13 @@ public class PlayerCharacter : MonoBehaviour
     }//開始時矯正主角位置
     public void Move(Transform selection)
     {
-        rb.MovePosition(selection.position + startPos);
+        transform.LookAt(selection.position+startPos);
+        //rb.MovePosition(selection.position + startPos);
+        var shift = Vector3.Distance(selection.position+startPos, transform.position);//計算出距離
+        while (shift!=0)
+        {
+        transform.Translate(Vector3.forward * shift * speed*Time.deltaTime);
+        }
     }
     #endregion
 }

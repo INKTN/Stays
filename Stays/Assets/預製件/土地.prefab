@@ -41,7 +41,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3292394785692520299}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 58acc4f29dba2c143a76a3b00fd2e703, type: 3}
   m_Name: 
@@ -292,8 +292,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d3e1647da524af438765070d6d4fc6c, type: 3}
+--- !u!1 &5927504018752423551 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3196648517536708714, guid: 3d3e1647da524af438765070d6d4fc6c, type: 3}
+  m_PrefabInstance: {fileID: 9087841406843469333}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4098946673782145731 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5114996075067899094, guid: 3d3e1647da524af438765070d6d4fc6c, type: 3}
   m_PrefabInstance: {fileID: 9087841406843469333}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6340279533233150785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5927504018752423551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58acc4f29dba2c143a76a3b00fd2e703, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  haveObstacle: 0
+  detectionRange: {x: 9, y: 9, z: 9}
+  detectionHight: {x: 0, y: 9.5, z: 0}
+  gizmosOn: 0
+  draggingTag: []

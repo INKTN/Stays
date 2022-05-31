@@ -8735,9 +8735,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: "\u4E3B\u89D2"
       objectReference: {fileID: 0}
+    - target: {fileID: 2115881616652980734, guid: 9930d501e34f7074e8984282d74cf047, type: 3}
+      propertyPath: m_Constraints
+      value: 116
+      objectReference: {fileID: 0}
+    - target: {fileID: 4340292805274539047, guid: 9930d501e34f7074e8984282d74cf047, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4340292805274539047, guid: 9930d501e34f7074e8984282d74cf047, type: 3}
+      propertyPath: m_Center.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812362450078894957, guid: 9930d501e34f7074e8984282d74cf047, type: 3}
+      propertyPath: speed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6812362450078894957, guid: 9930d501e34f7074e8984282d74cf047, type: 3}
       propertyPath: startPos.y
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812362450078894957, guid: 9930d501e34f7074e8984282d74cf047, type: 3}
+      propertyPath: detectionRange.x
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9930d501e34f7074e8984282d74cf047, type: 3}

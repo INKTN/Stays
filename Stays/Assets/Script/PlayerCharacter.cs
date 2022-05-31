@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.AI;
 /// <summary>
 /// 主角player控制
 /// </summary>
@@ -17,15 +18,14 @@ public class PlayerCharacter : MonoBehaviour
     public Vector3 startPos;
     [Header("移動速度"), Range(0, 50)]
     public float speed;
-
+    private NavMeshAgent agent;
     #endregion
     private void Start()
     {
         #region 取得相關元件
         rb = GetComponent<Rigidbody>();
         an = GetComponent<Animator>();
-
-
+        agent = GetComponent<NavMeshAgent>();//取得AI判定
         #endregion
         SetStartPosition();
 
@@ -50,13 +50,10 @@ public class PlayerCharacter : MonoBehaviour
     }//開始時矯正主角位置
     public void Move(Transform selection)
     {
-        transform.LookAt(selection.position+startPos);
-        //rb.MovePosition(selection.position + startPos);
-        var shift = Vector3.Distance(selection.position+startPos, transform.position);//計算出距離
-        while (shift!=0)
-        {
-        transform.Translate(Vector3.forward * shift * speed*Time.deltaTime);
-        }
+        SetStartPosition(); //每次觸控都校正一次
+        transform.LookAt(selection.position+startPos);//看向目標
+        agent.SetDestination(selection.position + startPos);//使用AI引導至位置
+
     }
     #endregion
 }

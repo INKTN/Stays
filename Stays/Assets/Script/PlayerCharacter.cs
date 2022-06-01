@@ -39,7 +39,8 @@ public class PlayerCharacter : MonoBehaviour
     }//位置偵測顯示
     private void Update()
     {
-        
+       print(Mathf.Ceil(agent.remainingDistance));
+        if (Mathf.Ceil(agent.remainingDistance) == 0) an.SetBool("walk", false);//當位置==0，關閉動畫
     }
     #region 方法
     private void SetStartPosition()
@@ -52,8 +53,9 @@ public class PlayerCharacter : MonoBehaviour
     {
         SetStartPosition(); //每次觸控都校正一次
         transform.LookAt(selection.position+startPos);//看向目標
+        an.SetBool("walk",true);
         agent.SetDestination(selection.position + startPos);//使用AI引導至位置
-
+        
     }
     #endregion
 }

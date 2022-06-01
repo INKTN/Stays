@@ -39,7 +39,7 @@ public class PlayerCharacter : MonoBehaviour
     }//位置偵測顯示
     private void Update()
     {
-       print(Mathf.Ceil(agent.remainingDistance));
+       //print(Mathf.Ceil(agent.remainingDistance));測試數值
         if (Mathf.Ceil(agent.remainingDistance) == 0) an.SetBool("walk", false);//當位置==0，關閉動畫
     }
     #region 方法

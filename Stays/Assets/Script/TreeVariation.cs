@@ -32,7 +32,7 @@ public class TreeVariation : MonoBehaviour
         if (speed == objectiveSpeed&&!convert&&cold==0)//當速度等於設定目標且開關為關閉
         {
             convert = true;//開啟改變
-            var completion = GameObject.Find("System").GetComponent<TaskList>();//找到任務中心
+            //var completion = GameObject.Find("System").GetComponent<TaskList>();//找到任務中心
             //completion.b_completion = true;//向任務中心回傳任務完成
             original.SetActive (false);//關閉初始模型
             Instantiate(wilting[0], transform);//實例化模型0在位置

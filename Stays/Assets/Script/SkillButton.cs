@@ -27,10 +27,10 @@ public class SkillButton : MonoBehaviour
     
     public void SkillFast()
     {
-       if(Target.tag=="animal")
+       if(Target.tag== "Bridge")//關卡五_橋
         {
-           var animal = Target.GetComponent<Animal>();//如果碰到的東西TAG為動物，取得動物腳本
-            animal.SkillUse(speed);//呼叫動物改變速度的方法
+           var bridge = Target.GetComponent<Bridge>();//如果碰到的東西TAG為動物，取得動物腳本
+            bridge.SkillUse(speed);//呼叫動物改變速度的方法
         }
 
         if (Target.tag == "obstacle")//2022043

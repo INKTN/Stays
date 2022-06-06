@@ -79,6 +79,8 @@ public class TouchS : MonoBehaviour
                 {
                     //取得碰到位置的物件
                     var selection = hit.transform;
+                    print(selection.name);
+                    
                     //得到那個物件的材質位置
                     orimaterial = selection.GetComponent<Renderer>().material;
                     //print("觸碰到物件");
@@ -87,9 +89,10 @@ public class TouchS : MonoBehaviour
                     //材質不等於0的話，把材質替換為指定材質
                     //if (selectionRenderer != null)selectionRenderer.material = hightmaterial;
 
+                    _salaction = selection;
+                    print(_salaction.name);
                     //呼叫UI控制
                     skillUI.SkillOn(selection);
-                    _salaction = selection;
                 }
                 #region 地板
                 if (Physics.Raycast(ray, out hit) && hit.collider.tag == "ground" && !skillUI.skillOpen)//技能UI不是開的才能換地板

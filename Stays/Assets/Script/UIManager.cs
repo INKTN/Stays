@@ -34,8 +34,8 @@ public class UIManager : MonoBehaviour
             }
         //顯示位置在點擊物件位置
             //uiUse.transform.position = Camera.main.WorldToScreenPoint(touchObject.position+onObject);
-            //當冷卻時間到 刪除不使用的SKILLUI
-            if (cold == coldTime)
+            
+            if (cold == coldTime)//當冷卻時間到 刪除不使用的SKILLUI
             {
                 Destroy(GameObject.Find("skill UI(Clone)"));
                 print("刪除UI");
@@ -55,7 +55,9 @@ public class UIManager : MonoBehaviour
         touchObject = selection;//選擇物件
         //實例化(技能氣泡框,在Canvas位置下).的Bttion
         //BUG 畫面中心會多出現一個
-        uiUse = Instantiate(skill, FindObjectOfType<Canvas>().transform).GetComponent<Image>();//實例化
+        uiUse = Instantiate(skill,FindObjectOfType<Canvas>().transform);//實例化.GetComponent<Image>();
+        //顯示位置在點擊物件位置
+        //uiUse.transform.position = Camera.main.WorldToScreenPoint(touchObject.position+onObject);
         cold = 0;//計時用來清除
        
     }

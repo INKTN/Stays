@@ -1,0 +1,534 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.30f1 (1fb1bf06830e) revision 2077119'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19042) 64bit Core' Language: 'en' Physical Memory: 8034 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+D:\2020.3.30f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+D:/Unity/Stays/Stays
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+64441
+Successfully changed project path to: D:/Unity/Stays/Stays
+D:/Unity/Stays/Stays
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 56.65 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.30f1 (1fb1bf06830e)
+[Subsystems] Discovering subsystems at path D:/2020.3.30f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Unity/Stays/Stays/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1050 (ID=0x1c91)
+    Vendor:   
+    VRAM:     2996 MB
+    Driver:   30.0.15.1165
+Initialize mono
+Mono path[0] = 'D:/2020.3.30f1/Editor/Data/Managed'
+Mono path[1] = 'D:/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/2020.3.30f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56224
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/2020.3.30f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/2020.3.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001463 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 52.22 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.580 seconds
+Domain Reload Profiling:
+	ReloadAssembly (580ms)
+		BeginReloadAssembly (59ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (455ms)
+			LoadAssemblies (59ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (147ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (180ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (52ms)
+				BeforeProcessingInitializeOnLoad (17ms)
+				ProcessInitializeOnLoadAttributes (78ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002850 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 44.98 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.187 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1188ms)
+		BeginReloadAssembly (148ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (988ms)
+			LoadAssemblies (98ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (298ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (421ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (45ms)
+				BeforeProcessingInitializeOnLoad (66ms)
+				ProcessInitializeOnLoadAttributes (294ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.46 seconds
+Refreshing native plugins compatible for Editor in 0.56 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2382 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.6 MB.
+System memory in use after: 141.7 MB.
+
+Unloading 87 unused Assets to reduce memory usage. Loaded Objects now: 2777.
+Total: 10.939800 ms (FindLiveObjects: 0.237600 ms CreateObjectMapping: 0.086200 ms MarkObjects: 2.692000 ms  DeleteObjects: 7.922500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/預製件/UI/關卡內UI.prefab
+  artifactKey: Guid(7b5ced3b1794f934faf9eb8c4aab8286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/關卡內UI.prefab using Guid(7b5ced3b1794f934faf9eb8c4aab8286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9287fbc0119c78d2d77490d308f00ded') in 0.307034 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.671789 seconds.
+  path: Assets/預製件/UI/關卡內UI.prefab
+  artifactKey: Guid(7b5ced3b1794f934faf9eb8c4aab8286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/關卡內UI.prefab using Guid(7b5ced3b1794f934faf9eb8c4aab8286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '497ad41d3b75bcced1d35461d47e9dcf') in 0.004412 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.751991 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34b55f6db0fc0e963e47c0d37a69ffc7') in 0.033829 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 28.424154 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13bc0df3f5e219af20b8465117006f8c') in 0.007349 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.329555 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d1f5f2c328d561fbcd67db07204fa4') in 0.004232 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.412232 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbe6f04346bd80959bec7fd59a35ba87') in 0.006887 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.336869 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a441d4288ffec7f838a2afca433be12') in 0.006155 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.750344 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26054c68918bb3c0bf8604d7f06cc4db') in 0.004380 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.175856 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df9a6079923b85ed671df594442087a8') in 0.006820 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.980633 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09b00f61cdedaebd216416018e3d5262') in 0.006133 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.780899 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fddd90ac3cb10c08a271e63e1663e3bd') in 0.005845 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.901233 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd927a75907508326bcb4b6b2ffef382e') in 0.005425 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.202783 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddacd0b12db78962a86eedc68560d5d8') in 0.004750 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.693321 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d47821152c95fad973a1e767f46fef7') in 0.005695 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.884835 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e22b1e919ef44c708dd46e71401bb02') in 0.004965 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.606102 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afeb3bd4fdbd09d5851134bea43a2a7a') in 0.005149 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.856999 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b06d06881d0657ebe78801eff0d48ece') in 0.005673 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.504443 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de9ba78494507ad31ec537ae0d2120e3') in 0.004783 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.444326 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ef8fafcb6bcd48dc8b34b9375428d23') in 0.004696 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.796649 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e79a8accbe2c6b7282087d6713e3eb8c') in 0.005238 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.295987 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa58be59e09a0234cda961ef6467c1a3') in 0.005811 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.278516 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07258b75a4639e987766c69f9af05c3f') in 0.005763 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.639621 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c37cc099ec7e5322ead225fb028010a') in 0.004688 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.013581 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be4a6c97d88173e652b0de3413e5c61e') in 0.004262 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.684167 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f91f39a0c9a5d56abee4225c66b10a9b') in 0.004549 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.428383 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acde87ea6a06974a05d69fa2b5d108eb') in 0.006134 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.120601 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c73f6d37d484520b0d42dc6e6b8dd024') in 0.004517 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 70.233008 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fa65e472136b13becdec02065345708') in 0.007240 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.029907 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b07a9ad2b80a639d65955742b8bee94') in 0.004178 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.720512 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a61eac1664562e6ea2c6b0e0240baf8') in 0.004716 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.596213 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50a15f79708dc1de6cb3d18d5f3ec593') in 0.004461 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.058978 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a75a9252a5f4a5c2e6a0ca9ecd850412') in 0.004841 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.858441 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b68260f8f8f746990b4320ced202494') in 0.004762 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.468728 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c4623b19ad1046ec8de33bac31a80f9') in 0.004960 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.655193 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4c6d6ea67746e72bbcdf81b8803b52d') in 0.005352 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.130671 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1d023484756cbd091ec8de2c0fb8cda') in 0.006416 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.202730 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '961c2a45481e2d49a40913400a563ac5') in 0.004193 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.220475 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aad32cff1eac1787057f629b9bb50f0e') in 0.004557 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.225917 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35928dc7bd6bc2163d753ab78626b704') in 0.006495 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.689747 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '368cf31f3e565712432892d7cd89f3bc') in 0.006443 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.004423 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e3eda7f4dc9bfcc85b50241adef8c19') in 0.005260 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.020203 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdf5eb1195ac78c100f2a02e731adf68') in 0.004620 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.800861 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c188a077a8519556aea8073d2171049') in 0.004496 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.449420 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e08361c0b9acd5e29cdffee54c1a6ab0') in 0.007343 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.790053 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2c158b613601d53abd44ef68f3e5ba8') in 0.004587 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.670323 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0af130605ac1ee14b33f31344b2517ea') in 0.006331 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.582826 seconds.
+  path: Assets/預製件/UI/對話框.prefab
+  artifactKey: Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/預製件/UI/對話框.prefab using Guid(0edd12d347d24844d9768ee683bd3b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05b101967baba25aa74ffd894ee0e5f0') in 0.005072 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004611 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.032 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1033ms)
+		BeginReloadAssembly (119ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (858ms)
+			LoadAssemblies (98ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (304ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (318ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (72ms)
+				ProcessInitializeOnLoadAttributes (231ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.50 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2290 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.6 MB.
+System memory in use after: 129.7 MB.
+
+Unloading 81 unused Assets to reduce memory usage. Loaded Objects now: 2781.
+Total: 10.741800 ms (FindLiveObjects: 0.211200 ms CreateObjectMapping: 0.091300 ms MarkObjects: 2.756000 ms  DeleteObjects: 7.682200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003192 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.088 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1089ms)
+		BeginReloadAssembly (117ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (910ms)
+			LoadAssemblies (101ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (307ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (45ms)
+			SetupLoadedEditorAssemblies (351ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (76ms)
+				ProcessInitializeOnLoadAttributes (259ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.58 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2290 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.6 MB.
+System memory in use after: 129.7 MB.
+
+Unloading 80 unused Assets to reduce memory usage. Loaded Objects now: 2783.
+Total: 10.507300 ms (FindLiveObjects: 0.188100 ms CreateObjectMapping: 0.088700 ms MarkObjects: 2.433500 ms  DeleteObjects: 7.796200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

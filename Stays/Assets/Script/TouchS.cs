@@ -24,11 +24,17 @@ public class TouchS : MonoBehaviour
     //UI召喚
     private UIManager skillUI;
     private GroundJudgment ground;
+
+    [Header("主角")]//20220620讓角色只能走一格
+    private GameObject character;
+    [Range(-50, 50), Header("格子距離")]
+    public float distance;
     #endregion
     private void Start()
     {
         skillUI = GameObject.Find("System").GetComponent<UIManager>();//先從UI控制中取得腳本
         ground= GameObject.Find("System").GetComponent<GroundJudgment>();
+        character = GameObject.Find("主角");
     }
 
     void FixedUpdate()
@@ -97,12 +103,16 @@ public class TouchS : MonoBehaviour
                 #region 地板
                 if (Physics.Raycast(ray, out hit) && hit.collider.tag == "ground" && !skillUI.skillOpen)//技能UI不是開的才能換地板
                 {
-                    var selection = hit.transform;
-                    print(selection.name);
-                    orimaterial = selection.GetComponent<Renderer>().material;
-                    ground.OnGround(selection);
-                    _salaction = selection;
-
+                    print("觸碰物件:" + hit.transform.name + "位置:" + hit.transform.position + "，角色位置:" + character.transform.position + "，X、Z距離:"
+                        + Math.Abs(hit.transform.position.x - character.transform.position.x) + "，" + Math.Abs(hit.transform.position.z - character.transform.position.z));
+                   if(Math.Abs(hit.transform.position.x - character.transform.position.x)<=distance&& Math.Abs(hit.transform.position.z - character.transform.position.z) <= distance)
+                    {
+                        var selection = hit.transform;
+                        print(selection.name);
+                        orimaterial = selection.GetComponent<Renderer>().material;
+                        ground.OnGround(selection);
+                        _salaction = selection;
+                    }
                 }
                 #endregion
             }

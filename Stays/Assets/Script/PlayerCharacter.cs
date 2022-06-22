@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 /// <summary>
@@ -18,7 +19,13 @@ public class PlayerCharacter : MonoBehaviour
     public Vector3 startPos;
     [Header("移動速度"), Range(0, 50)]
     public float speed;
+    [Header("停止時間"),Range(0,50)]
+    public float stop;
     private NavMeshAgent agent;
+    [Header("目標位置")]
+    private Vector3 target;
+    [Header("一格距離")]
+    public float unit=10;
     #endregion
     private void Start()
     {
@@ -51,11 +58,42 @@ public class PlayerCharacter : MonoBehaviour
     }//開始時矯正主角位置
     public void Move(Transform selection)
     {
+        target = selection.position+startPos;
         SetStartPosition(); //每次觸控都校正一次
-        transform.LookAt(selection.position+startPos);//看向目標
+        transform.LookAt(target);//看向目標
         an.SetBool("walk",true);
-        agent.SetDestination(selection.position + startPos);//使用AI引導至位置
+
+
+        StartCoroutine(TypeEffect());
+        //agent.SetDestination(new Vector3(transform.position.x + unit, target.y, target.z));//使用AI引導至位置
         
     }
+    private IEnumerator TypeEffect()
+    {
+        var gap = target - transform.position;
+        print(gap);
+        if (gap.x > 0)
+        {
+            for(int i= (int)(Mathf.Abs(gap.x) / unit); i > 0; i--)
+            {
+                Vector3 distance = new Vector3(transform.position.x + gap.x, transform.position.y, transform.position.z);
+                agent.SetDestination(distance);
+                print(i);
+                yield return new WaitForSeconds(stop);
+            }
+        }
+        if (gap.x < 0)
+        {
+            for (int i = (int)(Mathf.Abs(gap.x) / unit); i < 0; i++)
+            {
+                Vector3 distance = new Vector3(transform.position.x+gap.x, transform.position.y, transform.position.z);
+                agent.SetDestination(distance);
+                print(i);
+                yield return new WaitForSeconds(stop);
+            }
+        }
+
+    }
+
     #endregion
 }

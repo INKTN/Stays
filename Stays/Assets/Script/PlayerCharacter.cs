@@ -7,8 +7,6 @@ using UnityEngine.AI;
 public class PlayerCharacter : MonoBehaviour
 {
     #region 欄位
-    [Header("剛體")]
-    private Rigidbody rb;
     [Header("動畫控制")]
     private Animator an;
     [Header("偵測範圍")]
@@ -30,7 +28,6 @@ public class PlayerCharacter : MonoBehaviour
     private void Start()
     {
         #region 取得相關元件
-        rb = GetComponent<Rigidbody>();
         an = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();//取得AI判定
         #endregion
@@ -58,41 +55,74 @@ public class PlayerCharacter : MonoBehaviour
     }//開始時矯正主角位置
     public void Move(Transform selection)
     {
-        target = selection.position+startPos;
-        SetStartPosition(); //每次觸控都校正一次
-        transform.LookAt(target);//看向目標
-        an.SetBool("walk",true);
-
-
-        StartCoroutine(TypeEffect());
-        //agent.SetDestination(new Vector3(transform.position.x + unit, target.y, target.z));//使用AI引導至位置
-        
+        if (!an.GetBool("walk"))//行走動畫沒有開啟才能執行
+        {
+            target = selection.position + startPos;
+            SetStartPosition(); //每次觸控都校正一次
+            StartCoroutine(TypeEffect());//20220623使用IEnumerator使角色會在每個格子停頓
+                                         //agent.SetDestination(new Vector3(transform.position.x + unit, target.y, target.z));//使用AI引導至位置
+        }
     }
     private IEnumerator TypeEffect()
     {
-        var gap = target - transform.position;
-        print(gap);
-        if (gap.x > 0)
-        {
-            for(int i= (int)(Mathf.Abs(gap.x) / unit); i > 0; i--)
-            {
-                Vector3 distance = new Vector3(transform.position.x + gap.x, transform.position.y, transform.position.z);
-                agent.SetDestination(distance);
-                print(i);
-                yield return new WaitForSeconds(stop);
-            }
-        }
-        if (gap.x < 0)
-        {
-            for (int i = (int)(Mathf.Abs(gap.x) / unit); i < 0; i++)
-            {
-                Vector3 distance = new Vector3(transform.position.x+gap.x, transform.position.y, transform.position.z);
-                agent.SetDestination(distance);
-                print(i);
-                yield return new WaitForSeconds(stop);
-            }
-        }
+        var gap = target - transform.position;//算出角色與目標距離
+        //print(gap);查看距離座標
 
+        ///*X移動(左右)///
+        if (gap.x > 0)//若距離大於0=往右走
+        {
+            for(int i= (int)(Mathf.Abs(gap.x) / unit); i >0; i--)//迴圈(i為距離/單位;若i還>0則持續執行;且每次遞減i值)
+            {
+                SetStartPosition(); //每次觸控都校正一次
+                an.SetBool("walk", true);//開啟動畫
+                Vector3 distance = new Vector3(transform.position.x+unit , transform.position.y, transform.position.z);
+                transform.LookAt(distance);//看向目標
+                agent.SetDestination(distance);//使NAV的AI移動至點
+                //print("向右" + i + "格");
+                yield return new WaitForSeconds(stop);//停頓設定秒數
+            }
+        }
+        else
+        {
+            for (int i = (int)(gap.x/ unit); i < 0; i++)
+            {
+                SetStartPosition(); //每次觸控都校正一次
+                an.SetBool("walk", true);
+                Vector3 distance = new Vector3(transform.position.x - unit, transform.position.y, transform.position.z);
+                transform.LookAt(distance);
+                agent.SetDestination(distance);
+                //print("向左" + i + "格");
+                yield return new WaitForSeconds(stop);
+            }
+        }
+        ///*Z移動(前後)///
+        if (gap.z > 0)
+        {
+            for (int i = (int)Mathf.Ceil(Mathf.Abs(gap.z) / unit); i != 0; i--)
+            {
+                SetStartPosition(); //每次觸控都校正一次
+                an.SetBool("walk", true);
+                Vector3 distance = new Vector3(transform.position.x , transform.position.y, transform.position.z + unit);
+                transform.LookAt(distance);//看向目標
+                agent.SetDestination(distance);
+                //print("向前" + i + "格");
+                yield return new WaitForSeconds(stop);
+            }
+        }
+        else
+        {
+            //print((gap.z / unit));
+            for (int i = (int)Mathf.Floor(gap.z / unit); i != 0; i++)
+            {
+                SetStartPosition(); //每次觸控都校正一次
+                an.SetBool("walk", true);
+                Vector3 distance = new Vector3(transform.position.x , transform.position.y, transform.position.z - unit);
+                transform.LookAt(distance);//看向目標
+                agent.SetDestination(distance);
+                //print("向後" + i + "格");
+                yield return new WaitForSeconds(stop);
+            }
+        }
     }
 
     #endregion

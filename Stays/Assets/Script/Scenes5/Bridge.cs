@@ -27,9 +27,8 @@ public class Bridge : MonoBehaviour
     private void BuildBrodge()//update若速度與目標速度相同則隱藏看板，顯示橋梁
     {
         gameObject.transform.GetChild(0).gameObject.SetActive(false);
-        gameObject.transform.GetChild(2).gameObject.SetActive(true);
-        gameObject.transform.GetChild(3).gameObject.SetActive(true);
-        gameObject.transform.GetChild(4).gameObject.SetActive(true);
+        gameObject.transform.GetChild(1).gameObject.SetActive(true);
+
     }
     #endregion
 }

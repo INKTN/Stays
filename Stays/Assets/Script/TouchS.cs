@@ -22,8 +22,10 @@ public class TouchS : MonoBehaviour
     private hightlightSelectionResponse _selectionResponse;
     public Transform _salaction;
     //UI召喚
+    
     private UIManager skillUI;
     private GroundJudgment ground;
+    private DialongueSystem dialongue;//對話框偕同程序
 
     [Header("主角")]//20220620讓角色只能走一格
     private GameObject character;
@@ -34,6 +36,7 @@ public class TouchS : MonoBehaviour
     {
         skillUI = GameObject.Find("System").GetComponent<UIManager>();//先從UI控制中取得腳本
         ground= GameObject.Find("System").GetComponent<GroundJudgment>();
+        dialongue = GameObject.Find("System").GetComponent<DialongueSystem>();//找到對話框偕同程序
         character = GameObject.Find("主角");
     }
 
@@ -50,8 +53,8 @@ public class TouchS : MonoBehaviour
 
         }
         #endregion
-        
-        RayTouch();//觸碰
+        if (!dialongue.display) //若是對話框顯示則不觸控
+            RayTouch();//觸碰
         
         #region 觸碰物材質轉換
         if (_salaction != null)

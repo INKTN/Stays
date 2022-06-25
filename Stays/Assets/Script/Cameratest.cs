@@ -21,19 +21,23 @@ public class Cameratest : MonoBehaviour
     public float dis = 20f;
     [Header("靈敏度"), Range(0, 50)]
     public float speed = 15;
-    
+    private DialongueSystem dialongue;//對話框偕同程序
     #endregion
 
     private void Start()
     {
         target = GameObject.Find("主角").transform;//找到主角並跟隨他
         transform.localPosition = Vector3.MoveTowards(transform.position, target.position, -dis);
+        dialongue = GameObject.Find("System").GetComponent<DialongueSystem>();//找到對話框偕同程序
         // cameraPosition = transform.position;
     }
     private void Update()
     {
-        LS();
-        Border();
+        if (!dialongue.display)//若是對話框顯示則不觸控
+        {
+            LS();
+            Border();
+        }
     }
     #region 方法
     private void LS()//Long Shot

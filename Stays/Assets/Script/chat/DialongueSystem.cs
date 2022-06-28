@@ -23,19 +23,19 @@ public class DialongueSystem : MonoBehaviour
 
     void Start()
     {
-      //StartCoroutine(TypeEffect());
+      StartCoroutine(TypeEffect());
     }
 
     /// <summary>
     /// 打字效果
     /// </summary>
     /// <returns></returns>
-  private IEnumerator TypeEffect(string[] contents)
+  private IEnumerator TypeEffect()
     {
         //顯示文字
-        //string test1 = "test tipe";
-        //string test2 = "test tipe22222";
-        //string[] contents = { test1, test2 };
+        string test1 = "test tipe";
+        string test2 = "test tipe22222";
+        string[] contents = { test1, test2 };
 
         goDialogue.SetActive(true);//顯示對話物件 參考項目UnityEngine.UI
         display = true;
@@ -69,7 +69,7 @@ public class DialongueSystem : MonoBehaviour
     /// <param name="contents">顯示打字效果的對話內容</param>
     public void StartDialogue(string[] contents)
     {
-        StartCoroutine(TypeEffect(contents));
+        //StartCoroutine(TypeEffect(contents));
     }
 
     /// <summary>

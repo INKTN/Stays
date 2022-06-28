@@ -12,6 +12,7 @@ public class Kid : MonoBehaviour
     #endregion
     private void OnTriggerEnter(Collider other)
     {
-       // if (other.name == target) dialongueSystem.StartDialogue(dataDalogues.dialogues);
+       if (other.name == target) dialongueSystem.StartDialogue(dataDalogues.conversationContent);//對話資料讀取
     }
+    
 }

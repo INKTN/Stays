@@ -29,7 +29,6 @@ public class area : MonoBehaviour
 
     private void Update()
     {
-       
         CheckArea();
     }
     #region ¤èªk

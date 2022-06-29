@@ -11,7 +11,7 @@ using System;////Array.IndexOf使用
 public class TouchS : MonoBehaviour
 {
     #region 欄位
-    [Header("能觸碰物件TAG")]
+    [Header("能叫出技能使用物件TAG")]
     public string[] draggingTag;
     [Header("攝影機")]
     public Camera cam;
@@ -115,9 +115,22 @@ public class TouchS : MonoBehaviour
                     
                 }
                 #endregion
+                #region NPC
+                if(Physics.Raycast(ray, out hit) && hit.collider.tag == "NPC" && !skillUI.skillOpen)
+                {
+                    var selection = hit.transform;
+                    print(selection.name + selection.position);
+                    orimaterial = selection.GetComponent<Renderer>().material;
+                    //要在NPC處寫判斷格子
+
+                    //呼叫攝影機切換視角
+
+                    _salaction = selection;
+                }
+                #endregion
             }
-            
-            }    
+
+        }    
         }
     }
 

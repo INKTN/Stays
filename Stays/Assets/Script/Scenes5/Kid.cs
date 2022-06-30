@@ -29,6 +29,7 @@ public class Kid : MonoBehaviour
     }//位置偵測顯示
     private void OnTriggerEnter(Collider other)
     {
+        print(other.name);
        if (other.name == target) dialongueSystem.StartDialogue(dataDalogues.conversationContent);//對話資料讀取
     }
     

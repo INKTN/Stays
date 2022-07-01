@@ -19,6 +19,7 @@ public class DialongueSystem : MonoBehaviour
     public KeyCode key = KeyCode.Mouse0;
     [Header("偵測顯示")]
     public bool display=false;
+    private bool fin;//偵測說話完成
     #endregion
 
     void Start()
@@ -39,6 +40,7 @@ public class DialongueSystem : MonoBehaviour
 
         goDialogue.SetActive(true);//顯示對話物件 參考項目UnityEngine.UI
         display = true;
+        fin = false;
 
         //找到所有對話
         for (int j = 0; j < contents.Length; j++)
@@ -54,6 +56,7 @@ public class DialongueSystem : MonoBehaviour
             }
 
             goTip.SetActive(true);//顯示圖示
+            fin = true;
 
             while (!Input.GetKeyDown(key))//當玩家沒有按對話按鍵時持續執行
             {
@@ -100,7 +103,7 @@ public class DialongueSystem : MonoBehaviour
             textTito.text += contents[j];//更改為疊加對話文字介面 欄位名稱.text(裡面的屬性)
                 yield return new WaitForSeconds(interval); //等待(interval)秒
             
-            while (!Input.GetKeyDown(key))//當玩家沒有按對話按鍵時持續執行
+            while (!Input.GetKeyDown(key)||!fin)//當玩家沒有按對話按鍵時持續執行
             {
                 yield return null;//等待 unll一個影格時間
             }

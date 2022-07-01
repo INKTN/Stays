@@ -31,6 +31,7 @@ public class TouchS : MonoBehaviour
     private PlayerCharacter character;
     [Range(-50, 50), Header("格子距離")]
     public float distance;
+
     #endregion
     private void Start()
     {
@@ -108,7 +109,7 @@ public class TouchS : MonoBehaviour
                 {
                     
                         var selection = hit.transform;
-                        print(selection.name+selection.position);
+                        //print(selection.name+selection.position);
                         orimaterial = selection.GetComponent<Renderer>().material;
                         ground.OnGround(selection);
                         _salaction = selection;
@@ -121,10 +122,16 @@ public class TouchS : MonoBehaviour
                     var selection = hit.transform;
                     print(selection.name + selection.position);
                     orimaterial = selection.GetComponent<Renderer>().material;
+                    #region NPC
                     //要在NPC處寫判斷格子
-
+                    if (selection.name == "Kid")
+                    {
+                        //print(selection.name == "Kid");
+                        Kid getHit = selection.GetComponent<Kid>();
+                        getHit.Check();
+                    }
+                    #endregion
                     //呼叫攝影機切換視角
-
                     _salaction = selection;
                 }
                 #endregion

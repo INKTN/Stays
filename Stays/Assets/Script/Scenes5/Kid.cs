@@ -27,7 +27,7 @@ public class Kid : MonoBehaviour
         Gizmos.DrawCube(transform.position + detectionHight, detectionRange);//偵測區位置
 
     }//位置偵測顯示
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)//測試是否能觸發對話框(角色走入)
     {
         //print(other.name);
         if (other.name == target)

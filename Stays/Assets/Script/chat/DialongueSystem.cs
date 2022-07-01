@@ -61,6 +61,7 @@ public class DialongueSystem : MonoBehaviour
             }
         }
         goDialogue.SetActive(false); //隱藏對話物件
+        display = false;
     }
 
     /// <summary>

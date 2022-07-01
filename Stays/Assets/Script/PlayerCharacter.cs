@@ -18,6 +18,8 @@ public class PlayerCharacter : MonoBehaviour
     [Header("移動速度"), Range(0, 50)]
     public float speed;
     private NavMeshAgent agent;
+    [Header("行走中")]
+    public bool walking;
     #endregion
     private void Start()
     {
@@ -40,6 +42,7 @@ public class PlayerCharacter : MonoBehaviour
     {
         //print(Mathf.Ceil(agent.remainingDistance));測試數值
         if (Mathf.Ceil(agent.remainingDistance) == 0) an.SetBool("walk", false);//當位置==0，關閉動畫
+        walking = an.GetBool("walk");
     }
     #region 方法
     private void SetStartPosition()
@@ -54,7 +57,6 @@ public class PlayerCharacter : MonoBehaviour
         transform.LookAt(selection.position + startPos);//看向目標
         an.SetBool("walk", true);
         agent.SetDestination(selection.position + startPos);//使用AI引導至位置
-
     }
     #endregion
 }

@@ -11,6 +11,8 @@ using UnityEngine;
 public class DataDalogue : ScriptableObject
 {
     //Text Area (程︽计,程︽计) -度string
+    [Header("癸禜")]
+    public string[] talkName;
     [Header("癸杠ず甧"), TextArea(3, 5)]
     public string[] conversationContent;
 }

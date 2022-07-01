@@ -81,4 +81,34 @@ public class DialongueSystem : MonoBehaviour
         goDialogue.SetActive(false);
         display = false;
     }
+
+    #region 顯示名稱
+    private IEnumerator Nameffect(string[] contents)
+    {
+        //顯示文字
+        //string test1 = "test tipe";
+        //string test2 = "test tipe22222";
+        //string[] contents = { test1, test2 };
+
+        //找到所有對話
+        for (int j = 0; j < contents.Length; j++)
+        {
+            textTito.text = "";//清除上次對話內容
+                               //for迴圈(參照 ; 參照<測試文字總字數;參照++)
+
+            textTito.text += contents[j];//更改為疊加對話文字介面 欄位名稱.text(裡面的屬性)
+                yield return new WaitForSeconds(interval); //等待(interval)秒
+            
+            while (!Input.GetKeyDown(key))//當玩家沒有按對話按鍵時持續執行
+            {
+                yield return null;//等待 unll一個影格時間
+            }
+        }
+      
+    }
+    public void NameEnter(string[] contents)
+    {
+        StartCoroutine(Nameffect(contents));
+    }
+    #endregion
 }

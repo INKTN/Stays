@@ -8194,11 +8194,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aae3360a1636cc48aced482bb9283c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dataDalogues: {fileID: 11400000, guid: 82c311fbad2b2924691a53a5363546b4, type: 2}
+  dataDalogues:
+  - {fileID: 11400000, guid: 4e63cafd80c481546a0d001ad117bc23, type: 2}
+  - {fileID: 11400000, guid: 53c20a4ab7190ba4087dfdc37aba51ec, type: 2}
   dialongueSystem: {fileID: 903941004}
   target: "\u4E3B\u89D2"
   detectionRange: {x: 25, y: 15, z: 25}
   detectionHight: {x: 0.61, y: 5, z: 2.14}
+  gizmosOn: 0
 --- !u!95 &1472813913
 Animator:
   serializedVersion: 3

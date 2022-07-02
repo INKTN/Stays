@@ -41,6 +41,7 @@ public class Kid : MonoBehaviour
         ///print("接收回傳");
         Collider[] hit = Physics.OverlapBox(transform.position + detectionHight, detectionRange / 2, Quaternion.identity);//(中心點，大小，旋轉，圖層碼)
         int i = 0;
+        transform.LookAt(GameObject.Find("主角").transform);
         while (i < hit.Length)//若i小於hit最大值
         {
             print(hit[i].name);

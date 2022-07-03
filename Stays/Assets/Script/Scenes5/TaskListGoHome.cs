@@ -1,5 +1,5 @@
 using UnityEngine;
-using System.Collections;
+
 /// <summary>
 /// 20220119判斷任務
 /// 20220606 關卡五判斷任務

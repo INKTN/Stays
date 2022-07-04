@@ -85,25 +85,7 @@ public class TouchS : MonoBehaviour
                 Ray ray = cam.ScreenPointToRay(pos);
                 _salaction = null;
                 //if (Physics.Raycast(ray, out hit)) print(Array.IndexOf(draggingTag, hit.collider.tag));//檢驗觸碰用20220423
-                if (Physics.Raycast(ray, out hit) && Array.IndexOf(draggingTag, hit.collider.tag)>-1)//Array.IndexOf(陣列,要找的值) 如果有就回傳1，沒有就回傳-1(20220423)，如果RAY碰到的物件TAG為欄位名稱||欄位名稱符合內容
-                {
-                    //取得碰到位置的物件
-                    var selection = hit.transform;
-                    print(selection.name);
-                    
-                    //得到那個物件的材質位置
-                    orimaterial = selection.GetComponent<Renderer>().material;
-                    //print("觸碰到物件");
-                    //orimaterial = selectionRenderer.material;
-
-                    //材質不等於0的話，把材質替換為指定材質
-                    //if (selectionRenderer != null)selectionRenderer.material = hightmaterial;
-
-                    _salaction = selection;
-                    print(_salaction.name);
-                    //呼叫UI控制
-                    skillUI.SkillOn(selection);
-                }
+               
                 #region 地板
                 if (Physics.Raycast(ray, out hit) && hit.collider.tag == "ground" && !skillUI.skillOpen)//技能UI不是開的才能換地板
                 {

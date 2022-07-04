@@ -26,6 +26,10 @@ public class Kid : MonoBehaviour
     {
         an = GetComponent<Animator>();
     }
+    private void Update()
+    {
+        
+    }
     private void OnDrawGizmos()
     {
         if (gizmosOn)
@@ -63,6 +67,13 @@ public class Kid : MonoBehaviour
             }
             #endregion
             i++;
+        }
+    }
+    public void Control()
+    {
+        if (dalogues1Fin) 
+        {
+
         }
     }
     #endregion

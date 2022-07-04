@@ -9,6 +9,9 @@ public class TaskListGoHome : MonoBehaviour
     #region 欄位
     [Header("A_橋")]
     private Bridge a_bridge;
+    [Header("B_NPC小孩")]
+    private Kid b_kid;
+
     #endregion
     private void Start()
     {
@@ -16,11 +19,13 @@ public class TaskListGoHome : MonoBehaviour
         //A_Cow = GameObject.Find("CowBlW").GetComponent<Animal>();範例
         //A_Sheep = GameObject.Find("SheepWhite").GetComponent<Animal>();
         a_bridge = GameObject.Find("橋").GetComponent<Bridge>();
+        b_kid = GameObject.Find("Kid").GetComponent<Kid>();
         #endregion
     }
     void Update()
     {
         // A_AnimalStop();
+
 
     }
     #region 方法
@@ -39,5 +44,9 @@ public class TaskListGoHome : MonoBehaviour
      //   A_Sheep.solving = false;
      //A_Cow.solving = false;
      //   }
+     public bool A_BridgeFin()//20220704橋完成判定
+     {
+        return a_bridge.fin;
+     }
     #endregion
 }

@@ -9,16 +9,23 @@ public class Bridge : MonoBehaviour
     public float speed = 1;
     private float objectiveSpeed = 2;
     [Header("橋 搭建")]
-    public bool skillUse=false;
+    public bool skillUse = false;
     [Header("偵測範圍")]
     public Vector3 detectionRange = Vector3.one;
     public Vector3 detectionHight;
+    private string target = "主角";
     [Header("觸碰範圍顯示")]
     public bool gizmosOn;
+    [Header("技能系統")]
+    private UIManager skillUI;
+    [Header("是否完成")]
+    public bool fin;
     #endregion
     private void Start()
     {
         //print(gameObject.transform.GetChild(2).gameObject.name);//確認物件名稱
+        skillUI = GameObject.Find("System").GetComponent<UIManager>();//先從UI控制中取得腳本
+        fin = false;
     }
     private void Update()
     {
@@ -41,7 +48,15 @@ public class Bridge : MonoBehaviour
     {
         gameObject.transform.GetChild(0).gameObject.SetActive(false);
         gameObject.transform.GetChild(1).gameObject.SetActive(true);
+        fin = true;
 
     }
-    #endregion
+    public void Skill()
+    {
+        Collider[] hit = Physics.OverlapBox(transform.position + detectionHight, detectionRange / 2, Quaternion.identity);//(中心點，大小，旋轉，圖層碼)
+        int i = 0;
+        print(hit[i].name);
+        skillUI.SkillOn(transform);
+    }
+        #endregion
 }

@@ -67,7 +67,6 @@ public class Bridge : MonoBehaviour
         skillUse = true;
         yield return new WaitForSeconds(0.5f);
         player.Location(finPin);
-        
     }
         #endregion
 }

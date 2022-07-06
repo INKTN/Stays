@@ -25,8 +25,6 @@ public class TaskListGoHome : MonoBehaviour
     void Update()
     {
         // A_AnimalStop();
-
-
     }
     #region 方法
      /// <summary>
@@ -48,5 +46,9 @@ public class TaskListGoHome : MonoBehaviour
      {
         return a_bridge.skillUse;
      }
+    public bool B_Kid()//20220706小孩完成判定
+    {
+        return b_kid;
+    }
     #endregion
 }

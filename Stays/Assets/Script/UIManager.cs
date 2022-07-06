@@ -51,15 +51,17 @@ public class UIManager : MonoBehaviour
 
     public void SkillOn(Transform selection)
     {
-        skillOpen = true;//SKILLOPEN為開
-        touchObject = selection;//選擇物件
-        //實例化(技能氣泡框,在Canvas位置下).的Bttion
-        //BUG 畫面中心會多出現一個
-        uiUse = Instantiate(skill,FindObjectOfType<Canvas>().transform);//實例化.GetComponent<Image>();
-        //顯示位置在點擊物件位置
-        //uiUse.transform.position = Camera.main.WorldToScreenPoint(touchObject.position+onObject);
-        cold = 0;//計時用來清除
-       
+        if (!skillOpen)
+        {
+            skillOpen = true;//SKILLOPEN為開
+            touchObject = selection;//選擇物件
+                                    //實例化(技能氣泡框,在Canvas位置下).的Bttion
+                                    //BUG 畫面中心會多出現一個
+            uiUse = Instantiate(skill, FindObjectOfType<Canvas>().transform);//實例化.GetComponent<Image>();
+                                                                             //顯示位置在點擊物件位置
+                                                                             //uiUse.transform.position = Camera.main.WorldToScreenPoint(touchObject.position+onObject);
+            cold = 0;//計時用來清除
+        }
     }
     
     #endregion

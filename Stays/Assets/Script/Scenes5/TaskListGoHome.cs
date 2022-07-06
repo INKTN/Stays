@@ -46,7 +46,7 @@ public class TaskListGoHome : MonoBehaviour
      //   }
      public bool A_BridgeFin()//20220704¾ô§¹¦¨§P©w
      {
-        return a_bridge.fin;
+        return a_bridge.skillUse;
      }
     #endregion
 }

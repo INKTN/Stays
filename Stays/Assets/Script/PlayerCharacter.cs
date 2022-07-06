@@ -41,8 +41,14 @@ public class PlayerCharacter : MonoBehaviour
     private void Update()
     {
         //print(Mathf.Ceil(agent.remainingDistance));測試數值
-        if (Mathf.Ceil(agent.remainingDistance) == 0) an.SetBool("walk", false);//當位置==0，關閉動畫
+        if (Mathf.Ceil(agent.remainingDistance) == 0)
+        {
+            an.SetBool("walk", false);
+            agent.ResetPath();
+        }//當位置==0，關閉動畫
         walking = an.GetBool("walk");
+        //print(agent.hasPath);
+        
     }
     #region 方法
     private void SetStartPosition()
@@ -57,6 +63,17 @@ public class PlayerCharacter : MonoBehaviour
         transform.LookAt(selection.position + startPos);//看向目標
         an.SetBool("walk", true);
         agent.SetDestination(selection.position + startPos);//使用AI引導至位置
+
+    }
+    public void Location(Vector3 vector)
+    {
+        agent.isStopped = true;
+        agent.ResetPath();
+        transform.position = vector;
+        //transform.LookAt(vector);//看向目標
+       
+        //agent.SetDestination(vector);//使用AI引導至位置
+        //SetStartPosition();
     }
     #endregion
 }

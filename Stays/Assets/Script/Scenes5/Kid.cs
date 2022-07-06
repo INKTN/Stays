@@ -26,10 +26,7 @@ public class Kid : MonoBehaviour
     {
         an = GetComponent<Animator>();
     }
-    private void Update()
-    {
-        
-    }
+    
     private void OnDrawGizmos()
     {
         if (gizmosOn)

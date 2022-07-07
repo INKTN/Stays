@@ -54,11 +54,15 @@ public class Cameratest : MonoBehaviour
             }
         }
     }
-    private void Border()
+    private void Border()//攝影機邊界
     {
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, x_borderMin, x_borderMax),
             Mathf.Clamp(transform.position.y, y_borderMin, y_borderMax),
             Mathf.Clamp(transform.position.z, z_borderMin, z_borderMax));
+    }
+    public void TaskShot(Transform transform)
+    {
+
     }
     #endregion
 }

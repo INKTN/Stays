@@ -21,10 +21,13 @@ public class Kid : MonoBehaviour
     [Header("Ä²¸I½d³òÅã¥Ü")]
     public bool gizmosOn;
 
+    private Cameratest cameratest;
+
     #endregion
     private void Start()
     {
         an = GetComponent<Animator>();
+        cameratest = GameObject.Find("Camera").GetComponent<Cameratest>();
     }
     
     private void OnDrawGizmos()
@@ -70,7 +73,7 @@ public class Kid : MonoBehaviour
     {
         if (dalogues1Fin) 
         {
-
+            cameratest.TaskShot(transform);
         }
     }
     #endregion

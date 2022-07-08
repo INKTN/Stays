@@ -22,6 +22,8 @@ public class Cameratest : MonoBehaviour
     [Header("靈敏度"), Range(0, 50)]
     public float speed = 15;
     private DialongueSystem dialongue;//對話框偕同程序
+    //[Header("鏡頭切換開關")]
+    //public bool caTask;
     #endregion
 
     private void Start()
@@ -60,9 +62,6 @@ public class Cameratest : MonoBehaviour
             Mathf.Clamp(transform.position.y, y_borderMin, y_borderMax),
             Mathf.Clamp(transform.position.z, z_borderMin, z_borderMax));
     }
-    public void TaskShot(Transform transform)
-    {
-
-    }
+    
     #endregion
 }

@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 /// <summary>
 /// 小孩NPC腳本20220701
 /// </summary>
@@ -10,24 +11,27 @@ public class Kid : MonoBehaviour
     private Animator an;
     [Header("對話資料")]
     public DataDalogue[] dataDalogues;
-    private bool dalogues1Fin;
+    public bool dalogues1Fin;
     [Header("對話系統")]
     public DialongueSystem dialongueSystem;
     [Header("觸發對象")]
     public string target = "主角";
+    [Header("對應物件")]
+    public GameObject taskTa;
+    public GameObject setCamera;
+    public GameObject oriCamera;
     [Header("偵測範圍")]
     public Vector3 detectionRange = Vector3.one;
     public Vector3 detectionHight;
     [Header("觸碰範圍顯示")]
     public bool gizmosOn;
-
-    private Cameratest cameratest;
+    //private Cameratest cameratest;
 
     #endregion
     private void Start()
     {
         an = GetComponent<Animator>();
-        cameratest = GameObject.Find("Camera").GetComponent<Cameratest>();
+        oriCamera = GameObject.Find("Camera");
     }
     
     private void OnDrawGizmos()
@@ -58,6 +62,7 @@ public class Kid : MonoBehaviour
                     dialongueSystem.StartDialogue(dataDalogues[0].conversationContent);//對話資料讀取
                     dialongueSystem.NameEnter(dataDalogues[0].talkName);
                     dalogues1Fin = true;
+                    ControlCa();
                 }
                 else
                 {
@@ -69,11 +74,13 @@ public class Kid : MonoBehaviour
             i++;
         }
     }
-    public void Control()
+    public void ControlCa()
     {
         if (dalogues1Fin) 
         {
-            cameratest.TaskShot(transform);
+            //cameratest.TaskShot(taskTa.transform);
+            oriCamera.active = false;
+            setCamera.active = true;
         }
     }
     #endregion

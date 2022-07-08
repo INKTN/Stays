@@ -1,5 +1,4 @@
 using UnityEngine;
-using System.Collections;
 /// <summary>
 /// 小孩NPC腳本20220701
 /// </summary>
@@ -18,8 +17,9 @@ public class Kid : MonoBehaviour
     public string target = "主角";
     [Header("對應物件")]
     public GameObject taskTa;
-    public GameObject setCamera;
-    public GameObject oriCamera;
+    public Camera setCamera;
+    public Camera oriCamera;
+    public bool tastBool;
     [Header("偵測範圍")]
     public Vector3 detectionRange = Vector3.one;
     public Vector3 detectionHight;
@@ -31,9 +31,14 @@ public class Kid : MonoBehaviour
     private void Start()
     {
         an = GetComponent<Animator>();
-        oriCamera = GameObject.Find("Camera");
+        oriCamera = GameObject.Find("Main Camera").GetComponent<Camera>();
     }
-    
+
+    private void Update()
+    {
+       // ControlCa();
+    }
+
     private void OnDrawGizmos()
     {
         if (gizmosOn)
@@ -76,11 +81,13 @@ public class Kid : MonoBehaviour
     }
     public void ControlCa()
     {
+        //oriCamera.enabled = tastBool;
         if (dalogues1Fin) 
         {
             //cameratest.TaskShot(taskTa.transform);
-            oriCamera.active = false;
-            setCamera.active = true;
+            setCamera.enabled = dalogues1Fin;
+            oriCamera.enabled = tastBool;
+
         }
     }
     #endregion

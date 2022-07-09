@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 /// <summary>
 /// 小孩NPC腳本20220701
 /// </summary>
@@ -25,6 +26,7 @@ public class Kid : MonoBehaviour
     public Vector3 detectionHight;
     [Header("觸碰範圍顯示")]
     public bool gizmosOn;
+    private UIManager skillUI;
     //private Cameratest cameratest;
 
     #endregion
@@ -32,11 +34,15 @@ public class Kid : MonoBehaviour
     {
         an = GetComponent<Animator>();
         oriCamera = GameObject.Find("Main Camera").GetComponent<Camera>();
+        skillUI = GameObject.Find("System").GetComponent<UIManager>();
     }
 
     private void Update()
     {
-       // ControlCa();
+        if (!skillUI.skillOpen && dalogues1Fin)
+        {
+            ControlCa();
+        }
     }
 
     private void OnDrawGizmos()
@@ -67,7 +73,7 @@ public class Kid : MonoBehaviour
                     dialongueSystem.StartDialogue(dataDalogues[0].conversationContent);//對話資料讀取
                     dialongueSystem.NameEnter(dataDalogues[0].talkName);
                     dalogues1Fin = true;
-                    ControlCa();
+                    
                 }
                 else
                 {

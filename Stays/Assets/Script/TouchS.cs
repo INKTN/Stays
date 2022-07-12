@@ -85,21 +85,21 @@ public class TouchS : MonoBehaviour
                 Ray ray = cam.ScreenPointToRay(pos);
                 _salaction = null;
                 //if (Physics.Raycast(ray, out hit)) print(Array.IndexOf(draggingTag, hit.collider.tag));//檢驗觸碰用20220423
-               
+
                 #region 地板
                 if (Physics.Raycast(ray, out hit) && hit.collider.tag == "ground" && !skillUI.skillOpen)//技能UI不是開的才能換地板
                 {
-                    
-                        var selection = hit.transform;
-                        //print(selection.name+selection.position);
-                        orimaterial = selection.GetComponent<Renderer>().material;
-                        ground.OnGround(selection);
-                        _salaction = selection;
-                    
+
+                    var selection = hit.transform;
+                    //print(selection.name+selection.position);
+                    orimaterial = selection.GetComponent<Renderer>().material;
+                    ground.OnGround(selection);
+                    _salaction = selection;
+
                 }
                 #endregion
                 #region NPC
-                if(Physics.Raycast(ray, out hit) && hit.collider.tag == "NPC" && !skillUI.skillOpen)
+                if (Physics.Raycast(ray, out hit) && hit.collider.tag == "NPC" && !skillUI.skillOpen)
                 {
                     var selection = hit.transform;
                     print(selection.name + selection.position);
@@ -119,8 +119,24 @@ public class TouchS : MonoBehaviour
                 #endregion
             }
 
-        }    
+        }
+        if (Input.touchCount == 2)
+        {
+            Touch touch = Input.touches[0];
+            Vector3 pos = touch.position;
+            //若是觸碰開始
+            if (touch.phase == TouchPhase.Began)
+            {
+                //觸碰位置攝影機發出RAY
+                RaycastHit hit;
+                Ray ray = cam.ScreenPointToRay(pos);
+                _salaction = null;
+                if (Physics.Raycast(ray, out hit) && hit.collider.name == "29土地" && !skillUI.skillOpen)
+                {
+
+                }
+            }
+
         }
     }
-
-
+}

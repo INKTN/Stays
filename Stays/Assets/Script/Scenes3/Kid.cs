@@ -37,13 +37,7 @@ public class Kid : MonoBehaviour
         skillUI = GameObject.Find("System").GetComponent<UIManager>();
     }
 
-    private void Update()
-    {
-        if (!skillUI.skillOpen && dalogues1Fin)
-        {
-            ControlCa();
-        }
-    }
+
 
     private void OnDrawGizmos()
     {
@@ -85,16 +79,6 @@ public class Kid : MonoBehaviour
             i++;
         }
     }
-    public void ControlCa()
-    {
-        //oriCamera.enabled = tastBool;
-        if (dalogues1Fin) 
-        {
-            //cameratest.TaskShot(taskTa.transform);
-            setCamera.enabled = dalogues1Fin;
-            oriCamera.enabled = tastBool;
 
-        }
-    }
     #endregion
 }

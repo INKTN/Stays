@@ -120,23 +120,6 @@ public class TouchS : MonoBehaviour
             }
 
         }
-        if (Input.touchCount == 2)
-        {
-            Touch touch = Input.touches[0];
-            Vector3 pos = touch.position;
-            //若是觸碰開始
-            if (touch.phase == TouchPhase.Began)
-            {
-                //觸碰位置攝影機發出RAY
-                RaycastHit hit;
-                Ray ray = cam.ScreenPointToRay(pos);
-                _salaction = null;
-                if (Physics.Raycast(ray, out hit) && hit.collider.name == "29土地" && !skillUI.skillOpen)
-                {
-
-                }
-            }
-
-        }
+        
     }
 }

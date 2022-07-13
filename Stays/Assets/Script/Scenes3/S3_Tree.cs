@@ -7,7 +7,16 @@ public class S3_Tree : MonoBehaviour
     public Camera setCamera;
     public Camera oriCamera;
     public bool ch;
-    
+
+    private float begainTime = 0f;//最初點擊時間
+    private Vector2 startPos = Vector2.zero;//觸碰起始點
+
+    public float quickDoubleTabInterval = 0.15f;
+    public float lastTouchTime;//上一次點擊放開的時間
+    public string debugInfo = "Nothing";
+    public string target;
+    private static float intervals;//間隔時間
+    private static Touch lastTouch;//目前沒用到，不果主要是記錄上一次的觸碰
     #endregion
 
     private void Start()
@@ -18,33 +27,48 @@ public class S3_Tree : MonoBehaviour
     void FixedUpdate()
     {
         TouchTree();
-        print(Input.touchCount);
+        //print(Input.touchCount);
    
     }
     private void TouchTree()
     {
-        if (Input.touchCount == 2)
+        if (Input.touchCount == 1)
         {
             Touch touch = Input.touches[0];
             Vector3 pos = touch.position;
             //若是觸碰開始
             if (touch.phase == TouchPhase.Began)
             {
-                //觸碰位置攝影機發出RAY
                 RaycastHit hit;
                 Ray ray = oriCamera.ScreenPointToRay(pos);
-
-                if (Physics.Raycast(ray, out hit) && hit.collider.name == "29土地" )
+                Physics.Raycast(ray, out hit);
+                print(hit.transform.parent.gameObject.name);
+                if (Physics.Raycast(ray, out hit) && hit.transform.parent.gameObject.name == target)
                 {
-                print(hit.collider.name);
-                    ch = !ch;
-                    setCamera.enabled = ch;
-                    oriCamera.enabled = !ch;
-
+                    startPos = touch.position;
+                    begainTime = Time.realtimeSinceStartup;
+                    QuickDoubleTab();
                 }
             }
-
+            if (touch.phase == TouchPhase.Ended)
+            {
+                intervals = Time.realtimeSinceStartup - begainTime;
+                lastTouchTime = Time.realtimeSinceStartup;
+                lastTouch = touch;
+            }
         }
     }
-            
+     void QuickDoubleTab()
+     {
+        //print("呼叫");
+        if (Time.realtimeSinceStartup - lastTouchTime < quickDoubleTabInterval)
+        {
+            print("if測");
+            debugInfo = "touchCount";
+            ch = !ch;
+            setCamera.enabled = ch;
+            oriCamera.enabled = !ch;
+        }
+    }
+
 }

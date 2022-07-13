@@ -2052,9 +2052,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcac972dd171e8f4faef7f47f74d395c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  setCamera: {fileID: 0}
-  oriCamera: {fileID: 0}
+  setCamera: {fileID: 769633563}
+  oriCamera: {fileID: 994730623}
   ch: 0
+  quickDoubleTabInterval: 0.15
+  debugInfo: Nothing
+  target: "29\u571F\u5730"
 --- !u!4 &460593692 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8250593785596600116, guid: b84103262dbd8cd48a0d67046bee6366, type: 3}

@@ -7,6 +7,8 @@ public class S3_Tree : MonoBehaviour
     public Camera setCamera;
     public Camera oriCamera;
     public bool ch;
+    private Cameratest cameratest;
+    private Kid kid;
 
     private float begainTime = 0f;//程翴阑丁
     private Vector2 startPos = Vector2.zero;//牟窱癬﹍翴
@@ -21,14 +23,16 @@ public class S3_Tree : MonoBehaviour
 
     private void Start()
     {
-        oriCamera = GameObject.Find("Main Camera").GetComponent<Camera>();
+        oriCamera = GameObject.Find("MainCamera").GetComponent<Camera>();
         setCamera = GameObject.Find("TreeCa").GetComponent<Camera>();
+        cameratest = GameObject.Find("MainCamera").GetComponent<Cameratest>();
+        kid= GameObject.Find("Kid").GetComponent<Kid>();
     }
     void FixedUpdate()
     {
-        TouchTree();
+        if(kid.dalogues1Fin)TouchTree();
         //print(Input.touchCount);
-   
+        //print(Camera.main);
     }
     private void TouchTree()
     {
@@ -39,15 +43,43 @@ public class S3_Tree : MonoBehaviour
             //璝琌牟窱秨﹍
             if (touch.phase == TouchPhase.Began)
             {
-                RaycastHit hit;
-                Ray ray = oriCamera.ScreenPointToRay(pos);
-                Physics.Raycast(ray, out hit);
-                print(hit.transform.parent.gameObject.name);
-                if (Physics.Raycast(ray, out hit) && hit.transform.parent.gameObject.name == target)
+                if (ch)
                 {
+                    RaycastHit chHit;
+                    Ray chRay = setCamera.ScreenPointToRay(pos);
+                    Physics.Raycast(chRay, out chHit);
+                    print(chHit.transform.parent.gameObject.name);
+                    // if (Physics.Raycast(ray, out hit) && hit.transform.parent.gameObject.name == target)
                     startPos = touch.position;
                     begainTime = Time.realtimeSinceStartup;
-                    QuickDoubleTab();
+                    if (Time.realtimeSinceStartup - lastTouchTime < quickDoubleTabInterval)
+                    {
+                        print("if代");
+                        debugInfo = "touchCount";
+                        ch = !ch;
+                        setCamera.enabled = ch;
+                        oriCamera.enabled = !ch;
+                        cameratest.caTask = true;
+                    }
+                }
+                else
+                {
+                    RaycastHit hit;
+                    Ray ray = oriCamera.ScreenPointToRay(pos);
+                    Physics.Raycast(ray, out hit);
+                    print(hit.transform.parent.gameObject.name);
+                    // if (Physics.Raycast(ray, out hit) && hit.transform.parent.gameObject.name == target)
+                    startPos = touch.position;
+                    begainTime = Time.realtimeSinceStartup;
+                    if (Physics.Raycast(ray, out hit) && hit.transform.parent.gameObject.name == target && Time.realtimeSinceStartup - lastTouchTime < quickDoubleTabInterval)
+                    {
+                        //print("if代");
+                        debugInfo = "touchCount";
+                        ch = !ch;
+                        setCamera.enabled = ch;
+                        oriCamera.enabled = !ch;
+                        cameratest.caTask = false;
+                    }
                 }
             }
             if (touch.phase == TouchPhase.Ended)
@@ -56,18 +88,6 @@ public class S3_Tree : MonoBehaviour
                 lastTouchTime = Time.realtimeSinceStartup;
                 lastTouch = touch;
             }
-        }
-    }
-     void QuickDoubleTab()
-     {
-        //print("㊣");
-        if (Time.realtimeSinceStartup - lastTouchTime < quickDoubleTabInterval)
-        {
-            print("if代");
-            debugInfo = "touchCount";
-            ch = !ch;
-            setCamera.enabled = ch;
-            oriCamera.enabled = !ch;
         }
     }
 

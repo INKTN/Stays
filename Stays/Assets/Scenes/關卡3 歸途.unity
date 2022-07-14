@@ -1158,7 +1158,7 @@ Camera:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 252721887}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
@@ -1347,6 +1347,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 315003083}
     m_Modifications:
+    - target: {fileID: 3406499118600237492, guid: b84103262dbd8cd48a0d67046bee6366, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4096449574246004291, guid: b84103262dbd8cd48a0d67046bee6366, type: 3}
       propertyPath: m_Name
       value: Tree 2 (16)
@@ -1740,6 +1744,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 315003083}
     m_Modifications:
+    - target: {fileID: 3406499118600237492, guid: b84103262dbd8cd48a0d67046bee6366, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4096449574246004291, guid: b84103262dbd8cd48a0d67046bee6366, type: 3}
       propertyPath: m_Name
       value: Tree 2 (14)
@@ -2056,6 +2064,7 @@ MonoBehaviour:
   oriCamera: {fileID: 994730623}
   ch: 0
   quickDoubleTabInterval: 0.15
+  lastTouchTime: 0
   debugInfo: Nothing
   target: "29\u571F\u5730"
 --- !u!4 &460593692 stripped
@@ -3988,6 +3997,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 315003083}
     m_Modifications:
+    - target: {fileID: 3406499118600237492, guid: b84103262dbd8cd48a0d67046bee6366, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4096449574246004291, guid: b84103262dbd8cd48a0d67046bee6366, type: 3}
       propertyPath: m_Name
       value: Tree 2 (13)
@@ -4140,6 +4153,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 315003083}
     m_Modifications:
+    - target: {fileID: 3406499118600237492, guid: b84103262dbd8cd48a0d67046bee6366, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4096449574246004291, guid: b84103262dbd8cd48a0d67046bee6366, type: 3}
       propertyPath: m_Name
       value: Tree 2 (15)
@@ -4754,7 +4771,7 @@ GameObject:
   - component: {fileID: 994730627}
   - component: {fileID: 994730628}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: MainCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4824,6 +4841,7 @@ MonoBehaviour:
   z_borderMin: -24
   dis: 0
   speed: 10
+  caTask: 1
 --- !u!81 &994730625
 AudioListener:
   m_ObjectHideFlags: 0
@@ -4965,6 +4983,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 315003083}
     m_Modifications:
+    - target: {fileID: 3406499118600237492, guid: b84103262dbd8cd48a0d67046bee6366, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4096449574246004291, guid: b84103262dbd8cd48a0d67046bee6366, type: 3}
       propertyPath: m_Name
       value: Tree 2 (12)
@@ -6428,6 +6450,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 315003083}
     m_Modifications:
+    - target: {fileID: 3406499118600237492, guid: b84103262dbd8cd48a0d67046bee6366, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4096449574246004291, guid: b84103262dbd8cd48a0d67046bee6366, type: 3}
       propertyPath: m_Name
       value: Tree 2 (5)
@@ -6570,6 +6596,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 315003083}
     m_Modifications:
+    - target: {fileID: 3406499118600237492, guid: b84103262dbd8cd48a0d67046bee6366, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4096449574246004291, guid: b84103262dbd8cd48a0d67046bee6366, type: 3}
       propertyPath: m_Name
       value: Tree 2 (17)
@@ -7265,6 +7295,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 315003083}
     m_Modifications:
+    - target: {fileID: -5334569332054349193, guid: d26323b6796b9124cbb1d69c674adc29, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1534297885867037253, guid: d26323b6796b9124cbb1d69c674adc29, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -9739,6 +9773,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 315003083}
     m_Modifications:
+    - target: {fileID: -5334569332054349193, guid: d26323b6796b9124cbb1d69c674adc29, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1534297885867037253, guid: d26323b6796b9124cbb1d69c674adc29, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -10646,6 +10684,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 315003083}
     m_Modifications:
+    - target: {fileID: -5334569332054349193, guid: d26323b6796b9124cbb1d69c674adc29, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1534297885867037253, guid: d26323b6796b9124cbb1d69c674adc29, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -10728,6 +10770,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 315003083}
     m_Modifications:
+    - target: {fileID: -5334569332054349193, guid: d26323b6796b9124cbb1d69c674adc29, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1534297885867037253, guid: d26323b6796b9124cbb1d69c674adc29, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -10810,6 +10856,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 315003083}
     m_Modifications:
+    - target: {fileID: -5334569332054349193, guid: d26323b6796b9124cbb1d69c674adc29, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1534297885867037253, guid: d26323b6796b9124cbb1d69c674adc29, type: 3}
       propertyPath: m_RootOrder
       value: 2

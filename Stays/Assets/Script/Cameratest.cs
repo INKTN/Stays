@@ -22,8 +22,8 @@ public class Cameratest : MonoBehaviour
     [Header("靈敏度"), Range(0, 50)]
     public float speed = 15;
     private DialongueSystem dialongue;//對話框偕同程序
-    //[Header("鏡頭切換開關")]
-    //public bool caTask;
+    [Header("鏡頭切換開關")]
+    public bool caTask=true;
     #endregion
 
     private void Start()
@@ -32,6 +32,7 @@ public class Cameratest : MonoBehaviour
         transform.localPosition = Vector3.MoveTowards(transform.position, target.position, -dis);
         dialongue = GameObject.Find("System").GetComponent<DialongueSystem>();//找到對話框偕同程序
         // cameraPosition = transform.position;
+        
     }
     private void Update()
     {
@@ -52,7 +53,6 @@ public class Cameratest : MonoBehaviour
             {
                // transform.Translate(new Vector3(Input.touches[0].deltaPosition.x * Time.deltaTime * -1, 0, 0));//攝影機位置平移(只移動X)
                 transform.Translate(new Vector3(-Input.touches[0].deltaPosition.x * Time.deltaTime, -Input.touches[0].deltaPosition.y * Time.deltaTime, 0));
-
             }
         }
     }

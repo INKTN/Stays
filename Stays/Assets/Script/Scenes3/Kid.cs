@@ -33,11 +33,9 @@ public class Kid : MonoBehaviour
     private void Start()
     {
         an = GetComponent<Animator>();
-        oriCamera = GameObject.Find("Main Camera").GetComponent<Camera>();
+        oriCamera = GameObject.Find("MainCamera").GetComponent<Camera>();
         skillUI = GameObject.Find("System").GetComponent<UIManager>();
     }
-
-
 
     private void OnDrawGizmos()
     {
@@ -79,6 +77,5 @@ public class Kid : MonoBehaviour
             i++;
         }
     }
-
     #endregion
 }

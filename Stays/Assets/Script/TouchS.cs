@@ -26,6 +26,7 @@ public class TouchS : MonoBehaviour
     private UIManager skillUI;
     private GroundJudgment ground;
     private DialongueSystem dialongue;//對話框偕同程序
+    private Cameratest cameratest;
 
     [Header("主角")]//20220620讓角色只能走一格
     private PlayerCharacter character;
@@ -39,6 +40,7 @@ public class TouchS : MonoBehaviour
         ground= GameObject.Find("System").GetComponent<GroundJudgment>();
         dialongue = GameObject.Find("System").GetComponent<DialongueSystem>();//找到對話框偕同程序
         character = GameObject.Find("主角").GetComponent<PlayerCharacter>();
+        cameratest = GameObject.Find("MainCamera").GetComponent<Cameratest>();
     }
 
     void FixedUpdate()
@@ -54,9 +56,8 @@ public class TouchS : MonoBehaviour
 
         }
         #endregion
-        if (!dialongue.display&&!character.walking) //若是對話框顯示則不觸控
+        if (!dialongue.display&&!character.walking&&cameratest.caTask) //若是對話框顯示則不觸控
             RayTouch();//觸碰
-        
         #region 觸碰物材質轉換
         if (_salaction != null)
         {

@@ -1865,6 +1865,7 @@ MonoBehaviour:
   z_borderMin: -24
   dis: 2
   speed: 15
+  caTask: 1
 --- !u!81 &467191482
 AudioListener:
   m_ObjectHideFlags: 0
@@ -2928,9 +2929,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   skillUse: 0
-  detectionRange: {x: 1, y: 1, z: 1}
-  detectionHight: {x: 0, y: 0, z: 0}
-  gizmosOn: 0
+  canSkill: 0
+  finPin: {x: 0, y: 0, z: 0}
 --- !u!4 &783240763
 Transform:
   m_ObjectHideFlags: 0

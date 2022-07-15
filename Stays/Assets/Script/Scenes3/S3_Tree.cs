@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class S3_Tree : MonoBehaviour
 {
     #region Äæ¦ì
@@ -75,10 +75,7 @@ public class S3_Tree : MonoBehaviour
                     {
                         //print("if´ú");
                         debugInfo = "touchCount";
-                        ch = !ch;
-                        setCamera.enabled = ch;
-                        oriCamera.enabled = !ch;
-                        cameratest.caTask = false;
+                        SceneManager.LoadScene(4);
                     }
                 }
             }

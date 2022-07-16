@@ -35,9 +35,9 @@ public class Bridge : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.name == target)
+        if (other.name == target)//若進入範圍內的物件是主角
         {
-            canSkill = true;
+            canSkill = true;//可使用技能開啟
         }
     }
 
@@ -48,19 +48,16 @@ public class Bridge : MonoBehaviour
     }
     private void BuildBrodge()//update若速度與目標速度相同則隱藏看板，顯示橋梁
     {
-
         StartCoroutine(ChangePtion());
     }
     public void Skill()
     {
-        if (canSkill&&!skillUse)
+        if (canSkill&&!skillUse)//如果可使用技能並且技能UI為關閉
         {
-
-        skillUI.SkillOn(transform);
-
+        skillUI.SkillOn(transform);//開啟SKILLUI
         }
     }
-    private IEnumerator ChangePtion()
+    private IEnumerator ChangePtion()//協程顯示模型晚1秒
     {
         gameObject.transform.GetChild(0).gameObject.SetActive(false);
         gameObject.transform.GetChild(1).gameObject.SetActive(true);

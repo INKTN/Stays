@@ -85,7 +85,8 @@ public class TouchS : MonoBehaviour
                 RaycastHit hit;
                 Ray ray = cam.ScreenPointToRay(pos);
                 _salaction = null;
-                //if (Physics.Raycast(ray, out hit)) print(Array.IndexOf(draggingTag, hit.collider.tag));//檢驗觸碰用20220423
+                //print(Array.IndexOf(draggingTag, hit.collider.tag));//檢驗觸碰用20220423
+
 
                 #region 地板
                 if (Physics.Raycast(ray, out hit) && hit.collider.tag == "ground" && !skillUI.skillOpen)//技能UI不是開的才能換地板

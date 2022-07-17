@@ -9,9 +9,11 @@ public class Kid : MonoBehaviour
     #region 欄位
     [Header("動畫欄位")]
     private Animator an;
-    [Header("對話資料")]
+    [Header("任務完成前_對話資料")]
     public DataDalogue[] dataDalogues;
-    public bool dalogues1Fin;
+    public bool dalogues1Fin;//是否為第一次對話
+    public bool daloguesTaskFin;//任務完成對話
+
     [Header("對話系統")]
     public DialongueSystem dialongueSystem;
     [Header("觸發對象")]
@@ -69,6 +71,11 @@ public class Kid : MonoBehaviour
                 }
                 else
                 {
+                    if (daloguesTaskFin) 
+                    {
+                        dialongueSystem.StartDialogue(dataDalogues[2].conversationContent);//對話資料讀取
+                        dialongueSystem.NameEnter(dataDalogues[2].talkName);
+                    }
                     dialongueSystem.StartDialogue(dataDalogues[1].conversationContent);//對話資料讀取
                     dialongueSystem.NameEnter(dataDalogues[1].talkName);
                 }

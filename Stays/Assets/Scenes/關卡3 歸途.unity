@@ -2065,8 +2065,10 @@ MonoBehaviour:
   ch: 0
   quickDoubleTabInterval: 0.15
   lastTouchTime: 0
-  debugInfo: Nothing
   target: "29\u571F\u5730"
+  canSkill: 0
+  speed: 1
+  taskFin: 0
 --- !u!4 &460593692 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8250593785596600116, guid: b84103262dbd8cd48a0d67046bee6366, type: 3}
@@ -2325,6 +2327,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3406499118600237492, guid: b84103262dbd8cd48a0d67046bee6366, type: 3}
+      propertyPath: m_Size.x
+      value: 2.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 3406499118600237492, guid: b84103262dbd8cd48a0d67046bee6366, type: 3}
+      propertyPath: m_Size.y
+      value: 4.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 3406499118600237492, guid: b84103262dbd8cd48a0d67046bee6366, type: 3}
+      propertyPath: m_Size.z
+      value: 3.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 3406499118600237492, guid: b84103262dbd8cd48a0d67046bee6366, type: 3}
+      propertyPath: m_Center.y
+      value: 2.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 3406499118600237492, guid: b84103262dbd8cd48a0d67046bee6366, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4096449574246004291, guid: b84103262dbd8cd48a0d67046bee6366, type: 3}
       propertyPath: m_Name
       value: "\u6280\u80FD\u7528\u6A39"
@@ -8362,7 +8384,9 @@ MonoBehaviour:
   dataDalogues:
   - {fileID: 11400000, guid: 4e63cafd80c481546a0d001ad117bc23, type: 2}
   - {fileID: 11400000, guid: 53c20a4ab7190ba4087dfdc37aba51ec, type: 2}
+  - {fileID: 11400000, guid: 880720d3aad578643b57806b3ec687af, type: 2}
   dalogues1Fin: 0
+  daloguesTaskFin: 0
   dialongueSystem: {fileID: 903941004}
   target: "\u4E3B\u89D2"
   taskTa: {fileID: 450719736}

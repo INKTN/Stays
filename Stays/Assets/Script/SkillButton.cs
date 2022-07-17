@@ -27,16 +27,22 @@ public class SkillButton : MonoBehaviour
     
     public void SkillFast()
     {
-       if(Target.tag== "Bridge")//關卡五_橋
+        #region 關卡三
+        if (Target.tag== "Bridge")//關卡三_橋
         {
            var bridge = Target.GetComponent<Bridge>();//如果碰到的東西TAG為動物，取得動物腳本
             bridge.SkillUse(speed);//呼叫動物改變速度的方法
         }
-
+        if (Target.name == "技能用樹")//關卡三_Tree
+        {
+            var tree = Target.GetComponent<S3_Tree>();
+            tree.SkillUse(speed);
+        }
+        #endregion
         if (Target.tag == "obstacle")//2022043
         {
-           var tree = Target.GetComponent<TreeVariation>();//如果碰到的東西TAG為樹，取得動物腳本
-            tree.SkillUse(speed);//呼叫樹改變速度的方法
+           var get = Target.GetComponent<TreeVariation>();//如果碰到的東西TAG為樹，取得動物腳本
+            get.SkillUse(speed);//呼叫樹改變速度的方法
         }
         //print("使用技能" + speed);
         skillOpen.skillOpen = false;//關閉UI控制中顯示開關

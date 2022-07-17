@@ -11,7 +11,7 @@ public class TaskListGoHome : MonoBehaviour
     private Bridge a_bridge;
     [Header("B_NPC小孩")]
     private Kid b_kid;
-
+    
     #endregion
     private void Start()
     {
@@ -48,7 +48,7 @@ public class TaskListGoHome : MonoBehaviour
      }
     public bool B_Kid()//20220706小孩完成判定
     {
-        return b_kid;
+        return b_kid.daloguesTaskFin;
     }
     #endregion
 }

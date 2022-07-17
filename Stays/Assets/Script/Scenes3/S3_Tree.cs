@@ -16,7 +16,7 @@ public class S3_Tree : MonoBehaviour
     private Vector2 startPos = Vector2.zero;//觸碰起始點
     public float quickDoubleTabInterval = 0.15f;
     public float lastTouchTime;//上一次點擊放開的時間
-    public string debugInfo = "Nothing";
+    //public string debugInfo = "Nothing";
     public string target;
     private static float intervals;//間隔時間
     private static Touch lastTouch;//目前沒用到，不果主要是記錄上一次的觸碰
@@ -28,7 +28,7 @@ public class S3_Tree : MonoBehaviour
     public float speed = 1;
     private float objectiveSpeed = 2;
     [Header("任務完成")]
-    public bool skillUse = false;
+    public bool taskFin = false;
 
     #endregion
 
@@ -47,7 +47,8 @@ public class S3_Tree : MonoBehaviour
     void FixedUpdate()
     {
         if(kid.dalogues1Fin)TouchTree();
-        if (speed == objectiveSpeed && !skillUse) SkillTree();
+        if (speed == objectiveSpeed && !taskFin) SkillTree();
+        TaskFin();
         //print(Input.touchCount);
         //print(Camera.main);
     }
@@ -66,19 +67,19 @@ public class S3_Tree : MonoBehaviour
                     RaycastHit chHit;
                     Ray chRay = setCamera.ScreenPointToRay(pos);
                     Physics.Raycast(chRay, out chHit);
-                    print(chHit.transform.parent.gameObject.name);
+                    //print(chHit.transform.parent.gameObject.name);
                     // if (Physics.Raycast(ray, out hit) && hit.transform.parent.gameObject.name == target)
                     startPos = touch.position;
                     begainTime = Time.realtimeSinceStartup;
-
+                    
                     if(chHit.collider.name == "技能用樹" && !skillUI.skillOpen)
                     {
                         skillUI.SkillOn(transform);//開啟SKILLUI
                     }
                     if (Time.realtimeSinceStartup - lastTouchTime < quickDoubleTabInterval)
                     {
-                        print("if測");
-                        debugInfo = "touchCount";
+                        //print("if測");
+                        //debugInfo = "touchCount";
                         ch = !ch;
                         setCamera.enabled = ch;
                         oriCamera.enabled = !ch;
@@ -90,14 +91,12 @@ public class S3_Tree : MonoBehaviour
                     RaycastHit hit;
                     Ray ray = oriCamera.ScreenPointToRay(pos);
                     Physics.Raycast(ray, out hit);
-                    print(hit.transform.parent.gameObject.name);
+                    //print(hit.transform.parent.gameObject.name);
                     // if (Physics.Raycast(ray, out hit) && hit.transform.parent.gameObject.name == target)
                     startPos = touch.position;
                     begainTime = Time.realtimeSinceStartup;
                     if (Physics.Raycast(ray, out hit) && hit.transform.parent.gameObject.name == target && Time.realtimeSinceStartup - lastTouchTime < quickDoubleTabInterval)
                     {
-                        //print("if測");
-                        debugInfo = "touchCount";
                         ch = !ch;
                         setCamera.enabled = ch;
                         oriCamera.enabled = !ch;
@@ -116,14 +115,32 @@ public class S3_Tree : MonoBehaviour
     }
     private void SkillTree()
     {
+        taskFin = true;
         StartCoroutine(ChangePtion());
     }
     private IEnumerator ChangePtion()//協程顯示模型晚1秒
     {
         yield return new WaitForSeconds(0.5f);
-       // gameObject.transform.localScale = speed;
-        skillUse = true;
+        gameObject.transform.localScale = new Vector3(1, 1, 1);//放大模型
+        yield return new WaitForSeconds(0.5f);
+        gameObject.transform.localScale = new Vector3(3, 3, 3);//放大模型
+        yield return new WaitForSeconds(0.5f);
+        gameObject.transform.localScale = new Vector3(5, 5, 5);//放大模型
 
+    }
+    private void TaskFin()
+    {
+        if (taskFin)
+        {
+            setCamera.enabled = false;
+            oriCamera.enabled = true;
+            kid.daloguesTaskFin = true;
+            ch = false;
+        }
+    }
+    public void SkillUse(float get)//獲得技能按鈕的數值
+    {
+        speed += get;
     }
     #endregion
 }

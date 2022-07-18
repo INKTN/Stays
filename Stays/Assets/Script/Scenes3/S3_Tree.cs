@@ -136,6 +136,7 @@ public class S3_Tree : MonoBehaviour
             oriCamera.enabled = true;
             kid.daloguesTaskFin = true;
             ch = false;
+            cameratest.caTask = true;
         }
     }
     public void SkillUse(float get)//獲得技能按鈕的數值

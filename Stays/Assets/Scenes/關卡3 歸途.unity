@@ -2329,23 +2329,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3406499118600237492, guid: b84103262dbd8cd48a0d67046bee6366, type: 3}
       propertyPath: m_Size.x
-      value: 2.72
+      value: 0.88301766
       objectReference: {fileID: 0}
     - target: {fileID: 3406499118600237492, guid: b84103262dbd8cd48a0d67046bee6366, type: 3}
       propertyPath: m_Size.y
-      value: 4.53
+      value: 3.2153196
       objectReference: {fileID: 0}
     - target: {fileID: 3406499118600237492, guid: b84103262dbd8cd48a0d67046bee6366, type: 3}
       propertyPath: m_Size.z
-      value: 3.07
+      value: 0.9295302
       objectReference: {fileID: 0}
     - target: {fileID: 3406499118600237492, guid: b84103262dbd8cd48a0d67046bee6366, type: 3}
       propertyPath: m_Center.y
-      value: 2.09
+      value: 1.6076593
       objectReference: {fileID: 0}
     - target: {fileID: 3406499118600237492, guid: b84103262dbd8cd48a0d67046bee6366, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4096449574246004291, guid: b84103262dbd8cd48a0d67046bee6366, type: 3}
       propertyPath: m_Name
@@ -8310,7 +8310,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 428e87d475580ca458360e8c4956c12b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 32.81
+      value: 31.71
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 428e87d475580ca458360e8c4956c12b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8318,7 +8318,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 428e87d475580ca458360e8c4956c12b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 52.84
+      value: 59.49
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 428e87d475580ca458360e8c4956c12b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8393,8 +8393,8 @@ MonoBehaviour:
   setCamera: {fileID: 769633563}
   oriCamera: {fileID: 994730623}
   tastBool: 0
-  detectionRange: {x: 30.21, y: 10, z: 18.6}
-  detectionHight: {x: -2.5, y: 5, z: 1.3}
+  detectionRange: {x: 30.21, y: 10, z: 24.78}
+  detectionHight: {x: -2.5, y: 5, z: -1.74}
   gizmosOn: 0
 --- !u!95 &1472813913
 Animator:

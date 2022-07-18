@@ -71,13 +71,16 @@ public class Kid : MonoBehaviour
                 }
                 else
                 {
-                    if (daloguesTaskFin) 
+                    if (daloguesTaskFin)
                     {
                         dialongueSystem.StartDialogue(dataDalogues[2].conversationContent);//對話資料讀取
                         dialongueSystem.NameEnter(dataDalogues[2].talkName);
                     }
-                    dialongueSystem.StartDialogue(dataDalogues[1].conversationContent);//對話資料讀取
-                    dialongueSystem.NameEnter(dataDalogues[1].talkName);
+                    else
+                    {
+                        dialongueSystem.StartDialogue(dataDalogues[1].conversationContent);//對話資料讀取
+                        dialongueSystem.NameEnter(dataDalogues[1].talkName);
+                    }
                 }
             }
             #endregion

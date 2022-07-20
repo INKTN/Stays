@@ -20,6 +20,8 @@ public class PlayerCharacter : MonoBehaviour
     private NavMeshAgent agent;
     [Header("行走中")]
     public bool walking;
+    [Header("目前位置")]
+    public string pt;
     #endregion
     private void Start()
     {
@@ -54,7 +56,7 @@ public class PlayerCharacter : MonoBehaviour
     private void SetStartPosition()
     {
         Collider hit = Physics.OverlapSphere(transform.position + detectionRange, detectionSize)[0];
-        //print(hit.name);
+        pt = hit.transform.parent.gameObject.name;
         transform.position = hit.transform.position + startPos;
     }//開始時矯正主角位置
     public void Move(Transform selection)

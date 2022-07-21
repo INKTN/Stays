@@ -9,7 +9,7 @@ public class Kid : MonoBehaviour
     #region 欄位
     [Header("動畫欄位")]
     private Animator an;
-    [Header("任務完成前_對話資料")]
+    [Header("對話資料")]
     public DataDalogue[] dataDalogues;
     public bool dalogues1Fin;//是否為第一次對話
     public bool daloguesTaskFin;//任務完成對話

@@ -56,7 +56,7 @@ public class PlayerCharacter : MonoBehaviour
     private void SetStartPosition()
     {
         Collider hit = Physics.OverlapSphere(transform.position + detectionRange, detectionSize)[0];
-        pt = hit.transform.parent.gameObject.name;
+        pt = hit.name;
         transform.position = hit.transform.position + startPos;
     }//開始時矯正主角位置
     public void Move(Transform selection)

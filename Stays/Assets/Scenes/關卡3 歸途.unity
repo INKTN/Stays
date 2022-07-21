@@ -1158,7 +1158,7 @@ Camera:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 252721887}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
@@ -2121,7 +2121,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6608108948044695063, guid: ea4a9e6f87613344cba9f2f11b97f56b, type: 3}
       propertyPath: m_RootOrder
-      value: 59
+      value: 58
       objectReference: {fileID: 0}
     - target: {fileID: 6608108948044695063, guid: ea4a9e6f87613344cba9f2f11b97f56b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4479,6 +4479,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5b7f0f6030cff04290f5f4beddb8512, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  A_BridgeFin: 0
+  B_Kid: 0
+  allFin: 0
 --- !u!114 &903941000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5717,7 +5720,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6608108948044695063, guid: ea4a9e6f87613344cba9f2f11b97f56b, type: 3}
       propertyPath: m_RootOrder
-      value: 58
+      value: 59
       objectReference: {fileID: 0}
     - target: {fileID: 6608108948044695063, guid: ea4a9e6f87613344cba9f2f11b97f56b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5761,6 +5764,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea4a9e6f87613344cba9f2f11b97f56b, type: 3}
+--- !u!1 &1138938556 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3292394785692520299, guid: ea4a9e6f87613344cba9f2f11b97f56b, type: 3}
+  m_PrefabInstance: {fileID: 1138938555}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1138938557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138938556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 307bf7355ab02ed4cbc450d12059b2a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dataDalogues:
+  - {fileID: 11400000, guid: 2c441caedc4729b4c884a62226945f98, type: 2}
+  - {fileID: 11400000, guid: efec7c07e773c3140b1728345429d34a, type: 2}
+  dialongueSystem: {fileID: 903941004}
+  area: {fileID: 0}
+  read: 0
 --- !u!1001 &1140785537
 PrefabInstance:
   m_ObjectHideFlags: 0

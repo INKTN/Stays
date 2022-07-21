@@ -15,7 +15,8 @@ public class area : MonoBehaviour
     public bool gizmosOn;
     [Header("無法通行障礙物TAG")]
     public string[] draggingTag;
-
+    [Header("角色判定")]
+    public bool chIn;
     #endregion
    
     private void OnDrawGizmos()
@@ -37,11 +38,14 @@ public class area : MonoBehaviour
         Collider[] hit = Physics.OverlapBox(transform.position + detectionHight, detectionRange/2, Quaternion.identity);//(中心點，大小，旋轉，圖層碼)
         haveObstacle = false;
         int i = 0;
+        if (hit == null) chIn = false;
         while (i < hit.Length)//若i小於hit最大值
         {
             //print(transform.name+"Hit : " + hit[i].name+ hit[i].tag + ",第"+ i+"物件,T判定"+ Array.IndexOf(draggingTag, hit[i]));
             if (Array.IndexOf(draggingTag, hit[i].tag) > -1) haveObstacle = true;//有障礙物開啟
             else haveObstacle = false;
+            if (hit[i].tag == "Player") chIn = true;
+            else chIn = false;
             i++;
         }
     }

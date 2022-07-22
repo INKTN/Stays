@@ -5787,6 +5787,7 @@ MonoBehaviour:
   dialongueSystem: {fileID: 903941004}
   area: {fileID: 0}
   read: 0
+  finRead: 0
 --- !u!1001 &1140785537
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8336,7 +8337,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 428e87d475580ca458360e8c4956c12b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 31.71
+      value: 33.03
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 428e87d475580ca458360e8c4956c12b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8344,7 +8345,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 428e87d475580ca458360e8c4956c12b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 59.49
+      value: 56.82
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 428e87d475580ca458360e8c4956c12b, type: 3}
       propertyPath: m_LocalRotation.w

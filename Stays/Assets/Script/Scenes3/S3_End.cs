@@ -16,6 +16,7 @@ public class S3_End : MonoBehaviour
     [Header("區域")]
     public area area;
     public bool read;
+    public bool finRead;
     #endregion
     private void Start()
     {
@@ -30,20 +31,19 @@ public class S3_End : MonoBehaviour
     #region 方法
     private void Detection()
     {
-        if (area.chIn&&!read)
-        {
-            if (task.allFin)
+            if (area.chIn&&task.allFin&&!finRead)
             {
                 dialongueSystem.StartDialogue(dataDalogues[0].conversationContent);//對話資料讀取
                 dialongueSystem.NameEnter(dataDalogues[0].talkName);
+            finRead = true;
             }
-            else
+            else if (area.chIn&&!read)
             {
                 dialongueSystem.StartDialogue(dataDalogues[1].conversationContent);//對話資料讀取
                 dialongueSystem.NameEnter(dataDalogues[1].talkName);
-            }
             read = true;
-        }
+            }
+        
     }
     #endregion
 }

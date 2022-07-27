@@ -7,12 +7,14 @@ using UnityEngine;
 public class TaskListGoHome : MonoBehaviour
 {
     #region 欄位
-    [Header("A_橋")]
-    private Bridge a_bridge;
-    public bool A_BridgeFin;
-    [Header("B_NPC小孩")]
-    private Kid b_kid;
-    public bool B_Kid;
+    [Header("A_漂流物")]
+    public bool a_wood;
+    [Header("B_橋")]
+    private Bridge b_bridge;
+    public bool b_BridgeFin;
+    [Header("C_NPC小孩")]
+    private Kid C_kidC;
+    public bool c_Kid;
     [Header("All Fin")]
     public bool allFin;
     #endregion
@@ -20,8 +22,8 @@ public class TaskListGoHome : MonoBehaviour
     {
         //A_Cow = GameObject.Find("CowBlW").GetComponent<Animal>();範例
         //A_Sheep = GameObject.Find("SheepWhite").GetComponent<Animal>();
-        a_bridge = GameObject.Find("橋").GetComponent<Bridge>();
-        b_kid = GameObject.Find("Kid").GetComponent<Kid>();
+        b_bridge = GameObject.Find("橋").GetComponent<Bridge>();
+        C_kidC = GameObject.Find("Kid").GetComponent<Kid>();
     }
     private void Update()
     {
@@ -45,10 +47,10 @@ public class TaskListGoHome : MonoBehaviour
     //   }
     private void fin()
     {
-        A_BridgeFin = a_bridge.skillUse;
-        B_Kid= b_kid.daloguesTaskFin;
+        b_BridgeFin = b_bridge.skillUse;
+        c_Kid= C_kidC.daloguesTaskFin;
 
-        if (A_BridgeFin && B_Kid)
+        if (b_BridgeFin && c_Kid)
         {
             allFin = true;
         }

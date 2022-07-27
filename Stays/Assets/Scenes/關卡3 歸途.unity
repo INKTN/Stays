@@ -4479,8 +4479,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5b7f0f6030cff04290f5f4beddb8512, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  A_BridgeFin: 0
-  B_Kid: 0
+  a_wood: 0
+  b_BridgeFin: 0
+  c_Kid: 0
   allFin: 0
 --- !u!114 &903941000
 MonoBehaviour:
@@ -7002,7 +7003,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 642789318503546534, guid: 7b5ced3b1794f934faf9eb8c4aab8286, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4454154081091220312, guid: 7b5ced3b1794f934faf9eb8c4aab8286, type: 3}
       propertyPath: m_Pivot.x

@@ -9689,7 +9689,6 @@ GameObject:
   - component: {fileID: 903941001}
   - component: {fileID: 903941000}
   - component: {fileID: 903940998}
-  - component: {fileID: 903940999}
   - component: {fileID: 903941004}
   m_Layer: 0
   m_Name: System
@@ -9717,22 +9716,6 @@ MonoBehaviour:
   orimaterial: {fileID: 0}
   _salaction: {fileID: 0}
   distance: 10
---- !u!114 &903940999
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 903940997}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5b7f0f6030cff04290f5f4beddb8512, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  a_wood: 0
-  b_BridgeFin: 0
-  c_Kid: 0
-  allFin: 0
 --- !u!114 &903941000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10668,7 +10651,7 @@ GameObject:
   - component: {fileID: 994730627}
   - component: {fileID: 994730628}
   m_Layer: 0
-  m_Name: Camera
+  m_Name: MainCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10755,7 +10738,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 994730622}
   m_LocalRotation: {x: 0.35355338, y: -0.35355338, z: 0.1464466, w: 0.8535535}
-  m_LocalPosition: {x: 43, y: 51.1, z: -26.1}
+  m_LocalPosition: {x: 58.2, y: 47.7, z: -15.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

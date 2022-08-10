@@ -649,6 +649,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 112168758}
+  - component: {fileID: 112168759}
   m_Layer: 0
   m_Name: "\u9418\u5854"
   m_TagString: Untagged
@@ -675,6 +676,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &112168759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112168757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab348a1ef46c3894ba2770840ffbfe32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dataDalogues:
+  - {fileID: 11400000, guid: c131dc2267f2b9e439949b5d935c265f, type: 2}
+  dialongueSystem: {fileID: 903941004}
+  area: {fileID: 1955738883}
+  cameraControl: {fileID: 994730623}
+  playdone: 0
 --- !u!1001 &119749307
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6281,6 +6300,7 @@ MonoBehaviour:
   orimaterial: {fileID: 0}
   _salaction: {fileID: 0}
   distance: 10
+  switches: 0
 --- !u!114 &903940999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6967,6 +6987,7 @@ MonoBehaviour:
   dis: 0
   speed: 10
   caTask: 1
+  switches: 0
 --- !u!81 &994730625
 AudioListener:
   m_ObjectHideFlags: 0
@@ -14281,6 +14302,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea4a9e6f87613344cba9f2f11b97f56b, type: 3}
+--- !u!114 &1955738883 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6340279533233150785, guid: ea4a9e6f87613344cba9f2f11b97f56b, type: 3}
+  m_PrefabInstance: {fileID: 1638876919}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58acc4f29dba2c143a76a3b00fd2e703, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1963404683
 PrefabInstance:
   m_ObjectHideFlags: 0

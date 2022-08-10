@@ -24,6 +24,8 @@ public class Cameratest : MonoBehaviour
     private DialongueSystem dialongue;//對話框偕同程序
     [Header("鏡頭切換開關")]
     public bool caTask=true;
+    [Header("觸控開關")]
+    public bool switches;
     #endregion
 
     private void Start()
@@ -36,7 +38,7 @@ public class Cameratest : MonoBehaviour
     }
     private void Update()
     {
-        if (!dialongue.display)//若是對話框顯示則不觸控
+        if (!dialongue.display&&!switches)//若是對話框顯示則不觸控
         {
             LS();
             Border();

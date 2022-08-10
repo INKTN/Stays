@@ -32,7 +32,8 @@ public class TouchS : MonoBehaviour
     private PlayerCharacter character;
     [Range(-50, 50), Header("格子距離")]
     public float distance;
-
+    [Header("觸控開關")]
+    public bool switches;
     #endregion
     private void Start()
     {
@@ -56,7 +57,7 @@ public class TouchS : MonoBehaviour
 
         }
         #endregion
-        if (!dialongue.display&&!character.walking&&cameratest.caTask) //若是對話框顯示則不觸控
+        if (!dialongue.display&&!character.walking&&cameratest.caTask&&!switches) //若是對話框顯示則不觸控
             RayTouch();//觸碰
         #region 觸碰物材質轉換
         if (_salaction != null)

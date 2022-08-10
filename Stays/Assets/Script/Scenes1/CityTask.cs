@@ -6,7 +6,7 @@ public class CityTask : MonoBehaviour
 {
     #region Äæ¦ì
     [Header("A_°e«H")]
-    private int a_condition=3;
+    private int a_condition=2;
     public int a_done=0;
     public bool a_finish = false;
 

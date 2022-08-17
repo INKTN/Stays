@@ -706,6 +706,7 @@ MonoBehaviour:
   playdone1: 0
   playdone2: 0
   playdone3: 0
+  finPin: {x: 10, y: 5, z: 50}
 --- !u!1001 &119749307
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12793,7 +12794,7 @@ Camera:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1750708372}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.9333334, g: 0.854902, b: 0.65882355, a: 0}
@@ -15852,6 +15853,18 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: f9829a70d0fdd6d409bd39f48b257749, type: 2}
+    - target: {fileID: 1472903954894554376, guid: 9930d501e34f7074e8984282d74cf047, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1472903954894554376, guid: 9930d501e34f7074e8984282d74cf047, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 1472903954894554376, guid: 9930d501e34f7074e8984282d74cf047, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 32.86
+      objectReference: {fileID: 0}
     - target: {fileID: 1472903954894554386, guid: 9930d501e34f7074e8984282d74cf047, type: 3}
       propertyPath: m_RootOrder
       value: 8

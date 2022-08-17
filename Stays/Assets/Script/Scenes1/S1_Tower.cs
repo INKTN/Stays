@@ -32,6 +32,11 @@ public class S1_Tower : MonoBehaviour
     public bool playdone1;
     public bool playdone2;
     public bool playdone3;
+    [Header("完成傳送")]
+    public Vector3 finPin;
+    private PlayerCharacter player;
+    private GameObject target;
+
     #endregion
     private void Start()
     {
@@ -40,6 +45,7 @@ public class S1_Tower : MonoBehaviour
         t= GameObject.Find("System").GetComponent<TouchS>();
         cameratest = cameraControl.GetComponent<Cameratest>();
         s1_ManipulationNPC = npc.GetComponent<S1_ManipulationNPC>();
+        player = GameObject.Find("主角").GetComponent<PlayerCharacter>();
     }
     private void FixedUpdate()
     {
@@ -112,12 +118,15 @@ public class S1_Tower : MonoBehaviour
         dialongueSystem.StartDialogue(dataDalogues[3].conversationContent);//對話資料讀取
         dialongueSystem.NameEnter(dataDalogues[3].talkName);
     }
-    private void TowerEnd()
+    private IEnumerator TowerEnd()
     {
         cameratest.switches = false; cameratest.caTask = true;//關鏡頭移動
         t.switches = false;//關觸控
         cameraControl.enabled = true;//鏡頭切換
         camera_Tower.enabled = false;
+        yield return new WaitForSeconds(0.5F);
+        player.Location(finPin);
+        player.Move(target.transform);
     }
     #endregion
 }

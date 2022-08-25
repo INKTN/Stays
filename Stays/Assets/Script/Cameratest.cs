@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 /// <summary>
 /// 攝影機模式切換3V
@@ -8,6 +10,9 @@ public class Cameratest : MonoBehaviour
     #region 欄位
     [Header("目標物")]
     public Transform target;
+    //上次紀錄對象
+    private GameObject lastObj;
+
     [Header("觸摸位置")]
     private Vector3 oneTPosition;
     [Header("邊界範圍")]
@@ -43,7 +48,34 @@ public class Cameratest : MonoBehaviour
             LS();
             Border();
         }
+
+        Debug.DrawLine(target.transform.position, transform.position, Color.red);//畫線
+        RaycastHit hit;
+
+        if(Physics.Linecast(target.transform.position,transform.position,out hit))
+        {
+            lastObj = hit.collider.gameObject;
+            string nameTag = lastObj.tag;
+            //判斷
+            if(nameTag != "MainCamera" && nameTag != "terrain")
+            {
+                //使遮擋物變透明
+                Renderer renderer = lastObj.GetComponent<Renderer>();
+                Color _color = renderer.material.color;
+                _color.a = 0.5f;
+                renderer.material.SetColor("_Color", _color);
+            }
+        }//還原
+        else if (lastObj != null)
+        {
+            Renderer renderer = lastObj.GetComponent<Renderer>();
+            Color _color = renderer.material.color;
+            _color.a = 1f;
+            renderer.material.SetColor("_Color", _color);
+            lastObj = null;
+        }
     }
+   
     #region 方法
     private void LS()//Long Shot
     {
@@ -64,6 +96,7 @@ public class Cameratest : MonoBehaviour
             Mathf.Clamp(transform.position.y, y_borderMin, y_borderMax),
             Mathf.Clamp(transform.position.z, z_borderMin, z_borderMax));
     }
-    
+   
+
     #endregion
 }

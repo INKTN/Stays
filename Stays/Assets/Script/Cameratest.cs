@@ -12,6 +12,7 @@ public class Cameratest : MonoBehaviour
     public Transform target;
     //上次紀錄對象
     private GameObject lastObj;
+    public Vector3 rayLine;
 
     [Header("觸摸位置")]
     private Vector3 oneTPosition;
@@ -48,32 +49,8 @@ public class Cameratest : MonoBehaviour
             LS();
             Border();
         }
-
-        Debug.DrawLine(target.transform.position, transform.position, Color.red);//畫線
-        RaycastHit hit;
-
-        if(Physics.Linecast(target.transform.position,transform.position,out hit))
-        {
-            lastObj = hit.collider.gameObject;
-            string nameTag = lastObj.tag;
-            //判斷
-            if(nameTag != "MainCamera" && nameTag != "terrain")
-            {
-                //使遮擋物變透明
-                Renderer renderer = lastObj.GetComponent<Renderer>();
-                Color _color = renderer.material.color;
-                _color.a = 0.5f;
-                renderer.material.SetColor("_Color", _color);
-            }
-        }//還原
-        else if (lastObj != null)
-        {
-            Renderer renderer = lastObj.GetComponent<Renderer>();
-            Color _color = renderer.material.color;
-            _color.a = 1f;
-            renderer.material.SetColor("_Color", _color);
-            lastObj = null;
-        }
+        Masking();
+       
     }
    
     #region 方法
@@ -96,7 +73,34 @@ public class Cameratest : MonoBehaviour
             Mathf.Clamp(transform.position.y, y_borderMin, y_borderMax),
             Mathf.Clamp(transform.position.z, z_borderMin, z_borderMax));
     }
-   
+    private void Masking()//遮擋透明
+    {
+        Debug.DrawLine(target.transform.position + rayLine, transform.position, Color.red);//畫線
+        RaycastHit hit;
+
+        if (Physics.Linecast(target.transform.position + rayLine, transform.position, out hit) && lastObj == null)
+        {
+            lastObj = hit.collider.gameObject;
+            string nameTag = lastObj.tag;
+            //判斷
+            if (nameTag != "MainCamera" && nameTag != "terrain")
+            {
+                //使遮擋物變透明
+                Renderer renderer = lastObj.GetComponent<Renderer>();
+                Color _color = renderer.material.color;
+                _color.a = 0.5f;
+                renderer.material.SetColor("_Color", _color);
+            }
+        }//還原
+        else if (lastObj != null)
+        {
+            Renderer renderer = lastObj.GetComponent<Renderer>();
+            Color _color = renderer.material.color;
+            _color.a = 1f;
+            renderer.material.SetColor("_Color", _color);
+            lastObj = null;
+        }
+    }
 
     #endregion
 }

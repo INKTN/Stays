@@ -78,8 +78,17 @@ public class Cameratest : MonoBehaviour
         Debug.DrawLine(target.transform.position + rayLine, transform.position, Color.red);//畫線
         RaycastHit hit;
 
-        if (Physics.Linecast(target.transform.position + rayLine, transform.position, out hit) && lastObj == null)
+        if (Physics.Linecast(target.transform.position + rayLine, transform.position, out hit))
         {
+            if (lastObj != null)
+            {
+                Renderer renderer = lastObj.GetComponent<Renderer>();
+                Color _color = renderer.material.color;
+                _color.a = 1f;
+                renderer.material.SetColor("_Color", _color);
+                lastObj = null;
+
+            }
             lastObj = hit.collider.gameObject;
             string nameTag = lastObj.tag;
             //判斷
@@ -94,11 +103,12 @@ public class Cameratest : MonoBehaviour
         }//還原
         else if (lastObj != null)
         {
-            Renderer renderer = lastObj.GetComponent<Renderer>();
+                Renderer renderer = lastObj.GetComponent<Renderer>();
             Color _color = renderer.material.color;
             _color.a = 1f;
             renderer.material.SetColor("_Color", _color);
             lastObj = null;
+            
         }
     }
 

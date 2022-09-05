@@ -30,5 +30,10 @@ public class S1_ManipulationNPC : MonoBehaviour
         //yield return new WaitForSeconds(1);
         camera_NPC.transform.LookAt(transform);
         rb.MovePosition(transform.position + new Vector3(29, 0, 0) * speed * Time.deltaTime);
+        if (transform.position.x > 30)
+        {
+            speed = 0;
+            rb.MovePosition(transform.position + new Vector3(40, 0, 0) * speed * Time.deltaTime);
+        }
     }
 }

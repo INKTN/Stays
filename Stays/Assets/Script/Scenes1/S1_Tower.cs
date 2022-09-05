@@ -33,10 +33,12 @@ public class S1_Tower : MonoBehaviour
     public bool playdone2;
     public bool playdone3;
     public bool playdone4;
+    public bool playdone5;
     [Header("完成傳送")]
     public Vector3 finPin;
     private PlayerCharacter player;
-    private GameObject target;
+    public GameObject target;
+    public Collider station;
 
     #endregion
     private void Start()
@@ -47,6 +49,7 @@ public class S1_Tower : MonoBehaviour
         cameratest = cameraControl.GetComponent<Cameratest>();
         s1_ManipulationNPC = npc.GetComponent<S1_ManipulationNPC>();
         player = GameObject.Find("主角").GetComponent<PlayerCharacter>();
+        
     }
     private void FixedUpdate()
     {
@@ -73,9 +76,9 @@ public class S1_Tower : MonoBehaviour
         { FocusTower(); }
         if (!playdone2 && !dialongueSystem.display && playdone1)
         { StartCoroutine(FocusNPC()); }
-        if (playdone2 && !dialongueSystem.display && !playdone3) StartCoroutine(TalkTower());
-        if (playdone3 && !dialongueSystem.display && !playdone4) StartCoroutine(TowerEnd());
-        if (playdone0 && playdone2 && playdone1 && playdone3 && playdone4 && !dialongueSystem.display) StartCoroutine(GoStation());
+        //if (playdone2 && !dialongueSystem.display && !playdone3) { StartCoroutine(TalkTower()); }
+        if (playdone3 && !dialongueSystem.display && !playdone4) { StartCoroutine(TowerEnd()); }
+        if (playdone4 && !dialongueSystem.display && !playdone5) { StartCoroutine(GoStation()); }
     }
     private IEnumerator Performance()
     {
@@ -110,33 +113,35 @@ public class S1_Tower : MonoBehaviour
         camera_Tower.enabled = false;//鏡頭切換
         s1_ManipulationNPC.Normal();//NPC移動
         print("輸出:" + 2);
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         s1_ManipulationNPC.speed = 0.8f;
         dialongueSystem.StartDialogue(dataDalogues[2].conversationContent);//對話資料讀取
         dialongueSystem.NameEnter(dataDalogues[2].talkName);
+         StartCoroutine(TalkTower());
     }
     private IEnumerator TalkTower()
     {
-        playdone3 = true;
         cameratest.switches = true; cameratest.caTask = false;//關鏡頭移動
         t.switches = true;//關觸控
-        camera_NPC.enabled = true;//鏡頭切換
-        camera_Tower.enabled = false;
+        camera_Tower.enabled = true;//鏡頭切換
+        camera_NPC.enabled = false;
         yield return new WaitForSeconds(2);
         print("輸出:" + 3);
         dialongueSystem.StartDialogue(dataDalogues[3].conversationContent);//對話資料讀取
         dialongueSystem.NameEnter(dataDalogues[3].talkName);
+        playdone3 = true;
     }
     private IEnumerator TowerEnd()
     {
         playdone4 = true;
         cameratest.switches = false; cameratest.caTask = true;//關鏡頭移動
         t.switches = false;//關觸控
-        camera_Tower.enabled = true;//鏡頭切換
-        camera_NPC.enabled = false;
+        cameraControl.enabled = true;//鏡頭切換
+        camera_Tower.enabled = false;
         print("輸出:" + 4);
+       //發光
         yield return new WaitForSeconds(0.5F);
-        dialongueSystem.StartDialogue(dataDalogues[4].conversationContent);//對話資料讀取
+        dialongueSystem.StartDialogue(dataDalogues[4].conversationContent);//對話資料讀取 
         dialongueSystem.NameEnter(dataDalogues[4].talkName);
 
     }
@@ -146,9 +151,15 @@ public class S1_Tower : MonoBehaviour
         t.switches = false;//關觸控
         cameraControl.enabled = true;//鏡頭切換
         camera_Tower.enabled = false;
+        print("輸出:" + 5);
+        dialongueSystem.StartDialogue(dataDalogues[5].conversationContent);//對話資料讀取
+        dialongueSystem.NameEnter(dataDalogues[5].talkName);
+        station.isTrigger = true;
         yield return new WaitForSeconds(2F);
         player.Location(finPin);
         player.Move(target.transform);
+        //print(player.transform.position);
+        playdone5 = true;
 
     }
         #endregion

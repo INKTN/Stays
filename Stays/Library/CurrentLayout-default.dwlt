@@ -119,10 +119,10 @@ MonoBehaviour:
     y: 30
     width: 1228
     height: 634
-  m_MinSize: {x: 678, y: 492}
-  m_MaxSize: {x: 18003, y: 14042}
+  m_MinSize: {x: 679, y: 492}
+  m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 2627
+  controlID: 9193
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 14003, y: 14042}
   vertical: 1
-  controlID: 2605
+  controlID: 9171
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 2515
+  controlID: 9143
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -250,7 +250,7 @@ MonoBehaviour:
   m_MinSize: {x: 333, y: 271}
   m_MaxSize: {x: 14003, y: 10021}
   vertical: 0
-  controlID: 2606
+  controlID: 9172
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -348,7 +348,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Game
-    m_Image: {fileID: 4621777727084837110, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
@@ -457,9 +457,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 9.488001, y: 7.823974, z: 23.204046}
+    m_Target: {x: -155.87273, y: -12.862609, z: 108.103935}
     speed: 2
-    m_Value: {x: 9.488001, y: 7.823974, z: 23.204046}
+    m_Value: {x: -155.87273, y: -12.862609, z: 108.103935}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -506,13 +506,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.1181356, y: -0.09922566, z: 0.011822252, w: -0.988007}
+    m_Target: {x: -0.09120147, y: -0.30707997, z: 0.029516412, w: -0.94690776}
     speed: 2
-    m_Value: {x: -0.118135594, y: -0.09922566, z: 0.011822252, w: -0.988007}
+    m_Value: {x: -0.09120147, y: -0.30707994, z: 0.02951641, w: -0.9469077}
   m_Size:
-    m_Target: 34.34394
+    m_Target: 53.396748
     speed: 2
-    m_Value: 34.34394
+    m_Value: 53.396748
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -659,10 +659,10 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 784f0000
-      m_LastClickedID: 0
-      m_ExpandedIDs: 48b7ffff6ec8ffff78e2ffff74eaffff94eaffffd0eaffff3efbffff
+      scrollPos: {x: 0, y: 884}
+      m_SelectedIDs: 34a4feff
+      m_LastClickedID: -89036
+      m_ExpandedIDs: a2b2feffd2c4feffe8d6fefffee8feff1efbfeff340dffff4a1fffff582dfffff43fffff5c4effff5c64ffff6474ffff5c87ffff3e9dfffff4a5ffff06b6ffff42beffff5cd6ffff1ae2ffff3cf2ffff3efbffff78840000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -724,22 +724,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Prefabricated/Sky
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 56
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Prefabricated/Sky
   m_LastFoldersGridSize: 56
   m_LastProjectPath: D:\Unity\Stays\Stays
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 180}
-    m_SelectedIDs: 7c4e0000
-    m_LastClickedID: 20092
-    m_ExpandedIDs: 00000000624e0000644e0000664e0000684e000000ca9a3b
+    scrollPos: {x: 0, y: 129}
+    m_SelectedIDs: 884c0000
+    m_LastClickedID: 19592
+    m_ExpandedIDs: 00000000504c0000524c0000544c0000564c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -767,7 +767,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000624e0000644e0000664e0000684e000000ca9a3b
+    m_ExpandedIDs: 00000000504c0000524c0000544c0000564c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -819,7 +819,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 120}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 56
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 109.66667

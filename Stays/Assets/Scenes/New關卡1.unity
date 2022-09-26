@@ -2482,6 +2482,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6253309387374942287, guid: fc3606814b105d944aebbeed94d35dc4, type: 3}
+      propertyPath: allowOverlap
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6253309387374942287, guid: fc3606814b105d944aebbeed94d35dc4, type: 3}
+      propertyPath: includeInMerge
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6253309387374942287, guid: fc3606814b105d944aebbeed94d35dc4, type: 3}
+      propertyPath: placementRaycast.useRaycast
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3762847079393532164, guid: fc3606814b105d944aebbeed94d35dc4, type: 3}
       propertyPath: m_Layer
       value: 3
@@ -2554,7 +2566,8 @@ PrefabInstance:
       propertyPath: m_TagString
       value: ground
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -6253309387374942287, guid: fc3606814b105d944aebbeed94d35dc4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fc3606814b105d944aebbeed94d35dc4, type: 3}
 --- !u!1 &1411312191
 GameObject:
@@ -3843,6 +3856,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca18888df5c4b0348a32ba2257d9c155, type: 3}
+--- !u!1 &1752204486 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3762847079393532164, guid: fc3606814b105d944aebbeed94d35dc4, type: 3}
+  m_PrefabInstance: {fileID: 1394248287}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1752204487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752204486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58acc4f29dba2c143a76a3b00fd2e703, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  haveObstacle: 0
+  detectionRange: {x: 1, y: 1, z: 1}
+  detectionHight: {x: 0, y: 0, z: 0}
+  gizmosOn: 0
+  draggingTag: []
+  chIn: 0
 --- !u!1 &1788589448
 GameObject:
   m_ObjectHideFlags: 0

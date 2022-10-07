@@ -15,11 +15,11 @@ C:/Users/lilyh/Documents/GitHub/Stays/Stays
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62725
+58747
 Successfully changed project path to: C:/Users/lilyh/Documents/GitHub/Stays/Stays
 C:/Users/lilyh/Documents/GitHub/Stays/Stays
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 50.27 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 67.19 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.30f1 (1fb1bf06830e)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Resources/UnitySubsystems
@@ -36,39 +36,39 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56816
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56048
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002399 seconds.
+Registered in 0.002845 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 52.00 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 46.42 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.541 seconds
+- Completed reload, in  0.508 seconds
 Domain Reload Profiling:
-	ReloadAssembly (541ms)
-		BeginReloadAssembly (60ms)
+	ReloadAssembly (508ms)
+		BeginReloadAssembly (58ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (420ms)
-			LoadAssemblies (58ms)
+		EndReloadAssembly (388ms)
+			LoadAssemblies (56ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (121ms)
+			SetupTypeCache (118ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (26ms)
-			SetupLoadedEditorAssemblies (167ms)
+			RebuildScriptCaches (23ms)
+			SetupLoadedEditorAssemblies (156ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (52ms)
+				RefreshPlugins (46ms)
 				BeforeProcessingInitializeOnLoad (13ms)
-				ProcessInitializeOnLoadAttributes (73ms)
+				ProcessInitializeOnLoadAttributes (67ms)
 				ProcessInitializeOnLoadMethodAttributes (23ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -76,53 +76,53 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004775 seconds.
+Registered in 0.005047 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 51.75 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 48.89 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.927 seconds
+- Completed reload, in  0.982 seconds
 Domain Reload Profiling:
-	ReloadAssembly (929ms)
-		BeginReloadAssembly (114ms)
+	ReloadAssembly (983ms)
+		BeginReloadAssembly (126ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (17ms)
-		EndReloadAssembly (764ms)
-			LoadAssemblies (81ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (805ms)
+			LoadAssemblies (85ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (207ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (40ms)
-			SetupLoadedEditorAssemblies (349ms)
+			SetupTypeCache (247ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (348ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (52ms)
-				BeforeProcessingInitializeOnLoad (73ms)
-				ProcessInitializeOnLoadAttributes (207ms)
-				ProcessInitializeOnLoadMethodAttributes (6ms)
+				RefreshPlugins (49ms)
+				BeforeProcessingInitializeOnLoad (77ms)
+				ProcessInitializeOnLoadAttributes (205ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
 				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Custom/AdditiveTintable': fallback shader 'Particles/Additive (Soft)' not found
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.64 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 0.89 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2455 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 163.7 MB.
 System memory in use after: 152.5 MB.
 
 Unloading 90 unused Assets to reduce memory usage. Loaded Objects now: 2859.
-Total: 8.543400 ms (FindLiveObjects: 0.254200 ms CreateObjectMapping: 0.065700 ms MarkObjects: 2.880800 ms  DeleteObjects: 5.341800 ms)
+Total: 8.825600 ms (FindLiveObjects: 0.264200 ms CreateObjectMapping: 0.071400 ms MarkObjects: 3.219000 ms  DeleteObjects: 5.269900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -137,211 +137,109 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Store/FSP/Modular Pixel Forest/Prefabs
-  artifactKey: Guid(23f82c0238db3c54a99f0687c25b2d1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Store/FSP/Modular Pixel Forest/Prefabs using Guid(23f82c0238db3c54a99f0687c25b2d1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbb4cc10520f52447b4bc8945de0629d') in 0.012076 seconds 
+  path: Assets/Scenes/關卡1 城市.unity
+  artifactKey: Guid(b1b0cd6247b526b4481cbfa624aee5ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/關卡1 城市.unity using Guid(b1b0cd6247b526b4481cbfa624aee5ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41e653ff167c74b29e63caf35205204c') in 0.017520 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000416 seconds.
-  path: Assets/Store/FSP/Modular Pixel Forest/Prefabs/Foliage/Tree Point Up.prefab
-  artifactKey: Guid(16b741745510a3f4c94d008b08f3b551) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Store/FSP/Modular Pixel Forest/Prefabs/Foliage/Tree Point Up.prefab using Guid(16b741745510a3f4c94d008b08f3b551) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc49d55f3f2108aca4cf7ba0028ea1ba') in 0.103523 seconds 
+  Time since last request: 245.728361 seconds.
+  path: Assets/Character Modeling/奶奶.fbx
+  artifactKey: Guid(9e361265663c54d4487963deb87ec2d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Character Modeling/奶奶.fbx using Guid(9e361265663c54d4487963deb87ec2d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9cd7423d5b8320e375fad0c3a118d5a') in 0.224414 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000172 seconds.
-  path: Assets/Store/FSP/Modular Pixel Forest/Prefabs/Foliage/Tree Sphere.prefab
-  artifactKey: Guid(2cc1a8e1096b2874d8412b9f3378b1e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Store/FSP/Modular Pixel Forest/Prefabs/Foliage/Tree Sphere.prefab using Guid(2cc1a8e1096b2874d8412b9f3378b1e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea65e25060ed6a3974aafff71269b10d') in 0.017489 seconds 
+  Time since last request: 8.315712 seconds.
+  path: Assets/Character Modeling/小孩.fbx
+  artifactKey: Guid(58281214cde930b49a35a62b6aadf677) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Character Modeling/小孩.fbx using Guid(58281214cde930b49a35a62b6aadf677) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdc34b58b9ae1b0df3fb4090b30895a3') in 0.139994 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000363 seconds.
-  path: Assets/Store/FSP/Modular Pixel Forest/Prefabs/Foliage/Tree Point Down.prefab
-  artifactKey: Guid(dbe836a054f552f40920e331a2a2b469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Store/FSP/Modular Pixel Forest/Prefabs/Foliage/Tree Point Down.prefab using Guid(dbe836a054f552f40920e331a2a2b469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '585729a56ec6a281e8cd3d88c8b388cd') in 0.017282 seconds 
+  Time since last request: 1.912667 seconds.
+  path: Assets/Character Modeling/主角.fbx
+  artifactKey: Guid(55830e42d9d58e549843f3d7b6ad839e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Character Modeling/主角.fbx using Guid(55830e42d9d58e549843f3d7b6ad839e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a8d290170f9c458f251f24e4dd26cb1') in 0.110913 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000210 seconds.
-  path: Assets/Store/FSP/Modular Pixel Forest/Meshes
-  artifactKey: Guid(3b1ae0c22e9af99468dc4434e132ae2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Store/FSP/Modular Pixel Forest/Meshes using Guid(3b1ae0c22e9af99468dc4434e132ae2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b95d473828a4f9b1ef2f959c5ce17af') in 0.010434 seconds 
+  Time since last request: 1.044863 seconds.
+  path: Assets/Character Modeling/售票員.fbx
+  artifactKey: Guid(87013a1b2223fff439697a62c78ad8bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Character Modeling/售票員.fbx using Guid(87013a1b2223fff439697a62c78ad8bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aad634ca2491996fb8c2b11a2034cb78') in 0.112645 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000222 seconds.
-  path: Assets/Store/FSP/Modular Pixel Forest/Prefabs/Foliage
-  artifactKey: Guid(ee03c53290b4a3143834b295ecf54e10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Store/FSP/Modular Pixel Forest/Prefabs/Foliage using Guid(ee03c53290b4a3143834b295ecf54e10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b82a753840b8a0bc8381242c340bc91') in 0.007241 seconds 
+  Time since last request: 265.671017 seconds.
+  path: Assets/Material/clear_UV_color.png
+  artifactKey: Guid(44872e61ab3a1f34d90edb2c88d0e652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/clear_UV_color.png using Guid(44872e61ab3a1f34d90edb2c88d0e652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d838f7ddc1c87e988b84f16b4520df1') in 0.162681 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.263686 seconds.
-  path: Assets/Store/FSP/Modular Pixel Forest
-  artifactKey: Guid(1a82eaeebcc5d2644bc1d2d0fbd7a4c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Store/FSP/Modular Pixel Forest using Guid(1a82eaeebcc5d2644bc1d2d0fbd7a4c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4340db5359f219bdd3c05dadf5ae176') in 0.007671 seconds 
+  Time since last request: 9.613247 seconds.
+  path: Assets/Material/clear_UV_color.png
+  artifactKey: Guid(44872e61ab3a1f34d90edb2c88d0e652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/clear_UV_color.png using Guid(44872e61ab3a1f34d90edb2c88d0e652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1857a001e3fe230d87d7a4ccd1cd08b6') in 0.073670 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.873460 seconds.
-  path: Assets/Store/FSP/Modular Pixel Forest/Meshes/mesh_Boulder.asset
-  artifactKey: Guid(8de204b3de335854493d3b320d4f2414) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Store/FSP/Modular Pixel Forest/Meshes/mesh_Boulder.asset using Guid(8de204b3de335854493d3b320d4f2414) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7161da3ea7092843dfe4af332bd3c88') in 0.039983 seconds 
+  Time since last request: 75.717502 seconds.
+  path: Assets/Prefabricated/小孩_color_high.prefab
+  artifactKey: Guid(ef4f765e18e26554fa302732fc0ecaf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabricated/小孩_color_high.prefab using Guid(ef4f765e18e26554fa302732fc0ecaf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e30332a6bb4843b8d8fd1378d511042f') in 0.017691 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000157 seconds.
-  path: Assets/Store/FSP/Modular Pixel Forest/Meshes/mesh_Crate.asset
-  artifactKey: Guid(031d35ed76300204c89c4aa513909f5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Store/FSP/Modular Pixel Forest/Meshes/mesh_Crate.asset using Guid(031d35ed76300204c89c4aa513909f5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e875ce67433acb1d9ac85f380fc42e8d') in 0.013048 seconds 
+  Time since last request: 189.977616 seconds.
+  path: Assets/Texture/young_UV_color.png
+  artifactKey: Guid(ee6834e6b77449449baee14dedb6eb24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture/young_UV_color.png using Guid(ee6834e6b77449449baee14dedb6eb24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf7b0763245a025b3eabd76f9c574450') in 0.081463 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000171 seconds.
-  path: Assets/Store/FSP/Modular Pixel Forest/Meshes/mesh_Dirt Block Center.asset
-  artifactKey: Guid(2dd42a2cf228c7a4f9b4e8ac4c038497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Store/FSP/Modular Pixel Forest/Meshes/mesh_Dirt Block Center.asset using Guid(2dd42a2cf228c7a4f9b4e8ac4c038497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be6bc20dfbf26f0989fcfce73e8aed5a') in 0.014665 seconds 
+  Time since last request: 5.680597 seconds.
+  path: Assets/Texture/young_UV_color.png
+  artifactKey: Guid(ee6834e6b77449449baee14dedb6eb24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture/young_UV_color.png using Guid(ee6834e6b77449449baee14dedb6eb24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc8386cbe9c05fd84b3883bfd9c895f9') in 0.116230 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000250 seconds.
-  path: Assets/Store/FSP/Modular Pixel Forest/Meshes/mesh_Dirt Block.asset
-  artifactKey: Guid(874e93092d68624469ec8eebddb61a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Store/FSP/Modular Pixel Forest/Meshes/mesh_Dirt Block.asset using Guid(874e93092d68624469ec8eebddb61a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08bfb4fee0a38318353ab9c4738cbf8d') in 0.022686 seconds 
+  Time since last request: 8.188554 seconds.
+  path: Assets/Texture/ticket_UV_color_0930.png
+  artifactKey: Guid(dd76094988f3e284682394c50197847d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture/ticket_UV_color_0930.png using Guid(dd76094988f3e284682394c50197847d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd383a4436ed67eb392c14b15fb52e8b') in 0.082669 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000305 seconds.
-  path: Assets/Store/FSP/Modular Pixel Forest/Meshes/mesh_Dirt Ramp.asset
-  artifactKey: Guid(18a868b487d349140b3619f66c583b07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Store/FSP/Modular Pixel Forest/Meshes/mesh_Dirt Ramp.asset using Guid(18a868b487d349140b3619f66c583b07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd47d378d4b46c557a0e6a86a3f66a9db') in 0.019370 seconds 
+  Time since last request: 6.734719 seconds.
+  path: Assets/Texture/ticket_UV_color_0930.png
+  artifactKey: Guid(dd76094988f3e284682394c50197847d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture/ticket_UV_color_0930.png using Guid(dd76094988f3e284682394c50197847d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed068169cbb8f68d6f1c2a3f9bb79ad3') in 0.062899 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.049096 seconds.
-  path: Assets/Store/FSP/Modular Pixel Forest/Prefabs/Props
-  artifactKey: Guid(2ad54069af534b64cb7d1903ac106ed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Store/FSP/Modular Pixel Forest/Prefabs/Props using Guid(2ad54069af534b64cb7d1903ac106ed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50d4300c51e072cfef850477efb7807d') in 0.007639 seconds 
+  Time since last request: 147.461342 seconds.
+  path: Assets/Character Modeling/清潔工.fbx
+  artifactKey: Guid(af2d391dbc7cc39468c81e1f605106c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Character Modeling/清潔工.fbx using Guid(af2d391dbc7cc39468c81e1f605106c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35f6eed6db0ed4f5fe58d3f3525c67a3') in 0.112878 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.878324 seconds.
-  path: Assets/Store/FSP/Modular Pixel Forest/Prefabs/Props/Boulder.prefab
-  artifactKey: Guid(eb3e288cb7554f14dad862d236264c2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Store/FSP/Modular Pixel Forest/Prefabs/Props/Boulder.prefab using Guid(eb3e288cb7554f14dad862d236264c2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4f1c7563fd89d3f8102ea3b3752ba06') in 0.026293 seconds 
+  Time since last request: 26.754148 seconds.
+  path: Assets/Character Modeling/年輕人.fbx
+  artifactKey: Guid(f6d9b93cb08b7244bbf147ffececbcee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Character Modeling/年輕人.fbx using Guid(f6d9b93cb08b7244bbf147ffececbcee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b27cf80143dd121d51d62c703583ba7') in 0.072480 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.960570 seconds.
-  path: Assets/Store/FSP/Modular Pixel Forest/Prefabs/Props/Crate.prefab
-  artifactKey: Guid(a24305c3f959e714d95e35d3846f09a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Store/FSP/Modular Pixel Forest/Prefabs/Props/Crate.prefab using Guid(a24305c3f959e714d95e35d3846f09a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c72788e2d15ea0325631b724e6950af') in 0.019380 seconds 
+  Time since last request: 11.837397 seconds.
+  path: Assets/Character Modeling/年輕人.fbx
+  artifactKey: Guid(f6d9b93cb08b7244bbf147ffececbcee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Character Modeling/年輕人.fbx using Guid(f6d9b93cb08b7244bbf147ffececbcee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3999a164b1f4c1e3f630b522f968eca5') in 0.090546 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.475506 seconds.
-  path: Assets/Store/FSP/Modular Pixel Forest/Prefabs/Props/Fence Post.prefab
-  artifactKey: Guid(d1fd2795e6cd0004ca4f30241fe8a76e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Store/FSP/Modular Pixel Forest/Prefabs/Props/Fence Post.prefab using Guid(d1fd2795e6cd0004ca4f30241fe8a76e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c20308473b27708c2dc00a15046678f4') in 0.029487 seconds 
+  Time since last request: 1127.717235 seconds.
+  path: Assets/Character Modeling/售票員.fbx
+  artifactKey: Guid(87013a1b2223fff439697a62c78ad8bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Character Modeling/售票員.fbx using Guid(87013a1b2223fff439697a62c78ad8bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8da2f5508f3c431b8b96c560fb6b17b7') in 0.088651 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.726621 seconds.
-  path: Assets/Store/FSP/Modular Pixel Forest/Prefabs/Props/Fence Rail.prefab
-  artifactKey: Guid(d8d5df041e323154faf07ac7ef66c513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Store/FSP/Modular Pixel Forest/Prefabs/Props/Fence Rail.prefab using Guid(d8d5df041e323154faf07ac7ef66c513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae6c8ec332771a64e9617ee1eb5ab763') in 0.032675 seconds 
+  Time since last request: 9.631927 seconds.
+  path: Assets/Character Modeling/售票員.fbx
+  artifactKey: Guid(87013a1b2223fff439697a62c78ad8bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Character Modeling/售票員.fbx using Guid(87013a1b2223fff439697a62c78ad8bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3db3181680c8c7b3a429effa26da02e4') in 0.078188 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.423363 seconds.
-  path: Assets/Store/FSP/Modular Pixel Forest/Prefabs/Props/Sign.prefab
-  artifactKey: Guid(e5c1b68953a059347bc03b21b8cf3d12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Store/FSP/Modular Pixel Forest/Prefabs/Props/Sign.prefab using Guid(e5c1b68953a059347bc03b21b8cf3d12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64d8143429598009f59e27f4c8e3f929') in 0.027910 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.089014 seconds.
-  path: Assets/Store/FSP/Modular Pixel Forest/Prefabs/Props/Fence Hill.prefab
-  artifactKey: Guid(b84ac3378da52bc4a982a725fa749563) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Store/FSP/Modular Pixel Forest/Prefabs/Props/Fence Hill.prefab using Guid(b84ac3378da52bc4a982a725fa749563) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3efe0e657f5c41386c315d3840024abe') in 0.016575 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.088489 seconds.
-  path: Assets/Store/FSP/Modular Pixel Forest/Prefabs/Temple/Pillar Base.prefab
-  artifactKey: Guid(66ef922dbe314054c8cb54ee3cfeaf37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Store/FSP/Modular Pixel Forest/Prefabs/Temple/Pillar Base.prefab using Guid(66ef922dbe314054c8cb54ee3cfeaf37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e77c527f5a40a58cd3c0851303b4832') in 0.040857 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.657402 seconds.
-  path: Assets/Store/FSP/Modular Pixel Forest/Prefabs/Temple/Pillar Center.prefab
-  artifactKey: Guid(ca18888df5c4b0348a32ba2257d9c155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Store/FSP/Modular Pixel Forest/Prefabs/Temple/Pillar Center.prefab using Guid(ca18888df5c4b0348a32ba2257d9c155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7269c1d32651feffab493b916f473cc9') in 0.023585 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.182012 seconds.
-  path: Assets/Store/FSP/Modular Pixel Forest/Prefabs/Temple/Pillar Top.prefab
-  artifactKey: Guid(663ffae50351cb74787776c9c7bcc41a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Store/FSP/Modular Pixel Forest/Prefabs/Temple/Pillar Top.prefab using Guid(663ffae50351cb74787776c9c7bcc41a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40a2235683a10d3af3a35aae67b7115f') in 0.025000 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.702276 seconds.
-  path: Assets/Store/FSP/Modular Pixel Forest/Prefabs/Temple/Temple Block Center.prefab
-  artifactKey: Guid(c6288dfd4256245488fce10aceab189a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Store/FSP/Modular Pixel Forest/Prefabs/Temple/Temple Block Center.prefab using Guid(c6288dfd4256245488fce10aceab189a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a74e5239b8dc4bdb1470bf18e4cedad') in 0.021462 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.987818 seconds.
-  path: Assets/Store/FSP/Modular Pixel Forest/Prefabs/Temple/Temple Block.prefab
-  artifactKey: Guid(0d8bbc0d1157e8b4fb6347f20af70c4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Store/FSP/Modular Pixel Forest/Prefabs/Temple/Temple Block.prefab using Guid(0d8bbc0d1157e8b4fb6347f20af70c4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9862dd7dd82459a62a06f39ec7494fa') in 0.026125 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.582251 seconds.
-  path: Assets/Store/FSP/Modular Pixel Forest/Prefabs/Temple/Temple Steps.prefab
-  artifactKey: Guid(541deca0278571d4bbf93f38cd3de481) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Store/FSP/Modular Pixel Forest/Prefabs/Temple/Temple Steps.prefab using Guid(541deca0278571d4bbf93f38cd3de481) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e899ce16084118ee4bd9b51a00e18ba8') in 0.030118 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.121289 seconds.
-  path: Assets/Store/FSP/Modular Pixel Forest/Prefabs/Terrain/Dirt Block Center.prefab
-  artifactKey: Guid(60ee61b107ddee04ebe6b3afab332f46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Store/FSP/Modular Pixel Forest/Prefabs/Terrain/Dirt Block Center.prefab using Guid(60ee61b107ddee04ebe6b3afab332f46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d192ce5ec48b4d4f38c2fb6ea986ebf') in 0.020572 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.547451 seconds.
-  path: Assets/Store/FSP/Modular Pixel Forest/Prefabs/Terrain/Dirt Block.prefab
-  artifactKey: Guid(7dedb24e034cfb04f9b6f8d66b655234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Store/FSP/Modular Pixel Forest/Prefabs/Terrain/Dirt Block.prefab using Guid(7dedb24e034cfb04f9b6f8d66b655234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a978ba0e0d80ee54ff9c1316c91a833') in 0.030590 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.701917 seconds.
-  path: Assets/Store/FSP/Modular Pixel Forest/Prefabs/Terrain/Dirt Ramp.prefab
-  artifactKey: Guid(92db6737bf5e73544934e9b5e93c6395) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Store/FSP/Modular Pixel Forest/Prefabs/Terrain/Dirt Ramp.prefab using Guid(92db6737bf5e73544934e9b5e93c6395) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad1823b644442c1bef0e3c5ad95ea482') in 0.030829 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.664011 seconds.
-  path: Assets/Store/FSP/Modular Pixel Forest/Prefabs/Terrain/Grass Block.prefab
-  artifactKey: Guid(fc3606814b105d944aebbeed94d35dc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Store/FSP/Modular Pixel Forest/Prefabs/Terrain/Grass Block.prefab using Guid(fc3606814b105d944aebbeed94d35dc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4349befc30a3bb87852e4980dc16a3c8') in 0.017837 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.598728 seconds.
-  path: Assets/Store/FSP/Modular Pixel Forest/Prefabs/Terrain/Grass Hill Corner Inner.prefab
-  artifactKey: Guid(04835f81237f70f40807660ae79aee0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Store/FSP/Modular Pixel Forest/Prefabs/Terrain/Grass Hill Corner Inner.prefab using Guid(04835f81237f70f40807660ae79aee0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5786f987f0f5efa2e560f22f97017564') in 0.026445 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.629634 seconds.
-  path: Assets/Store/FSP/Modular Pixel Forest/Prefabs/Terrain/Grass Hill Corner Outer.prefab
-  artifactKey: Guid(1f037682c7dbf3a459ca35203f258c2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Store/FSP/Modular Pixel Forest/Prefabs/Terrain/Grass Hill Corner Outer.prefab using Guid(1f037682c7dbf3a459ca35203f258c2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0616e2013f19f769ec466538d24d66c') in 0.029821 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.736747 seconds.
-  path: Assets/Store/FSP/Modular Pixel Forest/Prefabs/Terrain/Grass Hill Straight.prefab
-  artifactKey: Guid(02ffa1243b833f54bac29cbd726cf4a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Store/FSP/Modular Pixel Forest/Prefabs/Terrain/Grass Hill Straight.prefab using Guid(02ffa1243b833f54bac29cbd726cf4a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c0ed8dad27517a09fb78277ab511405') in 0.024682 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.666059 seconds.
-  path: Assets/Store/FSP/Modular Pixel Forest/Prefabs/Terrain/Water.prefab
-  artifactKey: Guid(26e07b46482c556468073c7d05d0f19f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Store/FSP/Modular Pixel Forest/Prefabs/Terrain/Water.prefab using Guid(26e07b46482c556468073c7d05d0f19f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ffc3ae4a17dbbcde4157b6124112b49') in 0.028112 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 146.022063 seconds.
-  path: Assets/Scenes/New關卡2.unity
-  artifactKey: Guid(f05ac9a6068dfc84689a02c877dcad1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/New關卡2.unity using Guid(f05ac9a6068dfc84689a02c877dcad1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d2d1d49e95a482ae410aeeb381cd501') in 0.013648 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 160.993184 seconds.
-  path: Assets/Scenes/New關卡3.unity
-  artifactKey: Guid(9f14f6fa99f272b49bf1fc4f2e98aea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/New關卡3.unity using Guid(9f14f6fa99f272b49bf1fc4f2e98aea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55d58970a9730a9ee78dbeec2074f781') in 0.009985 seconds 
+  Time since last request: 5.635001 seconds.
+  path: Assets/Character Modeling/售票員.fbx
+  artifactKey: Guid(87013a1b2223fff439697a62c78ad8bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Character Modeling/售票員.fbx using Guid(87013a1b2223fff439697a62c78ad8bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ee447afe6a3a9c14ef119a6f34ec8ed') in 0.100842 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

@@ -91,6 +91,10 @@ public class S1_Tower : MonoBehaviour
             dialongueSystem.StopAllCoroutines();
             StartCoroutine(GoStation()); 
         }
+        else if (playdone4 && !dialongueSystem.display && playdone5 )
+        {
+            MoveTo();
+        }
     }
     private IEnumerator Performance()
     {
@@ -126,7 +130,7 @@ public class S1_Tower : MonoBehaviour
         camera_Tower.enabled = false;//鏡頭切換
         s1_ManipulationNPC.Normal();//NPC移動
         print("輸出:" + 2);
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(3);
         s1_ManipulationNPC.speed = 0.8f;
         dialongueSystem.StopAllCoroutines();
         dialongueSystem.StartDialogue(dataDalogues[2].conversationContent);//對話資料讀取
@@ -180,7 +184,9 @@ public class S1_Tower : MonoBehaviour
     private void MoveTo()
     {
         Transform fin = GameObject.Find(finPin).transform;
+        player.speed = 12;
         player.Move(fin);
+        print(fin.name+fin);
     }
         #endregion
 }

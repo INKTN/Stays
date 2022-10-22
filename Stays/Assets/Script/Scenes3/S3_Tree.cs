@@ -90,12 +90,15 @@ public class S3_Tree : MonoBehaviour
                 {
                     RaycastHit hit;
                     Ray ray = oriCamera.ScreenPointToRay(pos);
-                    Physics.Raycast(ray, out hit);
                     //print(hit.transform.parent.gameObject.name);
                     // if (Physics.Raycast(ray, out hit) && hit.transform.parent.gameObject.name == target)
                     startPos = touch.position;
                     begainTime = Time.realtimeSinceStartup;
-                    if (Physics.Raycast(ray, out hit) && hit.transform.parent.gameObject.name == target && Time.realtimeSinceStartup - lastTouchTime < quickDoubleTabInterval)
+
+                    Physics.Raycast(ray, out hit);
+                    print(hit.collider.name);
+
+                    if (Physics.Raycast(ray, out hit) && /*hit.transform.parent.gameObject.name == target &&*/ Time.realtimeSinceStartup - lastTouchTime < quickDoubleTabInterval)
                     {
                         ch = !ch;
                         setCamera.enabled = ch;

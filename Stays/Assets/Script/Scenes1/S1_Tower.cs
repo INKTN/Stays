@@ -35,7 +35,7 @@ public class S1_Tower : MonoBehaviour
     public bool playdone4;
     public bool playdone5;
     [Header("完成傳送")]
-    public Vector3 finPin;
+    public string finPin;
     private PlayerCharacter player;
     public GameObject target;
     public Collider station;
@@ -70,15 +70,27 @@ public class S1_Tower : MonoBehaviour
     {
         if (task.a_finish && !playdone0 && area.chIn)
         {
+            dialongueSystem.StopAllCoroutines();
             StartCoroutine(Performance());
         }
-        if (playdone0 && !dialongueSystem.display && !playdone1)
+        else if (playdone0 && !dialongueSystem.display && !playdone1)
         { FocusTower(); }
-        if (!playdone2 && !dialongueSystem.display && playdone1)
-        { StartCoroutine(FocusNPC()); }
+        else if(!playdone2 && !dialongueSystem.display && playdone1)
+        {
+            dialongueSystem.StopAllCoroutines();
+            StartCoroutine(FocusNPC()); 
+        }
         //if (playdone2 && !dialongueSystem.display && !playdone3) { StartCoroutine(TalkTower()); }
-        if (playdone3 && !dialongueSystem.display && !playdone4) { StartCoroutine(TowerEnd()); }
-        if (playdone4 && !dialongueSystem.display && !playdone5) { StartCoroutine(GoStation()); }
+        else if(playdone3 && !dialongueSystem.display && !playdone4) 
+        {
+            dialongueSystem.StopAllCoroutines();
+            StartCoroutine(TowerEnd()); 
+        }
+        else if(playdone4 && !dialongueSystem.display && !playdone5) 
+        {
+            dialongueSystem.StopAllCoroutines();
+            StartCoroutine(GoStation()); 
+        }
     }
     private IEnumerator Performance()
     {
@@ -100,6 +112,7 @@ public class S1_Tower : MonoBehaviour
         cameratest.switches = true; cameratest.caTask = false;//關鏡頭移動
                                                              //yield return new WaitForSeconds(1);
         print("輸出:" + 1);
+        dialongueSystem.StopAllCoroutines();
         dialongueSystem.StartDialogue(dataDalogues[1].conversationContent);//對話資料讀取
         dialongueSystem.NameEnter(dataDalogues[1].talkName);
         playdone1 = true;
@@ -115,6 +128,7 @@ public class S1_Tower : MonoBehaviour
         print("輸出:" + 2);
         yield return new WaitForSeconds(1);
         s1_ManipulationNPC.speed = 0.8f;
+        dialongueSystem.StopAllCoroutines();
         dialongueSystem.StartDialogue(dataDalogues[2].conversationContent);//對話資料讀取
         dialongueSystem.NameEnter(dataDalogues[2].talkName);
          StartCoroutine(TalkTower());
@@ -127,6 +141,7 @@ public class S1_Tower : MonoBehaviour
         camera_NPC.enabled = false;
         yield return new WaitForSeconds(2);
         print("輸出:" + 3);
+        dialongueSystem.StopAllCoroutines();
         dialongueSystem.StartDialogue(dataDalogues[3].conversationContent);//對話資料讀取
         dialongueSystem.NameEnter(dataDalogues[3].talkName);
         playdone3 = true;
@@ -141,26 +156,31 @@ public class S1_Tower : MonoBehaviour
         print("輸出:" + 4);
        //發光
         yield return new WaitForSeconds(0.5F);
+        dialongueSystem.StopAllCoroutines();
         dialongueSystem.StartDialogue(dataDalogues[4].conversationContent);//對話資料讀取 
         dialongueSystem.NameEnter(dataDalogues[4].talkName);
 
     }
     private IEnumerator GoStation()
     {
+        playdone5 = true;
         cameratest.switches = false; cameratest.caTask = true;//關鏡頭移動
         t.switches = false;//關觸控
         cameraControl.enabled = true;//鏡頭切換
         camera_Tower.enabled = false;
         print("輸出:" + 5);
+        dialongueSystem.StopAllCoroutines();
         dialongueSystem.StartDialogue(dataDalogues[5].conversationContent);//對話資料讀取
         dialongueSystem.NameEnter(dataDalogues[5].talkName);
         station.isTrigger = true;
-        yield return new WaitForSeconds(2F);
-        player.Location(finPin);
-        player.Move(target.transform);
+        yield return new WaitForSeconds(0.5F);
         //print(player.transform.position);
-        playdone5 = true;
 
+    }
+    private void MoveTo()
+    {
+        Transform fin = GameObject.Find(finPin).transform;
+        player.Move(fin);
     }
         #endregion
 }

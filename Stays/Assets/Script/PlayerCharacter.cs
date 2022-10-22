@@ -29,6 +29,7 @@ public class PlayerCharacter : MonoBehaviour
        
         an = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();//¨ú±oAI§P©w
+        speed = agent.speed;
         #endregion
         SetStartPosition();
 

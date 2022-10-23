@@ -66,6 +66,10 @@ public class Cameratest : MonoBehaviour
                 transform.Translate(new Vector3(-Input.touches[0].deltaPosition.x * Time.deltaTime, -Input.touches[0].deltaPosition.y * Time.deltaTime, 0));
             }
         }
+        else if (Input.touchCount == 2)
+        {
+
+        }
     }
     private void Border()//攝影機邊界
     {

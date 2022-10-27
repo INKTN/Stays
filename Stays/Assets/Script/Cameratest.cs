@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 /// <summary>
 /// 攝影機模式切換3V
+/// 20221023修改移動方式LS
 /// </summary>
 
 public class Cameratest : MonoBehaviour
@@ -36,8 +37,8 @@ public class Cameratest : MonoBehaviour
 
     private void Start()
     {
-        target = GameObject.Find("主角").transform;//找到主角並跟隨他
-        transform.localPosition = Vector3.MoveTowards(transform.position, target.position, -dis);
+        //target = GameObject.Find("主角").transform;//找到主角並跟隨他
+        //transform.localPosition = Vector3.MoveTowards(transform.position, target.position, -dis);
         dialongue = GameObject.Find("System").GetComponent<DialongueSystem>();//找到對話框偕同程序
         // cameraPosition = transform.position;
         
@@ -46,13 +47,17 @@ public class Cameratest : MonoBehaviour
     {
         if (!dialongue.display&&!switches)//若是對話框顯示則不觸控
         {
-            LS();
-            Border();
+            //LS();
+            //Border();
+
         }
-        Masking();
-       
+        NotMove();
     }
-   
+    private void LateUpdate()
+    {
+        Masking();
+        
+    }
     #region 方法
     private void LS()//Long Shot
     {
@@ -115,6 +120,12 @@ public class Cameratest : MonoBehaviour
             
         }
     }
-
+    private void NotMove()//攝影機僅跟隨主角
+    {
+        Vector3 disPos = target.position + Vector3.up*dis*2+Vector3.right*dis-target.forward*dis;//相機位置
+        print(disPos);
+        transform.position=Vector3.Lerp(transform.position,disPos,Time.deltaTime*speed);
+        transform.LookAt(target.position);//相機看相目標
+    }
     #endregion
 }

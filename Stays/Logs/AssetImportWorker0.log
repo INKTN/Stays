@@ -1,79 +1,1080 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.30f1 (1fb1bf06830e) revision 2077119'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'en' Physical Memory: 8034 MB
+OS: 'Windows 11  (10.0.22000) 64bit Core' Language: 'zh' Physical Memory: 32100 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
-D:\2020.3.30f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-D:/Unity/Stays/Stays
+C:/Users/lilyh/Documents/GitHub/Stays/Stays
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62096
-Successfully changed project path to: D:/Unity/Stays/Stays
-D:/Unity/Stays/Stays
+56753
+Successfully changed project path to: C:/Users/lilyh/Documents/GitHub/Stays/Stays
+C:/Users/lilyh/Documents/GitHub/Stays/Stays
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 55.21 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 79.18 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.30f1 (1fb1bf06830e)
-[Subsystems] Discovering subsystems at path D:/2020.3.30f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/Unity/Stays/Stays/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/lilyh/Documents/GitHub/Stays/Stays/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1050 (ID=0x1c91)
+    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2520)
     Vendor:   
-    VRAM:     2996 MB
-    Driver:   30.0.15.1165
+    VRAM:     6023 MB
+    Driver:   30.0.15.1278
 Shader 'Custom/AdditiveTintable': fallback shader 'Particles/Additive (Soft)' not found
 Initialize mono
-Mono path[0] = 'D:/2020.3.30f1/Editor/Data/Managed'
-Mono path[1] = 'D:/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'D:/2020.3.30f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56288
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56628
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: D:/2020.3.30f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: D:/2020.3.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.066541 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003976 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 70.75 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 92.20 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.821 seconds
+- Completed reload, in  0.887 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2821ms)
-		BeginReloadAssembly (2086ms)
+	ReloadAssembly (888ms)
+		BeginReloadAssembly (127ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (609ms)
-			LoadAssemblies (2087ms)
+		EndReloadAssembly (660ms)
+			LoadAssemblies (124ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (144ms)
+			SetupTypeCache (174ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (88ms)
-			SetupLoadedEditorAssemblies (262ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (282ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
+				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (71ms)
-				BeforeProcessingInitializeOnLoad (59ms)
-				ProcessInitializeOnLoadAttributes (97ms)
-				ProcessInitializeOnLoadMethodAttributes (26ms)
+				RefreshPlugins (92ms)
+				BeforeProcessingInitializeOnLoad (19ms)
+				ProcessInitializeOnLoadAttributes (125ms)
+				ProcessInitializeOnLoadMethodAttributes (38ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.154851 seconds.
+Registered in 0.007859 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 67.98 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.486 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1487ms)
+		BeginReloadAssembly (188ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (23ms)
+		EndReloadAssembly (1223ms)
+			LoadAssemblies (134ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (353ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (555ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (68ms)
+				BeforeProcessingInitializeOnLoad (102ms)
+				ProcessInitializeOnLoadAttributes (357ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Custom/AdditiveTintable': fallback shader 'Particles/Additive (Soft)' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
+Refreshing native plugins compatible for Editor in 0.88 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2456 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 163.9 MB.
+System memory in use after: 152.7 MB.
+
+Unloading 90 unused Assets to reduce memory usage. Loaded Objects now: 2860.
+Total: 12.489100 ms (FindLiveObjects: 0.327900 ms CreateObjectMapping: 0.101600 ms MarkObjects: 3.765700 ms  DeleteObjects: 8.292500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Script/chat/S1_01_起點.asset
+  artifactKey: Guid(0c70698f58716234b857cf3e4b7bd3d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1_01_起點.asset using Guid(0c70698f58716234b857cf3e4b7bd3d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2642318a186acdb9403a58f47bf6a22') in 0.057066 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 108.433446 seconds.
+  path: Assets/Script/chat/S1_.asset
+  artifactKey: Guid(546efc05969e6f4418d103e5fe0dc056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1_.asset using Guid(546efc05969e6f4418d103e5fe0dc056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07afc721a6a8c73171d8ca7368d8dcb2') in 0.009360 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.753947 seconds.
+  path: Assets/Script/chat/S1_01_01起點.asset
+  artifactKey: Guid(0c70698f58716234b857cf3e4b7bd3d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1_01_01起點.asset using Guid(0c70698f58716234b857cf3e4b7bd3d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b380a64eb3b216f8711bbd786216d136') in 0.011202 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.716247 seconds.
+  path: Assets/Script/chat/S1_04_02.asset
+  artifactKey: Guid(546efc05969e6f4418d103e5fe0dc056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1_04_02.asset using Guid(546efc05969e6f4418d103e5fe0dc056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24f997913836049310554eb3de102451') in 0.010284 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 84.858301 seconds.
+  path: Assets/Script/chat/S1_06_03.asset
+  artifactKey: Guid(bc13c26488e60d24290329f2c54313e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1_06_03.asset using Guid(bc13c26488e60d24290329f2c54313e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2c1cacce3558641de6182143c05664c') in 0.009257 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25.115676 seconds.
+  path: Assets/Script/chat/New Data Dalogue.asset
+  artifactKey: Guid(576ccb71aa3f1644f9df77cddd826467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/New Data Dalogue.asset using Guid(576ccb71aa3f1644f9df77cddd826467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0af45d89233c97179a1b119f8dbbef4c') in 0.012010 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 89.182712 seconds.
+  path: Assets/Script/chat/S1_12_04.asset
+  artifactKey: Guid(576ccb71aa3f1644f9df77cddd826467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1_12_04.asset using Guid(576ccb71aa3f1644f9df77cddd826467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6b6f9bccb80b5e2611a5b534f2f0da5') in 0.010648 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.726835 seconds.
+  path: Assets/Script/chat/S1_01_主線01起點.asset
+  artifactKey: Guid(0c70698f58716234b857cf3e4b7bd3d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1_01_主線01起點.asset using Guid(0c70698f58716234b857cf3e4b7bd3d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ffcb3c564eea37fb20737e3b2d7e820') in 0.010417 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.084473 seconds.
+  path: Assets/Script/chat/S1_04_主線02.asset
+  artifactKey: Guid(546efc05969e6f4418d103e5fe0dc056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1_04_主線02.asset using Guid(546efc05969e6f4418d103e5fe0dc056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e777d14b6d7430702eb67a7c02760fb1') in 0.012424 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.383575 seconds.
+  path: Assets/Script/chat/S1_06_主線03.asset
+  artifactKey: Guid(bc13c26488e60d24290329f2c54313e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1_06_主線03.asset using Guid(bc13c26488e60d24290329f2c54313e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98042f62090ec304e189b53201bbc3d2') in 0.011015 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.948455 seconds.
+  path: Assets/Script/chat/S1_12_主線04.asset
+  artifactKey: Guid(576ccb71aa3f1644f9df77cddd826467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1_12_主線04.asset using Guid(576ccb71aa3f1644f9df77cddd826467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c071e8cf66bdc5ff3b04aa790ebc255a') in 0.010647 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 67.565837 seconds.
+  path: Assets/Script/chat/S1_12_主線04_02.asset
+  artifactKey: Guid(1bd6b49fb0006cc4f9bdc56d2d892033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1_12_主線04_02.asset using Guid(1bd6b49fb0006cc4f9bdc56d2d892033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0e85766ed318196b73ea015cb29ece9') in 0.009991 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.330411 seconds.
+  path: Assets/Script/chat/S1_12_主線04_01.asset
+  artifactKey: Guid(576ccb71aa3f1644f9df77cddd826467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1_12_主線04_01.asset using Guid(576ccb71aa3f1644f9df77cddd826467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '527888020f0f573c32ce259671579e51') in 0.020094 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 81.399075 seconds.
+  path: Assets/Script/chat/S1_12_主線04_03.asset
+  artifactKey: Guid(286e34292c39f3f49a73bb2bcc8c1db1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1_12_主線04_03.asset using Guid(286e34292c39f3f49a73bb2bcc8c1db1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad863617ca75f0fe6a534739c3131cb8') in 0.010287 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 99.162281 seconds.
+  path: Assets/Script/chat/S1_12_主線04_04.asset
+  artifactKey: Guid(6390ae055e9e3a743a4d08df14bec5a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1_12_主線04_04.asset using Guid(6390ae055e9e3a743a4d08df14bec5a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54ca12b8ca8262adf5eaa82540813e01') in 0.010083 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 227.259119 seconds.
+  path: Assets/Script/chat/S1_12_主線04_05.asset
+  artifactKey: Guid(6261672560199d24180d57a5a1777a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1_12_主線04_05.asset using Guid(6261672560199d24180d57a5a1777a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bebf6ff17a2fc86ba9e28e8ffc67e7c') in 0.013390 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 59.618618 seconds.
+  path: Assets/Script/chat/S1_17_主線05.asset
+  artifactKey: Guid(bc00d528d8808c249918ebfd1b943b97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1_17_主線05.asset using Guid(bc00d528d8808c249918ebfd1b943b97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6107fc8be1ecd2d946cc57465fa3dab5') in 0.009582 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 74.982638 seconds.
+  path: Assets/Script/chat/S1_17_主線06_點擊火車站.asset
+  artifactKey: Guid(14465a7b335fed142948f8740c75f244) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1_17_主線06_點擊火車站.asset using Guid(14465a7b335fed142948f8740c75f244) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cba2eea18349392c0ed32bbec9c1f02') in 0.009272 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 437.272333 seconds.
+  path: Assets/Script/chat/S1_17_主線05_分支01.asset
+  artifactKey: Guid(6312b26b3917ff648a232cd8bcf8b195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1_17_主線05_分支01.asset using Guid(6312b26b3917ff648a232cd8bcf8b195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c51b8dcfd5c60e01020276b3d6d9c0bd') in 0.009653 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 38.078279 seconds.
+  path: Assets/Script/chat/S1_17_主線06分支_不點火車站.asset
+  artifactKey: Guid(6312b26b3917ff648a232cd8bcf8b195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1_17_主線06分支_不點火車站.asset using Guid(6312b26b3917ff648a232cd8bcf8b195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c47efc1b0976cad4fca923be9b7c586') in 0.009756 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.504703 seconds.
+  path: Assets/Script/chat/S1_17_主線06分支_不點火車站鐘塔大叫.asset
+  artifactKey: Guid(6312b26b3917ff648a232cd8bcf8b195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1_17_主線06分支_不點火車站鐘塔大叫.asset using Guid(6312b26b3917ff648a232cd8bcf8b195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c031590fc3ad22ca57e65c11b889fba') in 0.016575 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 32.115658 seconds.
+  path: Assets/Script/chat/S1_27_主線07_.asset
+  artifactKey: Guid(5e51289ad655ef043acd089896360ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1_27_主線07_.asset using Guid(5e51289ad655ef043acd089896360ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca34bcc81826072349e633321e747ee8') in 0.010168 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.155880 seconds.
+  path: Assets/Script/chat/S1_27_主線07.asset
+  artifactKey: Guid(5e51289ad655ef043acd089896360ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1_27_主線07.asset using Guid(5e51289ad655ef043acd089896360ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36d50f7c20af03da05e7ac99eb03e59a') in 0.009502 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 53.993245 seconds.
+  path: Assets/Script/chat/S1_17_主線08.asset
+  artifactKey: Guid(ae01496f8a8336049890d502b154cfee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1_17_主線08.asset using Guid(ae01496f8a8336049890d502b154cfee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '877ee358a64f4744dcef692ca5df1096') in 0.009820 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.668214 seconds.
+  path: Assets/Script/chat/S1_38_主線08.asset
+  artifactKey: Guid(ae01496f8a8336049890d502b154cfee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1_38_主線08.asset using Guid(ae01496f8a8336049890d502b154cfee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83b55bc76c38e37f682725b1db0593f2') in 0.009333 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 59.008329 seconds.
+  path: Assets/Script/chat/S1
+  artifactKey: Guid(f7d529d4014ca774fa9e8c93161b1feb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1 using Guid(f7d529d4014ca774fa9e8c93161b1feb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77712043c8a6fa61ad0703036fa2aac7') in 0.009562 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 58.285207 seconds.
+  path: Assets/Script/chat/S1/S1_38_主線08_01.asset
+  artifactKey: Guid(ae01496f8a8336049890d502b154cfee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1/S1_38_主線08_01.asset using Guid(ae01496f8a8336049890d502b154cfee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b54cd052dbb034f7705cb19f43c4ba07') in 0.012589 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.937452 seconds.
+  path: Assets/Script/chat/S1/S1_38_主線08_02.asset
+  artifactKey: Guid(60e32c00758a96e4a8464c8ad8c1e958) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1/S1_38_主線08_02.asset using Guid(60e32c00758a96e4a8464c8ad8c1e958) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37ad29f1df0b1551cbd0cc72a8e9e355') in 0.010432 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 41.896168 seconds.
+  path: Assets/Script/chat/S1/S1_44_主線09.asset
+  artifactKey: Guid(44654a414ca3776419c266cb26ea97bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1/S1_44_主線09.asset using Guid(44654a414ca3776419c266cb26ea97bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '133916943dc5938ef5bcdadf7dbecdae') in 0.009761 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.522987 seconds.
+  path: Assets/Script/chat/S2
+  artifactKey: Guid(696fa746e22700844ba94faad32e5d1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2 using Guid(696fa746e22700844ba94faad32e5d1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a50a21867410ab67f23efe6233dc58a') in 0.010826 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.576126 seconds.
+  path: Assets/Script/chat/S2/New Folder
+  artifactKey: Guid(8688ae302036a8b46a37409b58b64e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/New Folder using Guid(8688ae302036a8b46a37409b58b64e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41098deedd9dae8371aaaf62a60a2366') in 0.010437 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.743638 seconds.
+  path: Assets/Script/chat/S3
+  artifactKey: Guid(56f9c620f5ba8eb479e0dfee1f908032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S3 using Guid(56f9c620f5ba8eb479e0dfee1f908032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb1b31a324d0e87f717e7126934da8ef') in 0.010149 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 47.601174 seconds.
+  path: Assets/Script/chat/S2/S2_09_主線01.asset
+  artifactKey: Guid(d169f405762d2734a87bc376465aafee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_09_主線01.asset using Guid(d169f405762d2734a87bc376465aafee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b82f872fa3da944538323c3190b7bfa1') in 0.009809 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 134.690329 seconds.
+  path: Assets/Script/chat/S1/S1_主線01起點_01.asset
+  artifactKey: Guid(0c70698f58716234b857cf3e4b7bd3d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1/S1_主線01起點_01.asset using Guid(0c70698f58716234b857cf3e4b7bd3d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e35f0492421919e1b933e016f981522e') in 0.011752 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.365577 seconds.
+  path: Assets/Script/chat/S1/S1_主線02_04.asset
+  artifactKey: Guid(546efc05969e6f4418d103e5fe0dc056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1/S1_主線02_04.asset using Guid(546efc05969e6f4418d103e5fe0dc056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7728bfe8b1f1b6a7b79c23d1afd825e9') in 0.010781 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.521572 seconds.
+  path: Assets/Script/chat/S1/S1_主線03_06.asset
+  artifactKey: Guid(bc13c26488e60d24290329f2c54313e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1/S1_主線03_06.asset using Guid(bc13c26488e60d24290329f2c54313e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ad6d9d199de2801f2f395483bb6da68') in 0.010981 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.278903 seconds.
+  path: Assets/Script/chat/S1/S1_主線04_01_12.asset
+  artifactKey: Guid(576ccb71aa3f1644f9df77cddd826467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1/S1_主線04_01_12.asset using Guid(576ccb71aa3f1644f9df77cddd826467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48ff89ccc7b63d2631dfa11293948e01') in 0.017585 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.721205 seconds.
+  path: Assets/Script/chat/S1/S1_主線04_02_12.asset
+  artifactKey: Guid(1bd6b49fb0006cc4f9bdc56d2d892033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1/S1_主線04_02_12.asset using Guid(1bd6b49fb0006cc4f9bdc56d2d892033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e19325495fa6da0129648ccf70913cd6') in 0.011127 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.178510 seconds.
+  path: Assets/Script/chat/S1/S1_主線04_03_12.asset
+  artifactKey: Guid(286e34292c39f3f49a73bb2bcc8c1db1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1/S1_主線04_03_12.asset using Guid(286e34292c39f3f49a73bb2bcc8c1db1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ca6b8ad6e0a40a9979f3e50c4a1b3d9') in 0.009376 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.456554 seconds.
+  path: Assets/Script/chat/S1/S1_主線04_04_12.asset
+  artifactKey: Guid(6390ae055e9e3a743a4d08df14bec5a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1/S1_主線04_04_12.asset using Guid(6390ae055e9e3a743a4d08df14bec5a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f15106aea3d766a630a043f0cd33aeb') in 0.009458 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.402822 seconds.
+  path: Assets/Script/chat/S1/S1_主線04_05_12.asset
+  artifactKey: Guid(6261672560199d24180d57a5a1777a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1/S1_主線04_05_12.asset using Guid(6261672560199d24180d57a5a1777a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d535188f02d07f44c4fbe119fa2ee29') in 0.011337 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.026319 seconds.
+  path: Assets/Script/chat/S1/S1_主線05_17.asset
+  artifactKey: Guid(bc00d528d8808c249918ebfd1b943b97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1/S1_主線05_17.asset using Guid(bc00d528d8808c249918ebfd1b943b97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '227d4db317d1c438e701afb814ccdd03') in 0.009584 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.902296 seconds.
+  path: Assets/Script/chat/S1/S1_主線06_點擊火車站_17.asset
+  artifactKey: Guid(14465a7b335fed142948f8740c75f244) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1/S1_主線06_點擊火車站_17.asset using Guid(14465a7b335fed142948f8740c75f244) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c765c8a0eb8f81e7a6f4a46b5ae315e3') in 0.008009 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.536763 seconds.
+  path: Assets/Script/chat/S1/S1_主線06分支_不點火車站鐘塔大叫_17.asset
+  artifactKey: Guid(6312b26b3917ff648a232cd8bcf8b195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1/S1_主線06分支_不點火車站鐘塔大叫_17.asset using Guid(6312b26b3917ff648a232cd8bcf8b195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '386521baebc83df4b320e8d81f069b47') in 0.013465 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.494211 seconds.
+  path: Assets/Script/chat/S1/S1_主線07_27.asset
+  artifactKey: Guid(5e51289ad655ef043acd089896360ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1/S1_主線07_27.asset using Guid(5e51289ad655ef043acd089896360ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e40db4705cddba8b2f9169ee98b1108') in 0.008483 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.130561 seconds.
+  path: Assets/Script/chat/S1/S1_主線08_01_38.asset
+  artifactKey: Guid(ae01496f8a8336049890d502b154cfee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1/S1_主線08_01_38.asset using Guid(ae01496f8a8336049890d502b154cfee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4f62b997f2ec9a8f4a6aebdc4da0f13') in 0.009919 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.477378 seconds.
+  path: Assets/Script/chat/S1/S1_主線08_02_38.asset
+  artifactKey: Guid(60e32c00758a96e4a8464c8ad8c1e958) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1/S1_主線08_02_38.asset using Guid(60e32c00758a96e4a8464c8ad8c1e958) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '856b7e16fc2ff5abbaa614ad69036d74') in 0.007957 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.138348 seconds.
+  path: Assets/Script/chat/S1/S1_主線09_44.asset
+  artifactKey: Guid(44654a414ca3776419c266cb26ea97bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1/S1_主線09_44.asset using Guid(44654a414ca3776419c266cb26ea97bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af80e754b3244f5b4383954d70f28f6a') in 0.009194 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.201466 seconds.
+  path: Assets/Script/chat/S1/S1_44_主線09.asset
+  artifactKey: Guid(44654a414ca3776419c266cb26ea97bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1/S1_44_主線09.asset using Guid(44654a414ca3776419c266cb26ea97bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecb792411fa8d35f784f8261b5ec8e45') in 0.004364 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.338209 seconds.
+  path: Assets/Script/chat/S1/S1_38_主線08_02.asset
+  artifactKey: Guid(60e32c00758a96e4a8464c8ad8c1e958) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1/S1_38_主線08_02.asset using Guid(60e32c00758a96e4a8464c8ad8c1e958) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '696d4db2d07dd3a6df3518324f43a4e3') in 0.004373 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.828261 seconds.
+  path: Assets/Script/chat/S1/S1_27_主線07.asset
+  artifactKey: Guid(5e51289ad655ef043acd089896360ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1/S1_27_主線07.asset using Guid(5e51289ad655ef043acd089896360ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36106c493a5d487b512ace16ace59345') in 0.015055 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.667254 seconds.
+  path: Assets/Script/chat/S1/S1_17_主線06_點擊火車站.asset
+  artifactKey: Guid(14465a7b335fed142948f8740c75f244) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1/S1_17_主線06_點擊火車站.asset using Guid(14465a7b335fed142948f8740c75f244) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '017e8692c9fe766ac2abb125d1967c4f') in 0.004709 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.351079 seconds.
+  path: Assets/Script/chat/S1/S1_17_主線05.asset
+  artifactKey: Guid(bc00d528d8808c249918ebfd1b943b97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1/S1_17_主線05.asset using Guid(bc00d528d8808c249918ebfd1b943b97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6228969d8be9c6f536bb8fb9d00886a4') in 0.006155 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.337805 seconds.
+  path: Assets/Script/chat/S1/S1_12_主線04_05.asset
+  artifactKey: Guid(6261672560199d24180d57a5a1777a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1/S1_12_主線04_05.asset using Guid(6261672560199d24180d57a5a1777a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05fd5129247cbfa7e7ff3cbbf0ae6caf') in 0.004444 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.353559 seconds.
+  path: Assets/Script/chat/S1/S1_12_主線04_04.asset
+  artifactKey: Guid(6390ae055e9e3a743a4d08df14bec5a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1/S1_12_主線04_04.asset using Guid(6390ae055e9e3a743a4d08df14bec5a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7fe15f49fb7c3be6000ef45129b5540') in 0.004566 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.361082 seconds.
+  path: Assets/Script/chat/S1/S1_12_主線04_03.asset
+  artifactKey: Guid(286e34292c39f3f49a73bb2bcc8c1db1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1/S1_12_主線04_03.asset using Guid(286e34292c39f3f49a73bb2bcc8c1db1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f050fe14cab084bf4a768f53836b857') in 0.009701 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.362770 seconds.
+  path: Assets/Script/chat/S1/S1_12_主線04_02.asset
+  artifactKey: Guid(1bd6b49fb0006cc4f9bdc56d2d892033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1/S1_12_主線04_02.asset using Guid(1bd6b49fb0006cc4f9bdc56d2d892033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b04d741d167ae5566af02e0bc72a9f8b') in 0.006110 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 45.732751 seconds.
+  path: Assets/Script/chat/S2/S2_06_主線02.asset
+  artifactKey: Guid(78ed109b11691a44796ab85932adae4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_06_主線02.asset using Guid(78ed109b11691a44796ab85932adae4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8671dee682ee60df62dec799069d304') in 0.009836 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.728318 seconds.
+  path: Assets/Script/chat/S2/S2_06_主線02_01.asset
+  artifactKey: Guid(78ed109b11691a44796ab85932adae4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_06_主線02_01.asset using Guid(78ed109b11691a44796ab85932adae4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce0d6a5d19d362c99492b2dfdee4fcc3') in 0.009335 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.459611 seconds.
+  path: Assets/Script/chat/S2/S2_06_主線02_02.asset
+  artifactKey: Guid(a872711110396e246a863d57768aa34f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_06_主線02_02.asset using Guid(a872711110396e246a863d57768aa34f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05a3937da6dad02632f01003f8e0419e') in 0.010058 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.902222 seconds.
+  path: Assets/Script/chat/S2/S2_06_主線02_02_.asset
+  artifactKey: Guid(a872711110396e246a863d57768aa34f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_06_主線02_02_.asset using Guid(a872711110396e246a863d57768aa34f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7807e1760056b0292299be40b96f802a') in 0.011872 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.721838 seconds.
+  path: Assets/Script/chat/S2/S2_06_主線02_02_點擊調查山洞鐵欄杆.asset
+  artifactKey: Guid(a872711110396e246a863d57768aa34f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_06_主線02_02_點擊調查山洞鐵欄杆.asset using Guid(a872711110396e246a863d57768aa34f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d60b7f9b24640e95f5df7c7bce0eb5c') in 0.012448 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.506572 seconds.
+  path: Assets/Script/chat/S2/S2_06_主線02_03_.asset
+  artifactKey: Guid(e31b6c50be2b5934e879d6c6803f1fa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_06_主線02_03_.asset using Guid(e31b6c50be2b5934e879d6c6803f1fa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49deea2b378cf80e9ce029cbe17e533f') in 0.010878 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.947374 seconds.
+  path: Assets/Script/chat/S2/S2_06_主線02_03_點擊山洞鐵欄杆使用技能.asset
+  artifactKey: Guid(e31b6c50be2b5934e879d6c6803f1fa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_06_主線02_03_點擊山洞鐵欄杆使用技能.asset using Guid(e31b6c50be2b5934e879d6c6803f1fa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64a5f2f32e8e9118c622de78af4dece0') in 0.011332 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 36.425400 seconds.
+  path: Assets/Script/chat/S2/S2_06_主線02_03_使用技能後.asset
+  artifactKey: Guid(e31b6c50be2b5934e879d6c6803f1fa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_06_主線02_03_使用技能後.asset using Guid(e31b6c50be2b5934e879d6c6803f1fa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '659c05ef71cb84837c8c64194c83c0dc') in 0.013838 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 48.638037 seconds.
+  path: Assets/Script/chat/S2/S1_21_主線03.asset
+  artifactKey: Guid(0ccc2a0e38f717d4e8a709faef12df0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S1_21_主線03.asset using Guid(0ccc2a0e38f717d4e8a709faef12df0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c26f840caa2ba57d0d614f722338fd3') in 0.009797 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.020840 seconds.
+  path: Assets/Script/chat/S2/S2_21_主線03.asset
+  artifactKey: Guid(0ccc2a0e38f717d4e8a709faef12df0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_21_主線03.asset using Guid(0ccc2a0e38f717d4e8a709faef12df0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fdb6d9fac3979eff27bf7ccf1b6382c') in 0.010260 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.932181 seconds.
+  path: Assets/Script/chat/S2/S2_23_主線04.asset
+  artifactKey: Guid(4338691dbd4283841a7ef75aaf45c13b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_23_主線04.asset using Guid(4338691dbd4283841a7ef75aaf45c13b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b83913289db0c642a50b7b63e2cc6cef') in 0.010047 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 175.579256 seconds.
+  path: Assets/Script/chat/S2/S2_25.asset
+  artifactKey: Guid(5b1c3d9a38b82c8458b7bf832eea0392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_25.asset using Guid(5b1c3d9a38b82c8458b7bf832eea0392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c1f352311ab0e8044ce22a39da27b4e') in 0.010543 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.250409 seconds.
+  path: Assets/Script/chat/S2/S2_29.asset
+  artifactKey: Guid(c852ec88c0991ae43bd17cd74759f1e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_29.asset using Guid(c852ec88c0991ae43bd17cd74759f1e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0ed0268e414c44ad3023fecf3f31ab0') in 0.010142 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.947041 seconds.
+  path: Assets/Script/chat/S2/S2_34.asset
+  artifactKey: Guid(180a686e9c9ae974cb0dd74401b9430a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_34.asset using Guid(180a686e9c9ae974cb0dd74401b9430a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac6923d6464ad546e450870c9b698986') in 0.011470 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 28.114031 seconds.
+  path: Assets/Script/chat/S2/S2_25_主線05_01調查房子.asset
+  artifactKey: Guid(5b1c3d9a38b82c8458b7bf832eea0392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_25_主線05_01調查房子.asset using Guid(5b1c3d9a38b82c8458b7bf832eea0392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '890d14a298e2a295f856360ef2016f35') in 0.009144 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.467810 seconds.
+  path: Assets/Script/chat/S2/S2_29_主線05_調查房子.asset
+  artifactKey: Guid(c852ec88c0991ae43bd17cd74759f1e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_29_主線05_調查房子.asset using Guid(c852ec88c0991ae43bd17cd74759f1e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f65fd19e118842c950956919f10104b') in 0.009361 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.524258 seconds.
+  path: Assets/Script/chat/S2/S2_25_主線05_調查房子.asset
+  artifactKey: Guid(5b1c3d9a38b82c8458b7bf832eea0392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_25_主線05_調查房子.asset using Guid(5b1c3d9a38b82c8458b7bf832eea0392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e00e3356097a715048a626d3b2ade1df') in 0.009072 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.337472 seconds.
+  path: Assets/Script/chat/S2/S2_34_主線05_調查房子.asset
+  artifactKey: Guid(180a686e9c9ae974cb0dd74401b9430a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_34_主線05_調查房子.asset using Guid(180a686e9c9ae974cb0dd74401b9430a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a59f192ad4278ceaaecefa4c1f155596') in 0.009438 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 80.096240 seconds.
+  path: Assets/Script/chat/S2/S2_主線06_調查完所有房子時.asset
+  artifactKey: Guid(7a6eda9a4205f3341a453bd1170989f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_主線06_調查完所有房子時.asset using Guid(7a6eda9a4205f3341a453bd1170989f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '094f6984687bd6d5c45d500f732f84d7') in 0.010194 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 73.577109 seconds.
+  path: Assets/Script/chat/S2/S2_35_主線05_調查房子.asset
+  artifactKey: Guid(180a686e9c9ae974cb0dd74401b9430a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_35_主線05_調查房子.asset using Guid(180a686e9c9ae974cb0dd74401b9430a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7b9934d98e0a48c4533ea80229657e9') in 0.009624 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.435358 seconds.
+  path: Assets/Script/chat/S2/New Data Dalogue.asset
+  artifactKey: Guid(c1bd82ce55ef856438b26d4cd73bd731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/New Data Dalogue.asset using Guid(c1bd82ce55ef856438b26d4cd73bd731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '311dd9819952f4af0c5c27c9774fd49e') in 0.007830 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.408053 seconds.
+  path: Assets/Script/chat/S2/S2_主線07_.asset
+  artifactKey: Guid(c1bd82ce55ef856438b26d4cd73bd731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_主線07_.asset using Guid(c1bd82ce55ef856438b26d4cd73bd731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca6f31dd1134da1cb757890197831915') in 0.017897 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.430223 seconds.
+  path: Assets/Script/chat/S2/S2_主線07.asset
+  artifactKey: Guid(c1bd82ce55ef856438b26d4cd73bd731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_主線07.asset using Guid(c1bd82ce55ef856438b26d4cd73bd731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66858ef78e9890f4a04c8d27062f6de2') in 0.012681 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 38.363658 seconds.
+  path: Assets/Script/chat/S2/S2_主線07 1.asset
+  artifactKey: Guid(dee0de28390238a43b81ca716ba10222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_主線07 1.asset using Guid(dee0de28390238a43b81ca716ba10222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd198750aa87240d3f8aa2f6b8c6d7858') in 0.009799 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.269402 seconds.
+  path: Assets/Script/chat/S2/S2_34_主線07.asset
+  artifactKey: Guid(c1bd82ce55ef856438b26d4cd73bd731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_34_主線07.asset using Guid(c1bd82ce55ef856438b26d4cd73bd731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d9323d580615a12f34d89efa4219235') in 0.010308 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.272997 seconds.
+  path: Assets/Script/chat/S2/S2_34_主線07_02.asset
+  artifactKey: Guid(dee0de28390238a43b81ca716ba10222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_34_主線07_02.asset using Guid(dee0de28390238a43b81ca716ba10222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7898eea6f2fa7cd33b4cf49b6388e95b') in 0.010018 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.507440 seconds.
+  path: Assets/Script/chat/S2/S2_34_主線07_01.asset
+  artifactKey: Guid(c1bd82ce55ef856438b26d4cd73bd731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_34_主線07_01.asset using Guid(c1bd82ce55ef856438b26d4cd73bd731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a02b182f34f6856491d41c22a8422f4') in 0.010914 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.833539 seconds.
+  path: Assets/Script/chat/S2/S2_34_主線07_02_調查藤蔓.asset
+  artifactKey: Guid(dee0de28390238a43b81ca716ba10222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_34_主線07_02_調查藤蔓.asset using Guid(dee0de28390238a43b81ca716ba10222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b73bec21fe5d44cdb442b513ad53c59a') in 0.010357 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.162296 seconds.
+  path: Assets/Script/chat/S2/S2_34_主線07_02_點擊調查藤蔓.asset
+  artifactKey: Guid(dee0de28390238a43b81ca716ba10222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_34_主線07_02_點擊調查藤蔓.asset using Guid(dee0de28390238a43b81ca716ba10222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f40400fda0bbdd0cc07aac842617ec60') in 0.009767 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 77.402479 seconds.
+  path: Assets/Script/chat/S2/S2_20_主線07_03_找水桶.asset
+  artifactKey: Guid(c66d8e77f7cfa6b4bb7e51a70e505de3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_20_主線07_03_找水桶.asset using Guid(c66d8e77f7cfa6b4bb7e51a70e505de3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6215910250d40a14d3bf1cf30145ab3') in 0.009605 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 47.936280 seconds.
+  path: Assets/Script/chat/S2/S2_34_主線07_04.asset
+  artifactKey: Guid(77eaea76bc4dee24cb26b2cac9b5ab83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_34_主線07_04.asset using Guid(77eaea76bc4dee24cb26b2cac9b5ab83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '396cd805fd0110658bb77199ed1a9418') in 0.009168 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.055346 seconds.
+  path: Assets/Script/chat/S2/S2_34_主線07_04_對藤蔓使用技能.asset
+  artifactKey: Guid(77eaea76bc4dee24cb26b2cac9b5ab83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_34_主線07_04_對藤蔓使用技能.asset using Guid(77eaea76bc4dee24cb26b2cac9b5ab83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc963d4547809936f3a3dc0fc54945b8') in 0.009573 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 29.251381 seconds.
+  path: Assets/Script/chat/S1/S1_17_主線06分支_不去火車站鐘塔大叫.asset
+  artifactKey: Guid(6312b26b3917ff648a232cd8bcf8b195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1/S1_17_主線06分支_不去火車站鐘塔大叫.asset using Guid(6312b26b3917ff648a232cd8bcf8b195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3821cc58f55c94f61141da8b5d4ae72b') in 0.010299 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 57.696075 seconds.
+  path: Assets/Script/chat/S2/S2_34_主線07_分支_沒調查完屋子就想加速藤蔓.asset
+  artifactKey: Guid(2d4738fb04425c3479fc3d173f238b09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_34_主線07_分支_沒調查完屋子就想加速藤蔓.asset using Guid(2d4738fb04425c3479fc3d173f238b09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'add191f9209dedb6eb320344fce71225') in 0.009888 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 76.993312 seconds.
+  path: Assets/Script/chat/S2/S2_39_主線08.asset
+  artifactKey: Guid(bbc318ff2baa93a419092bed72c22fd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_39_主線08.asset using Guid(bbc318ff2baa93a419092bed72c22fd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '103c3c60a09ca10cf036c84804ef3429') in 0.010237 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.874068 seconds.
+  path: Assets/Script/chat/S2/S2_39_主線08_點擊藤蔓攀爬後.asset
+  artifactKey: Guid(bbc318ff2baa93a419092bed72c22fd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_39_主線08_點擊藤蔓攀爬後.asset using Guid(bbc318ff2baa93a419092bed72c22fd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56d44bd1e5d1798bcbb0fdd0b071833d') in 0.010850 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 28.202971 seconds.
+  path: Assets/Script/chat/S2/S2_主線09_和巨石對話.asset
+  artifactKey: Guid(30df77e90b0ccd042965a6be95a2bbb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_主線09_和巨石對話.asset using Guid(30df77e90b0ccd042965a6be95a2bbb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e0f51366ea7c592f33aeb7deef76026') in 0.010892 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 30.654111 seconds.
+  path: Assets/Script/chat/S2/S2_36_37_38_43_48_主線09_和巨石對話.asset
+  artifactKey: Guid(30df77e90b0ccd042965a6be95a2bbb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_36_37_38_43_48_主線09_和巨石對話.asset using Guid(30df77e90b0ccd042965a6be95a2bbb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1de045716dcc62dd39f4aa911de5f78') in 0.009774 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.454811 seconds.
+  path: Assets/Script/chat/S2/S2_36_37_38_43_48_主線09_和巨石對話_僅一次.asset
+  artifactKey: Guid(30df77e90b0ccd042965a6be95a2bbb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_36_37_38_43_48_主線09_和巨石對話_僅一次.asset using Guid(30df77e90b0ccd042965a6be95a2bbb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50024c6b941f1dcdcd157a65e19ef7b4') in 0.009776 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 241.380358 seconds.
+  path: Assets/Script/chat/S2/S2_36_37_43_48_主線09_和巨石對話_僅一次.asset
+  artifactKey: Guid(30df77e90b0ccd042965a6be95a2bbb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_36_37_43_48_主線09_和巨石對話_僅一次.asset using Guid(30df77e90b0ccd042965a6be95a2bbb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5a7fc9a84991f9e5989431f3877bf84') in 0.013803 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 63.618013 seconds.
+  path: Assets/Script/chat/S2/S2_主線09_02.asset
+  artifactKey: Guid(dbcb85d32584f0845903ae7d32a640a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_主線09_02.asset using Guid(dbcb85d32584f0845903ae7d32a640a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fe58004e184ef4b2cec8415f55fd022') in 0.009920 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.155886 seconds.
+  path: Assets/Script/chat/S2/S2_36_37_43_48_主線09_01和巨石對話_僅一次.asset
+  artifactKey: Guid(30df77e90b0ccd042965a6be95a2bbb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_36_37_43_48_主線09_01和巨石對話_僅一次.asset using Guid(30df77e90b0ccd042965a6be95a2bbb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74ebec93f5b79264e78cc86d81d4a214') in 0.011528 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.788960 seconds.
+  path: Assets/Script/chat/S2/S2_36_37_43_48_主線09_02.asset
+  artifactKey: Guid(dbcb85d32584f0845903ae7d32a640a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_36_37_43_48_主線09_02.asset using Guid(dbcb85d32584f0845903ae7d32a640a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1e77d85dd86e86b892b9ca48cc99342') in 0.010163 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.013397 seconds.
+  path: Assets/Script/chat/S2/S2_36_37_43_48_主線09_01_僅一次_和巨石對話.asset
+  artifactKey: Guid(30df77e90b0ccd042965a6be95a2bbb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_36_37_43_48_主線09_01_僅一次_和巨石對話.asset using Guid(30df77e90b0ccd042965a6be95a2bbb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '440100a5364850ff108375376633d7ee') in 0.011217 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.253360 seconds.
+  path: Assets/Script/chat/S2/S2_36_37_43_48_主線09_02_獲得技能後.asset
+  artifactKey: Guid(dbcb85d32584f0845903ae7d32a640a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_36_37_43_48_主線09_02_獲得技能後.asset using Guid(dbcb85d32584f0845903ae7d32a640a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1490028d24bf75af7edf57d077ca2397') in 0.010171 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 58.698740 seconds.
+  path: Assets/Script/chat/S2/S2_49_主線10.asset
+  artifactKey: Guid(cc27bed4b87ec9f48ad6f8af7f6e4e0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_49_主線10.asset using Guid(cc27bed4b87ec9f48ad6f8af7f6e4e0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '697fb8be147e6f97b6f280747637a674') in 0.007951 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.852020 seconds.
+  path: Assets/Script/chat/S2/S2_49_主線10_終點.asset
+  artifactKey: Guid(cc27bed4b87ec9f48ad6f8af7f6e4e0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_49_主線10_終點.asset using Guid(cc27bed4b87ec9f48ad6f8af7f6e4e0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6004464d57f820625dc2b23984d81b6d') in 0.010801 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.331809 seconds.
+  path: Assets/Script/chat/S1/S1_44_主線09_終點.asset
+  artifactKey: Guid(44654a414ca3776419c266cb26ea97bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1/S1_44_主線09_終點.asset using Guid(44654a414ca3776419c266cb26ea97bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8e29b5ede3275e430d2b3fa549aa9ae') in 0.010359 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 44.002819 seconds.
+  path: Assets/Script/chat/S3/S3_.asset
+  artifactKey: Guid(abb3d92461f5c2b46a2c466560b6fac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S3/S3_.asset using Guid(abb3d92461f5c2b46a2c466560b6fac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8ada44d188754dbab50dad857b02706') in 0.016516 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.929397 seconds.
+  path: Assets/Script/chat/S3/S3_02_主線01.asset
+  artifactKey: Guid(abb3d92461f5c2b46a2c466560b6fac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S3/S3_02_主線01.asset using Guid(abb3d92461f5c2b46a2c466560b6fac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed5289c73c50f43d924be1575aa6d5a9') in 0.010367 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.684964 seconds.
+  path: Assets/Script/chat/S3/S3_02_主線01_起點.asset
+  artifactKey: Guid(abb3d92461f5c2b46a2c466560b6fac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S3/S3_02_主線01_起點.asset using Guid(abb3d92461f5c2b46a2c466560b6fac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fc7c5f14966abeed9ac800ab329405b') in 0.010086 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 34.873019 seconds.
+  path: Assets/Script/chat/S3/S3_17_.asset
+  artifactKey: Guid(5c33b056b7c1ee6489035cda3b840396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S3/S3_17_.asset using Guid(5c33b056b7c1ee6489035cda3b840396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9e861da28cb903f408134d018a6cf97') in 0.010581 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.855083 seconds.
+  path: Assets/Script/chat/S3/S3_17_主線02.asset
+  artifactKey: Guid(5c33b056b7c1ee6489035cda3b840396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S3/S3_17_主線02.asset using Guid(5c33b056b7c1ee6489035cda3b840396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '727b520b251b0887108bb615140bc1e0') in 0.010069 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.928183 seconds.
+  path: Assets/Script/chat/S3/S3_17_主線02_調查橋.asset
+  artifactKey: Guid(5c33b056b7c1ee6489035cda3b840396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S3/S3_17_主線02_調查橋.asset using Guid(5c33b056b7c1ee6489035cda3b840396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01e2fa45823f2059563312dbf1dd5b97') in 0.010020 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.103771 seconds.
+  path: Assets/Script/chat/S3/S3_17_主線02_02使用技能.asset
+  artifactKey: Guid(976dedd827d227248b8c3f89b746677c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S3/S3_17_主線02_02使用技能.asset using Guid(976dedd827d227248b8c3f89b746677c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fddc587978fdd2f1fe04e1dcf803151c') in 0.015008 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.358894 seconds.
+  path: Assets/Script/chat/S3/S3_17_主線02_01調查橋.asset
+  artifactKey: Guid(5c33b056b7c1ee6489035cda3b840396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S3/S3_17_主線02_01調查橋.asset using Guid(5c33b056b7c1ee6489035cda3b840396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e6bf8d0227feb0deb10c7a6539e7c5f') in 0.009254 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.446599 seconds.
+  path: Assets/Script/chat/S3/S3_17_主線02_02使用技能.asset
+  artifactKey: Guid(976dedd827d227248b8c3f89b746677c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S3/S3_17_主線02_02使用技能.asset using Guid(976dedd827d227248b8c3f89b746677c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cecc9b7fc779afe7861dc43ddd16f91b') in 0.004715 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6358.758924 seconds.
+  path: Assets/Script/chat/S3/S3_27_主線03_01小孩搭話.asset
+  artifactKey: Guid(79b5be8463aca3e439094af241f5544b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S3/S3_27_主線03_01小孩搭話.asset using Guid(79b5be8463aca3e439094af241f5544b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e9297e7fb55e35be7e95787413939ce') in 0.006630 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 121.775079 seconds.
+  path: Assets/Script/chat/S2/S2_06_主線02_01.asset
+  artifactKey: Guid(78ed109b11691a44796ab85932adae4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_06_主線02_01.asset using Guid(78ed109b11691a44796ab85932adae4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3c3a7e80915c80b7ebbda66f416dac4') in 0.008237 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/Script/chat/S2/S2_36_37_43_48_主線09_02_獲得技能後.asset
+  artifactKey: Guid(dbcb85d32584f0845903ae7d32a640a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_36_37_43_48_主線09_02_獲得技能後.asset using Guid(dbcb85d32584f0845903ae7d32a640a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4760e6e12caf2627cebef9d53eafde8c') in 0.009605 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/Script/chat/S2/S2_09_主線01.asset
+  artifactKey: Guid(d169f405762d2734a87bc376465aafee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_09_主線01.asset using Guid(d169f405762d2734a87bc376465aafee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3da7e2ada937b6ed48fc5a3816983ed3') in 0.009430 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Script/chat/S2/S2_06_主線02_03_使用技能後.asset
+  artifactKey: Guid(e31b6c50be2b5934e879d6c6803f1fa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_06_主線02_03_使用技能後.asset using Guid(e31b6c50be2b5934e879d6c6803f1fa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22f974082016f6a1aaf3cb93937dd1a7') in 0.009989 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/Script/chat/S2/S2_34_主線07_04_對藤蔓使用技能.asset
+  artifactKey: Guid(77eaea76bc4dee24cb26b2cac9b5ab83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_34_主線07_04_對藤蔓使用技能.asset using Guid(77eaea76bc4dee24cb26b2cac9b5ab83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b38c4ce1d41bf71601fb827391498941') in 0.009622 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/Script/chat/S2/S2_39_主線08_點擊藤蔓攀爬後.asset
+  artifactKey: Guid(bbc318ff2baa93a419092bed72c22fd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_39_主線08_點擊藤蔓攀爬後.asset using Guid(bbc318ff2baa93a419092bed72c22fd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '924b52234e79ff46af86ac7fd400b959') in 0.009024 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/Script/chat/S2/S2_主線06_調查完所有房子時.asset
+  artifactKey: Guid(7a6eda9a4205f3341a453bd1170989f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_主線06_調查完所有房子時.asset using Guid(7a6eda9a4205f3341a453bd1170989f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '065f6dacca2e0c988904d5479f00791c') in 0.009162 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Script/chat/S3/S3_02_主線01_起點.asset
+  artifactKey: Guid(abb3d92461f5c2b46a2c466560b6fac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S3/S3_02_主線01_起點.asset using Guid(abb3d92461f5c2b46a2c466560b6fac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cec018fd54eef14daed245b2ebba10b') in 0.008838 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/Script/chat/S2/S2_25_主線05_調查房子.asset
+  artifactKey: Guid(5b1c3d9a38b82c8458b7bf832eea0392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_25_主線05_調查房子.asset using Guid(5b1c3d9a38b82c8458b7bf832eea0392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fd32033a4b74ea24e6733e56dfab8f4') in 0.013895 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/Script/chat/S2/S2_29_主線05_調查房子.asset
+  artifactKey: Guid(c852ec88c0991ae43bd17cd74759f1e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_29_主線05_調查房子.asset using Guid(c852ec88c0991ae43bd17cd74759f1e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6f40a07acbaab92861ae841bf7ab583') in 0.010384 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Script/chat/S2/S2_20_主線07_03_找水桶.asset
+  artifactKey: Guid(c66d8e77f7cfa6b4bb7e51a70e505de3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_20_主線07_03_找水桶.asset using Guid(c66d8e77f7cfa6b4bb7e51a70e505de3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea4a27f673a825d94245ed816bff6f91') in 0.010577 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Script/chat/S2/S2_21_主線03.asset
+  artifactKey: Guid(0ccc2a0e38f717d4e8a709faef12df0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_21_主線03.asset using Guid(0ccc2a0e38f717d4e8a709faef12df0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f13559d3fab25ec9f3cc541564a012d9') in 0.010080 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Script/chat/S2/S2_34_主線07_分支_沒調查完屋子就想加速藤蔓.asset
+  artifactKey: Guid(2d4738fb04425c3479fc3d173f238b09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_34_主線07_分支_沒調查完屋子就想加速藤蔓.asset using Guid(2d4738fb04425c3479fc3d173f238b09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b2490faf26b24cccb2d2e6cd2c5166f') in 0.014663 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000438 seconds.
+  path: Assets/Script/chat/S2/S2_34_主線07_02_點擊調查藤蔓.asset
+  artifactKey: Guid(dee0de28390238a43b81ca716ba10222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_34_主線07_02_點擊調查藤蔓.asset using Guid(dee0de28390238a43b81ca716ba10222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0aa03683ab3f8b00963b0ec50885cb4') in 0.014027 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/Script/chat/S2/S2_49_主線10_終點.asset
+  artifactKey: Guid(cc27bed4b87ec9f48ad6f8af7f6e4e0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_49_主線10_終點.asset using Guid(cc27bed4b87ec9f48ad6f8af7f6e4e0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ed00a21d622aedd7a2d3c86bda15b32') in 0.009917 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/Script/chat/S2/S2_23_主線04.asset
+  artifactKey: Guid(4338691dbd4283841a7ef75aaf45c13b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_23_主線04.asset using Guid(4338691dbd4283841a7ef75aaf45c13b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11d2bb043ef6926b73b1c52324b31ad2') in 0.009662 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/Script/chat/S2/S2_06_主線02_02_點擊調查山洞鐵欄杆.asset
+  artifactKey: Guid(a872711110396e246a863d57768aa34f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_06_主線02_02_點擊調查山洞鐵欄杆.asset using Guid(a872711110396e246a863d57768aa34f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26ba3acf494b904dc1acec196969e3b3') in 0.010175 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.091942 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.763 seconds
+Domain Reload Profiling:
+	ReloadAssembly (763ms)
+		BeginReloadAssembly (95ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (624ms)
+			LoadAssemblies (75ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (186ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (249ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (58ms)
+				ProcessInitializeOnLoadAttributes (175ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Shader 'Custom/AdditiveTintable': fallback shader 'Particles/Additive (Soft)' not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2360 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.0 MB.
+System memory in use after: 139.9 MB.
+
+Unloading 83 unused Assets to reduce memory usage. Loaded Objects now: 2862.
+Total: 8.306200 ms (FindLiveObjects: 0.222400 ms CreateObjectMapping: 0.068000 ms MarkObjects: 2.381900 ms  DeleteObjects: 5.633200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 864.468154 seconds.
+  path: Assets/Script/chat/S3/S3_主線03_02點擊小孩使用技能_可能要靠近到小孩旁邊.asset
+  artifactKey: Guid(ee21683a5544d5444a54543e0817c7e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S3/S3_主線03_02點擊小孩使用技能_可能要靠近到小孩旁邊.asset using Guid(ee21683a5544d5444a54543e0817c7e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6cdc72f43767fb5c721a3ec7b912f19') in 0.026985 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 51.015852 seconds.
+  path: Assets/Script/chat/S3/S3_主線03_02點擊小孩使用技能_28或29.asset
+  artifactKey: Guid(ee21683a5544d5444a54543e0817c7e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S3/S3_主線03_02點擊小孩使用技能_28或29.asset using Guid(ee21683a5544d5444a54543e0817c7e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '797d6a6dda6fd5901089d2501b0c583b') in 0.005769 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 34.293994 seconds.
+  path: Assets/Script/chat/S3/S3_主線03_02點擊小孩使用技能_28或29或33.asset
+  artifactKey: Guid(ee21683a5544d5444a54543e0817c7e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S3/S3_主線03_02點擊小孩使用技能_28或29或33.asset using Guid(ee21683a5544d5444a54543e0817c7e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fa740fa00755d3809e944124fff8c39') in 0.005769 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.873868 seconds.
+  path: Assets/Script/chat/S3/S3_28或29或33_主線03_02點擊小孩使用技能.asset
+  artifactKey: Guid(ee21683a5544d5444a54543e0817c7e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S3/S3_28或29或33_主線03_02點擊小孩使用技能.asset using Guid(ee21683a5544d5444a54543e0817c7e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd82d45a99199e2c9cf76b0c96d541c1') in 0.006171 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.965944 seconds.
+  path: Assets/Script/chat/S2/S2_36cji437_43_48_主線09_01_僅一次_和巨石對話.asset
+  artifactKey: Guid(30df77e90b0ccd042965a6be95a2bbb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_36cji437_43_48_主線09_01_僅一次_和巨石對話.asset using Guid(30df77e90b0ccd042965a6be95a2bbb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2a6dffb2b6e5f2d151d3c94483c8b5d') in 0.006199 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.401257 seconds.
+  path: Assets/Script/chat/S2/S2_36或37或43或48_主線09_01_僅一次_和巨石對話.asset
+  artifactKey: Guid(30df77e90b0ccd042965a6be95a2bbb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_36或37或43或48_主線09_01_僅一次_和巨石對話.asset using Guid(30df77e90b0ccd042965a6be95a2bbb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16ea4f4a5c712d5c3821175599b4afb8') in 0.006247 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.952434 seconds.
+  path: Assets/Script/chat/S2/S2_36或37或43或48_主線09_02_獲得技能後.asset
+  artifactKey: Guid(dbcb85d32584f0845903ae7d32a640a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_36或37或43或48_主線09_02_獲得技能後.asset using Guid(dbcb85d32584f0845903ae7d32a640a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3591cbe374bef223999e44717cf1c1b2') in 0.005971 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.717529 seconds.
+  path: Assets/Script/chat/S2/S2_36或37或43或48_主線09_02_接續01獲得技能後.asset
+  artifactKey: Guid(dbcb85d32584f0845903ae7d32a640a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_36或37或43或48_主線09_02_接續01獲得技能後.asset using Guid(dbcb85d32584f0845903ae7d32a640a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e394209dc0019d62ca1b56825df1427') in 0.007029 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 71.711713 seconds.
+  path: Assets/Script/chat/S3/S3_28或29或33_主線03_03對大樹使用技能.asset
+  artifactKey: Guid(fafcfdcd54e664a478a2f46fd5535d72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S3/S3_28或29或33_主線03_03對大樹使用技能.asset using Guid(fafcfdcd54e664a478a2f46fd5535d72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd69d64a9b28ed74d4c27fbbbfda0d342') in 0.006173 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.969705 seconds.
+  path: Assets/Script/chat/S3/S3_28或29或33_主線03_02點擊小孩使用技能後.asset
+  artifactKey: Guid(ee21683a5544d5444a54543e0817c7e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S3/S3_28或29或33_主線03_02點擊小孩使用技能後.asset using Guid(ee21683a5544d5444a54543e0817c7e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1d45c1bec350ef91be9eb22b5299187') in 0.005942 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.638201 seconds.
+  path: Assets/Script/chat/S3/S3_28或29或33_主線03_03對大樹使用技能後.asset
+  artifactKey: Guid(fafcfdcd54e664a478a2f46fd5535d72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S3/S3_28或29或33_主線03_03對大樹使用技能後.asset using Guid(fafcfdcd54e664a478a2f46fd5535d72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed300d6097039993d0d9e5aedf37be23') in 0.008476 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 82.964570 seconds.
+  path: Assets/Script/chat/S3/S3_43_主線04_終點.asset
+  artifactKey: Guid(e5be20f3deb317842b011417b9a80663) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S3/S3_43_主線04_終點.asset using Guid(e5be20f3deb317842b011417b9a80663) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '949c5c45f72d3579adbfa7b0313c00af') in 0.006133 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.771529 seconds.
+  path: Assets/Script/chat/S1/S1_01_主線01_起點.asset
+  artifactKey: Guid(0c70698f58716234b857cf3e4b7bd3d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1/S1_01_主線01_起點.asset using Guid(0c70698f58716234b857cf3e4b7bd3d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e5f7b9fd008785aa99fea92421fe699') in 0.006048 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.359782 seconds.
+  path: Assets/Script/chat/S1/S1_17_主線06_分支_不去火車站鐘塔大叫.asset
+  artifactKey: Guid(6312b26b3917ff648a232cd8bcf8b195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S1/S1_17_主線06_分支_不去火車站鐘塔大叫.asset using Guid(6312b26b3917ff648a232cd8bcf8b195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dc81228ae54846dc3b9b67cceeb86e1') in 0.005708 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.047582 seconds.
+  path: Assets/Script/chat/S2/S2_34_主線07分支_沒調查完屋子就想加速藤蔓.asset
+  artifactKey: Guid(2d4738fb04425c3479fc3d173f238b09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chat/S2/S2_34_主線07分支_沒調查完屋子就想加速藤蔓.asset using Guid(2d4738fb04425c3479fc3d173f238b09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bc186eb09e3f9e77d95ddbd252e9cc5') in 0.006217 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

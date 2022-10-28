@@ -62,6 +62,7 @@ public class PlayerCharacter : MonoBehaviour
     }//開始時矯正主角位置
     public void Move(Transform selection)
     {
+        agent.speed = speed;
         SetStartPosition(); //每次觸控都校正一次
         transform.LookAt(selection.position + startPos);//看向目標
         an.SetBool("walk", true);

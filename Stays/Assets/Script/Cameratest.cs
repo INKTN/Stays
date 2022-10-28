@@ -123,7 +123,7 @@ public class Cameratest : MonoBehaviour
     private void NotMove()//攝影機僅跟隨主角
     {
         Vector3 disPos = target.position + Vector3.up*dis*2+Vector3.right*dis-target.forward*dis;//相機位置
-        print(disPos);
+        //print(disPos);位置測試
         transform.position=Vector3.Lerp(transform.position,disPos,Time.deltaTime*speed);
         transform.LookAt(target.position);//相機看相目標
     }

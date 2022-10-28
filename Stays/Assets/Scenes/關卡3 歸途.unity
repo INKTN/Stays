@@ -5207,7 +5207,7 @@ MonoBehaviour:
   y_borderMin: 40
   z_borderMax: 50
   z_borderMin: -24
-  dis: 0
+  dis: 25
   speed: 10
   caTask: 1
   switches: 0
@@ -8679,7 +8679,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 428e87d475580ca458360e8c4956c12b, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 428e87d475580ca458360e8c4956c12b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8755,9 +8755,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dataDalogues:
-  - {fileID: 11400000, guid: 4e63cafd80c481546a0d001ad117bc23, type: 2}
-  - {fileID: 11400000, guid: 53c20a4ab7190ba4087dfdc37aba51ec, type: 2}
-  - {fileID: 11400000, guid: 880720d3aad578643b57806b3ec687af, type: 2}
+  - {fileID: 11400000, guid: 79b5be8463aca3e439094af241f5544b, type: 2}
+  - {fileID: 11400000, guid: 79b5be8463aca3e439094af241f5544b, type: 2}
+  - {fileID: 11400000, guid: ee21683a5544d5444a54543e0817c7e5, type: 2}
   dalogues1Fin: 0
   daloguesTaskFin: 0
   dialongueSystem: {fileID: 903941004}
@@ -10775,7 +10775,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1861110485
 GameObject:

@@ -1,0 +1,315 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.30f1 (1fb1bf06830e) revision 2077119'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'en' Physical Memory: 8034 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+D:\2020.3.30f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+D:/Unity/Stays/Stays
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+58056
+Successfully changed project path to: D:/Unity/Stays/Stays
+D:/Unity/Stays/Stays
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 51.72 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.30f1 (1fb1bf06830e)
+[Subsystems] Discovering subsystems at path D:/2020.3.30f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Unity/Stays/Stays/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1050 (ID=0x1c91)
+    Vendor:   
+    VRAM:     2996 MB
+    Driver:   30.0.15.1165
+Shader 'Custom/AdditiveTintable': fallback shader 'Particles/Additive (Soft)' not found
+Initialize mono
+Mono path[0] = 'D:/2020.3.30f1/Editor/Data/Managed'
+Mono path[1] = 'D:/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/2020.3.30f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56680
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/2020.3.30f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/2020.3.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001314 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 56.62 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.544 seconds
+Domain Reload Profiling:
+	ReloadAssembly (545ms)
+		BeginReloadAssembly (56ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (431ms)
+			LoadAssemblies (56ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (129ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (176ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (57ms)
+				BeforeProcessingInitializeOnLoad (15ms)
+				ProcessInitializeOnLoadAttributes (74ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003234 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 64.15 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.378 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1379ms)
+		BeginReloadAssembly (140ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (1190ms)
+			LoadAssemblies (96ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (274ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (650ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (64ms)
+				BeforeProcessingInitializeOnLoad (68ms)
+				ProcessInitializeOnLoadAttributes (300ms)
+				ProcessInitializeOnLoadMethodAttributes (205ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Custom/AdditiveTintable': fallback shader 'Particles/Additive (Soft)' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.28 seconds
+Refreshing native plugins compatible for Editor in 0.58 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2456 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 163.6 MB.
+System memory in use after: 152.4 MB.
+
+Unloading 90 unused Assets to reduce memory usage. Loaded Objects now: 2860.
+Total: 10.756500 ms (FindLiveObjects: 0.201500 ms CreateObjectMapping: 0.093600 ms MarkObjects: 2.822600 ms  DeleteObjects: 7.638200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Conversation content/S1
+  artifactKey: Guid(f7d529d4014ca774fa9e8c93161b1feb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conversation content/S1 using Guid(f7d529d4014ca774fa9e8c93161b1feb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc8af52d0d7bc5278764cc5363a6864e') in 0.004955 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 140.361080 seconds.
+  path: Assets/Conversation content/S1/S1_12_主線04_01.asset
+  artifactKey: Guid(576ccb71aa3f1644f9df77cddd826467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conversation content/S1/S1_12_主線04_01.asset using Guid(576ccb71aa3f1644f9df77cddd826467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c38e8eedf065b403d536c90c05a79285') in 0.330759 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 28.356844 seconds.
+  path: Assets/Conversation content/S1/S1_17_主線05.asset
+  artifactKey: Guid(bc00d528d8808c249918ebfd1b943b97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conversation content/S1/S1_17_主線05.asset using Guid(bc00d528d8808c249918ebfd1b943b97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f3be8c7aa018f21b76c7df79b2f9cd9') in 0.001989 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.255937 seconds.
+  path: Assets/Conversation content/S1/S1_12_主線04_05.asset
+  artifactKey: Guid(6261672560199d24180d57a5a1777a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conversation content/S1/S1_12_主線04_05.asset using Guid(6261672560199d24180d57a5a1777a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21145acb3b8e6d6f93ee069c3e5e930a') in 0.002225 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25.945270 seconds.
+  path: Assets/Conversation content/S1/S1_01_主線01_起點.asset
+  artifactKey: Guid(0c70698f58716234b857cf3e4b7bd3d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conversation content/S1/S1_01_主線01_起點.asset using Guid(0c70698f58716234b857cf3e4b7bd3d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccb80daef033bffdd455314411605692') in 0.001881 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.854256 seconds.
+  path: Assets/Conversation content/S1/S1_04_主線02.asset
+  artifactKey: Guid(546efc05969e6f4418d103e5fe0dc056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conversation content/S1/S1_04_主線02.asset using Guid(546efc05969e6f4418d103e5fe0dc056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71ad30c4ff2be23cc70ef0e3de7573ce') in 0.002523 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 117.275467 seconds.
+  path: Assets/Scenes/關卡3 歸途.unity
+  artifactKey: Guid(bb68ec8e1ad851d479e038e34582b11d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/關卡3 歸途.unity using Guid(bb68ec8e1ad851d479e038e34582b11d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9cba7ce2448ff6a80679439b9407b06') in 0.002254 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 93.882044 seconds.
+  path: Assets/Conversation content/S3
+  artifactKey: Guid(56f9c620f5ba8eb479e0dfee1f908032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conversation content/S3 using Guid(56f9c620f5ba8eb479e0dfee1f908032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '762cbbf16633ddd5c593d43257a9205d') in 0.002046 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.976195 seconds.
+  path: Assets/Conversation content/S3/S3_27_主線03_01小孩搭話.asset
+  artifactKey: Guid(79b5be8463aca3e439094af241f5544b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conversation content/S3/S3_27_主線03_01小孩搭話.asset using Guid(79b5be8463aca3e439094af241f5544b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e96058cc07d774b53b26dd658c736697') in 0.002063 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.813500 seconds.
+  path: Assets/Conversation content/S3/S3_17_主線02_02使用技能.asset
+  artifactKey: Guid(976dedd827d227248b8c3f89b746677c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conversation content/S3/S3_17_主線02_02使用技能.asset using Guid(976dedd827d227248b8c3f89b746677c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20d7304b0baab33001adcf387dcf44d6') in 0.002417 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.049047 seconds.
+  path: Assets/Conversation content/S3/S3_28或29或33_主線03_02點擊小孩使用技能後.asset
+  artifactKey: Guid(ee21683a5544d5444a54543e0817c7e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conversation content/S3/S3_28或29或33_主線03_02點擊小孩使用技能後.asset using Guid(ee21683a5544d5444a54543e0817c7e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3254f07d6296b5c354138c46447f6600') in 0.001929 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.188347 seconds.
+  path: Assets/Conversation content/S3/S3_28或29或33_主線03_03對大樹使用技能後.asset
+  artifactKey: Guid(fafcfdcd54e664a478a2f46fd5535d72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conversation content/S3/S3_28或29或33_主線03_03對大樹使用技能後.asset using Guid(fafcfdcd54e664a478a2f46fd5535d72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '692a57f208142961f7d4e2714058470b') in 0.001910 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.344977 seconds.
+  path: Assets/Conversation content/S3/S3_43_主線04_終點.asset
+  artifactKey: Guid(e5be20f3deb317842b011417b9a80663) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conversation content/S3/S3_43_主線04_終點.asset using Guid(e5be20f3deb317842b011417b9a80663) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '040d57c40e85bd64001e30b1fab88f74') in 0.002431 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25.008417 seconds.
+  path: Assets/Conversation content/S5_Kid_2.asset
+  artifactKey: Guid(53c20a4ab7190ba4087dfdc37aba51ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conversation content/S5_Kid_2.asset using Guid(53c20a4ab7190ba4087dfdc37aba51ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92301cce6b32fff84b4b33143aa397c0') in 0.002001 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.281727 seconds.
+  path: Assets/Conversation content/S5_Kid_3.asset
+  artifactKey: Guid(880720d3aad578643b57806b3ec687af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conversation content/S5_Kid_3.asset using Guid(880720d3aad578643b57806b3ec687af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b93381c134056c72abb49d1ee070f80') in 0.021113 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.058836 seconds.
+  path: Assets/Conversation content/S5_Kid_1.asset
+  artifactKey: Guid(4e63cafd80c481546a0d001ad117bc23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conversation content/S5_Kid_1.asset using Guid(4e63cafd80c481546a0d001ad117bc23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cac69d194f3ea52ecb9a004ed7e41839') in 0.001902 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 430.323071 seconds.
+  path: Assets/Script/TestLookAt.cs
+  artifactKey: Guid(74c9430509619ed4191aab8f1a3ff7ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/TestLookAt.cs using Guid(74c9430509619ed4191aab8f1a3ff7ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb8a27bcfcff512a6d36f2bc5aeb76d9') in 0.118505 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 118.646567 seconds.
+  path: Assets/Scenes/關卡1 城市.unity
+  artifactKey: Guid(b1b0cd6247b526b4481cbfa624aee5ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/關卡1 城市.unity using Guid(b1b0cd6247b526b4481cbfa624aee5ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31784c469233641905ffa6af446ed888') in 0.002876 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002644 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.894 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1895ms)
+		BeginReloadAssembly (680ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (66ms)
+		EndReloadAssembly (1168ms)
+			LoadAssemblies (787ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (277ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (39ms)
+			SetupLoadedEditorAssemblies (377ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (61ms)
+				ProcessInitializeOnLoadAttributes (207ms)
+				ProcessInitializeOnLoadMethodAttributes (97ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Shader 'Custom/AdditiveTintable': fallback shader 'Particles/Additive (Soft)' not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2360 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 150.7 MB.
+System memory in use after: 139.6 MB.
+
+Unloading 83 unused Assets to reduce memory usage. Loaded Objects now: 2862.
+Total: 11.016900 ms (FindLiveObjects: 0.237200 ms CreateObjectMapping: 0.102900 ms MarkObjects: 3.124400 ms  DeleteObjects: 7.551400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 119.330623 seconds.
+  path: Assets/Scenes/關卡2 上山.unity
+  artifactKey: Guid(9f45ce2297a444d4f927109d8cf4ac73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/關卡2 上山.unity using Guid(9f45ce2297a444d4f927109d8cf4ac73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aeb8323a01909ac5c25c3b97940b6e0d') in 0.053620 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 65.022297 seconds.
+  path: Assets/Scenes/New關卡1.unity
+  artifactKey: Guid(64c3b2d6196c3a6419f468eb4f88f961) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/New關卡1.unity using Guid(64c3b2d6196c3a6419f468eb4f88f961) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58aa142965b6923ca011807a2afdb612') in 0.004643 seconds 

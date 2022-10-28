@@ -728,9 +728,9 @@ MonoBehaviour:
   playdone3: 0
   playdone4: 0
   playdone5: 0
-  finPin: "17\u571F\u5730"
-  target: {fileID: 2067278338}
+  target: {fileID: 1832011243}
   station: {fileID: 1650251898}
+  moveGo: 0
 --- !u!1001 &119749307
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13953,6 +13953,11 @@ Transform:
   m_Father: {fileID: 387499711}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1832011243 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5927504018752423551, guid: ea4a9e6f87613344cba9f2f11b97f56b, type: 3}
+  m_PrefabInstance: {fileID: 1259044597}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1839862263
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16014,11 +16019,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea4a9e6f87613344cba9f2f11b97f56b, type: 3}
---- !u!1 &2067278338 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5927504018752423551, guid: ea4a9e6f87613344cba9f2f11b97f56b, type: 3}
-  m_PrefabInstance: {fileID: 2067278337}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2090742852
 PrefabInstance:
   m_ObjectHideFlags: 0

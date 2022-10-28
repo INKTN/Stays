@@ -35,11 +35,10 @@ public class S1_Tower : MonoBehaviour
     public bool playdone4;
     public bool playdone5;
     [Header("§¹¦¨¶Ç°e")]
-    public string finPin;
     private PlayerCharacter player;
     public GameObject target;
     public Collider station;
-
+    public bool moveGo;
     #endregion
     private void Start()
     {
@@ -183,10 +182,13 @@ public class S1_Tower : MonoBehaviour
     }
     private void MoveTo()
     {
-        Transform fin = GameObject.Find(finPin).transform;
-        player.speed = 12;
-        player.Move(fin);
-        print(fin.name+fin);
+        if (!moveGo)
+        {
+            moveGo = true;
+            player.speed = 12;
+            player.Move(target.transform);
+
+        }
     }
         #endregion
 }

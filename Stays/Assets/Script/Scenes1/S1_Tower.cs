@@ -187,7 +187,6 @@ public class S1_Tower : MonoBehaviour
             moveGo = true;
             player.speed = 12;
             player.Move(target.transform);
-
         }
     }
         #endregion

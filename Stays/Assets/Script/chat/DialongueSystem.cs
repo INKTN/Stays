@@ -6,7 +6,7 @@ public class DialongueSystem : MonoBehaviour
 {
     #region 欄位
     [Header("對話間格"), Range(0, 1)]
-    public float interval = 0.2f;
+    public float interval = 0.1f;
     [Header("名稱輸入")]
     public Text textTito;
     [Header("畫布對話系統UI")]
@@ -20,6 +20,9 @@ public class DialongueSystem : MonoBehaviour
     [Header("偵測顯示")]
     public bool display=false;
     private bool fin;//偵測說話完成
+    [Header("人物顯示")]
+    public GameObject certificate;
+    public GameObject ramCertificate;
     #endregion
 
     void Start()
@@ -102,7 +105,7 @@ public class DialongueSystem : MonoBehaviour
 
             textTito.text += contents[j];//更改為疊加對話文字介面 欄位名稱.text(裡面的屬性)
                 yield return new WaitForSeconds(interval); //等待(interval)秒
-            
+            CertificatePhoto(contents[j]);
             while (!Input.GetKeyDown(key)||!fin)//當玩家沒有按對話按鍵時持續執行
             {
                 yield return null;//等待 unll一個影格時間
@@ -113,6 +116,20 @@ public class DialongueSystem : MonoBehaviour
     public void NameEnter(string[] contents)
     {
         StartCoroutine(Nameffect(contents));
+    }
+    #endregion
+    #region 角色圖
+    public void CertificatePhoto(string name)
+    {
+        if (name == "Rem")
+        {
+            certificate.SetActive(false);
+            ramCertificate.SetActive(true);
+        }
+        else 
+        { 
+            ramCertificate.SetActive(false); 
+        }
     }
     #endregion
 }

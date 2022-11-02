@@ -5313,7 +5313,7 @@ MonoBehaviour:
   y_borderMin: 40
   z_borderMax: 50
   z_borderMin: -24
-  dis: 25
+  dis: {x: 25, y: 35, z: -25}
   speed: 10
   caTask: 1
   switches: 0
@@ -12202,11 +12202,19 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1472903954894788860, guid: 9930d501e34f7074e8984282d74cf047, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 1472903954894788914, guid: 9930d501e34f7074e8984282d74cf047, type: 3}
       propertyPath: m_Name
       value: "\u4E3B\u89D2"
       objectReference: {fileID: 0}
     - target: {fileID: 1472903954894788914, guid: 9930d501e34f7074e8984282d74cf047, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1472903954894788916, guid: 9930d501e34f7074e8984282d74cf047, type: 3}
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}

@@ -14,7 +14,7 @@ public class Cameratest : MonoBehaviour
     //上次紀錄對象
     private GameObject lastObj;
     public Vector3 rayLine;
-
+    
     [Header("觸摸位置")]
     private Vector3 oneTPosition;
     [Header("邊界範圍")]
@@ -24,8 +24,8 @@ public class Cameratest : MonoBehaviour
     public float y_borderMin;
     public float z_borderMax;
     public float z_borderMin;
-    [Header("與目標距離"), Range(0, 50)]
-    public float dis = 20f;
+    [Header("與目標距離")]
+    public Vector3 dis;
     [Header("靈敏度"), Range(0, 50)]
     public float speed = 15;
     private DialongueSystem dialongue;//對話框偕同程序
@@ -41,7 +41,7 @@ public class Cameratest : MonoBehaviour
         //transform.localPosition = Vector3.MoveTowards(transform.position, target.position, -dis);
         dialongue = GameObject.Find("System").GetComponent<DialongueSystem>();//找到對話框偕同程序
         // cameraPosition = transform.position;
-        
+        NotMove();
     }
     private void Update()
     {
@@ -87,7 +87,7 @@ public class Cameratest : MonoBehaviour
         Debug.DrawLine(target.transform.position + rayLine, transform.position, Color.red);//畫線
         RaycastHit hit;
 
-        if (Physics.Linecast(target.transform.position + rayLine, transform.position, out hit))
+        if (Physics.Linecast(target.transform.position + rayLine, transform.position, out hit)&&lastObj!=target)
         {
             if (lastObj != null)
             {
@@ -101,7 +101,7 @@ public class Cameratest : MonoBehaviour
             lastObj = hit.collider.gameObject;
             string nameTag = lastObj.tag;
             //判斷
-            if (nameTag != "MainCamera" && nameTag != "terrain")
+            if (nameTag != "MainCamera" && nameTag != "terrain"&&nameTag != "Player")
             {
                 //使遮擋物變透明
                 Renderer renderer = lastObj.GetComponent<Renderer>();
@@ -122,7 +122,7 @@ public class Cameratest : MonoBehaviour
     }
     private void NotMove()//攝影機僅跟隨主角
     {
-        Vector3 disPos = target.position + Vector3.up*dis*2+Vector3.right*dis-target.forward*dis;//相機位置
+        Vector3 disPos = target.position + dis - target.forward;//相機位置
         //print(disPos);位置測試
         transform.position=Vector3.Lerp(transform.position,disPos,Time.deltaTime*speed);
         transform.LookAt(target.position);//相機看相目標

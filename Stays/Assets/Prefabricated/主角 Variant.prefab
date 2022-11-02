@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e9c5981fbaf261f4f976333c279b3ffc, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: e9c5981fbaf261f4f976333c279b3ffc, type: 3}
       propertyPath: m_Layer
       value: 8
@@ -411,13 +415,25 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 100200, guid: e9c5981fbaf261f4f976333c279b3ffc, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 100202, guid: e9c5981fbaf261f4f976333c279b3ffc, type: 3}
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 100202, guid: e9c5981fbaf261f4f976333c279b3ffc, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 100204, guid: e9c5981fbaf261f4f976333c279b3ffc, type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100204, guid: e9c5981fbaf261f4f976333c279b3ffc, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 100206, guid: e9c5981fbaf261f4f976333c279b3ffc, type: 3}
       propertyPath: m_Name
@@ -435,13 +451,25 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 100208, guid: e9c5981fbaf261f4f976333c279b3ffc, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 100210, guid: e9c5981fbaf261f4f976333c279b3ffc, type: 3}
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 100210, guid: e9c5981fbaf261f4f976333c279b3ffc, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 100212, guid: e9c5981fbaf261f4f976333c279b3ffc, type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100212, guid: e9c5981fbaf261f4f976333c279b3ffc, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 400206, guid: e9c5981fbaf261f4f976333c279b3ffc, type: 3}
       propertyPath: m_RootOrder
@@ -551,8 +579,8 @@ MonoBehaviour:
   detectionSize: 0.1
   startPos: {x: 0, y: 0, z: 0}
   speed: 0
-  stop: 0
-  unit: 10
+  walking: 0
+  pt: 
 --- !u!195 &7106858675582920769
 NavMeshAgent:
   m_ObjectHideFlags: 0

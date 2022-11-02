@@ -76,6 +76,7 @@ public class DialongueSystem : MonoBehaviour
     /// <param name="contents">顯示打字效果的對話內容</param>
     public void StartDialogue(string[] contents)
     {
+        
         StartCoroutine(TypeEffect(contents));
     }
 

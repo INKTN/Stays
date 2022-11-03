@@ -96,7 +96,7 @@ public class S3_Tree : MonoBehaviour
                     begainTime = Time.realtimeSinceStartup;
 
                     Physics.Raycast(ray, out hit);
-                    print(hit.collider.name);
+                    //print(hit.collider.name);
 
                     if (Physics.Raycast(ray, out hit) && /*hit.transform.parent.gameObject.name == target &&*/ Time.realtimeSinceStartup - lastTouchTime < quickDoubleTabInterval)
                     {

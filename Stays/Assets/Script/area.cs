@@ -17,6 +17,8 @@ public class area : MonoBehaviour
     public string[] draggingTag;
     [Header("角色判定")]
     public bool chIn;
+    [Header("判定輸出")]
+    public bool text;
     #endregion
    
     private void OnDrawGizmos()
@@ -31,6 +33,7 @@ public class area : MonoBehaviour
     private void Update()
     {
         CheckArea();
+        //chIn = false;
     }
     #region 方法
     public void CheckArea()//檢測內部是否有東西
@@ -41,7 +44,7 @@ public class area : MonoBehaviour
         if (hit == null) chIn = false;
         while (i < hit.Length)//若i小於hit最大值
         {
-            //print(transform.name+"Hit : " + hit[i].name+ hit[i].tag + ",第"+ i+"物件,T判定"+ Array.IndexOf(draggingTag, hit[i]));
+            if(text)print(transform.name+"Hit : " + hit[i].name+ hit[i].tag + ",第"+ i+"物件,T判定"+ Array.IndexOf(draggingTag, hit[i]));
             if (Array.IndexOf(draggingTag, hit[i].tag) > -1) haveObstacle = true;//有障礙物開啟
             else haveObstacle = false;
             if (hit[i].tag == "Player") chIn = true;

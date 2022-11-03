@@ -8287,6 +8287,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea4a9e6f87613344cba9f2f11b97f56b, type: 3}
+--- !u!1 &728987948 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3443514980519901056, guid: 0edd12d347d24844d9768ee683bd3b4d, type: 3}
+  m_PrefabInstance: {fileID: 1796556656}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &729327723
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10451,8 +10456,8 @@ MonoBehaviour:
   goTip: {fileID: 1796556661}
   key: 323
   display: 0
-  certificate: {fileID: 0}
-  ramCertificate: {fileID: 0}
+  certificate: {fileID: 2088750395}
+  ramCertificate: {fileID: 728987948}
 --- !u!1001 &922528655
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11490,7 +11495,7 @@ MonoBehaviour:
   y_borderMin: 40
   z_borderMax: 50
   z_borderMin: -24
-  dis: 25
+  dis: {x: 0, y: 0, z: 0}
   speed: 10
   caTask: 1
   switches: 0
@@ -23912,6 +23917,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 5011000548567438112, guid: e8d2ccbee098ec94a954a38c4f953c91, type: 3}
   m_PrefabInstance: {fileID: 2085354185}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2088750395 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6356285440041607654, guid: 0edd12d347d24844d9768ee683bd3b4d, type: 3}
+  m_PrefabInstance: {fileID: 1796556656}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2090742852
 PrefabInstance:

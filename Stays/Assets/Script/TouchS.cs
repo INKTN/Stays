@@ -105,7 +105,7 @@ public class TouchS : MonoBehaviour
                 if (Physics.Raycast(ray, out hit) && hit.collider.tag == "NPC" && !skillUI.skillOpen)
                 {
                     var selection = hit.transform;
-                    print(selection.name + selection.position);
+                    //print(selection.name + selection.position);
                     orimaterial = selection.GetComponent<Renderer>().material;
                     #region NPC
                     //要在NPC處寫判斷格子

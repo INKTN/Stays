@@ -46,7 +46,7 @@ public class S3_Tree : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if(kid.dalogues1Fin)TouchTree();
+        //if(kid.dalogues1Fin)TouchTree();
         if (speed == objectiveSpeed && !taskFin) SkillTree();
         TaskFin();
         //print(Input.touchCount);

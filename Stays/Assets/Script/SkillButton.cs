@@ -1,3 +1,6 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine;
 /// <summary>
@@ -21,8 +24,9 @@ public class SkillButton : MonoBehaviour
     {
         //喚醒時取得UI控制器與選擇物件
         skillOpen = GameObject.Find("System").GetComponent<UIManager>();
+        print(Target);
         Target = skillOpen.touchObject;
-       
+        Scene scene = SceneManager.GetActiveScene();
     }
     
     public void SkillFast()
@@ -38,6 +42,7 @@ public class SkillButton : MonoBehaviour
             var tree = Target.GetComponent<S3_Tree>();
             tree.SkillUse(speed);
         }
+        if(Scene.name=="")
         #endregion
         if (Target.tag == "obstacle")//2022043
         {

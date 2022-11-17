@@ -10,18 +10,26 @@ public class Kid : MonoBehaviour
     [Header("動畫欄位")]
     private Animator an;
     [Header("對話資料")]
-    public DataDalogue[] dataDalogues;
-    public bool dalogues1Fin;//是否為第一次對話
+    public DataDalogue[] dataDalogues;//對話系統
+    [Header("各式判定")]
+    public bool dalogues1Fin;//接第一次任務
+    public bool childGrowth;//使用技能
     public bool daloguesTaskFin;//任務完成對話
 
     [Header("對話系統")]
-    public DialongueSystem dialongueSystem;
+    private DialongueSystem dialongueSystem;
     [Header("觸發對象")]
     public string target = "主角";
+    [Header("鏡頭是否為聚焦")]
+    public bool ch;
+    [Header("其他腳本")]
+    private Cameratest cameratest;
     [Header("對應物件")]
-    public GameObject taskTa;
+    public GameObject taskTa;//樹
     public Camera setCamera;
     public Camera oriCamera;
+    public GameObject initial;//小孩模型
+    public GameObject adultModels;//成年人模型
     public bool tastBool;
     [Header("偵測範圍")]
     public Vector3 detectionRange = Vector3.one;
@@ -30,20 +38,35 @@ public class Kid : MonoBehaviour
     public bool gizmosOn;
     private UIManager skillUI;
     //private Cameratest cameratest;
+    [Header("技能使用")]
+    public float speed = 1;
+    public bool man;
+
 
     #endregion
     private void Start()
     {
         an = GetComponent<Animator>();
+        dialongueSystem = GameObject.Find("System").GetComponent<DialongueSystem>();
         oriCamera = GameObject.Find("MainCamera").GetComponent<Camera>();
         skillUI = GameObject.Find("System").GetComponent<UIManager>();
+        cameratest = GameObject.Find("MainCamera").GetComponent<Cameratest>();
     }
-
+    private void FixedUpdate()
+    {
+        if (!childGrowth && speed == 2)//使用技能後
+        {
+            childGrowth = true;
+            setCamera.transform.position = new Vector3(27,8,56);
+            transform.LookAt(setCamera.transform);
+            StartCoroutine(ChangePtion());
+        }
+    }
     private void OnDrawGizmos()
     {
         if (gizmosOn)
         {
-            Gizmos.color = new Color(1, 0, 0, .5f);//判斷區設置為藍色
+            Gizmos.color = new Color(1, 0, 0, .5f);//判斷區設置為紅色
             Gizmos.DrawCube(transform.position + detectionHight, detectionRange);//偵測區位置
         }
     }//位置偵測顯示
@@ -64,28 +87,50 @@ public class Kid : MonoBehaviour
             {
                 if (!dalogues1Fin)
                 {
+                    dialongueSystem.StopAllCoroutines();
                     dialongueSystem.StartDialogue(dataDalogues[0].conversationContent);//對話資料讀取
                     dialongueSystem.NameEnter(dataDalogues[0].talkName);
                     dalogues1Fin = true;
                     
                 }
-                else
+                else if(dalogues1Fin&& !dialongueSystem.display)
                 {
-                    if (daloguesTaskFin)
-                    {
-                        dialongueSystem.StartDialogue(dataDalogues[2].conversationContent);//對話資料讀取
-                        dialongueSystem.NameEnter(dataDalogues[2].talkName);
-                    }
-                    else
-                    {
-                        dialongueSystem.StartDialogue(dataDalogues[1].conversationContent);//對話資料讀取
-                        dialongueSystem.NameEnter(dataDalogues[1].talkName);
-                    }
+                    Skill();
                 }
+                else if(adultModels.activeSelf&& !dialongueSystem.display&& childGrowth)
+                {
+                    dialongueSystem.StopAllCoroutines();
+                    dialongueSystem.StartDialogue(dataDalogues[1].conversationContent);//對話資料讀取
+                    dialongueSystem.NameEnter(dataDalogues[1].talkName);
+                }
+
             }
             #endregion
             i++;
         }
+    }
+
+    public void Skill()
+    {
+        ch = !ch;
+        setCamera.enabled = ch;
+        oriCamera.enabled = !ch;
+        cameratest.caTask = true;
+        skillUI.SkillOn(transform);//開啟SKILLUI
+ 
+    }
+    public void SkillUse(float get)//獲得技能按鈕的數值
+    {
+        speed += get;
+        print("小孩加速");
+    }
+    private IEnumerator ChangePtion()//協程顯示模型晚1秒
+    {
+        yield return new WaitForSeconds(0.1f);
+        gameObject.transform.localScale = new Vector3(1, 1, 1);//放大模型
+        yield return new WaitForSeconds(0.2f);
+        adultModels.SetActive(true);//開啟成年人模型顯示
+        initial.SetActive (false);//關閉小孩模型顯示
     }
     #endregion
 }

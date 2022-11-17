@@ -14,7 +14,8 @@ public class TaskListGoHome : MonoBehaviour
     public bool b_BridgeFin;
     [Header("C_NPC¤p«Ä")]
     private Kid C_kidC;
-    public bool c_Kid;
+    public bool c_kidGrowth;
+    public bool c_tree;
     [Header("All Fin")]
     public bool allFin;
     #endregion
@@ -48,9 +49,10 @@ public class TaskListGoHome : MonoBehaviour
     private void fin()
     {
         b_BridgeFin = b_bridge.skillUse;
-        c_Kid= C_kidC.daloguesTaskFin;
+        c_kidGrowth= C_kidC.childGrowth;
+        c_tree = C_kidC.childGrowth;
 
-        if (b_BridgeFin && c_Kid)
+        if (b_BridgeFin && c_kidGrowth&&c_tree)
         {
             allFin = true;
         }

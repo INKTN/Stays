@@ -2744,6 +2744,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea4a9e6f87613344cba9f2f11b97f56b, type: 3}
+--- !u!1 &597666448 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: 428e87d475580ca458360e8c4956c12b, type: 3}
+  m_PrefabInstance: {fileID: 1472813909}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &602598073
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4181,7 +4186,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 769633562}
   m_LocalRotation: {x: -0.026449692, y: -0.7267668, z: 0.02737783, w: -0.6858287}
-  m_LocalPosition: {x: 26.74, y: 7.57, z: 48.71}
+  m_LocalPosition: {x: 27.2, y: 7.6, z: 56.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4931,7 +4936,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a_wood: 0
   b_BridgeFin: 0
-  c_Kid: 0
+  c_kidGrowth: 0
+  c_tree: 0
   allFin: 0
 --- !u!114 &903941000
 MonoBehaviour:
@@ -5004,7 +5010,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fd21fde03ddef8419aa9dc2596b2f6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interval: 0.2
+  interval: 0
   textTito: {fileID: 1796556659}
   goDialogue: {fileID: 1796556660}
   textContent: {fileID: 1796556658}
@@ -8710,6 +8716,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 428e87d475580ca458360e8c4956c12b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 100010, guid: 428e87d475580ca458360e8c4956c12b, type: 3}
       propertyPath: m_Layer
       value: 9
@@ -8877,19 +8887,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataDalogues:
   - {fileID: 11400000, guid: 79b5be8463aca3e439094af241f5544b, type: 2}
-  - {fileID: 11400000, guid: 79b5be8463aca3e439094af241f5544b, type: 2}
   - {fileID: 11400000, guid: ee21683a5544d5444a54543e0817c7e5, type: 2}
+  - {fileID: 11400000, guid: fafcfdcd54e664a478a2f46fd5535d72, type: 2}
   dalogues1Fin: 0
+  childGrowth: 0
   daloguesTaskFin: 0
-  dialongueSystem: {fileID: 903941004}
   target: "\u4E3B\u89D2"
+  ch: 0
   taskTa: {fileID: 450719736}
   setCamera: {fileID: 769633563}
   oriCamera: {fileID: 994730623}
+  initial: {fileID: 1546063079}
+  adultModels: {fileID: 597666448}
   tastBool: 0
-  detectionRange: {x: 30.21, y: 10, z: 24.78}
-  detectionHight: {x: -2.5, y: 5, z: -1.74}
+  detectionRange: {x: 28, y: 10, z: 28}
+  detectionHight: {x: -3, y: 5, z: 3.18}
   gizmosOn: 0
+  speed: 1
+  man: 0
 --- !u!95 &1472813913
 Animator:
   serializedVersion: 3
@@ -9116,6 +9131,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fb308743c41c55b4ead555ce1b78f260, type: 3}
   m_PrefabInstance: {fileID: 1537899647}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1546063079 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100008, guid: 428e87d475580ca458360e8c4956c12b, type: 3}
+  m_PrefabInstance: {fileID: 1472813909}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1560299195
 PrefabInstance:

@@ -29,7 +29,8 @@ public class S3_Tree : MonoBehaviour
     private float objectiveSpeed = 2;
     [Header("任務完成")]
     public bool taskFin = false;
-
+    [Header("對話系統")]
+    private DialongueSystem dialongueSystem;
     #endregion
 
     private void Start()
@@ -42,11 +43,12 @@ public class S3_Tree : MonoBehaviour
         cameratest = GameObject.Find("MainCamera").GetComponent<Cameratest>();
         kid= GameObject.Find("Kid").GetComponent<Kid>();
         skillUI = GameObject.Find("System").GetComponent<UIManager>();//先從UI控制中取得腳本
+        dialongueSystem = GameObject.Find("System").GetComponent<DialongueSystem>();
         #endregion
     }
     void FixedUpdate()
     {
-        //if(kid.dalogues1Fin)TouchTree();
+        if(kid.dalogues2Fin&& !dialongueSystem.display) TouchTree();
         if (speed == objectiveSpeed && !taskFin) SkillTree();
         TaskFin();
         //print(Input.touchCount);

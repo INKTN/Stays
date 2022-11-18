@@ -18,15 +18,16 @@ public class SkillButton : MonoBehaviour
     private UIManager skillOpen;
     //觸碰項目
     public Transform Target;
-  
+    public Scene scene;
     #endregion
     private void Awake()
     {
         //喚醒時取得UI控制器與選擇物件
         skillOpen = GameObject.Find("System").GetComponent<UIManager>();
-        print(Target);
+        scene = SceneManager.GetActiveScene();
         Target = skillOpen.touchObject;
-        Scene scene = SceneManager.GetActiveScene();
+        //print(Target);
+        //print(scene.name);
     }
     
     public void SkillFast()
@@ -42,7 +43,11 @@ public class SkillButton : MonoBehaviour
             var tree = Target.GetComponent<S3_Tree>();
             tree.SkillUse(speed);
         }
-        if(Scene.name=="")
+        if(scene.name=="關卡3 歸途" && Target == null||Target.name=="Kid")
+        {
+            var kid= GameObject.Find("Kid").GetComponent<Kid>();
+            kid.SkillUse(speed);
+        }
         #endregion
         if (Target.tag == "obstacle")//2022043
         {

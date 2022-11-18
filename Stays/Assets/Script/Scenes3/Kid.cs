@@ -14,6 +14,7 @@ public class Kid : MonoBehaviour
     [Header("各式判定")]
     public bool dalogues1Fin;//接第一次任務
     public bool childGrowth;//使用技能
+    public bool dalogues2Fin;
     public bool daloguesTaskFin;//任務完成對話
 
     [Header("對話系統")]
@@ -57,8 +58,6 @@ public class Kid : MonoBehaviour
         if (!childGrowth && speed == 2)//使用技能後
         {
             childGrowth = true;
-            setCamera.transform.position = new Vector3(27,8,56);
-            transform.LookAt(setCamera.transform);
             StartCoroutine(ChangePtion());
         }
     }
@@ -80,7 +79,7 @@ public class Kid : MonoBehaviour
         transform.LookAt(GameObject.Find("主角").transform);
         while (i < hit.Length)//若i小於hit最大值
         {
-            print(hit[i].name);
+            //print(hit[i].name);
             //Contains:在字串中尋找，若有回傳True
             #region 對話
             if (hit[i].name.Contains(target)) 
@@ -93,16 +92,20 @@ public class Kid : MonoBehaviour
                     dalogues1Fin = true;
                     
                 }
-                else if(dalogues1Fin&& !dialongueSystem.display)
+                else if(dalogues1Fin&& !dialongueSystem.display&& !childGrowth)
                 {
+                    setCamera.transform.position = new Vector3(27, 8, 56);
+                    transform.LookAt(setCamera.transform);
                     Skill();
                 }
-                else if(adultModels.activeSelf&& !dialongueSystem.display&& childGrowth)
+                else if(!dalogues2Fin&&!dialongueSystem.display&& childGrowth)
                 {
                     dialongueSystem.StopAllCoroutines();
                     dialongueSystem.StartDialogue(dataDalogues[1].conversationContent);//對話資料讀取
                     dialongueSystem.NameEnter(dataDalogues[1].talkName);
+                    dalogues2Fin = true;
                 }
+                
 
             }
             #endregion
@@ -121,8 +124,13 @@ public class Kid : MonoBehaviour
     }
     public void SkillUse(float get)//獲得技能按鈕的數值
     {
+        ch = !ch;
+        setCamera.enabled = ch;
+        oriCamera.enabled = !ch;
+        cameratest.caTask = false;
         speed += get;
-        print("小孩加速");
+        //print("小孩加速");
+       
     }
     private IEnumerator ChangePtion()//協程顯示模型晚1秒
     {
@@ -131,6 +139,7 @@ public class Kid : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         adultModels.SetActive(true);//開啟成年人模型顯示
         initial.SetActive (false);//關閉小孩模型顯示
+
     }
     #endregion
 }

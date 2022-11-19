@@ -2338,6 +2338,7 @@ MonoBehaviour:
   target: "29\u571F\u5730"
   canSkill: 0
   speed: 1
+  task1: 0
   taskFin: 0
 --- !u!4 &460593692 stripped
 Transform:
@@ -2599,19 +2600,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3406499118600237492, guid: b84103262dbd8cd48a0d67046bee6366, type: 3}
       propertyPath: m_Size.x
-      value: 9.24
+      value: 0.8830178
       objectReference: {fileID: 0}
     - target: {fileID: 3406499118600237492, guid: b84103262dbd8cd48a0d67046bee6366, type: 3}
       propertyPath: m_Size.y
-      value: 10.15
+      value: 3.21532
       objectReference: {fileID: 0}
     - target: {fileID: 3406499118600237492, guid: b84103262dbd8cd48a0d67046bee6366, type: 3}
       propertyPath: m_Size.z
-      value: 9.1
+      value: 0.9295303
+      objectReference: {fileID: 0}
+    - target: {fileID: 3406499118600237492, guid: b84103262dbd8cd48a0d67046bee6366, type: 3}
+      propertyPath: m_Center.x
+      value: -0.0070400992
       objectReference: {fileID: 0}
     - target: {fileID: 3406499118600237492, guid: b84103262dbd8cd48a0d67046bee6366, type: 3}
       propertyPath: m_Center.y
-      value: 4.91
+      value: 1.6076596
+      objectReference: {fileID: 0}
+    - target: {fileID: 3406499118600237492, guid: b84103262dbd8cd48a0d67046bee6366, type: 3}
+      propertyPath: m_Center.z
+      value: -0.05985091
       objectReference: {fileID: 0}
     - target: {fileID: 3406499118600237492, guid: b84103262dbd8cd48a0d67046bee6366, type: 3}
       propertyPath: m_IsTrigger
@@ -4186,7 +4195,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 769633562}
   m_LocalRotation: {x: -0.026449692, y: -0.7267668, z: 0.02737783, w: -0.6858287}
-  m_LocalPosition: {x: 27.2, y: 7.6, z: 56.1}
+  m_LocalPosition: {x: 26.8, y: 7.6, z: 48.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -8903,7 +8912,7 @@ MonoBehaviour:
   tastBool: 0
   detectionRange: {x: 28, y: 10, z: 28}
   detectionHight: {x: -3, y: 5, z: 3.18}
-  gizmosOn: 1
+  gizmosOn: 0
   speed: 1
   man: 0
 --- !u!95 &1472813913

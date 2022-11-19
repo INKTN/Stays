@@ -28,6 +28,7 @@ public class S3_Tree : MonoBehaviour
     public float speed = 1;
     private float objectiveSpeed = 2;
     [Header("任務完成")]
+    public bool task1;
     public bool taskFin = false;
     [Header("對話系統")]
     private DialongueSystem dialongueSystem;
@@ -49,7 +50,10 @@ public class S3_Tree : MonoBehaviour
     void FixedUpdate()
     {
         if(kid.dalogues2Fin&& !dialongueSystem.display) TouchTree();
-        if (speed == objectiveSpeed && !taskFin) SkillTree();
+        if (kid.childGrowth&&!task1) SkillTree();//小孩長大樹一同長大
+
+        if(speed==objectiveSpeed)
+            
         TaskFin();
         //print(Input.touchCount);
         //print(Camera.main);
@@ -82,6 +86,7 @@ public class S3_Tree : MonoBehaviour
                     {
                         //print("if測");
                         //debugInfo = "touchCount";
+                        setCamera.transform.position = new Vector3(27, 8, 49);
                         ch = !ch;
                         setCamera.enabled = ch;
                         oriCamera.enabled = !ch;
@@ -120,7 +125,7 @@ public class S3_Tree : MonoBehaviour
     }
     private void SkillTree()
     {
-        taskFin = true;
+        task1 = true;
         StartCoroutine(ChangePtion());
     }
     private IEnumerator ChangePtion()//協程顯示模型晚1秒

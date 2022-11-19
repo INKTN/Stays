@@ -125,9 +125,9 @@ public class Kid : MonoBehaviour
     public void SkillUse(float get)//獲得技能按鈕的數值
     {
         ch = !ch;
-        setCamera.enabled = ch;
-        oriCamera.enabled = !ch;
-        cameratest.caTask = false;
+        setCamera.enabled = false;
+        oriCamera.enabled = true;
+        cameratest.caTask = true;
         speed += get;
         //print("小孩加速");
        

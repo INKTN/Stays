@@ -27,6 +27,7 @@ public class Kid : MonoBehaviour
     private Cameratest cameratest;
     [Header("對應物件")]
     public GameObject taskTa;//樹
+    private S3_Tree tree;
     public Camera setCamera;
     public Camera oriCamera;
     public GameObject initial;//小孩模型
@@ -52,6 +53,7 @@ public class Kid : MonoBehaviour
         oriCamera = GameObject.Find("MainCamera").GetComponent<Camera>();
         skillUI = GameObject.Find("System").GetComponent<UIManager>();
         cameratest = GameObject.Find("MainCamera").GetComponent<Cameratest>();
+        tree = taskTa.GetComponent<S3_Tree>();
     }
     private void FixedUpdate()
     {
@@ -92,7 +94,7 @@ public class Kid : MonoBehaviour
                     dalogues1Fin = true;
                     
                 }
-                else if(dalogues1Fin&& !dialongueSystem.display&& !childGrowth)
+                else if(dalogues1Fin&& !dialongueSystem.display&& !childGrowth&&speed!=2)
                 {
                     setCamera.transform.position = new Vector3(27, 8, 56);
                     transform.LookAt(setCamera.transform);
@@ -105,7 +107,12 @@ public class Kid : MonoBehaviour
                     dialongueSystem.NameEnter(dataDalogues[1].talkName);
                     dalogues2Fin = true;
                 }
-                
+                else if (!dialongueSystem.display &&tree.taskFin)
+                {
+                    dialongueSystem.StopAllCoroutines();
+                    dialongueSystem.StartDialogue(dataDalogues[2].conversationContent);//對話資料讀取
+                    dialongueSystem.NameEnter(dataDalogues[2].talkName);
+                }
 
             }
             #endregion

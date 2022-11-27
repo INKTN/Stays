@@ -32,6 +32,9 @@ public class S3_Tree : MonoBehaviour
     public bool taskFin = false;
     [Header("對話系統")]
     private DialongueSystem dialongueSystem;
+    [Header("對話資料")]
+    public DataDalogue[] dataDalogues;//對話系統
+    public bool dalogues1Fin;
     #endregion
 
     private void Start()
@@ -49,10 +52,10 @@ public class S3_Tree : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if(kid.dalogues2Fin&& !dialongueSystem.display) TouchTree();
+        if(kid.dalogues2Fin&& !dialongueSystem.display&&speed != objectiveSpeed) TouchTree();
         if (kid.childGrowth&&!task1) SkillTree();//小孩長大樹一同長大
 
-        if(speed==objectiveSpeed)
+        if (speed == objectiveSpeed&&!taskFin&&!dalogues1Fin) Wilting();
             
         TaskFin();
         //print(Input.touchCount);
@@ -152,6 +155,14 @@ public class S3_Tree : MonoBehaviour
     public void SkillUse(float get)//獲得技能按鈕的數值
     {
         speed += get;
+    }
+    private void Wilting()
+    {
+        dalogues1Fin = true;
+        dialongueSystem.StopAllCoroutines();
+        dialongueSystem.StartDialogue(dataDalogues[0].conversationContent);//對話資料讀取
+        dialongueSystem.NameEnter(dataDalogues[0].talkName);
+        if (!dialongueSystem.display) taskFin = true;
     }
     #endregion
 }

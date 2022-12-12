@@ -26,7 +26,7 @@ public class S3_Tree : MonoBehaviour
     public bool canSkill;
     [Header("技能速度")]
     public float speed = 1;
-    private float objectiveSpeed = 2;
+    private float objectiveSpeed = 0;
     [Header("任務完成")]
     public bool task1;
     public bool taskFin = false;
@@ -71,6 +71,7 @@ public class S3_Tree : MonoBehaviour
             //若是觸碰開始
             if (touch.phase == TouchPhase.Began)
             {
+                setCamera.transform.position = new Vector3(27, 8, 49);
                 if (ch)
                 {
                     RaycastHit chHit;
@@ -89,7 +90,7 @@ public class S3_Tree : MonoBehaviour
                     {
                         //print("if測");
                         //debugInfo = "touchCount";
-                        setCamera.transform.position = new Vector3(27, 8, 49);
+                        //setCamera.transform.position = new Vector3(27, 8, 49);
                         ch = !ch;
                         setCamera.enabled = ch;
                         oriCamera.enabled = !ch;
@@ -162,7 +163,7 @@ public class S3_Tree : MonoBehaviour
         dialongueSystem.StopAllCoroutines();
         dialongueSystem.StartDialogue(dataDalogues[0].conversationContent);//對話資料讀取
         dialongueSystem.NameEnter(dataDalogues[0].talkName);
-        if (!dialongueSystem.display) taskFin = true;
+        taskFin = true;
     }
     #endregion
 }

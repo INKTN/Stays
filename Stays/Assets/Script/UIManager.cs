@@ -2,6 +2,7 @@ using UnityEngine.UI;
 using UnityEngine;
 /// <summary>
 /// 20220416 UI顯示 獨立
+/// 20221217 設定框顯示
 /// </summary>
 
 public class UIManager : MonoBehaviour
@@ -20,10 +21,25 @@ public class UIManager : MonoBehaviour
     public int coldTime = 100;//設定冷卻時間
     private int cold;//實際冷卻時間
 
+    [Header("左側按鈕列")]
+    public GameObject setting;
+    private Cameratest cameratest;
+    [Header("對話系統")]
+    private DialongueSystem dialongueSystem;
+
     #endregion
 
+    private void Start()
+    {
+        setting = GameObject.Find("關卡內UI");
+        cameratest = GameObject.Find("MainCamera").GetComponent<Cameratest>();
+        dialongueSystem = GameObject.Find("System").GetComponent<DialongueSystem>();
+    }
     private void FixedUpdate()
     {
+        //聚焦、對話框顯示時時設定UI不顯示
+        if (cameratest.caTask&& !dialongueSystem.display) setting.SetActive(true);
+        else if(!cameratest.caTask || dialongueSystem.display) { setting.SetActive(false); }
         //顯示氣泡框
         if (skillOpen)
         {

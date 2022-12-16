@@ -15,11 +15,11 @@ D:/Unity/Stays/Stays
 -logFile
 Logs/AssetImportWorker3.log
 -srvPort
-55054
+51500
 Successfully changed project path to: D:/Unity/Stays/Stays
 D:/Unity/Stays/Stays
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 62.69 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 54.54 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.30f1 (1fb1bf06830e)
 [Subsystems] Discovering subsystems at path D:/2020.3.30f1/Editor/Data/Resources/UnitySubsystems
@@ -36,39 +36,39 @@ Initialize mono
 Mono path[0] = 'D:/2020.3.30f1/Editor/Data/Managed'
 Mono path[1] = 'D:/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/2020.3.30f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56204
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56832
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/2020.3.30f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: D:/2020.3.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001474 seconds.
+Registered in 0.001286 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 55.94 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 51.40 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.630 seconds
+- Completed reload, in  1.138 seconds
 Domain Reload Profiling:
-	ReloadAssembly (630ms)
-		BeginReloadAssembly (73ms)
+	ReloadAssembly (1138ms)
+		BeginReloadAssembly (633ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (486ms)
-			LoadAssemblies (72ms)
+		EndReloadAssembly (447ms)
+			LoadAssemblies (632ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (168ms)
+			SetupTypeCache (153ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (27ms)
-			SetupLoadedEditorAssemblies (181ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (168ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (56ms)
-				BeforeProcessingInitializeOnLoad (16ms)
-				ProcessInitializeOnLoadAttributes (79ms)
+				RefreshPlugins (51ms)
+				BeforeProcessingInitializeOnLoad (15ms)
+				ProcessInitializeOnLoadAttributes (72ms)
 				ProcessInitializeOnLoadMethodAttributes (25ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -76,252 +76,4 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003427 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 49.11 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  4.634 seconds
-Domain Reload Profiling:
-	ReloadAssembly (4635ms)
-		BeginReloadAssembly (165ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (20ms)
-		EndReloadAssembly (4412ms)
-			LoadAssemblies (3344ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (271ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (50ms)
-			SetupLoadedEditorAssemblies (648ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (49ms)
-				BeforeProcessingInitializeOnLoad (64ms)
-				ProcessInitializeOnLoadAttributes (446ms)
-				ProcessInitializeOnLoadMethodAttributes (82ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Shader 'Custom/AdditiveTintable': fallback shader 'Particles/Additive (Soft)' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.55 seconds
-Refreshing native plugins compatible for Editor in 0.67 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2456 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 163.9 MB.
-System memory in use after: 153.0 MB.
-
-Unloading 88 unused Assets to reduce memory usage. Loaded Objects now: 2862.
-Total: 10.249700 ms (FindLiveObjects: 0.205600 ms CreateObjectMapping: 0.085400 ms MarkObjects: 2.698200 ms  DeleteObjects: 7.259800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  path: Assets/Prefabricated/S1_Materials/mailbox_UV_color.png
-  artifactKey: Guid(3560e3d6f29eb0f4dbda04d49ef23495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabricated/S1_Materials/mailbox_UV_color.png using Guid(3560e3d6f29eb0f4dbda04d49ef23495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f95d4784ae535c97195c133f31be1bf') in 1.120801 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000485 seconds.
-  path: Assets/Prefabricated/S1_Models/信箱.fbx
-  artifactKey: Guid(e699e64a967515246a6886d6ed10f5e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabricated/S1_Models/信箱.fbx using Guid(e699e64a967515246a6886d6ed10f5e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0533ca88cc313fd8cb2e0c8839ebde37') in 0.425508 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 91.080040 seconds.
-  path: Assets/Prefabricated/S1_Models/房子_1.fbx
-  artifactKey: Guid(c4e9db32bacf2774690726d60eb5c6d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabricated/S1_Models/房子_1.fbx using Guid(c4e9db32bacf2774690726d60eb5c6d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efa291c9290866197130408ca8d33d6f') in 0.493879 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.214707 seconds.
-  path: Assets/Prefabricated/S1_Models/房子_1.fbx
-  artifactKey: Guid(c4e9db32bacf2774690726d60eb5c6d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabricated/S1_Models/房子_1.fbx using Guid(c4e9db32bacf2774690726d60eb5c6d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '744e23b58882777404aad16cefbf45f7') in 0.017289 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.489226 seconds.
-  path: Assets/Prefabricated/S1_Models/房子_2.fbx
-  artifactKey: Guid(60b25c0c1125cf346a0881a513992dc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabricated/S1_Models/房子_2.fbx using Guid(60b25c0c1125cf346a0881a513992dc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d0cce505131309e548f07d2c57dac94') in 0.019391 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 43.764101 seconds.
-  path: Assets/Prefabricated/S1_Materials/shop_left_bulletin board_UV_color.png
-  artifactKey: Guid(0b5bf5508f699cf4aa7be82ca173ccc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabricated/S1_Materials/shop_left_bulletin board_UV_color.png using Guid(0b5bf5508f699cf4aa7be82ca173ccc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64c7f24cb447193f6665d34bdf044553') in 0.188355 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 16.158556 seconds.
-  path: Assets/Store/Suriyun/Voxel_Environments/Texture/Mushroom_A.png
-  artifactKey: Guid(9cecbc2dacfb0c94fae6d75cfe40f3a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Store/Suriyun/Voxel_Environments/Texture/Mushroom_A.png using Guid(9cecbc2dacfb0c94fae6d75cfe40f3a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0a91cedb7ee90fa38edcb238b1ccbf0') in 0.188937 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.063462 seconds.
-  path: Assets/Prefabricated/S1_Materials/shop_left_UV_color.png
-  artifactKey: Guid(e43cfe649f6fd7644bee5414f8f2cc36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabricated/S1_Materials/shop_left_UV_color.png using Guid(e43cfe649f6fd7644bee5414f8f2cc36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '447178df6609050a7eb5e811817dfa3f') in 0.188157 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000427 seconds.
-  path: Assets/Prefabricated/S1_Materials/shop_Triangular_UV_color.png
-  artifactKey: Guid(441b59ea5d3d9de41888a97b5eb7da86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabricated/S1_Materials/shop_Triangular_UV_color.png using Guid(441b59ea5d3d9de41888a97b5eb7da86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70918bdcc82020e6fa2b67f540dd24a5') in 0.280134 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000411 seconds.
-  path: Assets/Prefabricated/S1_Materials/shop_right_UV_color.png
-  artifactKey: Guid(045b8f8c5167dff42896e1f862831418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabricated/S1_Materials/shop_right_UV_color.png using Guid(045b8f8c5167dff42896e1f862831418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4b20135ed8b6ee01fcd44ba315a055f') in 0.280216 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 60.760408 seconds.
-  path: Assets/Prefabricated/S1_Models/商店街_左開門.fbx
-  artifactKey: Guid(9e7ce4570eee4664e88f4a0ba85099e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabricated/S1_Models/商店街_左開門.fbx using Guid(9e7ce4570eee4664e88f4a0ba85099e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7059ec21e4d6e4a8e8a41edbd079d46') in 0.082583 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 20.797306 seconds.
-  path: Assets/Prefabricated/S1_Models/商店街_左開門.fbx
-  artifactKey: Guid(9e7ce4570eee4664e88f4a0ba85099e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabricated/S1_Models/商店街_左開門.fbx using Guid(9e7ce4570eee4664e88f4a0ba85099e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa0971f7a6cc3783c9872193871aab6d') in 0.048556 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.990455 seconds.
-  path: Assets/Material/block/S3_sea_send.mat
-  artifactKey: Guid(ca9ec65a2c3eccc4e91b65beb5727e5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Material/block/S3_sea_send.mat using Guid(ca9ec65a2c3eccc4e91b65beb5727e5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '322e4a0e236071b39e17397055422946') in 0.187416 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000592 seconds.
-  path: Assets/Material/S1_Color/Shop_right.mat
-  artifactKey: Guid(38b23a7b0c7b80b409fbc1852a00dbe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Material/S1_Color/Shop_right.mat using Guid(38b23a7b0c7b80b409fbc1852a00dbe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8040d3ac7563b437b26a8883664e470') in 0.047052 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000485 seconds.
-  path: Assets/Store/FSP/Modular Pixel Forest/Materials/Props/Sign Arrow.mat
-  artifactKey: Guid(e2956cf06e3662348b81cdbd1b458a0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Store/FSP/Modular Pixel Forest/Materials/Props/Sign Arrow.mat using Guid(e2956cf06e3662348b81cdbd1b458a0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55d3a81bb510f87b22983fbb100dfede') in 0.154178 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000363 seconds.
-  path: Assets/Material/S1_Color/Shop_middle.mat
-  artifactKey: Guid(b20ee597145768d4f969e90d4a48cfa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Material/S1_Color/Shop_middle.mat using Guid(b20ee597145768d4f969e90d4a48cfa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60fa21e6f33e9afe9aaffedc0a5b4ff6') in 0.056735 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000734 seconds.
-  path: Assets/Material/S1_Color/Shop_triangular.mat
-  artifactKey: Guid(d4e2b6afa2465a0468d3fb25829de44c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Material/S1_Color/Shop_triangular.mat using Guid(d4e2b6afa2465a0468d3fb25829de44c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddcce3017245585332eab21711713283') in 0.048064 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000485 seconds.
-  path: Assets/Material/block/S3_send_grass.mat
-  artifactKey: Guid(e498398b2b64a5d439dd8116b821d7bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Material/block/S3_send_grass.mat using Guid(e498398b2b64a5d439dd8116b821d7bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eea5d58567b079d82553dadea4cdcc5a') in 0.062418 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000401 seconds.
-  path: Assets/Material/block/S3_water.mat
-  artifactKey: Guid(83fe797e83acf4e4982f98dec3f22f54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Material/block/S3_water.mat using Guid(83fe797e83acf4e4982f98dec3f22f54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59bdcae26e52c25c105e166cae7bdf47') in 0.067833 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.028128 seconds.
-  path: Assets/Prefabricated/S1_Models/商店街_左開門.fbx
-  artifactKey: Guid(9e7ce4570eee4664e88f4a0ba85099e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabricated/S1_Models/商店街_左開門.fbx using Guid(9e7ce4570eee4664e88f4a0ba85099e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e83190cb836fc7eaf59037c37390262') in 0.076600 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.882908 seconds.
-  path: Assets/Store/FSP/Modular Pixel Forest/Materials/Props/Sign Blank.mat
-  artifactKey: Guid(ac71bec3567be5a4191fccd4664ee587) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Store/FSP/Modular Pixel Forest/Materials/Props/Sign Blank.mat using Guid(ac71bec3567be5a4191fccd4664ee587) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b722291e709990887a80cebbcc6ae2b9') in 0.174964 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000383 seconds.
-  path: Assets/Store/FSP/Modular Pixel Forest/Materials/Props/Sign Help.mat
-  artifactKey: Guid(e2f245a6d5f07a943b5609f7edefdb9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Store/FSP/Modular Pixel Forest/Materials/Props/Sign Help.mat using Guid(e2f245a6d5f07a943b5609f7edefdb9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a4ec1c1da9ef610870f5acac8df02ee') in 0.158800 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.745408 seconds.
-  path: Assets/Material/block/S3_floor_around.mat
-  artifactKey: Guid(d3c9b992f66b2564ba87c8e77c58fee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Material/block/S3_floor_around.mat using Guid(d3c9b992f66b2564ba87c8e77c58fee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9fcba504b109ecaf1fed6e873549a38') in 0.076369 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000514 seconds.
-  path: Assets/Material/block/S3_grass.mat
-  artifactKey: Guid(e2af07075ff4d7645b0d5d6b4a126cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Material/block/S3_grass.mat using Guid(e2af07075ff4d7645b0d5d6b4a126cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2125e9957e84856145028043407c7ba8') in 0.064249 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 117.028694 seconds.
-  path: Assets/Prefabricated/S1_Models/商店街_中開門.fbx
-  artifactKey: Guid(7bb752559f02b6344bb360f2baeacfe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabricated/S1_Models/商店街_中開門.fbx using Guid(7bb752559f02b6344bb360f2baeacfe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62de4d8d911fa9c881f36e840bd35226') in 0.080946 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.206517 seconds.
-  path: Assets/Prefabricated/S1_Models/商店街_中開門.fbx
-  artifactKey: Guid(7bb752559f02b6344bb360f2baeacfe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabricated/S1_Models/商店街_中開門.fbx using Guid(7bb752559f02b6344bb360f2baeacfe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67bad988d352dce153a51e58d2bfdf25') in 0.016450 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 35.070471 seconds.
-  path: Assets/Prefabricated/S1_Models/商店街_右開門.fbx
-  artifactKey: Guid(b4c8dd846e49fe84d8b17eea67645b6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabricated/S1_Models/商店街_右開門.fbx using Guid(b4c8dd846e49fe84d8b17eea67645b6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a30c75d5bcc8727baed198b9bfff2000') in 0.014570 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 39.605806 seconds.
-  path: Assets/Prefabricated/S1_Models/商店街_三角窗.fbx
-  artifactKey: Guid(d287b84033e0e8646b12ecf7ae83f67f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabricated/S1_Models/商店街_三角窗.fbx using Guid(d287b84033e0e8646b12ecf7ae83f67f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe62b0e36f825fbceeead1aa46002461') in 0.079931 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.838625 seconds.
-  path: Assets/Prefabricated/S1_Models/商店街_三角窗.fbx
-  artifactKey: Guid(d287b84033e0e8646b12ecf7ae83f67f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabricated/S1_Models/商店街_三角窗.fbx using Guid(d287b84033e0e8646b12ecf7ae83f67f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '627ef40e3cbdc74fb3f7a3d2fd2e1e28') in 0.014479 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 21.155931 seconds.
-  path: Assets/Store/FSP/Modular Pixel Forest/Prefabs/Terrain/_MAST_Thumbnails/Grass Hill Straight.png
-  artifactKey: Guid(72f279e6321c6014ea96a27e5b58226c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Store/FSP/Modular Pixel Forest/Prefabs/Terrain/_MAST_Thumbnails/Grass Hill Straight.png using Guid(72f279e6321c6014ea96a27e5b58226c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edd31e34fb108a89f4038a082d686c85') in 0.095283 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 23.301763 seconds.
-  path: Assets/Store/Suriyun/Voxel_Environments/Texture/Ground_Sand_B.png
-  artifactKey: Guid(4c5eb843e888e8744961bbae11ddf477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Store/Suriyun/Voxel_Environments/Texture/Ground_Sand_B.png using Guid(4c5eb843e888e8744961bbae11ddf477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa5822458d175af110275d57deaaf065') in 0.207738 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 34.432963 seconds.
-  path: Assets/Prefabricated/S1_Models/火車站.fbx
-  artifactKey: Guid(3b72c212fdd767b44914120ae3e0dc19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabricated/S1_Models/火車站.fbx using Guid(3b72c212fdd767b44914120ae3e0dc19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8110f4effd78afbd5bf4e46a234022c') in 0.111613 seconds 
+Registered in 0.003032 seconds.

@@ -20,12 +20,17 @@ public class UIManager : MonoBehaviour
 
     public int coldTime = 100;//設定冷卻時間
     private int cold;//實際冷卻時間
-
-    [Header("左側按鈕列")]
-    public GameObject setting;
-    private Cameratest cameratest;
     [Header("對話系統")]
     private DialongueSystem dialongueSystem;
+    [Header("左側按鈕列")]
+    public GameObject setting;
+    public GameObject settingPage;
+    public GameObject tipsPage;
+    public GameObject resetPage;
+    private Cameratest cameratest;
+    private Blur blurCam;
+    private TouchS touchS;
+    
 
     #endregion
 
@@ -33,6 +38,8 @@ public class UIManager : MonoBehaviour
     {
         setting = GameObject.Find("關卡內UI");
         cameratest = GameObject.Find("MainCamera").GetComponent<Cameratest>();
+        blurCam= GameObject.Find("MainCamera").GetComponent<Blur>();
+        touchS= GameObject.Find("System").GetComponent<TouchS>();
         dialongueSystem = GameObject.Find("System").GetComponent<DialongueSystem>();
     }
     private void FixedUpdate()
@@ -79,6 +86,33 @@ public class UIManager : MonoBehaviour
             cold = 0;//計時用來清除
         }
     }
-    
+    #region 按鈕使用
+    public void Set()//叫出設定頁面
+    {
+        touchS.switches = true;//關觸控
+        blurCam.iterations = 4;//背景模糊
+        settingPage.SetActive(true);
+    }
+    public void Tip()//叫出提示頁面
+    {
+        touchS.switches = true;//關觸控
+        blurCam.iterations = 4;//背景模糊
+        tipsPage.SetActive(true);
+    }
+    public void Re()//叫出重設頁面
+    {
+        touchS.switches = true;//關觸控
+        blurCam.iterations = 4;//背景模糊
+        resetPage.SetActive(true);
+    }
+    public void Back()
+    {
+        touchS.switches = false;//開觸控
+        blurCam.iterations = 0;//關背景模糊
+        settingPage.SetActive(false);
+        tipsPage.SetActive(false);
+        resetPage.SetActive(false);
+    }
+    #endregion
     #endregion
 }

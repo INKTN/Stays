@@ -97,8 +97,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _1st2nd_Shades_Feather: 0.0001
-    - _1st_ShadeColor_Feather: 0.0001
-    - _1st_ShadeColor_Step: 0.7
+    - _1st_ShadeColor_Feather: 1
+    - _1st_ShadeColor_Step: 0.279
     - _2nd_ShadeColor_Feather: 0.0001
     - _2nd_ShadeColor_Step: 0.5
     - _ARSampler_AlphaOn: 0
@@ -108,8 +108,8 @@ Material:
     - _AngelRing: 0
     - _Ap_RimLight_FeatherOff: 0
     - _Ap_RimLight_Power: 0.1
-    - _BaseColor_Step: 0.7
-    - _BaseShade_Feather: 0.0001
+    - _BaseColor_Step: 0.279
+    - _BaseShade_Feather: 1
     - _Base_Speed: 0
     - _BlurLevelMatcap: 0
     - _BlurLevelSGM: 0.4
@@ -121,7 +121,7 @@ Material:
     - _EMISSIVE: 0
     - _Farthest_Distance: 100
     - _GI_Intensity: 0
-    - _HighColor_Power: 0.6
+    - _HighColor_Power: 0.457
     - _Inverse_MatcapMask: 0
     - _Inverse_Z_Axis_BLD: 1
     - _Is_BLD: 1
@@ -193,7 +193,7 @@ Material:
     - _utsVersion: 2.075
     m_Colors:
     - _1st_ShadeColor: {r: 1, g: 1, b: 1, a: 1}
-    - _2nd_ShadeColor: {r: 1, g: 1, b: 1, a: 1}
+    - _2nd_ShadeColor: {r: 0.9931935, g: 1, b: 0.9308176, a: 1}
     - _AngelRing_Color: {r: 1, g: 1, b: 1, a: 1}
     - _Ap_RimLightColor: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}

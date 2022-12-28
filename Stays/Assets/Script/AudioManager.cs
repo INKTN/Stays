@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor.Audio;
+//using UnityEditor.Audio;
 /// <summary>
 /// ­µ®Ä±±¨î20221217
 /// </summary>

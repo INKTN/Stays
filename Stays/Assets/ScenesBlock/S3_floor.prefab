@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9221363551669269382}
   - component: {fileID: 5738037313560754381}
   - component: {fileID: 6820027847789991339}
+  - component: {fileID: -4810495892354851351}
   m_Layer: 3
   m_Name: S3_floor
   m_TagString: ground
@@ -101,3 +102,16 @@ MonoBehaviour:
   draggingTag: []
   chIn: 0
   text: 0
+--- !u!65 &-4810495892354851351
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7212912518946108598}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 1.0000004, z: 1.0000004}
+  m_Center: {x: 0, y: 0.50000006, z: -0.000000059604645}

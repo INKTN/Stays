@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5051924400127199467}
   - component: {fileID: 8532107104404543170}
   - component: {fileID: 7397442037109756268}
+  - component: {fileID: -4021199203948969751}
   m_Layer: 3
   m_Name: S2_incline
   m_TagString: ground
@@ -116,3 +117,16 @@ MonoBehaviour:
   draggingTag: []
   chIn: 0
   text: 0
+--- !u!65 &-4021199203948969751
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6519090575361365320}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000002, y: 2.0000005, z: 2.0000005}
+  m_Center: {x: -0.00000008940697, y: 1.0000002, z: 0.5}

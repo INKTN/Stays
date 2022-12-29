@@ -125,7 +125,7 @@ public class Kid : MonoBehaviour
         ch = !ch;
         setCamera.enabled = ch;
         oriCamera.enabled = !ch;
-        cameratest.caTask = true;
+        cameratest.caTask = false;
         skillUI.SkillOn(transform);//¶}±ÒSKILLUI
  
     }

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8666365442842791888}
   - component: {fileID: 2424871892233480261}
   - component: {fileID: 4887952937679197000}
+  - component: {fileID: -2147604070817146980}
   m_Layer: 3
   m_Name: S2_grass_road
   m_TagString: ground
@@ -101,3 +102,16 @@ MonoBehaviour:
   draggingTag: []
   chIn: 0
   text: 0
+--- !u!65 &-2147604070817146980
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6237275219571627875}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 1.0000004, z: 1.0000004}
+  m_Center: {x: 0, y: 0.50000006, z: -0.000000059604645}

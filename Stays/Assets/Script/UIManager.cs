@@ -27,6 +27,7 @@ public class UIManager : MonoBehaviour
     public GameObject settingPage;
     public GameObject tipsPage;
     public GameObject resetPage;
+    public GameObject back;
     private Cameratest cameratest;
     private Blur blurCam;
     private TouchS touchS;
@@ -45,8 +46,11 @@ public class UIManager : MonoBehaviour
     private void FixedUpdate()
     {
         //聚焦、對話框顯示時時設定UI不顯示
-        if (cameratest.caTask&& !dialongueSystem.display) setting.SetActive(true);
-        else if(!cameratest.caTask || dialongueSystem.display) { setting.SetActive(false); }
+        if(!cameratest.caTask || dialongueSystem.display ||tipsPage.active||resetPage.active||settingPage.active) 
+        { setting.SetActive(false); }
+        else if (cameratest.caTask&& !dialongueSystem.display) setting.SetActive(true);
+        if (!cameratest.caTask) back.SetActive(true);
+        else { back.SetActive(false); }
         //顯示氣泡框
         if (skillOpen)
         {

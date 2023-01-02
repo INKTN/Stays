@@ -1,5 +1,7 @@
 using UnityEngine.UI;
 using UnityEngine;
+using System.Collections;
+using UnityEngine.SceneManagement;
 /// <summary>
 /// 20220416 UI顯示 獨立
 /// 20221217 設定框顯示
@@ -31,25 +33,48 @@ public class UIManager : MonoBehaviour
     private Cameratest cameratest;
     private Blur blurCam;
     private TouchS touchS;
+    [Header("退出鍵")]
+    public GameObject exitMessage;
+    private GameObject sceneExit;
     
 
     #endregion
 
     private void Start()
     {
+        
         setting = GameObject.Find("關卡內UI");
         cameratest = GameObject.Find("MainCamera").GetComponent<Cameratest>();
         blurCam= GameObject.Find("MainCamera").GetComponent<Blur>();
         touchS= GameObject.Find("System").GetComponent<TouchS>();
         dialongueSystem = GameObject.Find("System").GetComponent<DialongueSystem>();
     }
-    private void FixedUpdate()
+    private void Update()
     {
+        
+        //返回
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            //若一秒沒有點兩次，生成提示，如果有則退出遊戲
+            if (sceneExit == null)
+            {
+                sceneExit = Instantiate(exitMessage, FindObjectOfType<Canvas>().transform) as GameObject;
+                StartCoroutine("RestQuitMessage");
+            }
+            else
+            {
+                
+                    //非首頁回首頁
+                SceneManager.LoadScene("首頁");
+
+                
+            }
+        }
         //聚焦、對話框顯示時時設定UI不顯示
         if(!cameratest.caTask || dialongueSystem.display ||tipsPage.active||resetPage.active||settingPage.active) 
         { setting.SetActive(false); }
         else if (cameratest.caTask&& !dialongueSystem.display) setting.SetActive(true);
-        if (!cameratest.caTask) back.SetActive(true);
+        if (!cameratest.caTask && !dialongueSystem.display) back.SetActive(true);
         else { back.SetActive(false); }
         //顯示氣泡框
         if (skillOpen)
@@ -116,6 +141,22 @@ public class UIManager : MonoBehaviour
         settingPage.SetActive(false);
         tipsPage.SetActive(false);
         resetPage.SetActive(false);
+    }
+    public void BackCa()
+    {
+
+    }
+    #endregion
+    #region 返回鍵
+    private IEnumerator RestQuitMessage()
+    {
+        yield return new WaitForSeconds(1f);
+        
+        if (sceneExit != null)
+        {
+            Destroy(sceneExit);
+            
+        }
     }
     #endregion
     #endregion

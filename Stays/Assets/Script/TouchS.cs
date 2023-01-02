@@ -123,6 +123,42 @@ public class TouchS : MonoBehaviour
             }
 
         }
-        
+        if (Input.GetMouseButton(0))
+        {
+            RaycastHit hit;
+            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+            _salaction = null;
+            #region 地板
+            if (Physics.Raycast(ray, out hit) && hit.collider.tag == "ground" && !skillUI.skillOpen)//技能UI不是開的才能換地板
+            {
+
+                var selection = hit.transform;
+                //print(selection.name+selection.position);
+                orimaterial = selection.GetComponent<Renderer>().material;
+                ground.OnGround(selection);
+                _salaction = selection;
+
+            }
+            #endregion
+            #region NPC
+            if (Physics.Raycast(ray, out hit) && hit.collider.tag == "NPC" && !skillUI.skillOpen)
+            {
+                var selection = hit.transform;
+                //print(selection.name + selection.position);
+                orimaterial = selection.GetComponent<Renderer>().material;
+                #region NPC
+                //要在NPC處寫判斷格子
+                if (selection.name == "Kid")
+                {
+                    //print(selection.name == "Kid");
+                    Kid getHit = selection.GetComponent<Kid>();
+                    getHit.Check();
+                }
+                #endregion
+                //呼叫攝影機切換視角
+                _salaction = selection;
+            }
+        }
+        #endregion
     }
 }

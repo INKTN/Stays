@@ -127,5 +127,10 @@ public class Cameratest : MonoBehaviour
         transform.position=Vector3.Lerp(transform.position,disPos,Time.deltaTime*speed);
         transform.LookAt(target.position);//相機看相目標
     }
+    public void OpenCa()
+    {
+        this.enabled = true;
+        caTask = false;   
+    }
     #endregion
 }

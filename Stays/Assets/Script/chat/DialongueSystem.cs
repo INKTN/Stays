@@ -23,11 +23,14 @@ public class DialongueSystem : MonoBehaviour
     [Header("人物顯示")]
     public GameObject certificate;
     public GameObject ramCertificate;
+    [Header("觸控控制")]
+    private TouchS t;
     #endregion
 
     void Start()
     {
-      //StartCoroutine(TypeEffect());
+        //StartCoroutine(TypeEffect());
+        t = GameObject.Find("System").GetComponent<TouchS>();
     }
 
     /// <summary>
@@ -67,6 +70,7 @@ public class DialongueSystem : MonoBehaviour
             }
         }
         goDialogue.SetActive(false); //隱藏對話物件
+        t.switches = false;//關觸控
         display = false;
     }
 
@@ -76,7 +80,7 @@ public class DialongueSystem : MonoBehaviour
     /// <param name="contents">顯示打字效果的對話內容</param>
     public void StartDialogue(string[] contents)
     {
-        
+        t.switches = true;//關觸控
         StartCoroutine(TypeEffect(contents));
     }
 
@@ -87,6 +91,7 @@ public class DialongueSystem : MonoBehaviour
     {
         StopAllCoroutines();
         goDialogue.SetActive(false);
+        t.switches = false;//關觸控
         display = false;
     }
 

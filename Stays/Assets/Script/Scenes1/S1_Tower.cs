@@ -50,6 +50,7 @@ public class S1_Tower : MonoBehaviour
         player = GameObject.Find("主角").GetComponent<PlayerCharacter>();
         
     }
+ 
     private void FixedUpdate()
     {
         Plot();
@@ -153,7 +154,7 @@ public class S1_Tower : MonoBehaviour
     {
         playdone4 = true;
         cameratest.switches = false; cameratest.caTask = true;//關鏡頭移動
-        t.switches = false;//關觸控
+        t.switches = true;//關觸控
         cameraControl.enabled = true;//鏡頭切換
         camera_Tower.enabled = false;
         print("輸出:" + 4);
@@ -168,7 +169,7 @@ public class S1_Tower : MonoBehaviour
     {
         playdone5 = true;
         cameratest.switches = false; cameratest.caTask = true;//關鏡頭移動
-        t.switches = false;//關觸控
+        t.switches = true;//關觸控
         cameraControl.enabled = true;//鏡頭切換
         camera_Tower.enabled = false;
         print("輸出:" + 5);
@@ -189,6 +190,12 @@ public class S1_Tower : MonoBehaviour
             player.Move(target.transform);
             
         }
+    }
+    public void GJDialong()//點擊車站以外的位置
+    {
+        dialongueSystem.StopAllCoroutines();
+        dialongueSystem.StartDialogue(dataDalogues[6].conversationContent);//對話資料讀取
+        dialongueSystem.NameEnter(dataDalogues[6].talkName);
     }
         #endregion
 }

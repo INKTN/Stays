@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8947871780591225439}
   - component: {fileID: 5501773659342066079}
   - component: {fileID: 5799172144106818885}
+  - component: {fileID: 7605049839730822255}
   m_Layer: 3
   m_Name: S1_station
   m_TagString: ground
@@ -101,3 +102,16 @@ MonoBehaviour:
   draggingTag: []
   chIn: 0
   text: 0
+--- !u!65 &7605049839730822255
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7602184815094932845}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 1.0000004, z: 1.0000004}
+  m_Center: {x: 0, y: 0.50000006, z: -0.000000059604645}

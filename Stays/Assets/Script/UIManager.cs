@@ -36,13 +36,13 @@ public class UIManager : MonoBehaviour
     [Header("退出鍵")]
     public GameObject exitMessage;
     private GameObject sceneExit;
-    
-
+    [Header("當前場景名稱")]
+    public Scene scene;
     #endregion
 
     private void Start()
     {
-        
+        scene = SceneManager.GetActiveScene();
         setting = GameObject.Find("關卡內UI");
         cameratest = GameObject.Find("MainCamera").GetComponent<Cameratest>();
         blurCam= GameObject.Find("MainCamera").GetComponent<Blur>();
@@ -119,32 +119,36 @@ public class UIManager : MonoBehaviour
     public void Set()//叫出設定頁面
     {
         touchS.switches = true;//關觸控
+        Time.timeScale = 0;
         blurCam.iterations = 4;//背景模糊
         settingPage.SetActive(true);
     }
     public void Tip()//叫出提示頁面
     {
         touchS.switches = true;//關觸控
+        Time.timeScale = 0;
         blurCam.iterations = 4;//背景模糊
         tipsPage.SetActive(true);
     }
     public void Re()//叫出重設頁面
     {
         touchS.switches = true;//關觸控
+        Time.timeScale = 0;
         blurCam.iterations = 4;//背景模糊
         resetPage.SetActive(true);
     }
-    public void Back()
+    public void Back()//提示重設返回遊戲
     {
+        Time.timeScale = 1;
         touchS.switches = false;//開觸控
         blurCam.iterations = 0;//關背景模糊
         settingPage.SetActive(false);
         tipsPage.SetActive(false);
         resetPage.SetActive(false);
     }
-    public void BackCa()
+    public void BackCa()//重設按鈕
     {
-
+        SceneManager.LoadScene(scene.name);
     }
     #endregion
     #region 返回鍵

@@ -21,8 +21,10 @@ public class TouchS : MonoBehaviour
     public Material orimaterial;
     private hightlightSelectionResponse _selectionResponse;
     public Transform _salaction;
+    public int timerLimit=3;
+    public float timer;
     //UI召喚
-    
+
     private UIManager skillUI;
     private GroundJudgment ground;
     private DialongueSystem dialongue;//對話框偕同程序
@@ -43,21 +45,24 @@ public class TouchS : MonoBehaviour
         character = GameObject.Find("主角").GetComponent<PlayerCharacter>();
         cameratest = GameObject.Find("MainCamera").GetComponent<Cameratest>();
     }
-
+    private void Update()
+    {
+        
+    }
     void FixedUpdate()
     {
         #region 材質還原
-        if (_salaction != null)
+        if (_salaction != null && timer ==0)
         {
             var selectionRenderer = _salaction.GetComponent<Renderer>();
-            if (selectionRenderer !=null)
+            if (selectionRenderer != null)
             {
                 selectionRenderer.material = orimaterial;
             }
 
         }
         #endregion
-        if (!dialongue.display&&!character.walking&&cameratest.caTask&&!switches) //若是對話框顯示則不觸控
+        if (!dialongue.display && !character.walking && cameratest.caTask && !switches) //若是對話框顯示則不觸控
             RayTouch();//觸碰
         #region 觸碰物材質轉換
         if (_salaction != null)
@@ -65,11 +70,14 @@ public class TouchS : MonoBehaviour
             var selectionRenderer = _salaction.GetComponent<Renderer>();
             if (selectionRenderer != null)
             {
+                timer = timerLimit;
+                Time_Area();
                 selectionRenderer.material = hightmaterial;
             }
 
         }
         #endregion
+        
     }
     private void RayTouch()//觸碰
     {
@@ -82,6 +90,7 @@ public class TouchS : MonoBehaviour
             //若是觸碰開始
             if (touch.phase == TouchPhase.Began)
             {
+                   
                 //觸碰位置攝影機發出RAY
                 RaycastHit hit;
                 Ray ray = cam.ScreenPointToRay(pos);
@@ -92,7 +101,8 @@ public class TouchS : MonoBehaviour
                 #region 地板
                 if (Physics.Raycast(ray, out hit) && hit.collider.tag == "ground" && !skillUI.skillOpen)//技能UI不是開的才能換地板
                 {
-
+                    timer = timerLimit;
+                    Time_Area();
                     var selection = hit.transform;
                     //print(selection.name+selection.position);
                     orimaterial = selection.GetComponent<Renderer>().material;
@@ -125,13 +135,15 @@ public class TouchS : MonoBehaviour
         }
         if (Input.GetMouseButton(0))
         {
+               
             RaycastHit hit;
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             _salaction = null;
             #region 地板
             if (Physics.Raycast(ray, out hit) && hit.collider.tag == "ground" && !skillUI.skillOpen)//技能UI不是開的才能換地板
             {
-
+                timer = timerLimit;
+                Time_Area();
                 var selection = hit.transform;
                 //print(selection.name+selection.position);
                 orimaterial = selection.GetComponent<Renderer>().material;
@@ -143,6 +155,8 @@ public class TouchS : MonoBehaviour
             #region NPC
             if (Physics.Raycast(ray, out hit) && hit.collider.tag == "NPC" && !skillUI.skillOpen)
             {
+                timer = timerLimit;
+                Time_Area();
                 var selection = hit.transform;
                 //print(selection.name + selection.position);
                 orimaterial = selection.GetComponent<Renderer>().material;
@@ -157,6 +171,19 @@ public class TouchS : MonoBehaviour
                 #endregion
                 //呼叫攝影機切換視角
                 _salaction = selection;
+            }
+        }
+        #endregion
+    }
+    private void Time_Area()
+    {
+        #region 計時器
+        if (timer == timerLimit)
+        {
+            while (timer != 0)
+            {
+                timer -= Time.deltaTime;
+                print(timer);
             }
         }
         #endregion

@@ -70,7 +70,8 @@ public class DialongueSystem : MonoBehaviour
             }
         }
         goDialogue.SetActive(false); //隱藏對話物件
-        t.switches = false;//關觸控
+        yield return new WaitForSeconds(interval);
+        t.switches = false;//開觸控
         display = false;
     }
 

@@ -12,7 +12,7 @@ public class Cameratest : MonoBehaviour
     [Header("目標物")]
     public Transform target;
     //上次紀錄對象
-    private GameObject lastObj;
+    public GameObject lastObj;
     public Vector3 rayLine;
     
     [Header("觸摸位置")]
@@ -86,15 +86,17 @@ public class Cameratest : MonoBehaviour
     {
         Debug.DrawLine(target.transform.position + rayLine, transform.position, Color.red);//畫線
         RaycastHit hit;
-
         if (Physics.Linecast(target.transform.position + rayLine, transform.position, out hit)&&lastObj!=target)
         {
+            
             if (lastObj != null)
             {
                 Renderer renderer = lastObj.GetComponent<Renderer>();
                 Color _color = renderer.material.color;
                 _color.a = 1f;
+                float _aph = 0f;
                 renderer.material.SetColor("_Color", _color);
+                renderer.material.SetFloat("_Tweak_transparency", _aph);
                 lastObj = null;
 
             }
@@ -107,15 +109,20 @@ public class Cameratest : MonoBehaviour
                 Renderer renderer = lastObj.GetComponent<Renderer>();
                 Color _color = renderer.material.color;
                 _color.a = 0.5f;
+                float _aph = -0.5f;
                 renderer.material.SetColor("_Color", _color);
+                renderer.material.SetFloat("_Tweak_transparency", _aph);
             }
         }//還原
         else if (lastObj != null)
         {
-                Renderer renderer = lastObj.GetComponent<Renderer>();
+            Renderer renderer = lastObj.GetComponent<Renderer>();
             Color _color = renderer.material.color;
+        
             _color.a = 1f;
+            float _aph = 0f;
             renderer.material.SetColor("_Color", _color);
+            renderer.material.SetFloat("_Tweak_transparency",_aph);
             lastObj = null;
             
         }

@@ -10,7 +10,7 @@ public class PlayerCharacter : MonoBehaviour
     [Header("動畫控制")]
     private Animator an;
     [Header("偵測範圍")]
-    private Vector3 detectionRange = new Vector3(0, 0, 0);
+    public Vector3 detectionRange = new Vector3(0, 0, 0);
     [Range(0, 50)]
     public float detectionSize;
     [Header("偵測位置調整")]
@@ -29,7 +29,7 @@ public class PlayerCharacter : MonoBehaviour
        
         an = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();//取得AI判定
-        speed = agent.speed;
+        agent.speed= speed ;
         #endregion
         SetStartPosition();
 
@@ -46,7 +46,7 @@ public class PlayerCharacter : MonoBehaviour
         //print(Mathf.Ceil(agent.remainingDistance));測試數值
         if (Mathf.Ceil(agent.remainingDistance) == 0)
         {
-            an.SetBool("walk", false);
+            //an.SetBool("walk", false);
             agent.ResetPath();
         }//當位置==0，關閉動畫
         walking = an.GetBool("walk");

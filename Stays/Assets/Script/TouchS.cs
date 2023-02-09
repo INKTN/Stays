@@ -52,7 +52,7 @@ public class TouchS : MonoBehaviour
     void FixedUpdate()
     {
         #region 材質還原
-        if (_salaction != null && timer ==0)
+        if (_salaction != null )
         {
             var selectionRenderer = _salaction.GetComponent<Renderer>();
             if (selectionRenderer != null)
@@ -71,7 +71,7 @@ public class TouchS : MonoBehaviour
             if (selectionRenderer != null)
             {
                 timer = timerLimit;
-                Time_Area();
+                //Time_Area();
                 selectionRenderer.material = hightmaterial;
             }
 
@@ -102,7 +102,7 @@ public class TouchS : MonoBehaviour
                 if (Physics.Raycast(ray, out hit) && hit.collider.tag == "ground" && !skillUI.skillOpen)//技能UI不是開的才能換地板
                 {
                     timer = timerLimit;
-                    Time_Area();
+                    //Time_Area();
                     var selection = hit.transform;
                     //print(selection.name+selection.position);
                     orimaterial = selection.GetComponent<Renderer>().material;
@@ -143,7 +143,7 @@ public class TouchS : MonoBehaviour
             if (Physics.Raycast(ray, out hit) && hit.collider.tag == "ground" && !skillUI.skillOpen)//技能UI不是開的才能換地板
             {
                 timer = timerLimit;
-                Time_Area();
+                //Time_Area();
                 var selection = hit.transform;
                 //print(selection.name+selection.position);
                 orimaterial = selection.GetComponent<Renderer>().material;
@@ -156,7 +156,7 @@ public class TouchS : MonoBehaviour
             if (Physics.Raycast(ray, out hit) && hit.collider.tag == "NPC" && !skillUI.skillOpen)
             {
                 timer = timerLimit;
-                Time_Area();
+                //Time_Area();
                 var selection = hit.transform;
                 //print(selection.name + selection.position);
                 orimaterial = selection.GetComponent<Renderer>().material;

@@ -1,112 +1,112 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.30f1 (1fb1bf06830e) revision 2077119'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'zh' Physical Memory: 8034 MB
+OS: 'Windows 11  (10.0.22621) 64bit Core' Language: 'zh' Physical Memory: 32100 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
-D:\2020.3.30f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-D:/Unity/Stays/Stays
+C:/Users/lilyh/Documents/GitHub/Stays/Stays
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-56033
-Successfully changed project path to: D:/Unity/Stays/Stays
-D:/Unity/Stays/Stays
+57651
+Successfully changed project path to: C:/Users/lilyh/Documents/GitHub/Stays/Stays
+C:/Users/lilyh/Documents/GitHub/Stays/Stays
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 161.40 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 48.00 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.30f1 (1fb1bf06830e)
-[Subsystems] Discovering subsystems at path D:/2020.3.30f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/Unity/Stays/Stays/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/lilyh/Documents/GitHub/Stays/Stays/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1050 (ID=0x1c91)
+    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2520)
     Vendor:   
-    VRAM:     2996 MB
-    Driver:   30.0.15.1165
+    VRAM:     6023 MB
+    Driver:   30.0.15.1278
 Shader 'Custom/AdditiveTintable': fallback shader 'Particles/Additive (Soft)' not found
 Initialize mono
-Mono path[0] = 'D:/2020.3.30f1/Editor/Data/Managed'
-Mono path[1] = 'D:/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'D:/2020.3.30f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56700
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56536
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: D:/2020.3.30f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: D:/2020.3.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001357 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002447 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 54.29 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 45.42 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.597 seconds
+- Completed reload, in  0.445 seconds
 Domain Reload Profiling:
-	ReloadAssembly (597ms)
-		BeginReloadAssembly (63ms)
+	ReloadAssembly (445ms)
+		BeginReloadAssembly (51ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (476ms)
-			LoadAssemblies (63ms)
+		EndReloadAssembly (339ms)
+			LoadAssemblies (50ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (139ms)
+			SetupTypeCache (97ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (28ms)
-			SetupLoadedEditorAssemblies (167ms)
+			RebuildScriptCaches (20ms)
+			SetupLoadedEditorAssemblies (140ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (54ms)
-				BeforeProcessingInitializeOnLoad (15ms)
-				ProcessInitializeOnLoadAttributes (70ms)
-				ProcessInitializeOnLoadMethodAttributes (23ms)
+				RefreshPlugins (45ms)
+				BeforeProcessingInitializeOnLoad (11ms)
+				ProcessInitializeOnLoadAttributes (60ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003063 seconds.
+Registered in 0.004396 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 51.50 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 44.23 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.245 seconds
+- Completed reload, in  0.854 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1245ms)
-		BeginReloadAssembly (136ms)
+	ReloadAssembly (855ms)
+		BeginReloadAssembly (111ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (17ms)
-		EndReloadAssembly (1063ms)
-			LoadAssemblies (160ms)
+			CreateAndSetChildDomain (15ms)
+		EndReloadAssembly (697ms)
+			LoadAssemblies (79ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (268ms)
+			SetupTypeCache (199ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (47ms)
-			SetupLoadedEditorAssemblies (491ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (308ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (52ms)
-				BeforeProcessingInitializeOnLoad (139ms)
-				ProcessInitializeOnLoadAttributes (288ms)
+				RefreshPlugins (44ms)
+				BeforeProcessingInitializeOnLoad (61ms)
+				ProcessInitializeOnLoadAttributes (188ms)
 				ProcessInitializeOnLoadMethodAttributes (6ms)
-				AfterProcessingInitializeOnLoad (2ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (5ms)
@@ -114,15 +114,15 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Custom/AdditiveTintable': fallback shader 'Particles/Additive (Soft)' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.86 ms, found 5 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.64 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2461 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 166.6 MB.
-System memory in use after: 156.1 MB.
+System memory in use before: 174.9 MB.
+System memory in use after: 164.3 MB.
 
-Unloading 87 unused Assets to reduce memory usage. Loaded Objects now: 2870.
-Total: 15.996300 ms (FindLiveObjects: 0.395500 ms CreateObjectMapping: 0.207000 ms MarkObjects: 4.063200 ms  DeleteObjects: 11.329300 ms)
+Unloading 87 unused Assets to reduce memory usage. Loaded Objects now: 2895.
+Total: 7.624100 ms (FindLiveObjects: 0.230100 ms CreateObjectMapping: 0.074500 ms MarkObjects: 2.356500 ms  DeleteObjects: 4.962100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -131,17 +131,175 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Material/S1_Color/House_1.mat
-  artifactKey: Guid(d101f9c240518794c9756f80faac7774) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Material/S1_Color/House_1.mat using Guid(d101f9c240518794c9756f80faac7774) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a1a8b893cb0e5319fc907547175d78b') in 1.723214 seconds 
+  path: Assets/Texture/S1_Materials/house_2_UV_color.png
+  artifactKey: Guid(f9e68d45b8805cb479a9bffb3194627b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture/S1_Materials/house_2_UV_color.png using Guid(f9e68d45b8805cb479a9bffb3194627b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a414418a95c26b8509cb2e2bd0ca999') in 0.114275 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 9.205444 seconds.
-  path: Assets/Scenes/關卡3 歸途.unity
-  artifactKey: Guid(bb68ec8e1ad851d479e038e34582b11d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/關卡3 歸途.unity using Guid(bb68ec8e1ad851d479e038e34582b11d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '871f1a7a8c767dc9e8d5abaeb4f73ba4') in 0.017576 seconds 
+  Time since last request: 0.000180 seconds.
+  path: Assets/Texture/S1_Materials/mailbox_UV_color.png
+  artifactKey: Guid(3560e3d6f29eb0f4dbda04d49ef23495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture/S1_Materials/mailbox_UV_color.png using Guid(3560e3d6f29eb0f4dbda04d49ef23495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad8f0c2acb042ce2cd54ee8657c73336') in 0.051939 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/Texture/S1_Materials/clock tower_UV_color_.png
+  artifactKey: Guid(722173039b83ee140a56719f39b99930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture/S1_Materials/clock tower_UV_color_.png using Guid(722173039b83ee140a56719f39b99930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0a73d3d0722918e22a7ef13a059792b') in 0.057054 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/Texture/S1_Materials/shop_Triangular_UV_color.png
+  artifactKey: Guid(441b59ea5d3d9de41888a97b5eb7da86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture/S1_Materials/shop_Triangular_UV_color.png using Guid(441b59ea5d3d9de41888a97b5eb7da86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbf6ffef4718c7fa2d9df9e0b0ea73f2') in 0.055281 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/Texture/S1_Materials/clock tower_UV_color.png
+  artifactKey: Guid(94b603c8fdf1c3848b80afd214f055df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture/S1_Materials/clock tower_UV_color.png using Guid(94b603c8fdf1c3848b80afd214f055df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41a1babd6520ecba78cfd29b1b0d190e') in 0.056631 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Texture/S1_Materials/shop_middle_UV_color.png
+  artifactKey: Guid(3dd2dd9b9b62f2e4aa1fb847cf40b2d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture/S1_Materials/shop_middle_UV_color.png using Guid(3dd2dd9b9b62f2e4aa1fb847cf40b2d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc523aece0af4a063eceb8b9205092c5') in 0.052977 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Texture/S1_Materials/carriage_UV_color.png
+  artifactKey: Guid(8f189267e025138428ae4cf1eecbe90f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture/S1_Materials/carriage_UV_color.png using Guid(8f189267e025138428ae4cf1eecbe90f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f2fcadff7b392124a80001c3649ecf9') in 0.048381 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Texture/S1_Materials/shop_left_UV_color.png
+  artifactKey: Guid(e43cfe649f6fd7644bee5414f8f2cc36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture/S1_Materials/shop_left_UV_color.png using Guid(e43cfe649f6fd7644bee5414f8f2cc36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af84bda2c9d531b4142299feb44d50b1') in 0.049469 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/Texture/S1_Materials/TrainStation_middle_UV_color.png
+  artifactKey: Guid(d1c6dc82d6bbcfb4aad37032f910ef6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture/S1_Materials/TrainStation_middle_UV_color.png using Guid(d1c6dc82d6bbcfb4aad37032f910ef6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6e6a599a7647836777d187d7706b932') in 0.045371 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/Texture/S1_Materials/shop_right_UV_color.png
+  artifactKey: Guid(045b8f8c5167dff42896e1f862831418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture/S1_Materials/shop_right_UV_color.png using Guid(045b8f8c5167dff42896e1f862831418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c72c5876a372bc738ce3c04255ccec76') in 0.042967 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Texture/S1_Materials/TrainStation_both sides_UV_color.png
+  artifactKey: Guid(e07d92cd242ebe7489e60f7f5d6cb735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture/S1_Materials/TrainStation_both sides_UV_color.png using Guid(e07d92cd242ebe7489e60f7f5d6cb735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae8a5f12568e2b7333c818e56d283646') in 0.044358 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/Texture/S1_Materials/locomotive_UV_color.png
+  artifactKey: Guid(c4692c1eb3b1e5040aaa42707b4fb6bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture/S1_Materials/locomotive_UV_color.png using Guid(c4692c1eb3b1e5040aaa42707b4fb6bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ebeb8fda510b27fa70a5350eed1c724') in 0.045249 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/Texture/S1_Materials/clock tower_UV_color_1.png
+  artifactKey: Guid(06dfdcb281343e7489f3685170e81da1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture/S1_Materials/clock tower_UV_color_1.png using Guid(06dfdcb281343e7489f3685170e81da1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4f6fa741a44eaea25dba7a1a43320c5') in 0.044129 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Assets/Texture/S1_Materials/house_1_UV_color.png
+  artifactKey: Guid(688dbc5a27b9b784cacc8710074c3311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture/S1_Materials/house_1_UV_color.png using Guid(688dbc5a27b9b784cacc8710074c3311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88b59e8e6886a026fa25f3ceba2264ea') in 0.040352 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Texture/S1_Materials/shop_left_bulletin board_UV_color.png
+  artifactKey: Guid(0b5bf5508f699cf4aa7be82ca173ccc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture/S1_Materials/shop_left_bulletin board_UV_color.png using Guid(0b5bf5508f699cf4aa7be82ca173ccc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c45b85cc730bab37fa9bfb3984e6de4c') in 0.045250 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 43.875907 seconds.
+  path: Assets/Models/S1_Models
+  artifactKey: Guid(02abb114804b14e479a5995b97dfb761) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/S1_Models using Guid(02abb114804b14e479a5995b97dfb761) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f6806427e5e6479516db3f881d75940') in 0.002876 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.084462 seconds.
+  path: Assets/Models/S1_Models/信箱.fbx
+  artifactKey: Guid(e699e64a967515246a6886d6ed10f5e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/S1_Models/信箱.fbx using Guid(e699e64a967515246a6886d6ed10f5e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99cd97c1aa36f34de8d5c36ef9ef4267') in 0.102289 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/Models/S1_Models/鐘塔_1.fbx
+  artifactKey: Guid(63a7f0e20e741cd499131f3e100f657a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/S1_Models/鐘塔_1.fbx using Guid(63a7f0e20e741cd499131f3e100f657a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1df1b6c4f875f9df295cd844db2c604b') in 0.058636 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/Models/S1_Models/房子_2.fbx
+  artifactKey: Guid(60b25c0c1125cf346a0881a513992dc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/S1_Models/房子_2.fbx using Guid(60b25c0c1125cf346a0881a513992dc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1396cddd46688e36740fa9d02153b457') in 0.064491 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/Models/S1_Models/鐘塔_2.fbx
+  artifactKey: Guid(7cb9b0ccb4b36cc4f8f5c6aa07a84962) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/S1_Models/鐘塔_2.fbx using Guid(7cb9b0ccb4b36cc4f8f5c6aa07a84962) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '863bfe6478fb03fe8a305169b3da19be') in 0.063882 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/Models/S1_Models/商店街_中開門.fbx
+  artifactKey: Guid(7bb752559f02b6344bb360f2baeacfe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/S1_Models/商店街_中開門.fbx using Guid(7bb752559f02b6344bb360f2baeacfe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e18ce69c131f627e24d6d975e228eb57') in 0.059906 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Models/S1_Models/火車.fbx
+  artifactKey: Guid(eaa5725de420bdc4690abc9a376ae416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/S1_Models/火車.fbx using Guid(eaa5725de420bdc4690abc9a376ae416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d23391dde30a99ae52ddbfb99aa87da') in 0.102496 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/Models/S1_Models/房子_1.fbx
+  artifactKey: Guid(c4e9db32bacf2774690726d60eb5c6d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/S1_Models/房子_1.fbx using Guid(c4e9db32bacf2774690726d60eb5c6d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1197a9293a107aa9558f1f2e27b54ec4') in 0.043747 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/Models/S1_Models/火車站.fbx
+  artifactKey: Guid(3b72c212fdd767b44914120ae3e0dc19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/S1_Models/火車站.fbx using Guid(3b72c212fdd767b44914120ae3e0dc19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2022f7578f02dca4f53abcbdc1733be5') in 0.095037 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/Models/S1_Models/商店街_右開門.fbx
+  artifactKey: Guid(b4c8dd846e49fe84d8b17eea67645b6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/S1_Models/商店街_右開門.fbx using Guid(b4c8dd846e49fe84d8b17eea67645b6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8038a427d73a99373dd2d967c4044b9') in 0.050970 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000405 seconds.
+  path: Assets/Models/S1_Models/商店街_三角窗.fbx
+  artifactKey: Guid(d287b84033e0e8646b12ecf7ae83f67f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/S1_Models/商店街_三角窗.fbx using Guid(d287b84033e0e8646b12ecf7ae83f67f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71c34df274ca767fa769e1bcf3945414') in 0.058077 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Models/S1_Models/商店街_左開門.fbx
+  artifactKey: Guid(9e7ce4570eee4664e88f4a0ba85099e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/S1_Models/商店街_左開門.fbx using Guid(9e7ce4570eee4664e88f4a0ba85099e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f5f26ca3b62a992010352aa63ecb14d') in 0.092026 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/Models/S1_Models/鐘塔.fbx
+  artifactKey: Guid(2dc98ae5d7f254b40a7f5c2f3379d080) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/S1_Models/鐘塔.fbx using Guid(2dc98ae5d7f254b40a7f5c2f3379d080) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94b17a16b2108c4e9df94f75c4092710') in 0.042982 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

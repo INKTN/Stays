@@ -1393,7 +1393,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &158505000
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1713,6 +1713,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: "\u4E3B\u89D2"
       objectReference: {fileID: 0}
+    - target: {fileID: 7746610461653674562, guid: 10fba4c8033c7a544a3b23501b371546, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: f9829a70d0fdd6d409bd39f48b257749, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10fba4c8033c7a544a3b23501b371546, type: 3}
 --- !u!1001 &175712698
@@ -7984,7 +7988,7 @@ MonoBehaviour:
   onObject: {x: 0, y: 2.5, z: 0}
   skillOpen: 0
   coldTime: 500
-  setting: {fileID: 0}
+  setting: {fileID: 2146521074}
   settingPage: {fileID: 1411186241}
   tipsPage: {fileID: 635700705}
   resetPage: {fileID: 1715284565}
@@ -16537,7 +16541,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3977458733755232760, guid: 2c4f97a46e743ac418ac0813e90b9611, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3977458733755232761, guid: 2c4f97a46e743ac418ac0813e90b9611, type: 3}
       propertyPath: m_Pivot.x
@@ -17942,6 +17946,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2146521074 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 642789318503546534, guid: 7b5ced3b1794f934faf9eb8c4aab8286, type: 3}
+  m_PrefabInstance: {fileID: 1297421227}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &3292394785251801386
 GameObject:
   m_ObjectHideFlags: 0

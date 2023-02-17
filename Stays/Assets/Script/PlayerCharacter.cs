@@ -46,7 +46,7 @@ public class PlayerCharacter : MonoBehaviour
         //print(Mathf.Ceil(agent.remainingDistance));測試數值
         if (Mathf.Ceil(agent.remainingDistance) == 0)
         {
-            //an.SetBool("walk", false);
+            an.SetBool("walk", false);
             agent.ResetPath();
         }//當位置==0，關閉動畫
         walking = an.GetBool("walk");

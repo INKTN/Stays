@@ -71,7 +71,7 @@ public class UIManager : MonoBehaviour
             }
         }
         //聚焦、對話框顯示時時設定UI不顯示
-        if(!cameratest.caTask || dialongueSystem.display ||tipsPage.active||resetPage.active||settingPage.active) 
+        if(!cameratest.caTask || dialongueSystem.display )// ||tipsPage.active||resetPage.active||settingPage.active
         { setting.SetActive(false); }
         else if (cameratest.caTask&& !dialongueSystem.display) setting.SetActive(true);
         if (!cameratest.caTask && !dialongueSystem.display) back.SetActive(true);

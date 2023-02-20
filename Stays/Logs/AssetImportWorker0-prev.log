@@ -1,184 +1,128 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.30f1 (1fb1bf06830e) revision 2077119'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'zh' Physical Memory: 8034 MB
+OS: 'Windows 11  (10.0.22621) 64bit Core' Language: 'zh' Physical Memory: 32100 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
-D:\2020.3.30f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-D:/Unity/Stays/Stays
+C:/Users/lilyh/Documents/GitHub/Stays/Stays
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49560
-Successfully changed project path to: D:/Unity/Stays/Stays
-D:/Unity/Stays/Stays
+49763
+Successfully changed project path to: C:/Users/lilyh/Documents/GitHub/Stays/Stays
+C:/Users/lilyh/Documents/GitHub/Stays/Stays
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 64.78 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 56.00 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.30f1 (1fb1bf06830e)
-[Subsystems] Discovering subsystems at path D:/2020.3.30f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/Unity/Stays/Stays/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/lilyh/Documents/GitHub/Stays/Stays/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1050 (ID=0x1c91)
+    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2520)
     Vendor:   
-    VRAM:     2996 MB
-    Driver:   30.0.15.1165
+    VRAM:     6023 MB
+    Driver:   30.0.15.1278
 Shader 'Custom/AdditiveTintable': fallback shader 'Particles/Additive (Soft)' not found
 Initialize mono
-Mono path[0] = 'D:/2020.3.30f1/Editor/Data/Managed'
-Mono path[1] = 'D:/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'D:/2020.3.30f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56760
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56288
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: D:/2020.3.30f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: D:/2020.3.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001518 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002279 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 56.26 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 51.03 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.573 seconds
+- Completed reload, in  0.476 seconds
 Domain Reload Profiling:
-	ReloadAssembly (573ms)
-		BeginReloadAssembly (59ms)
+	ReloadAssembly (476ms)
+		BeginReloadAssembly (52ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (454ms)
-			LoadAssemblies (59ms)
+		EndReloadAssembly (368ms)
+			LoadAssemblies (51ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (136ms)
+			SetupTypeCache (105ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (28ms)
-			SetupLoadedEditorAssemblies (165ms)
+			RebuildScriptCaches (21ms)
+			SetupLoadedEditorAssemblies (149ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (56ms)
-				BeforeProcessingInitializeOnLoad (14ms)
-				ProcessInitializeOnLoadAttributes (67ms)
-				ProcessInitializeOnLoadMethodAttributes (23ms)
+				RefreshPlugins (51ms)
+				BeforeProcessingInitializeOnLoad (12ms)
+				ProcessInitializeOnLoadAttributes (61ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003638 seconds.
+Registered in 0.004949 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-0000027890A30080 doesn't match image D:\Unity\Stays\Stays\Library\ScriptAssemblies\Unity.Recorder.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002788FE160A0 doesn't match image D:\Unity\Stays\Stays\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002788F83CA60 doesn't match image D:\Unity\Stays\Stays\Library\ScriptAssemblies\Unity.Recorder.Base.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002788C0785B0 doesn't match image D:\Unity\Stays\Stays\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002788FAEC9C0 doesn't match image D:\Unity\Stays\Stays\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002788C0A7FD0 doesn't match image D:\Unity\Stays\Stays\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002788C0A7FD0 doesn't match image D:\Unity\Stays\Stays\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002788BFA1EC0 doesn't match image D:\Unity\Stays\Stays\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002788FB10000 doesn't match image D:\Unity\Stays\Stays\Library\ScriptAssemblies\Unity.Burst.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002788BFD00D0 doesn't match image D:\Unity\Stays\Stays\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002788FAEC9C0 doesn't match image D:\Unity\Stays\Stays\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002788BF588D0 doesn't match image D:\Unity\Stays\Stays\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002788C161230 doesn't match image D:\Unity\Stays\Stays\Library\ScriptAssemblies\Unity.InputSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002788BF15830 doesn't match image D:\Unity\Stays\Stays\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002788BE4C020 doesn't match image D:\Unity\Stays\Stays\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002788BE4C020 doesn't match image D:\Unity\Stays\Stays\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002789010B420 doesn't match image D:\Unity\Stays\Stays\Library\ScriptAssemblies\Unity.Animation.Rigging.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002788BCC7010 doesn't match image D:\Unity\Stays\Stays\Library\ScriptAssemblies\Unity.Mathematics.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002788BF15830 doesn't match image D:\Unity\Stays\Stays\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002788BE64030 doesn't match image D:\Unity\Stays\Stays\Library\ScriptAssemblies\Cinemachine.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002788BE64030 doesn't match image D:\Unity\Stays\Stays\Library\ScriptAssemblies\Unity.Burst.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002788FC17220 doesn't match image D:\Unity\Stays\Stays\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002789010B420 doesn't match image D:\Unity\Stays\Stays\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000027890B5E020 doesn't match image D:\Unity\Stays\Stays\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002789010B420 doesn't match image D:\Unity\Stays\Stays\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002788C137F90 doesn't match image D:\Unity\Stays\Stays\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002789010B420 doesn't match image D:\Unity\Stays\Stays\Library\ScriptAssemblies\Unity.Animation.Rigging.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002788C01DB40 doesn't match image D:\Unity\Stays\Stays\Library\ScriptAssemblies\Unity.Recorder.dll
-Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 55.84 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 51.30 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.516 seconds
+- Completed reload, in  1.460 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1517ms)
-		BeginReloadAssembly (138ms)
+	ReloadAssembly (1461ms)
+		BeginReloadAssembly (113ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (17ms)
-		EndReloadAssembly (1332ms)
-			LoadAssemblies (111ms)
+			CreateAndSetChildDomain (15ms)
+		EndReloadAssembly (1302ms)
+			LoadAssemblies (83ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (268ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (50ms)
-			SetupLoadedEditorAssemblies (807ms)
+			SetupTypeCache (225ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (882ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (56ms)
-				BeforeProcessingInitializeOnLoad (67ms)
-				ProcessInitializeOnLoadAttributes (672ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (51ms)
+				BeforeProcessingInitializeOnLoad (66ms)
+				ProcessInitializeOnLoadAttributes (749ms)
 				ProcessInitializeOnLoadMethodAttributes (6ms)
-				AfterProcessingInitializeOnLoad (2ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Custom/AdditiveTintable': fallback shader 'Particles/Additive (Soft)' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.40 seconds
-Refreshing native plugins compatible for Editor in 0.66 ms, found 5 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.71 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2843 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 198.5 MB.
-System memory in use after: 188.0 MB.
+System memory in use before: 198.6 MB.
+System memory in use after: 188.1 MB.
 
 Unloading 88 unused Assets to reduce memory usage. Loaded Objects now: 3278.
-Total: 11.336400 ms (FindLiveObjects: 0.450300 ms CreateObjectMapping: 0.288200 ms MarkObjects: 3.576000 ms  DeleteObjects: 7.021200 ms)
+Total: 8.389000 ms (FindLiveObjects: 0.248500 ms CreateObjectMapping: 0.111500 ms MarkObjects: 2.979200 ms  DeleteObjects: 5.049000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -187,54 +131,193 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Prefabricated/Sky/1-2 (1).png
-  artifactKey: Guid(ebcac17c8b4c085418052ca07d4b9cf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabricated/Sky/1-2 (1).png using Guid(ebcac17c8b4c085418052ca07d4b9cf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d4dc80eb43c4553e4ce71b40efb482d') in 1.554280 seconds 
+  path: Assets/Store/建築/LowPolyVillage/Prefabs/Other_Objects/Box.prefab
+  artifactKey: Guid(ad7194aa8031aa74d9226754ef39fadc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Store/建築/LowPolyVillage/Prefabs/Other_Objects/Box.prefab using Guid(ad7194aa8031aa74d9226754ef39fadc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3721b6229a6494e2ba81774c6a329d4') in 0.149578 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000701 seconds.
-  path: Assets/Prefabricated/Sky/2.jpeg
-  artifactKey: Guid(5ef8d2853f14cbe41bc5e0e27b0bbb40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabricated/Sky/2.jpeg using Guid(5ef8d2853f14cbe41bc5e0e27b0bbb40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '322abda2f80e52f8a142fb22c3022b7c') in 0.290294 seconds 
+  Time since last request: 13.191407 seconds.
+  path: Assets/Store/建築/LowPolyVillage/Prefabs/Stone
+  artifactKey: Guid(dba34c5062f2efc498af81fe9d764308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Store/建築/LowPolyVillage/Prefabs/Stone using Guid(dba34c5062f2efc498af81fe9d764308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02edd0b1517c39d23b907b7182c26641') in 0.006744 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000402 seconds.
-  path: Assets/icon/01首頁/01首頁_Touch_to_Start.png
-  artifactKey: Guid(c337a4df09db41348a10ca523392b2ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/icon/01首頁/01首頁_Touch_to_Start.png using Guid(c337a4df09db41348a10ca523392b2ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7434c034863d6618b9b547205a7703c') in 0.313190 seconds 
+  Time since last request: 0.691592 seconds.
+  path: Assets/Store/建築/LowPolyVillage/Prefabs/Stone/Stone_05.prefab
+  artifactKey: Guid(362fec71bbd77ae45a2dab264844e7c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Store/建築/LowPolyVillage/Prefabs/Stone/Stone_05.prefab using Guid(362fec71bbd77ae45a2dab264844e7c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eec1e5441f811deb0ce76a77a4a18e23') in 0.079548 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000379 seconds.
-  path: Assets/Prefabricated/Sky/1-2 (2).png
-  artifactKey: Guid(0346d6dae92d025488cf0c996265781e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabricated/Sky/1-2 (2).png using Guid(0346d6dae92d025488cf0c996265781e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e1489b2a9b17f5de4f58b2050c0cd0e') in 0.026205 seconds 
+  Time since last request: 0.372621 seconds.
+  path: Assets/Store/建築/LowPolyVillage/Prefabs/Stone/Stone_06.prefab
+  artifactKey: Guid(a6274c7f5e2fcaa409c4bffae9b2f2f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Store/建築/LowPolyVillage/Prefabs/Stone/Stone_06.prefab using Guid(a6274c7f5e2fcaa409c4bffae9b2f2f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c7743ed686c3ee1a5671021fa7ae542') in 0.065226 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000447 seconds.
-  path: Assets/icon/01首頁/01首頁_按鈕01回憶.png
-  artifactKey: Guid(36853dbc1f885b54d80fe57684172c83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/icon/01首頁/01首頁_按鈕01回憶.png using Guid(36853dbc1f885b54d80fe57684172c83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86e782d1c771bdf591b222e1e052796d') in 0.156865 seconds 
+  Time since last request: 1.586694 seconds.
+  path: Assets/Store/建築/LowPolyVillage/Prefabs/Stand
+  artifactKey: Guid(b8e1f3e7208d603479174d0a0ca5cb6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Store/建築/LowPolyVillage/Prefabs/Stand using Guid(b8e1f3e7208d603479174d0a0ca5cb6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a80e3998c6b680876eb5c4943dd3dbf') in 0.006559 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000351 seconds.
-  path: Assets/icon/01首頁/01首頁_按鈕02設定.png
-  artifactKey: Guid(0f01de7677bb3fe4ca714b8eb077316c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/icon/01首頁/01首頁_按鈕02設定.png using Guid(0f01de7677bb3fe4ca714b8eb077316c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4da00ddc0c98857a1a687b810c3a37a') in 0.138526 seconds 
+  Time since last request: 0.725138 seconds.
+  path: Assets/Store/建築/LowPolyVillage/Prefabs/Stand/Stand_Wood.prefab
+  artifactKey: Guid(c357c9df5bbccec4b829a6e9dc3759c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Store/建築/LowPolyVillage/Prefabs/Stand/Stand_Wood.prefab using Guid(c357c9df5bbccec4b829a6e9dc3759c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e33c6739d4b24dad896fff136167c832') in 0.076295 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000404 seconds.
-  path: Assets/icon/01首頁/01首頁_按鈕03關於.png
-  artifactKey: Guid(64e14a4303fc51b4eb12c7a504831822) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/icon/01首頁/01首頁_按鈕03關於.png using Guid(64e14a4303fc51b4eb12c7a504831822) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ee7e8c90e6136e15f6babcb6dff2cda') in 0.164044 seconds 
+  Time since last request: 0.471274 seconds.
+  path: Assets/Store/建築/LowPolyVillage/Prefabs/Stand/Stand_Purple.prefab
+  artifactKey: Guid(29ef9a712a6f84541a21a423a1e1bbd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Store/建築/LowPolyVillage/Prefabs/Stand/Stand_Purple.prefab using Guid(29ef9a712a6f84541a21a423a1e1bbd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '227cfa32c8c45150b90b1ec3f4102f11') in 0.073360 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000383 seconds.
-  path: Assets/icon/01首頁/01首頁_背景.png
-  artifactKey: Guid(3740fdc99bf8da44b81381d1bec38c2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/icon/01首頁/01首頁_背景.png using Guid(3740fdc99bf8da44b81381d1bec38c2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b14a608d1f9831b91dd08a94974c164d') in 0.319420 seconds 
+  Time since last request: 0.395243 seconds.
+  path: Assets/Store/建築/LowPolyVillage/Prefabs/Stand/Stand_Orange.prefab
+  artifactKey: Guid(f2a879fb0ab02e24091b2ade1c8d3ce8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Store/建築/LowPolyVillage/Prefabs/Stand/Stand_Orange.prefab using Guid(f2a879fb0ab02e24091b2ade1c8d3ce8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1365902e03e88f4c9b32a7799779ab3c') in 0.075124 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.366627 seconds.
+  path: Assets/Store/建築/LowPolyVillage/Prefabs/Stand/Stand_Empty_Wood.prefab
+  artifactKey: Guid(918ca8ce04e69de4c953d61ff03bd365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Store/建築/LowPolyVillage/Prefabs/Stand/Stand_Empty_Wood.prefab using Guid(918ca8ce04e69de4c953d61ff03bd365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cb86dae87ac94b6bd2f8745b6617043') in 0.071318 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.948681 seconds.
+  path: Assets/Store/建築/LowPolyVillage/Prefabs/Flower
+  artifactKey: Guid(93c43ddafad034047aeb2bd02fdacb87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Store/建築/LowPolyVillage/Prefabs/Flower using Guid(93c43ddafad034047aeb2bd02fdacb87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c390f5e1a3978caa7720b03863d5981') in 0.006671 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.908282 seconds.
+  path: Assets/Store/建築/LowPolyVillage/Prefabs/House
+  artifactKey: Guid(abf744acc731b214bb62046a595da8d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Store/建築/LowPolyVillage/Prefabs/House using Guid(abf744acc731b214bb62046a595da8d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ecda1c9be98d8eb056457a90204f12f') in 0.006589 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.127399 seconds.
+  path: Assets/Store/建築/LowPolyVillage/Prefabs/House/House_01.prefab
+  artifactKey: Guid(9ec9a389e33c64a418c1a821a228a8b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Store/建築/LowPolyVillage/Prefabs/House/House_01.prefab using Guid(9ec9a389e33c64a418c1a821a228a8b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd86d405abb7f8be6712852b076c320b1') in 0.062033 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.339351 seconds.
+  path: Assets/Store/建築/LowPolyVillage/Prefabs/House/House_02.prefab
+  artifactKey: Guid(def968192fd81424483a976346f52b66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Store/建築/LowPolyVillage/Prefabs/House/House_02.prefab using Guid(def968192fd81424483a976346f52b66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b36fe0fadcd8f8dbfb9114e105513976') in 0.056997 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.330073 seconds.
+  path: Assets/Store/建築/LowPolyVillage/Prefabs/House/House_03.prefab
+  artifactKey: Guid(184d205ad7b7e484ca73918442247db1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Store/建築/LowPolyVillage/Prefabs/House/House_03.prefab using Guid(184d205ad7b7e484ca73918442247db1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3db84a83d2f1d45dab70e67aca013259') in 0.062126 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.062246 seconds.
+  path: Assets/Store/建築/LowPolyVillage/Prefabs/Barn
+  artifactKey: Guid(b5f3672227c559c40b6c71b1b73002a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Store/建築/LowPolyVillage/Prefabs/Barn using Guid(b5f3672227c559c40b6c71b1b73002a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '718a363a787d91bcaf174dd00b682ad5') in 0.006503 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.669886 seconds.
+  path: Assets/Store/建築/LowPolyVillage/Prefabs/Barn/Barn_01.prefab
+  artifactKey: Guid(91627a40468b6554997fd42252dca814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Store/建築/LowPolyVillage/Prefabs/Barn/Barn_01.prefab using Guid(91627a40468b6554997fd42252dca814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '292f65b7a41def31779aa6fb47648f18') in 0.071206 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.454322 seconds.
+  path: Assets/Store/建築/LowPolyVillage/Prefabs/Barn/Barn_03.prefab
+  artifactKey: Guid(dfb0fbdb3e1e8144e872ef4e41f9d317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Store/建築/LowPolyVillage/Prefabs/Barn/Barn_03.prefab using Guid(dfb0fbdb3e1e8144e872ef4e41f9d317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41bfcd36078d8ada85d39ab96a64d4bb') in 0.070765 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.850039 seconds.
+  path: Assets/Store/建築/LowPolyVillage/Prefabs/Bushes/Bushes_02.prefab
+  artifactKey: Guid(51b8fc81aef14b14ea1b8fb1ecb2b082) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Store/建築/LowPolyVillage/Prefabs/Bushes/Bushes_02.prefab using Guid(51b8fc81aef14b14ea1b8fb1ecb2b082) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ace0f8a4206bb3761e01748bc05c903') in 0.073585 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.610335 seconds.
+  path: Assets/Store/建築/LowPolyVillage/Prefabs/Bushes/Bushes_03.prefab
+  artifactKey: Guid(d9206355b7757244ab0f522bf6836655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Store/建築/LowPolyVillage/Prefabs/Bushes/Bushes_03.prefab using Guid(d9206355b7757244ab0f522bf6836655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c1853a736ce20ee296864949b58bf9f') in 0.067460 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.016252 seconds.
+  path: Assets/Store/建築/LowPolyVillage/Prefabs/Field/Empty_Field.prefab
+  artifactKey: Guid(343d63e58c0d2c14b851888112f2b650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Store/建築/LowPolyVillage/Prefabs/Field/Empty_Field.prefab using Guid(343d63e58c0d2c14b851888112f2b650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c705f00fb366f39241af44a68f18ed14') in 0.075430 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.747027 seconds.
+  path: Assets/Store/建築/LowPolyVillage/Prefabs/Field/Corn_Field.prefab
+  artifactKey: Guid(0468f27d1edbdac47ac2c1f1af58674a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Store/建築/LowPolyVillage/Prefabs/Field/Corn_Field.prefab using Guid(0468f27d1edbdac47ac2c1f1af58674a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c369c8e6e15da00a5cb1587ca006f0c0') in 0.070446 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.812893 seconds.
+  path: Assets/Store/建築/LowPolyVillage/Prefabs/Tree
+  artifactKey: Guid(977243c2e2b9c5549a0962cc1a7746c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Store/建築/LowPolyVillage/Prefabs/Tree using Guid(977243c2e2b9c5549a0962cc1a7746c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c1505a419583e3350075fc01f0b49be') in 0.006043 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 242.613788 seconds.
+  path: Assets/Models/S1_Models
+  artifactKey: Guid(02abb114804b14e479a5995b97dfb761) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/S1_Models using Guid(02abb114804b14e479a5995b97dfb761) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f6806427e5e6479516db3f881d75940') in 0.006102 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.658554 seconds.
+  path: Assets/Models/S1_Models/噴水池.fbx
+  artifactKey: Guid(811849c693ecc23439dc0b9a27991cb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/S1_Models/噴水池.fbx using Guid(811849c693ecc23439dc0b9a27991cb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7fe4338c72d370e7b98aa087cf0fe95') in 0.057416 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.265739 seconds.
+  path: Assets/Texture/S1_Materials
+  artifactKey: Guid(42a59046f2fe3a946aca0ccdbba27727) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture/S1_Materials using Guid(42a59046f2fe3a946aca0ccdbba27727) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dabd719f816c75f498fb16cf5fcf3f8') in 0.007004 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.384139 seconds.
+  path: Assets/Texture/S1_Materials/fountain_UV_color.png
+  artifactKey: Guid(7f76e71c3afb42b47bbb573165e7df2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture/S1_Materials/fountain_UV_color.png using Guid(7f76e71c3afb42b47bbb573165e7df2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4050633b5d634cc90cdec953c6353aa0') in 0.108696 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.776175 seconds.
+  path: Assets/Texture/S1_Materials/fountain_UV_color.png
+  artifactKey: Guid(7f76e71c3afb42b47bbb573165e7df2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture/S1_Materials/fountain_UV_color.png using Guid(7f76e71c3afb42b47bbb573165e7df2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0310b6db572fecab7e01af19c8c29327') in 0.091304 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.914606 seconds.
+  path: Assets/Material/S1_Color
+  artifactKey: Guid(f4261b87921df5f4286459dca295ff4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/S1_Color using Guid(f4261b87921df5f4286459dca295ff4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4b0cf2d10977bf7935f4ae3a2f1177a') in 0.005885 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.326539 seconds.
+  path: Assets/Texture/S1_Materials/clock tower_UV_color_1.png
+  artifactKey: Guid(06dfdcb281343e7489f3685170e81da1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture/S1_Materials/clock tower_UV_color_1.png using Guid(06dfdcb281343e7489f3685170e81da1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4f6fa741a44eaea25dba7a1a43320c5') in 0.075258 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 37.881885 seconds.
+  path: Assets/Models/S1_Models/商店街_左開門.fbx
+  artifactKey: Guid(9e7ce4570eee4664e88f4a0ba85099e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/S1_Models/商店街_左開門.fbx using Guid(9e7ce4570eee4664e88f4a0ba85099e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f5f26ca3b62a992010352aa63ecb14d') in 0.114194 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.378744 seconds.
+  path: Assets/Models/S1_Models/噴水池.fbx
+  artifactKey: Guid(811849c693ecc23439dc0b9a27991cb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/S1_Models/噴水池.fbx using Guid(811849c693ecc23439dc0b9a27991cb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05481c049573059e8fac50c0c036741d') in 0.060464 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

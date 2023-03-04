@@ -5258,6 +5258,12 @@ MonoBehaviour:
   display: 0
   certificate: {fileID: 1396643628}
   ramCertificate: {fileID: 129280124}
+  young: {fileID: 21300000, guid: 203ca4ea502d2234ea6f5476859c3a03, type: 3}
+  clear: {fileID: 21300000, guid: 0d264cc55c250cd4384c8f18862fff1e, type: 3}
+  ticket: {fileID: 21300000, guid: ec329582be90ee344bd0611d8165d6d6, type: 3}
+  kid: {fileID: 2800000, guid: 75f13d48c3789b24b95d6dc9174384a2, type: 3}
+  adult: {fileID: 21300000, guid: 6c1de9240f263ae47af26bad8d88b8bc, type: 3}
+  gma: {fileID: 21300000, guid: 1295ebda5688bfd46901b44aa87c3a02, type: 3}
 --- !u!1001 &905461764
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9403,7 +9409,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 428e87d475580ca458360e8c4956c12b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 428e87d475580ca458360e8c4956c12b, type: 3}
       propertyPath: m_TagString
@@ -11170,7 +11176,11 @@ PrefabInstance:
     - target: {fileID: 597608524060454892, guid: 0edd12d347d24844d9768ee683bd3b4d, type: 3}
       propertyPath: m_Texture
       value: 
-      objectReference: {fileID: 8400000, guid: feed6eb8b812325449a1b1394fca6156, type: 2}
+      objectReference: {fileID: 2800000, guid: 7ea55d11266c02a4d8f71a091121e723, type: 3}
+    - target: {fileID: 3443514980519901056, guid: 0edd12d347d24844d9768ee683bd3b4d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6108985348760306812, guid: 0edd12d347d24844d9768ee683bd3b4d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -11265,6 +11275,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6108985348760306812, guid: 0edd12d347d24844d9768ee683bd3b4d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6356285440041607654, guid: 0edd12d347d24844d9768ee683bd3b4d, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6822773860291470523, guid: 0edd12d347d24844d9768ee683bd3b4d, type: 3}
@@ -13396,7 +13410,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6812362450078894957, guid: 9930d501e34f7074e8984282d74cf047, type: 3}
       propertyPath: speed
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6812362450078894957, guid: 9930d501e34f7074e8984282d74cf047, type: 3}
       propertyPath: startPos.y

@@ -25,17 +25,17 @@ public class DialongueSystem : MonoBehaviour
     public GameObject ramCertificate;
     #region 立繪
     [Header("年輕人(西裝)立繪")]
-    public Sprite young;
+    public Texture2D young;
     [Header("清潔工立繪")]
-    public Sprite clear;
+    public Texture2D clear;
     [Header("售票員立繪")]
-    public Sprite ticket;
+    public Texture2D ticket;
     [Header("小孩立繪")]
-    public Sprite kid;
+    public Texture2D kid;
     [Header("成年人立繪")]
-    public Sprite adult;
+    public Texture2D adult;
     [Header("奶奶立繪")]
-    public Sprite gma;
+    public Texture2D gma;
     #endregion
     [Header("觸控控制")]
     private TouchS t;
@@ -144,6 +144,7 @@ public class DialongueSystem : MonoBehaviour
     #region 角色圖
     public void CertificatePhoto(string name)
     {
+        print(name);
         if (name == "Rem")
         {
             certificate.SetActive(false);
@@ -152,23 +153,42 @@ public class DialongueSystem : MonoBehaviour
         else if (name == "年輕人")
         {
             ramCertificate.SetActive(false);
-            certificate.GetComponent<Image>().sprite = young;
+            certificate.GetComponent<RawImage>().texture = young;
             certificate.SetActive(true);
         }
         else if (name == "奶奶")
         {
             ramCertificate.SetActive(false);
-            certificate.GetComponent<Image>().sprite = gma;
+            certificate.GetComponent<RawImage>().texture = gma;
             certificate.SetActive(true);
         }
         else if (name == "售票員")
         {
             ramCertificate.SetActive(false);
-            certificate.GetComponent<Image>().sprite = young;
+            certificate.GetComponent<RawImage>().texture = ticket;
+            certificate.SetActive(true);
+        }
+        else if (name == "清潔工")
+        {
+            ramCertificate.SetActive(false);
+            certificate.GetComponent<RawImage>().texture = clear;
+            certificate.SetActive(true);
+        }
+        else if (name == "長大後的小孩")
+        {
+            ramCertificate.SetActive(false);
+            certificate.GetComponent<RawImage>().texture = adult;
+            certificate.SetActive(true);
+        }
+        else if (name == "小孩")
+        {
+            ramCertificate.SetActive(false);
+            certificate.GetComponent<RawImage>().texture = kid;
             certificate.SetActive(true);
         }
         else
         { 
+            print("沒有角色圖");
             ramCertificate.SetActive(false);
             certificate.SetActive(false);
         }

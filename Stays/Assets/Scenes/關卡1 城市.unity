@@ -6897,7 +6897,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fd21fde03ddef8419aa9dc2596b2f6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interval: 0.1
+  interval: 0
   textTito: {fileID: 1796556659}
   goDialogue: {fileID: 1796556660}
   textContent: {fileID: 1796556658}
@@ -6906,6 +6906,12 @@ MonoBehaviour:
   display: 0
   certificate: {fileID: 1073954796}
   ramCertificate: {fileID: 216869635}
+  young: {fileID: 21300000, guid: ec329582be90ee344bd0611d8165d6d6, type: 3}
+  clear: {fileID: 21300000, guid: 0d264cc55c250cd4384c8f18862fff1e, type: 3}
+  ticket: {fileID: 21300000, guid: ec329582be90ee344bd0611d8165d6d6, type: 3}
+  kid: {fileID: 21300000, guid: 75f13d48c3789b24b95d6dc9174384a2, type: 3}
+  adult: {fileID: 21300000, guid: 6c1de9240f263ae47af26bad8d88b8bc, type: 3}
+  gma: {fileID: 21300000, guid: 1295ebda5688bfd46901b44aa87c3a02, type: 3}
 --- !u!1001 &926624229
 PrefabInstance:
   m_ObjectHideFlags: 0

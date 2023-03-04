@@ -23,6 +23,20 @@ public class DialongueSystem : MonoBehaviour
     [Header("人物顯示")]
     public GameObject certificate;
     public GameObject ramCertificate;
+    #region 立繪
+    [Header("年輕人(西裝)立繪")]
+    public Sprite young;
+    [Header("清潔工立繪")]
+    public Sprite clear;
+    [Header("售票員立繪")]
+    public Sprite ticket;
+    [Header("小孩立繪")]
+    public Sprite kid;
+    [Header("成年人立繪")]
+    public Sprite adult;
+    [Header("奶奶立繪")]
+    public Sprite gma;
+    #endregion
     [Header("觸控控制")]
     private TouchS t;
     #endregion
@@ -54,12 +68,14 @@ public class DialongueSystem : MonoBehaviour
             textContent.text = "";//清除上次對話內容
             goTip.SetActive(false);
             //for迴圈(參照 ; 參照<測試文字總字數;參照++)
-            for (int i = 0; i < contents[j].Length; i++)
+            textContent.text += contents[j];//更改為疊加對話文字介面 欄位名稱.text(裡面的屬性)
+            yield return new WaitForSeconds(interval); //等待(interval)秒
+            /* for (int i = 0; i < contents[j].Length; i++)
             {
                 //print(test[i]); 打出測試文字的第[i]個字
                 textContent.text += contents[j][i];//更改為疊加對話文字介面 欄位名稱.text(裡面的屬性)
                 yield return new WaitForSeconds(interval); //等待(interval)秒
-            }
+            }*/
 
             goTip.SetActive(true);//顯示圖示
             fin = true;
@@ -133,9 +149,28 @@ public class DialongueSystem : MonoBehaviour
             certificate.SetActive(false);
             ramCertificate.SetActive(true);
         }
-        else 
+        else if (name == "年輕人")
+        {
+            ramCertificate.SetActive(false);
+            certificate.GetComponent<Image>().sprite = young;
+            certificate.SetActive(true);
+        }
+        else if (name == "奶奶")
+        {
+            ramCertificate.SetActive(false);
+            certificate.GetComponent<Image>().sprite = gma;
+            certificate.SetActive(true);
+        }
+        else if (name == "售票員")
+        {
+            ramCertificate.SetActive(false);
+            certificate.GetComponent<Image>().sprite = young;
+            certificate.SetActive(true);
+        }
+        else
         { 
-            ramCertificate.SetActive(false); 
+            ramCertificate.SetActive(false);
+            certificate.SetActive(false);
         }
     }
     #endregion

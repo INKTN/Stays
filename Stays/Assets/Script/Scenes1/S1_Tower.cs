@@ -128,7 +128,7 @@ public class S1_Tower : MonoBehaviour
         t.switches = true;//關觸控
         camera_NPC.enabled = true;
         camera_Tower.enabled = false;//鏡頭切換
-        s1_ManipulationNPC.Normal();//NPC移動
+        s1_ManipulationNPC.run=true;//NPC移動
         print("輸出:" + 2);
         yield return new WaitForSeconds(3);
         s1_ManipulationNPC.speed = 0.8f;

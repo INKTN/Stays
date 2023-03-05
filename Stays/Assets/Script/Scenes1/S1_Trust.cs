@@ -23,6 +23,7 @@ public class S1_Trust : MonoBehaviour
     private PlayerCharacter player;
     [Header("開關")]
     public bool playdone0;
+    public bool playdone1;
     [Header("位置")]
     public GameObject post;
     #endregion
@@ -41,7 +42,12 @@ public class S1_Trust : MonoBehaviour
         {
             StartCoroutine(Meet());
         }
-        if(playdone0&& !dialongueSystem.display) t.switches = false;//開觸控
+        if(!playdone1 && playdone0 && !dialongueSystem.display)
+        {
+            StartCoroutine(Confirm());
+        }
+        if (playdone1 && playdone0 && !dialongueSystem.display)
+            t.switches = false;//開觸控
     }
     private IEnumerator Meet()
     {
@@ -53,6 +59,17 @@ public class S1_Trust : MonoBehaviour
         dialongueSystem.NameEnter(dataDalogues[0].talkName);
         playdone0 = true;
         
+    }
+    private IEnumerator Confirm()
+    {
+        t.switches = true;//關觸控
+        yield return new WaitForSeconds(2);
+        player.transform.LookAt(post.transform);
+        dialongueSystem.StopAllCoroutines();
+        dialongueSystem.StartDialogue(dataDalogues[1].conversationContent);//對話資料讀取
+        dialongueSystem.NameEnter(dataDalogues[1].talkName);
+        playdone1 = true;
+
     }
     #endregion
 }

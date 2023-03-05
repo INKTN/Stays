@@ -43,7 +43,7 @@ public class CityTask : MonoBehaviour
     }
     private void C_Trust()
     {
-        c_trust = trust.playdone0;
+        c_trust = trust.playdone1;
     }
     public void InStation()
     {

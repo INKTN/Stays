@@ -144,7 +144,7 @@ public class DialongueSystem : MonoBehaviour
     #region 角色圖
     public void CertificatePhoto(string name)
     {
-        print(name);
+       //print(name);
         if (name == "Rem")
         {
             certificate.SetActive(false);
@@ -188,7 +188,7 @@ public class DialongueSystem : MonoBehaviour
         }
         else
         { 
-            print("沒有角色圖");
+           // print("沒有角色圖");
             ramCertificate.SetActive(false);
             certificate.SetActive(false);
         }

@@ -18,12 +18,16 @@ public class CityTask : MonoBehaviour
     [Header("進入車站")]
     public bool trainStation;
     public area area22;
+    [Header("D_清潔員")]
+    public bool d_cleaning;
+    S1_CleaningStaff cleaningStaff;
     #endregion
     private void Start()
     {
         tower = GameObject.Find("鐘塔").GetComponent<S1_Tower>();
         trust = GameObject.Find("年輕人").GetComponent<S1_Trust>();
-        
+        cleaningStaff= GameObject.Find("清潔員").GetComponent<S1_CleaningStaff>();
+
     }
     private void FixedUpdate()
     {
@@ -31,6 +35,7 @@ public class CityTask : MonoBehaviour
         B_Tower();
         C_Trust();
         InStation();
+        d_cleaning = cleaningStaff.cleanerAway;
     }
     #region 方法
     private void A_Judge()

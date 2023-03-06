@@ -10,15 +10,13 @@ public class S1_Trust : MonoBehaviour
     [Header("對話資料")]
     public DataDalogue[] dataDalogues;
     [Header("對話系統")]
-    public DialongueSystem dialongueSystem;
+    private DialongueSystem dialongueSystem;
     [Header("觸發區域")]
     public area area;
     [Header("任務偵測")]
     private CityTask task;
     [Header("觸控開關")]
     private TouchS t;
-    [Header("攝影機")]
-    public Camera cameraControl;
     [Header("角色")]
     private PlayerCharacter player;
     [Header("開關")]

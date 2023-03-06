@@ -116,13 +116,19 @@ public class TouchS : MonoBehaviour
                 {
                     var selection = hit.transform;
                     //print(selection.name + selection.position);
-                    orimaterial = selection.GetComponent<Renderer>().material;
+                    //orimaterial = selection.GetComponent<Renderer>().material;
                     #region NPC
                     //要在NPC處寫判斷格子
                     if (selection.name == "Kid")
                     {
                         //print(selection.name == "Kid");
-                        Kid getHit = selection.GetComponent<Kid>();
+                        var getHit = selection.GetComponent<Kid>();
+                        getHit.Check();
+                    }
+                    if (selection.name == "清潔員")
+                    {
+                        //print(selection.name == "Kid");
+                        var getHit = selection.GetComponent<S1_CleaningStaff>();
                         getHit.Check();
                     }
                     #endregion
@@ -159,13 +165,19 @@ public class TouchS : MonoBehaviour
                 //Time_Area();
                 var selection = hit.transform;
                 //print(selection.name + selection.position);
-                orimaterial = selection.GetComponent<Renderer>().material;
+                //orimaterial = selection.GetComponent<Renderer>().material;
                 #region NPC
                 //要在NPC處寫判斷格子
                 if (selection.name == "Kid")
                 {
                     //print(selection.name == "Kid");
                     Kid getHit = selection.GetComponent<Kid>();
+                    getHit.Check();
+                }
+                if (selection.name == "清潔員")
+                {
+                    //print(selection.name == "Kid");
+                    var getHit = selection.GetComponent<S1_CleaningStaff>();
                     getHit.Check();
                 }
                 #endregion

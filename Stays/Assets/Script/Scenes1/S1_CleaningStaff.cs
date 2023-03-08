@@ -111,11 +111,11 @@ public class S1_CleaningStaff : MonoBehaviour
     }
     public void Check()//檢測內部是否有東西並呼叫對話
     {
-        ///print("接收回傳");
+        print("接收回傳");
         Collider[] hit = Physics.OverlapBox(transform.position + detectionHight, detectionRange / 2, Quaternion.identity);//(中心點，大小，旋轉，圖層碼)
         int i = 0;
-        transform.LookAt(GameObject.Find("主角").transform);
-        while (i < hit.Length)//若i小於hit最大值
+        
+       /* while (i < hit.Length)//若i小於hit最大值
         {
             //print(hit[i].name);
             //Contains:在字串中尋找，若有回傳True
@@ -129,7 +129,7 @@ public class S1_CleaningStaff : MonoBehaviour
                 }
             }
             #endregion
-        }
+        }*/
     }
                    
     #endregion

@@ -115,7 +115,7 @@ public class S1_CleaningStaff : MonoBehaviour
         Collider[] hit = Physics.OverlapBox(transform.position + detectionHight, detectionRange / 2, Quaternion.identity);//(中心點，大小，旋轉，圖層碼)
         int i = 0;
         
-       /* while (i < hit.Length)//若i小於hit最大值
+       while (i < hit.Length)//若i小於hit最大值
         {
             //print(hit[i].name);
             //Contains:在字串中尋找，若有回傳True
@@ -124,12 +124,12 @@ public class S1_CleaningStaff : MonoBehaviour
             {
                 if (!playdone1&&playdone0&& !dialongueSystem.display&&speed != 2)
                 {
-                    transform.LookAt(setCamera.transform);
                     Skill();
                 }
             }
             #endregion
-        }*/
+            i++;
+        }
     }
                    
     #endregion

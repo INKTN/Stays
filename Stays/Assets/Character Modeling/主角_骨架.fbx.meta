@@ -6,7 +6,12 @@ ModelImporter:
   - first:
       74: 1827226128182048838
     second: Take 001
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 3863cf9de5a3a0a4082f41331c190adf, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -19,7 +24,7 @@ ModelImporter:
     optimizeGameObjects: 0
     motionNodeName: 
     rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
-      human bone 'LeftFoot' not found\n"
+      human bone 'LeftUpperArm' not found\n"
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
@@ -80,201 +85,8 @@ ModelImporter:
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
-    human:
-    - boneName: butt
-      humanName: Hips
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Lleg
-      humanName: LeftUpperLeg
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Rleg
-      humanName: RightUpperLeg
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Lfeet
-      humanName: LeftLowerLeg
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Rfeet
-      humanName: RightLowerLeg
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: body 1
-      humanName: Spine
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: neck
-      humanName: Neck
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Mhead
-      humanName: Head
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Thead
-      humanName: LeftEye
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: LlegIK_
-      humanName: LeftFoot
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: RlegIK
-      humanName: RightFoot
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    skeleton:
-    - name: "\u4E3B\u89D2_\u9AA8\u67B6(Clone)"
-      parentName: 
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: RlegIK
-      parentName: "\u4E3B\u89D2_\u9AA8\u67B6(Clone)"
-      position: {x: 0.17110883, y: -1.5884268, z: 2.585435e-16}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: LlegIK_
-      parentName: "\u4E3B\u89D2_\u9AA8\u67B6(Clone)"
-      position: {x: -0.1654373, y: -1.5909566, z: 2.922668e-16}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: headik
-      parentName: "\u4E3B\u89D2_\u9AA8\u67B6(Clone)"
-      position: {x: -0.010227446, y: 2.095462, z: 0.011250049}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: wingM
-      parentName: "\u4E3B\u89D2_\u9AA8\u67B6(Clone)"
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: wing
-      parentName: "\u4E3B\u89D2_\u9AA8\u67B6(Clone)"
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: feetR
-      parentName: "\u4E3B\u89D2_\u9AA8\u67B6(Clone)"
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: feetL
-      parentName: "\u4E3B\u89D2_\u9AA8\u67B6(Clone)"
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: body
-      parentName: "\u4E3B\u89D2_\u9AA8\u67B6(Clone)"
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: wayjin
-      parentName: "\u4E3B\u89D2_\u9AA8\u67B6(Clone)"
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: face
-      parentName: "\u4E3B\u89D2_\u9AA8\u67B6(Clone)"
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: hat
-      parentName: "\u4E3B\u89D2_\u9AA8\u67B6(Clone)"
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: butt
-      parentName: "\u4E3B\u89D2_\u9AA8\u67B6(Clone)"
-      position: {x: 0.0031064095, y: -0.8081758, z: 0}
-      rotation: {x: 0.45087168, y: -0.5447153, z: -0.43603587, w: 0.55666214}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Lleg
-      parentName: butt
-      position: {x: 0.010333317, y: -0.0022554859, z: 0.297988}
-      rotation: {x: 0.069716945, y: -0.007520133, z: 0.99178535, w: 0.10698066}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Lfeet
-      parentName: Lleg
-      position: {x: -0.7750016, y: -4.302123e-17, z: 2.842171e-16}
-      rotation: {x: -0.028044181, y: 0.08626472, z: 0.07508713, w: 0.99304277}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Rleg
-      parentName: butt
-      position: {x: 0.023444086, y: -0.0051172148, z: -0.2939795}
-      rotation: {x: -0.094809406, y: 0.01022679, z: 0.98970187, w: 0.10675592}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Rfeet
-      parentName: Rleg
-      position: {x: -0.77458423, y: -3.1554436e-32, z: 2.1316282e-16}
-      rotation: {x: 0.008234919, y: -0.08288306, z: -0.07117823, w: 0.99398}
-      scale: {x: 1, y: 1, z: 1}
-    - name: body 1
-      parentName: butt
-      position: {x: -0.50668275, y: -3.5527136e-17, z: -4.440892e-18}
-      rotation: {x: -0.0009282288, y: -0.0029843552, z: 0.08666559, w: 0.99623257}
-      scale: {x: 1, y: 1, z: 1}
-    - name: neck
-      parentName: body 1
-      position: {x: -0.5223392, y: -7.105427e-17, z: -1.11022296e-17}
-      rotation: {x: -0.00354328, y: -0.016840763, z: -0.18006091, w: 0.9835049}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Mhead
-      parentName: neck
-      position: {x: -0.9713358, y: 0, z: -8.881784e-18}
-      rotation: {x: -0.0013651423, y: 0.008503343, z: -0.18441495, w: 0.9828108}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Thead
-      parentName: Mhead
-      position: {x: -1.0142154, y: -1.4210854e-16, z: -8.881784e-18}
-      rotation: {x: 0.57904375, y: -0.40584272, z: -0.577623, w: -0.40786234}
-      scale: {x: 1, y: 1, z: 1}
+    human: []
+    skeleton: []
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -285,7 +97,7 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1

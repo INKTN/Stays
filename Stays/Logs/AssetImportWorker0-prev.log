@@ -1,0 +1,281 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.30f1 (1fb1bf06830e) revision 2077119'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Core' Language: 'zh' Physical Memory: 32100 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/lilyh/Documents/GitHub/Stays/Stays
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+50169
+Successfully changed project path to: C:/Users/lilyh/Documents/GitHub/Stays/Stays
+C:/Users/lilyh/Documents/GitHub/Stays/Stays
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 64.42 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.30f1 (1fb1bf06830e)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/lilyh/Documents/GitHub/Stays/Stays/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2520)
+    Vendor:   
+    VRAM:     6023 MB
+    Driver:   30.0.15.1278
+Shader 'Custom/AdditiveTintable': fallback shader 'Particles/Additive (Soft)' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56960
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002475 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 54.48 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.510 seconds
+Domain Reload Profiling:
+	ReloadAssembly (510ms)
+		BeginReloadAssembly (63ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (391ms)
+			LoadAssemblies (61ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (104ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (156ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (55ms)
+				BeforeProcessingInitializeOnLoad (12ms)
+				ProcessInitializeOnLoadAttributes (64ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005062 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 71.31 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.339 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1341ms)
+		BeginReloadAssembly (118ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (1174ms)
+			LoadAssemblies (86ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (207ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (36ms)
+			SetupLoadedEditorAssemblies (771ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (71ms)
+				BeforeProcessingInitializeOnLoad (66ms)
+				ProcessInitializeOnLoadAttributes (617ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Custom/AdditiveTintable': fallback shader 'Particles/Additive (Soft)' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.77 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2845 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 198.9 MB.
+System memory in use after: 188.2 MB.
+
+Unloading 88 unused Assets to reduce memory usage. Loaded Objects now: 3280.
+Total: 9.377000 ms (FindLiveObjects: 0.289700 ms CreateObjectMapping: 0.093200 ms MarkObjects: 3.700800 ms  DeleteObjects: 5.292000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Scenes/關卡3 歸途.unity
+  artifactKey: Guid(bb68ec8e1ad851d479e038e34582b11d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/關卡3 歸途.unity using Guid(bb68ec8e1ad851d479e038e34582b11d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce14e81b8575adeff7a125a610ac36d6') in 0.015950 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1235.663238 seconds.
+  path: Assets/Scenes/關卡2 上山.unity
+  artifactKey: Guid(9f45ce2297a444d4f927109d8cf4ac73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/關卡2 上山.unity using Guid(9f45ce2297a444d4f927109d8cf4ac73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d3b37d1530ae7a990915432c41a4d7e') in 0.002953 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 160.371501 seconds.
+  path: Assets/Scenes/關卡2 上山.unity
+  artifactKey: Guid(9f45ce2297a444d4f927109d8cf4ac73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/關卡2 上山.unity using Guid(9f45ce2297a444d4f927109d8cf4ac73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb11005cc22f49dbf4d73fa24de9ee9d') in 0.003179 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1009.860932 seconds.
+  path: Assets/Scenes/首頁.unity
+  artifactKey: Guid(9fb980dc84c43384a8183a485703a585) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/首頁.unity using Guid(9fb980dc84c43384a8183a485703a585) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c02acda663988c298208c4795fac46f') in 0.008407 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 139.837544 seconds.
+  path: Assets/Conversation content/SA
+  artifactKey: Guid(10c2b960d91c09344b3a9c90429d01e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conversation content/SA using Guid(10c2b960d91c09344b3a9c90429d01e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d6ab33c6da7c4b897806ad44654ca87') in 0.008022 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.065066 seconds.
+  path: Assets/Conversation content/SA/SA_01燃起火焰.asset
+  artifactKey: Guid(22f22c87a1693ba409392ba40d507873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conversation content/SA/SA_01燃起火焰.asset using Guid(22f22c87a1693ba409392ba40d507873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86bfb672aa9f7f3d9a330f44ff8dcbbd') in 0.032857 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Conversation content/SA/SA_03準備跳海.asset
+  artifactKey: Guid(e1a16ce4c88ed7b4f99ebcdda313bbb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conversation content/SA/SA_03準備跳海.asset using Guid(e1a16ce4c88ed7b4f99ebcdda313bbb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '291796fe30da3c0df3b6422839df8127') in 0.011569 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Conversation content/SA/SA_10Rem感想.asset
+  artifactKey: Guid(c6e7f604352f48f4998c83eab606a062) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conversation content/SA/SA_10Rem感想.asset using Guid(c6e7f604352f48f4998c83eab606a062) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19f34ad4114865b8e53a845db843c300') in 0.011356 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000369 seconds.
+  path: Assets/Conversation content/SA/SA_11Rem上岸.asset
+  artifactKey: Guid(110decff7864f224c80449f4bc4e5d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conversation content/SA/SA_11Rem上岸.asset using Guid(110decff7864f224c80449f4bc4e5d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '716fcd94ba814763787e2d6ad5d3926e') in 0.013092 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Conversation content/SA/SA_07信漂出來了播信的音效.asset
+  artifactKey: Guid(0cf6b596fa3037e4a835e145dddf59af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conversation content/SA/SA_07信漂出來了播信的音效.asset using Guid(0cf6b596fa3037e4a835e145dddf59af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3fab93312a01f4b91b896066c31b2c8') in 0.011545 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/Conversation content/SA/SA_09文字漂出來.asset
+  artifactKey: Guid(832e4f26ebe17f946b3c1a413373bf78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conversation content/SA/SA_09文字漂出來.asset using Guid(832e4f26ebe17f946b3c1a413373bf78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1e42ec8e6d996123099affbe7521016') in 0.011302 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/Conversation content/SA/SA_04跳水後.asset
+  artifactKey: Guid(62d92e5393a74ed4892bc884cc2cec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conversation content/SA/SA_04跳水後.asset using Guid(62d92e5393a74ed4892bc884cc2cec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a324174d24ff4a5c7e01383e3b0e438') in 0.011672 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Conversation content/SA/SA_08靠近信.asset
+  artifactKey: Guid(a9049e0ba4f987449b580f28dde37f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conversation content/SA/SA_08靠近信.asset using Guid(a9049e0ba4f987449b580f28dde37f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cad5197316926b0e16a64d6de9ddf48c') in 0.011746 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Conversation content/SA/SA_06沒有BGM了.asset
+  artifactKey: Guid(2a9438ba95d2dd043838250db1dbaa2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conversation content/SA/SA_06沒有BGM了.asset using Guid(2a9438ba95d2dd043838250db1dbaa2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1049d2e4736e1cd0edc96ad4be6cff8f') in 0.013583 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Conversation content/SA/SA_02嘗試控制時間.asset
+  artifactKey: Guid(00412b663a652c1449bc05a536828f56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conversation content/SA/SA_02嘗試控制時間.asset using Guid(00412b663a652c1449bc05a536828f56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73c027a98beefdc6a2d57e8e4c9285c0') in 0.011083 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Conversation content/SA/SA_05深海說話播BGM.asset
+  artifactKey: Guid(2632708169490c64c97505e4e6de9554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conversation content/SA/SA_05深海說話播BGM.asset using Guid(2632708169490c64c97505e4e6de9554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a66834c122403ec0f6731412c6d38259') in 0.011685 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 39.290743 seconds.
+  path: Assets/Conversation content/END_CG版本
+  artifactKey: Guid(ed9858b705ea158419f140673cd31b58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conversation content/END_CG版本 using Guid(ed9858b705ea158419f140673cd31b58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '383b1ce4386023c47eb402af713c19c5') in 0.008563 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.055324 seconds.
+  path: Assets/Conversation content/END_CG版本/END_01搖椅的聲音.asset
+  artifactKey: Guid(e76f6043b99b1c440b03f70495b9649c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conversation content/END_CG版本/END_01搖椅的聲音.asset using Guid(e76f6043b99b1c440b03f70495b9649c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e426d7c1405ae999f1c687e72cff5b1') in 0.010715 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/Conversation content/END_CG版本/END_06.asset
+  artifactKey: Guid(a88c0e8a140951b42b1073ca803ecbf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conversation content/END_CG版本/END_06.asset using Guid(a88c0e8a140951b42b1073ca803ecbf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '378db00434f661666ef37083bc80357c') in 0.010094 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Conversation content/END_CG版本/END_07現實.asset
+  artifactKey: Guid(dea9a2f47f40614498e086eb7d636981) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conversation content/END_CG版本/END_07現實.asset using Guid(dea9a2f47f40614498e086eb7d636981) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1e0ec20deb247cbf9ea7c837bc35770') in 0.011205 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/Conversation content/END_CG版本/END_02摸頭的聲音.asset
+  artifactKey: Guid(dc9af662b1eeb9346a6da9b1a7a4687c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conversation content/END_CG版本/END_02摸頭的聲音.asset using Guid(dc9af662b1eeb9346a6da9b1a7a4687c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25b3432faaa924bc8c97e75e51033cbc') in 0.011160 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Conversation content/END_CG版本/END_03奶奶的BGM.asset
+  artifactKey: Guid(3dde22174582d8a49aaa77d4cf9f974c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conversation content/END_CG版本/END_03奶奶的BGM.asset using Guid(3dde22174582d8a49aaa77d4cf9f974c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a464f490fcfdbd04b304807685f5279d') in 0.011641 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/Conversation content/END_CG版本/END_05.asset
+  artifactKey: Guid(f777396a8193bc247a52e3ed0938e533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conversation content/END_CG版本/END_05.asset using Guid(f777396a8193bc247a52e3ed0938e533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a31352c38d2b1ea456cc313e4f7bb114') in 0.011202 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/Conversation content/END_CG版本/END_04結局BGM.asset
+  artifactKey: Guid(65044bcd60d7390488b6b625e626f85d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conversation content/END_CG版本/END_04結局BGM.asset using Guid(65044bcd60d7390488b6b625e626f85d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91501d7d3133fe88cf4b7c2fa7d1e625') in 0.011313 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

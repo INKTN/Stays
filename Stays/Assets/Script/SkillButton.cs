@@ -32,6 +32,13 @@ public class SkillButton : MonoBehaviour
     
     public void SkillFast()
     {
+        #region 關卡一
+        if (scene.name == "關卡1 城市" && Target == null || Target.name == "清潔員")
+        {
+            var cleaning = GameObject.Find("清潔員").GetComponent<S1_CleaningStaff>();
+            cleaning.SkillUse(speed);
+        }
+        #endregion
         #region 關卡三
         if (Target.tag== "Bridge")//關卡三_橋
         {

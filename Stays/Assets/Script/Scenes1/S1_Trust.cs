@@ -50,23 +50,23 @@ public class S1_Trust : MonoBehaviour
     private IEnumerator Meet()
     {
         t.switches = true;//關觸控
+        playdone0 = true;
         yield return new WaitForSeconds(2);
         player.transform.LookAt(post.transform);
         dialongueSystem.StopAllCoroutines();
         dialongueSystem.StartDialogue(dataDalogues[0].conversationContent);//對話資料讀取
         dialongueSystem.NameEnter(dataDalogues[0].talkName);
-        playdone0 = true;
         
     }
     private IEnumerator Confirm()
     {
+        playdone1 = true;
         t.switches = true;//關觸控
         yield return new WaitForSeconds(2);
         player.transform.LookAt(post.transform);
         dialongueSystem.StopAllCoroutines();
         dialongueSystem.StartDialogue(dataDalogues[1].conversationContent);//對話資料讀取
         dialongueSystem.NameEnter(dataDalogues[1].talkName);
-        playdone1 = true;
 
     }
     #endregion

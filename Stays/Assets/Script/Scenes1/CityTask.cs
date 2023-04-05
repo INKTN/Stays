@@ -21,22 +21,36 @@ public class CityTask : MonoBehaviour
     [Header("D_清潔員")]
     public bool d_cleaning;
     S1_CleaningStaff cleaningStaff;
+    [Header("E_火車前對話")]
+    public bool e_trin;
+    private S1_Completed completed;
+    public bool fin;
+
     #endregion
     private void Start()
     {
         tower = GameObject.Find("鐘塔").GetComponent<S1_Tower>();
         trust = GameObject.Find("年輕人").GetComponent<S1_Trust>();
         cleaningStaff= GameObject.Find("清潔員").GetComponent<S1_CleaningStaff>();
-
+        completed= GameObject.Find("火車").GetComponent<S1_Completed>();
     }
-    private void FixedUpdate()
+
+    private void Update()
     {
         A_Judge();
         B_Tower();
         C_Trust();
         InStation();
         d_cleaning = cleaningStaff.cleanerAway;
+        e_trin = completed.playdone1;
+        if (a_finish && b_towerDialogue && c_trust && d_cleaning&&e_trin)
+        {
+
+            fin=true;
+        }
+        else fin=false;
     }
+    
     #region 方法
     private void A_Judge()
     {
@@ -58,5 +72,6 @@ public class CityTask : MonoBehaviour
         }
         
     }
+
     #endregion
 }

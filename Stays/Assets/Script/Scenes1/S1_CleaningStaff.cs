@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.AI;
 /// <summary>
 /// 清潔員任務 20230306
 /// </summary>
@@ -46,7 +45,10 @@ public class S1_CleaningStaff : MonoBehaviour
     [Header("技能使用")]
     public float speed = 1;
     //public bool man;
-    private NavMeshAgent agent;
+
+    [Header("完成任務位置")]
+    private float speedFin = 50;
+    public Transform fin;
     #endregion
     private void Start()
     {
@@ -58,7 +60,7 @@ public class S1_CleaningStaff : MonoBehaviour
         oriCamera = GameObject.Find("MainCamera").GetComponent<Camera>();
         skillUI = GameObject.Find("System").GetComponent<UIManager>();
         cameratest = GameObject.Find("MainCamera").GetComponent<Cameratest>();
-        agent = GetComponent<NavMeshAgent>();//取得AI判定
+
     }
     private void OnDrawGizmos()
     {
@@ -68,7 +70,7 @@ public class S1_CleaningStaff : MonoBehaviour
             Gizmos.DrawCube(transform.position + detectionHight, detectionRange);//偵測區位置
         }
     }//位置偵測顯示
-    private void FixedUpdate()
+    private void Update()
     {
         if (task.b_towerDialogue && !playdone0 && area.chIn && !dialongueSystem.display)
         {
@@ -78,8 +80,12 @@ public class S1_CleaningStaff : MonoBehaviour
             t.switches = false;//開觸控
         if (!cleanerAway && speed == 2)//使用技能後
         {
-            cleanerAway = true;
             FinTask();
+        }
+        if(post.transform.position == fin.transform.position) cleanerAway = true;
+        if (cleanerAway)
+        {
+
         }
     }
     #region 方法
@@ -90,6 +96,16 @@ public class S1_CleaningStaff : MonoBehaviour
         dialongueSystem.StopAllCoroutines();
         dialongueSystem.StartDialogue(dataDalogues[0].conversationContent);//對話資料讀取
         dialongueSystem.NameEnter(dataDalogues[0].talkName);
+        playdone0 = true;
+
+    }
+    private void CleaningFin()
+    {
+        t.switches = true;//關觸控
+        player.transform.LookAt(post.transform);
+        dialongueSystem.StopAllCoroutines();
+        dialongueSystem.StartDialogue(dataDalogues[1].conversationContent);//對話資料讀取
+        dialongueSystem.NameEnter(dataDalogues[1].talkName);
         playdone0 = true;
 
     }
@@ -136,8 +152,8 @@ public class S1_CleaningStaff : MonoBehaviour
     }
     private void FinTask()
     {
-        transform.LookAt(new Vector3(42.7F, 8, 70));//看向目標
-        agent.SetDestination(new Vector3 (42.7F,8,70));//使用AI引導至位置
+        transform.position = Vector3.MoveTowards(transform.position, fin.position, speedFin * Time.deltaTime);
+       
     }      
     #endregion
   }

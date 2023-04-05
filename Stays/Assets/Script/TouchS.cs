@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections;
+using UnityEngine.SceneManagement;
 using System;////Array.IndexOf使用
 /// <summary>
 /// 觸碰判定系統
@@ -131,6 +133,13 @@ public class TouchS : MonoBehaviour
                         var getHit = selection.GetComponent<S1_CleaningStaff>();
                         getHit.Check();
                     }
+                    if (selection.name == "火車")
+                    {
+                        var citytask = GameObject.Find("System").GetComponent<CityTask>();
+                        if (citytask.fin) { SceneManager.LoadScene("關卡2 上山"); }
+                        
+                    }
+
                     #endregion
                     //呼叫攝影機切換視角
                     _salaction = selection;
@@ -179,6 +188,16 @@ public class TouchS : MonoBehaviour
                     //print(selection.name == "Kid");
                     var getHit = selection.GetComponent<S1_CleaningStaff>();
                     getHit.Check();
+                }
+                if (selection.name == "火車")
+                {
+                    SceneManager.LoadScene("關卡2 上山");
+                }
+                if (selection.name == "技能用樹")
+                {
+                    //print(selection.name == "Kid");
+                    var tree = selection.GetComponent<S3_Tree>();
+                    tree.Check();
                 }
                 #endregion
                 //呼叫攝影機切換視角

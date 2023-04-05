@@ -53,14 +53,7 @@ public class S1_Trust : MonoBehaviour
         if (playdone1 && playdone0 && !dialongueSystem.display)
             t.switches = false;//開觸控
     }
-    private IEnumerator Meet()
-    {
-        t.switches = true;//關觸控
-        NPCGo();
-        yield return new WaitForSeconds(2);
-        
-        
-    }
+
     private IEnumerator Confirm()
     {
         playdone1 = true;
@@ -75,7 +68,7 @@ public class S1_Trust : MonoBehaviour
     }
     private void NPCGo()
     {
-        print("移動");
+        //print("移動");
         this.transform.LookAt(player.transform);
         transform.position = Vector3.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
         playdone0 = true;

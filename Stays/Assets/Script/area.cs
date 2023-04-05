@@ -19,6 +19,8 @@ public class area : MonoBehaviour
     public bool chIn;
     [Header("§P©w¿é¥X")]
     public bool text;
+    [Header("«Ç¤º")]
+    public bool indoor;
     #endregion
    
     private void OnDrawGizmos()

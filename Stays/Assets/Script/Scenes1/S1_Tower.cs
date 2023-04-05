@@ -115,7 +115,7 @@ public class S1_Tower : MonoBehaviour
         cameraControl.enabled=false;//鏡頭切換
         cameratest.switches = true; cameratest.caTask = false;//關鏡頭移動
                                                              //yield return new WaitForSeconds(1);
-        print("輸出:" + 1);
+        //print("輸出:" + 1);
         dialongueSystem.StopAllCoroutines();
         dialongueSystem.StartDialogue(dataDalogues[1].conversationContent);//對話資料讀取
         dialongueSystem.NameEnter(dataDalogues[1].talkName);
@@ -129,7 +129,7 @@ public class S1_Tower : MonoBehaviour
         camera_NPC.enabled = true;
         camera_Tower.enabled = false;//鏡頭切換
         s1_ManipulationNPC.run=true;//NPC移動
-        print("輸出:" + 2);
+       // print("輸出:" + 2);
         yield return new WaitForSeconds(3);
         s1_ManipulationNPC.speed = 0.8f;
         dialongueSystem.StopAllCoroutines();
@@ -157,7 +157,7 @@ public class S1_Tower : MonoBehaviour
         t.switches = true;//關觸控
         cameraControl.enabled = true;//鏡頭切換
         camera_Tower.enabled = false;
-        print("輸出:" + 4);
+        //print("輸出:" + 4);
        //發光
         yield return new WaitForSeconds(0.5F);
         dialongueSystem.StopAllCoroutines();
@@ -172,7 +172,7 @@ public class S1_Tower : MonoBehaviour
         t.switches = true;//關觸控
         cameraControl.enabled = true;//鏡頭切換
         camera_Tower.enabled = false;
-        print("輸出:" + 5);
+        //print("輸出:" + 5);
         dialongueSystem.StopAllCoroutines();
         dialongueSystem.StartDialogue(dataDalogues[5].conversationContent);//對話資料讀取
         dialongueSystem.NameEnter(dataDalogues[5].talkName);

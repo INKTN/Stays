@@ -33,34 +33,39 @@ public class GroundJudgment : MonoBehaviour
         else if (scene== "關卡1 城市")
         {
             var cityTask= GameObject.Find("System").GetComponent<CityTask>();
-            var s1_Tower= GameObject.Find("鐘塔").GetComponent<S1_Tower>();
-            if (cityTask.b_towerDialogue && cityTask.c_trust && !cityTask.trainStation)
+            var s1_Tower = GameObject.Find("鐘塔").GetComponent<S1_Tower>();
+            if (selection.transform.tag == "ground")
             {
-                //print("進入條件"+selection.transform+target.transform);
-                if (selection.transform == target.transform)
+                var area = selection.transform.GetComponent<area>();
+                if (cityTask.b_towerDialogue && cityTask.c_trust && !cityTask.trainStation)
                 {
-                    player.Move(selection);//呼叫主角移動
+                    //print("進入條件"+selection.transform+target.transform);
+                    if (selection.transform == target.transform)
+                    {
+                        player.Move(selection);//呼叫主角移動
+                    }
+                    else
+                    {
+                        s1_Tower.GJDialong();
+                    }
+                }
+                else if (cityTask.b_towerDialogue && cityTask.c_trust && cityTask.trainStation)
+                {
+
+                    if (!area.indoor)
+                    {
+                        s1_Tower.GJDialong();
+                    }
+                    else
+                    {
+
+                        player.Move(selection);//呼叫主角移動
+                    }
                 }
                 else
                 {
-                    s1_Tower.GJDialong();
-                }
-            }
-            else if(cityTask.b_towerDialogue && cityTask.c_trust && cityTask.trainStation)
-            {
-                if (selection.transform == target.transform)
-                {
-                    s1_Tower.GJDialong();
-                }
-                else
-                {
-                   
                     player.Move(selection);//呼叫主角移動
                 }
-            }
-            else
-            {
-                player.Move(selection);//呼叫主角移動
             }
         }
         else

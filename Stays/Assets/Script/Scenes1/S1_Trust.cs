@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+
 /// <summary>
 /// 接信件任務
 /// </summary>
@@ -24,6 +25,8 @@ public class S1_Trust : MonoBehaviour
     public bool playdone1;
     [Header("位置")]
     public GameObject post;
+    private float speed = 10;
+    public Transform target;
     #endregion
     private void Start()
     {
@@ -32,30 +35,30 @@ public class S1_Trust : MonoBehaviour
         dialongueSystem = GameObject.Find("System").GetComponent<DialongueSystem>();
         t = GameObject.Find("System").GetComponent<TouchS>();
         player = GameObject.Find("主角").GetComponent<PlayerCharacter>();
+
     }
     #region 方法
-    private void FixedUpdate()
+    private void Update()
     {
-        if (task.b_towerDialogue && !playdone0 && area.chIn && !dialongueSystem.display)
+        if (task.b_towerDialogue && (!playdone0||post.transform.position!=target.transform.position) && area.chIn && !dialongueSystem.display)
         {
-            StartCoroutine(Meet());
+            NPCGo();
         }
-        if(!playdone1 && playdone0 && !dialongueSystem.display)
+        if (!playdone1 && playdone0 && !dialongueSystem.display)
         {
+            playdone1 = true;
             StartCoroutine(Confirm());
         }
+
         if (playdone1 && playdone0 && !dialongueSystem.display)
             t.switches = false;//開觸控
     }
     private IEnumerator Meet()
     {
         t.switches = true;//關觸控
-        playdone0 = true;
+        NPCGo();
         yield return new WaitForSeconds(2);
-        player.transform.LookAt(post.transform);
-        dialongueSystem.StopAllCoroutines();
-        dialongueSystem.StartDialogue(dataDalogues[0].conversationContent);//對話資料讀取
-        dialongueSystem.NameEnter(dataDalogues[0].talkName);
+        
         
     }
     private IEnumerator Confirm()
@@ -64,10 +67,18 @@ public class S1_Trust : MonoBehaviour
         t.switches = true;//關觸控
         yield return new WaitForSeconds(2);
         player.transform.LookAt(post.transform);
+        this.transform.LookAt(player.transform);
         dialongueSystem.StopAllCoroutines();
-        dialongueSystem.StartDialogue(dataDalogues[1].conversationContent);//對話資料讀取
-        dialongueSystem.NameEnter(dataDalogues[1].talkName);
+        dialongueSystem.StartDialogue(dataDalogues[0].conversationContent);//對話資料讀取
+        dialongueSystem.NameEnter(dataDalogues[0].talkName);
 
+    }
+    private void NPCGo()
+    {
+        print("移動");
+        this.transform.LookAt(player.transform);
+        transform.position = Vector3.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+        playdone0 = true;
     }
     #endregion
 }

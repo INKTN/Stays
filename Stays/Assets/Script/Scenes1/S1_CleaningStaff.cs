@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.AI;
 /// <summary>
 /// 清潔員任務 20230306
 /// </summary>
@@ -45,6 +46,7 @@ public class S1_CleaningStaff : MonoBehaviour
     [Header("技能使用")]
     public float speed = 1;
     //public bool man;
+    private NavMeshAgent agent;
     #endregion
     private void Start()
     {
@@ -56,6 +58,7 @@ public class S1_CleaningStaff : MonoBehaviour
         oriCamera = GameObject.Find("MainCamera").GetComponent<Camera>();
         skillUI = GameObject.Find("System").GetComponent<UIManager>();
         cameratest = GameObject.Find("MainCamera").GetComponent<Cameratest>();
+        agent = GetComponent<NavMeshAgent>();//取得AI判定
     }
     private void OnDrawGizmos()
     {
@@ -76,7 +79,7 @@ public class S1_CleaningStaff : MonoBehaviour
         if (!cleanerAway && speed == 2)//使用技能後
         {
             cleanerAway = true;
-           
+            FinTask();
         }
     }
     #region 方法
@@ -111,7 +114,7 @@ public class S1_CleaningStaff : MonoBehaviour
     }
     public void Check()//檢測內部是否有東西並呼叫對話
     {
-        print("接收回傳");
+        //print("接收回傳");
         Collider[] hit = Physics.OverlapBox(transform.position + detectionHight, detectionRange / 2, Quaternion.identity);//(中心點，大小，旋轉，圖層碼)
         int i = 0;
         
@@ -131,6 +134,10 @@ public class S1_CleaningStaff : MonoBehaviour
             i++;
         }
     }
-                   
+    private void FinTask()
+    {
+        transform.LookAt(new Vector3(42.7F, 8, 70));//看向目標
+        agent.SetDestination(new Vector3 (42.7F,8,70));//使用AI引導至位置
+    }      
     #endregion
   }

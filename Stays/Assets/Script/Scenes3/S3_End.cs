@@ -23,7 +23,7 @@ public class S3_End : MonoBehaviour
     private void Start()
     {
         task= GameObject.Find("System").GetComponent<TaskListGoHome>();
-        area = gameObject.transform.GetChild(0).GetComponent<area>();
+       
     }
     private void Update()
     {

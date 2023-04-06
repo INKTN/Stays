@@ -146,7 +146,7 @@ public class Kid : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         adultModels.SetActive(true);//開啟成年人模型顯示
         initial.SetActive (false);//關閉小孩模型顯示
-
+        setCamera.transform.position = new Vector3(26.8f, 7.6f, 48.9f);
     }
     #endregion
 }

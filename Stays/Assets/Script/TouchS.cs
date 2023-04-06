@@ -139,10 +139,15 @@ public class TouchS : MonoBehaviour
                         if (citytask.fin) { SceneManager.LoadScene("關卡2 上山"); }
                         
                     }
-
+                    if (selection.name == "技能用樹")
+                    {
+                        //print(selection.name == "Kid");
+                        var tree = selection.GetComponent<S3_Tree>();
+                        tree.Check();
+                    }
                     #endregion
                     //呼叫攝影機切換視角
-                    _salaction = selection;
+                   // _salaction = selection;
                 }
                 #endregion
             }
@@ -195,9 +200,9 @@ public class TouchS : MonoBehaviour
                 }
                 if (selection.name == "技能用樹")
                 {
-                    //print(selection.name == "Kid");
                     var tree = selection.GetComponent<S3_Tree>();
                     tree.Check();
+                    //print("傳樹");
                 }
                 #endregion
                 //呼叫攝影機切換視角

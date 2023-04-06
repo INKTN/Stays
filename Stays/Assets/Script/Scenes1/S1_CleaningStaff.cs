@@ -83,10 +83,6 @@ public class S1_CleaningStaff : MonoBehaviour
             FinTask();
         }
         if(post.transform.position == fin.transform.position) cleanerAway = true;
-        if (cleanerAway)
-        {
-
-        }
     }
     #region 方法
     private void Meet()

@@ -1836,6 +1836,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55830e42d9d58e549843f3d7b6ad839e, type: 3}
+--- !u!1 &334193153 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 6f3c96e1c8fb50946899c94eb00593cb, type: 3}
+  m_PrefabInstance: {fileID: 1624097327}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &334193154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 334193153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 307bf7355ab02ed4cbc450d12059b2a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dataDalogues:
+  - {fileID: 11400000, guid: e5be20f3deb317842b011417b9a80663, type: 2}
+  - {fileID: 11400000, guid: efec7c07e773c3140b1728345429d34a, type: 2}
+  dialongueSystem: {fileID: 903941004}
+  area: {fileID: 1845029420}
+  read: 0
+  finRead: 0
+  interval: 0.1
 --- !u!1001 &341395832
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2595,17 +2620,18 @@ MonoBehaviour:
   ch: 0
   quickDoubleTabInterval: 0.15
   lastTouchTime: 0
-  target: "29\u571F\u5730"
+  target: "\u4E3B\u89D2"
   canSkill: 0
   speed: 1
   task1: 0
   taskFin: 0
   dataDalogues:
   - {fileID: 11400000, guid: e87fc5d218720844085c3cb01c0cdc60, type: 2}
+  - {fileID: 11400000, guid: fb7b348fa2c430144973347611b504c8, type: 2}
   dalogues1Fin: 0
+  detectionRange: {x: 31.74, y: 2.89, z: 18.94}
+  detectionHight: {x: -0.2, y: 2.39, z: 7.11}
   gizmosOn: 0
-  detectionRange: {x: 27.36, y: 8.27, z: 21.58}
-  detectionHight: {x: 1.02, y: 4.8, z: 8.4}
 --- !u!4 &460593692 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8250593785596600116, guid: b84103262dbd8cd48a0d67046bee6366, type: 3}
@@ -3035,7 +3061,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4096449574246004291, guid: b84103262dbd8cd48a0d67046bee6366, type: 3}
       propertyPath: m_Layer
-      value: 12
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4096449574246004291, guid: b84103262dbd8cd48a0d67046bee6366, type: 3}
       propertyPath: m_TagString
@@ -5111,7 +5137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fd21fde03ddef8419aa9dc2596b2f6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interval: 0
+  interval: 1
   textTito: {fileID: 1796556659}
   goDialogue: {fileID: 1796556660}
   textContent: {fileID: 1796556658}
@@ -6527,26 +6553,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 602861433011159823, guid: 3650ebe3ad1f52c43b278e6774dc4a57, type: 3}
   m_PrefabInstance: {fileID: 1119923681}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1138938557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3292394786781126096}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 307bf7355ab02ed4cbc450d12059b2a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dataDalogues:
-  - {fileID: 11400000, guid: 2c441caedc4729b4c884a62226945f98, type: 2}
-  - {fileID: 11400000, guid: efec7c07e773c3140b1728345429d34a, type: 2}
-  dialongueSystem: {fileID: 903941004}
-  area: {fileID: 0}
-  read: 0
-  finRead: 0
-  interval: 0.1
 --- !u!1001 &1147867687
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11363,6 +11369,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9118772889463623371, guid: acdd29772566ca745a4f0426fdd61a03, type: 3}
   m_PrefabInstance: {fileID: 1824012720}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1845029420 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2663869553087146946, guid: 3650ebe3ad1f52c43b278e6774dc4a57, type: 3}
+  m_PrefabInstance: {fileID: 1956096420}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58acc4f29dba2c143a76a3b00fd2e703, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1861110485
 GameObject:
   m_ObjectHideFlags: 0
@@ -13253,7 +13270,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7106858675582920769, guid: 9930d501e34f7074e8984282d74cf047, type: 3}
       propertyPath: m_Speed
-      value: 6
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7106858675582920769, guid: 9930d501e34f7074e8984282d74cf047, type: 3}
       propertyPath: m_StoppingDistance
@@ -13766,7 +13783,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6608108949141591212}
-  - component: {fileID: 1138938557}
   m_Layer: 3
   m_Name: "43\u571F\u5730"
   m_TagString: ground

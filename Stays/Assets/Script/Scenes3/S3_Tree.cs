@@ -16,8 +16,8 @@ public class S3_Tree : MonoBehaviour
     private Vector2 startPos = Vector2.zero;//觸碰起始點
     public float quickDoubleTabInterval = 0.15f;
     public float lastTouchTime;//上一次點擊放開的時間
-    //public string debugInfo = "Nothing";
-    public string target;
+                               //public string debugInfo = "Nothing";
+    public string target = "主角";
     private static float intervals;//間隔時間
     private static Touch lastTouch;//目前沒用到，不果主要是記錄上一次的觸碰
     [Header("技能系統")]
@@ -35,6 +35,11 @@ public class S3_Tree : MonoBehaviour
     [Header("對話資料")]
     public DataDalogue[] dataDalogues;//對話系統
     public bool dalogues1Fin;
+    [Header("偵測範圍")]
+    public Vector3 detectionRange = Vector3.one;
+    public Vector3 detectionHight;
+    [Header("觸碰範圍顯示")]
+    public bool gizmosOn;
     #endregion
 
     private void Start()
@@ -50,17 +55,35 @@ public class S3_Tree : MonoBehaviour
         dialongueSystem = GameObject.Find("System").GetComponent<DialongueSystem>();
         #endregion
     }
-    void FixedUpdate()
+    void Update()
     {
-        if(kid.dalogues2Fin&& !dialongueSystem.display&&speed != objectiveSpeed) TouchTree();
+        
+        //if(kid.dalogues2Fin&& !dialongueSystem.display&&speed != objectiveSpeed) TouchTree();
         if (kid.childGrowth&&!task1) SkillTree();//小孩長大樹一同長大
+        if (speed == objectiveSpeed && !taskFin && !dalogues1Fin)
+        {
+            print("對ㄌ");
+            Wilting();
+        }
+        if (speed >= 2 && !taskFin && !dalogues1Fin)
+        {
+            //print("減速拉笨蛋");
+            Accelerate();
+        }
+        //if (speed == objectiveSpeed&&!taskFin&&!dalogues1Fin) Wilting();
 
-        if (speed == objectiveSpeed&&!taskFin&&!dalogues1Fin) Wilting();
-            
         TaskFin();
         //print(Input.touchCount);
         //print(Camera.main);
     }
+    private void OnDrawGizmos()
+    {
+        if (gizmosOn)
+        {
+            Gizmos.color = new Color(1, 0, 0, .5f);//判斷區設置為紅色
+            Gizmos.DrawCube(transform.position + detectionHight, detectionRange);//偵測區位置
+        }
+    }//位置偵測顯示
     #region 方法
     private void TouchTree()
     {
@@ -116,6 +139,8 @@ public class S3_Tree : MonoBehaviour
                         oriCamera.enabled = !ch;
                         cameratest.caTask = false;
                     }
+                    if(speed == objectiveSpeed && !taskFin && !dalogues1Fin) Wilting();
+                    if (speed <= objectiveSpeed && !taskFin && !dalogues1Fin) Wilting();
                 }
 
             }
@@ -164,6 +189,65 @@ public class S3_Tree : MonoBehaviour
         dialongueSystem.StartDialogue(dataDalogues[0].conversationContent);//對話資料讀取
         dialongueSystem.NameEnter(dataDalogues[0].talkName);
         taskFin = true;
+    }
+    public void Check()//檢測內部是否有東西並呼叫對話
+    {
+        //print("接收回傳");
+        Collider[] hit = Physics.OverlapBox(transform.position + detectionHight, detectionRange / 2, Quaternion.identity);//(中心點，大小，旋轉，圖層碼)
+        int i = 0;
+
+        while (i < hit.Length)//若i小於hit最大值
+        {
+            //print(hit[i].name);
+            //Contains:在字串中尋找，若有回傳True
+            #region 對話
+            if (hit[i].name.Contains(target))
+            {
+                if (kid.dalogues2Fin && !dialongueSystem.display && speed != objectiveSpeed && cameratest.caTask)
+                {
+                   // hit[i]= null;
+                   // print("樹接收回傳"+i);
+                    Skill();
+                }
+                 if(kid.dalogues2Fin && !dialongueSystem.display && speed != objectiveSpeed)
+                 {
+                    // print("開技能"+i);
+                     skillUI.SkillOn(transform);//開啟SKILLUI
+                 }
+                
+            }
+             /*else
+             {
+                 ch = !ch;
+                 setCamera.enabled = ch;
+                 oriCamera.enabled = !ch;
+                 cameratest.caTask = false;
+             }*/
+                #endregion
+                i++;
+            }
+
+        }
+    public void Skill()
+    {
+        ch = !ch;
+        setCamera.enabled = ch;
+        oriCamera.enabled = !ch;
+        cameratest.caTask = false;
+        skillUI.SkillOn(transform);//開啟SKILLUI
+
+    }
+    private void Accelerate()
+    {
+        dialongueSystem.StopAllCoroutines();
+        dialongueSystem.StartDialogue(dataDalogues[1].conversationContent);//對話資料讀取
+        dialongueSystem.NameEnter(dataDalogues[1].talkName);
+        speed = 1;
+        setCamera.enabled = false;
+        oriCamera.enabled = true;
+        kid.daloguesTaskFin = true;
+        ch = false;
+        cameratest.caTask = true;
     }
     #endregion
 }

@@ -62,6 +62,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: f19f62772ac110e4baba6c2e1e846b2c, type: 2}
+  - {fileID: 2100000, guid: f19f62772ac110e4baba6c2e1e846b2c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -102,6 +103,7 @@ MonoBehaviour:
   draggingTag: []
   chIn: 0
   text: 0
+  indoor: 0
 --- !u!65 &7605049839730822255
 BoxCollider:
   m_ObjectHideFlags: 0

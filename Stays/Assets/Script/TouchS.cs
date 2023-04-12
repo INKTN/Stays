@@ -136,7 +136,7 @@ public class TouchS : MonoBehaviour
                     if (selection.name == "火車")
                     {
                         var citytask = GameObject.Find("System").GetComponent<CityTask>();
-                        if (citytask.fin) { SceneManager.LoadScene("關卡2 上山"); }
+                        citytask.swith();
                         
                     }
                     if (selection.name == "技能用樹")
@@ -196,7 +196,9 @@ public class TouchS : MonoBehaviour
                 }
                 if (selection.name == "火車")
                 {
-                    SceneManager.LoadScene("關卡2 上山");
+
+                    var citytask = GameObject.Find("System").GetComponent<CityTask>();
+                    citytask.swith();
                 }
                 if (selection.name == "技能用樹")
                 {

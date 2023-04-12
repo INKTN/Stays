@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 /// <summary>
-/// 關卡完成 場景轉換
+/// 關卡完成 
 /// </summary>
 public class S1_Completed : MonoBehaviour
 {
@@ -25,6 +25,7 @@ public class S1_Completed : MonoBehaviour
     public GameObject post;
     private float speed = 50;
     public Transform target;
+    
     #endregion
     private void Start()
     {

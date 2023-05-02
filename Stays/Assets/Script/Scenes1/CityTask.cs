@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 /// <summary>
 /// 20220807關卡1 任務判定
 /// </summary>
@@ -25,7 +26,8 @@ public class CityTask : MonoBehaviour
     public bool e_trin;
     private S1_Completed completed;
     public bool fin;
-
+    [Header("切換關卡")]
+    public string scenes = "結束";
     #endregion
     private void Start()
     {
@@ -72,6 +74,14 @@ public class CityTask : MonoBehaviour
         }
         
     }
+    public void swith()
+    {
+        if (fin)
+        {
+            SceneManager.LoadScene(scenes);
 
+
+        }
+    }
     #endregion
 }

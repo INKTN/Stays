@@ -8,9 +8,11 @@ public class S1_Start : MonoBehaviour
 
     [Header("對話系統")]
     public DialongueSystem dialongueSystem;
+    [Header("劇情播放")]
+    public bool playdone0;
     [Header("區域")]
     public area area;
-    public bool finRead;
+
     #endregion
     private void Start()
     {
@@ -24,11 +26,11 @@ public class S1_Start : MonoBehaviour
     #region 方法
     private void Detection()
     {
-        if (area.chIn && !finRead)
+        if (area.chIn && !playdone0)
         {
             dialongueSystem.StartDialogue(dataDalogues[0].conversationContent);//對話資料讀取
             dialongueSystem.NameEnter(dataDalogues[0].talkName);
-            finRead = true;
+            playdone0 = true;
         }
 
     }

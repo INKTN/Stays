@@ -62,7 +62,7 @@ public class S3_Tree : MonoBehaviour
         if (kid.childGrowth&&!task1) SkillTree();//小孩長大樹一同長大
         if (speed == objectiveSpeed && !taskFin && !dalogues1Fin)
         {
-            print("對ㄌ");
+            //print("對ㄌ");
             Wilting();
         }
         if (speed >= 2 && !taskFin && !dalogues1Fin)

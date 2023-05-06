@@ -18,7 +18,7 @@ public class S1_Completed : MonoBehaviour
     private TouchS t;
     [Header("角色")]
     private PlayerCharacter player;
-    [Header("開關")]
+    [Header("劇情播放")]
     public bool playdone0;
     public bool playdone1;
     [Header("位置")]

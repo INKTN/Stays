@@ -97,8 +97,10 @@ public class DialongueSystem : MonoBehaviour
     /// <param name="contents">顯示打字效果的對話內容</param>
     public void StartDialogue(string[] contents)
     {
-        t.switches = true;//關觸控
-        StartCoroutine(TypeEffect(contents));
+        if (t != null) {
+            t.switches = true;//關觸控
+            }
+            StartCoroutine(TypeEffect(contents));
     }
 
     /// <summary>

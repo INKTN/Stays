@@ -10,6 +10,7 @@ public class ButtonSetting : MonoBehaviour
 {
     [Header("≠∫≠∂")]
     public string play;
+    public Image black;
     public string setting;
     public string movie;
     public string about;
@@ -18,8 +19,17 @@ public class ButtonSetting : MonoBehaviour
     [Header("∞h•X¡‰")]
     public GameObject exitMessage;
     private GameObject sceneExit;
-    public void StartGame()
+    private void Start()
     {
+        Scene scene = SceneManager.GetActiveScene();
+        if (scene.name == "≠∫≠∂")
+        {
+            black.color =  Color.clear;
+        }
+    }
+        public void StartGame()
+    {
+        black.color =  Color.white;
         SceneManager.LoadScene(play);
     }
     public void Movie()

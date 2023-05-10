@@ -12,14 +12,15 @@ public class ImageSwitcher : MonoBehaviour
     public float fadeTime = 0.5f;  // 淡入淡出的時間
 
     private int currentIndex = 0;  // 當前顯示的圖片的索引
-    public bool fading = false;  // 是否正在淡入淡出
+    private bool fading = false;  // 是否正在淡入淡出
     [Header("對話資料")]
     public DataDalogue[] dataDalogues;
     [Header("對話系統")]
     private DialongueSystem dialongueSystem;
     [Header("讀取開關")]
     public bool lodingtoNext;
-
+    [Header("防止重複")]
+    public bool repeat;
 
     public float moveDistance = 100.0f; // 移动的距离
     public float moveTime = 1.0f; // 移动的时间
@@ -38,7 +39,7 @@ public class ImageSwitcher : MonoBehaviour
     private void Update()
     {
         // 當按下滑鼠左鍵時，切換到下一張圖片
-        if (Input.GetMouseButtonDown(0) && !fading)
+        if (Input.GetMouseButtonDown(0) && !fading&&!repeat)
         {
             StartCoroutine(FadeOut());
            
@@ -90,7 +91,11 @@ public class ImageSwitcher : MonoBehaviour
        
 
         fading = false;
-        if(lodingtoNext)Load();
+        if (currentIndex == images.Length-1) repeat = true;
+        if (lodingtoNext)
+        {
+            //repeat = true;
+            Load(); }
     }
     private void Load()
     {

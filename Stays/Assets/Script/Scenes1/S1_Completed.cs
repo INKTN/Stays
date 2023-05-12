@@ -25,10 +25,14 @@ public class S1_Completed : MonoBehaviour
     public GameObject post;
     private float speed = 50;
     public Transform target;
-    
+    [Header("音效")]
+    public AudioSource audioSource;
+    public AudioClip[] soundEffect;
+
     #endregion
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();//音效
         post = this.gameObject;
         task = GameObject.Find("System").GetComponent<CityTask>();
         dialongueSystem = GameObject.Find("System").GetComponent<DialongueSystem>();
@@ -47,6 +51,13 @@ public class S1_Completed : MonoBehaviour
             playdone1 = true;
             Confirm();
         }
+        #region 音效停止
+        if (transform.position==target.position)
+        {
+            audioSource.Stop();
+        }
+
+        #endregion
     }
     #region 方法
     private void Confirm()
@@ -57,6 +68,7 @@ public class S1_Completed : MonoBehaviour
         dialongueSystem.StopAllCoroutines();
         dialongueSystem.StartDialogue(dataDalogues[0].conversationContent);//對話資料讀取
         dialongueSystem.NameEnter(dataDalogues[0].talkName);
+        audioSource.PlayOneShot(soundEffect[0]);//音效
 
     }
     private void TrinGo()

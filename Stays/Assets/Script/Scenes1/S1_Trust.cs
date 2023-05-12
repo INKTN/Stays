@@ -27,9 +27,13 @@ public class S1_Trust : MonoBehaviour
     public GameObject post;
     private float speed = 10;
     public Transform target;
+    [Header("音效")]
+    public AudioSource audioSource;
+    public AudioClip[] soundEffect;
     #endregion
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();//音效
         post = this.gameObject;
         task = GameObject.Find("System").GetComponent<CityTask>();
         dialongueSystem = GameObject.Find("System").GetComponent<DialongueSystem>();
@@ -52,6 +56,13 @@ public class S1_Trust : MonoBehaviour
 
         if (playdone1 && playdone0 && !dialongueSystem.display)
             t.switches = false;//開觸控
+        #region 音效停止
+        if (transform.position == target.position)
+        {
+            audioSource.Stop();
+        }
+
+        #endregion
     }
 
     private IEnumerator Confirm()
@@ -62,6 +73,7 @@ public class S1_Trust : MonoBehaviour
         player.transform.LookAt(post.transform);
         this.transform.LookAt(player.transform);
         dialongueSystem.StopAllCoroutines();
+        audioSource.PlayOneShot(soundEffect[0]);//音效
         dialongueSystem.StartDialogue(dataDalogues[0].conversationContent);//對話資料讀取
         dialongueSystem.NameEnter(dataDalogues[0].talkName);
 
@@ -71,6 +83,7 @@ public class S1_Trust : MonoBehaviour
         //print("移動");
         this.transform.LookAt(player.transform);
         transform.position = Vector3.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+        
         playdone0 = true;
     }
     #endregion

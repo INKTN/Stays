@@ -49,6 +49,9 @@ public class S1_CleaningStaff : MonoBehaviour
     [Header("完成任務位置")]
     private float speedFin = 50;
     public Transform fin;
+    [Header("音效")]
+    public AudioSource audioSource;
+    public AudioClip[] soundEffect;
     #endregion
     private void Start()
     {
@@ -60,6 +63,7 @@ public class S1_CleaningStaff : MonoBehaviour
         oriCamera = GameObject.Find("MainCamera").GetComponent<Camera>();
         skillUI = GameObject.Find("System").GetComponent<UIManager>();
         cameratest = GameObject.Find("MainCamera").GetComponent<Cameratest>();
+        audioSource = GetComponent<AudioSource>();//音效
 
     }
     private void OnDrawGizmos()
@@ -83,6 +87,13 @@ public class S1_CleaningStaff : MonoBehaviour
             FinTask();
         }
         if(post.transform.position == fin.transform.position) cleanerAway = true;
+        #region 音效停止
+        if (transform.position == fin.position)
+        {
+            audioSource.Stop();
+        }
+
+        #endregion
     }
     #region 方法
     private void Meet()
@@ -92,6 +103,7 @@ public class S1_CleaningStaff : MonoBehaviour
         dialongueSystem.StopAllCoroutines();
         dialongueSystem.StartDialogue(dataDalogues[0].conversationContent);//對話資料讀取
         dialongueSystem.NameEnter(dataDalogues[0].talkName);
+        audioSource.PlayOneShot(soundEffect[0]);//音效
         playdone0 = true;
 
     }
@@ -149,7 +161,8 @@ public class S1_CleaningStaff : MonoBehaviour
     private void FinTask()
     {
         transform.position = Vector3.MoveTowards(transform.position, fin.position, speedFin * Time.deltaTime);
-       
+        
+
     }      
     #endregion
   }

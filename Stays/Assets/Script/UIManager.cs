@@ -148,7 +148,14 @@ public class UIManager : MonoBehaviour
     }
     public void BackCa()//重設按鈕
     {
-        SceneManager.LoadScene(scene.name);
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(scene.name);
+        asyncLoad.completed += LoadNextScene;
+
+        //SceneManager.LoadScene(scene.name);
+    }
+    private void LoadNextScene(AsyncOperation obj)
+    {
+        // 在這裡寫入您要執行的代碼，例如淡入淡出效果或者其他場景初始化操作
     }
     #endregion
     #region 返回鍵

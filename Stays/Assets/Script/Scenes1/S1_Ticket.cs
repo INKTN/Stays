@@ -23,9 +23,13 @@ public class S1_Ticket : MonoBehaviour
     public bool playdone0;
     [Header("位置")]
     public GameObject post;
+    [Header("音效")]
+    public AudioSource audioSource;
+    public AudioClip[] soundEffect;
     #endregion
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();//音效
         post = this.gameObject;
         task = GameObject.Find("System").GetComponent<CityTask>();
         dialongueSystem = GameObject.Find("System").GetComponent<DialongueSystem>();
@@ -41,6 +45,13 @@ public class S1_Ticket : MonoBehaviour
         }
         if ( playdone0 && !dialongueSystem.display)
             t.switches = false;//開觸控
+        #region 音效停止
+        if (!t.switches)
+        {
+            audioSource.Stop();
+        }
+
+        #endregion
     }
     #region 方法
     private void Buy()
@@ -50,6 +61,7 @@ public class S1_Ticket : MonoBehaviour
         dialongueSystem.StopAllCoroutines();
         dialongueSystem.StartDialogue(dataDalogues[0].conversationContent);//對話資料讀取
         dialongueSystem.NameEnter(dataDalogues[0].talkName);
+        audioSource.PlayOneShot(soundEffect[0]);//音效
         playdone0 = true;
 
     }

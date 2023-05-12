@@ -9,15 +9,26 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     #region 欄位
-    static AudioManager current;
+    public AudioSource audioSource;
+    //static AudioManager current;
     [Header("音樂")]
     public AudioClip ambientClip;
     [Header("音效")]
-    public AudioClip[] sundEffects;
+    public AudioClip[] soundEffect;
     #endregion
     private void Awake()
     {
-        current = this;
-        DontDestroyOnLoad(gameObject);
+        /*current = this;
+        DontDestroyOnLoad(gameObject);*/
+        audioSource = GameObject.Find("MainCamera").GetComponent<AudioSource>();
+    }
+    public void Walking()//主角行走
+    {
+        audioSource.PlayOneShot(soundEffect[0]);
+        print("走路中");
+    }
+    public void stop()
+    {
+        audioSource.Stop();
     }
 }

@@ -22,11 +22,14 @@ public class PlayerCharacter : MonoBehaviour
     public bool walking;
     [Header("目前位置")]
     public string pt;
+    [Header("音效")]
+    public AudioSource audioSource;
+    public AudioClip[] soundEffect;
     #endregion
     private void Start()
     {
         #region 取得相關元件
-       
+        audioSource = GetComponent<AudioSource>();//音效
         an = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();//取得AI判定
         agent.speed= speed ;
@@ -51,8 +54,15 @@ public class PlayerCharacter : MonoBehaviour
         }//當位置==0，關閉動畫
         walking = an.GetBool("walk");
         //print(agent.hasPath);
-        
-        
+        #region 音效停止
+        if (!walking)
+        {
+            audioSource.Stop();
+        }
+
+        #endregion
+
+
     }
     #region 方法
     private void SetStartPosition()
@@ -67,6 +77,7 @@ public class PlayerCharacter : MonoBehaviour
         SetStartPosition(); //每次觸控都校正一次
         transform.LookAt(selection.position + startPos);//看向目標
         an.SetBool("walk", true);
+        audioSource.PlayOneShot(soundEffect[0]);//音效
         agent.SetDestination(selection.position + startPos);//使用AI引導至位置
 
     }

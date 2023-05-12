@@ -17,6 +17,9 @@ public class S1_SendLetter : MonoBehaviour
     public bool finRead;
     [Header("主角")]
     private PlayerCharacter player;
+    [Header("音效")]
+    public AudioSource audioSource;
+    public AudioClip[] soundEffect;
     #endregion
     private void Start()
     {
@@ -24,17 +27,26 @@ public class S1_SendLetter : MonoBehaviour
         dialongueSystem= GameObject.Find("System").GetComponent<DialongueSystem>();
         area = gameObject.transform.GetChild(0).GetComponent<area>();
         player = GameObject.Find("主角").GetComponent<PlayerCharacter>();
+        audioSource = GetComponent<AudioSource>();//音效
+
     }
     private void FixedUpdate()
     {
         Detection();
-        
+        #region 音效停止
+        if (!player.walking)
+        {
+            audioSource.Stop();
+        }
+
+        #endregion
     }
     #region 方法
     private void Detection()
     {
         if (area.chIn && !finRead &&!player.walking)
         {
+            audioSource.PlayOneShot(soundEffect[0]);//音效
             dialongueSystem.StartDialogue(dataDalogues[0].conversationContent);//對話資料讀取
             dialongueSystem.NameEnter(dataDalogues[0].talkName);
             finRead = true;

@@ -39,6 +39,9 @@ public class S1_Tower : MonoBehaviour
     public GameObject target;
     public Collider station;
     public bool moveGo;
+    [Header("音效")]
+    public AudioSource audioSource;
+    public AudioClip[] soundEffect;
     #endregion
     private void Start()
     {
@@ -48,13 +51,21 @@ public class S1_Tower : MonoBehaviour
         cameratest = cameraControl.GetComponent<Cameratest>();
         s1_ManipulationNPC = npc.GetComponent<S1_ManipulationNPC>();
         player = GameObject.Find("主角").GetComponent<PlayerCharacter>();
-        
+        audioSource = GetComponent<AudioSource>();//音效
+
     }
  
     private void FixedUpdate()
     {
         Plot();
         StartDialogue();
+        #region 音效停止
+        if (!t.switches)
+        {
+            audioSource.Stop();
+        }
+
+        #endregion
     }
     #region 方法
     private void Plot()
@@ -100,12 +111,12 @@ public class S1_Tower : MonoBehaviour
     {
         cameratest.switches = true;//關鏡頭移動
         t.switches = true;//關觸控
-        print("輸出:"+0);
+        //print("輸出:"+0);
         //角色動畫
         yield return new WaitForSeconds(5);
         dialongueSystem.StartDialogue(dataDalogues[0].conversationContent);//對話資料讀取
         dialongueSystem.NameEnter(dataDalogues[0].talkName);
-        
+        audioSource.PlayOneShot(soundEffect[0]);//音效
         playdone0 = true;   
 
     }
@@ -119,6 +130,7 @@ public class S1_Tower : MonoBehaviour
         dialongueSystem.StopAllCoroutines();
         dialongueSystem.StartDialogue(dataDalogues[1].conversationContent);//對話資料讀取
         dialongueSystem.NameEnter(dataDalogues[1].talkName);
+        
         playdone1 = true;
     }
     private IEnumerator FocusNPC()
@@ -129,6 +141,7 @@ public class S1_Tower : MonoBehaviour
         camera_NPC.enabled = true;
         camera_Tower.enabled = false;//鏡頭切換
         s1_ManipulationNPC.run=true;//NPC移動
+        audioSource.PlayOneShot(soundEffect[1]);//音效
        // print("輸出:" + 2);
         yield return new WaitForSeconds(3);
         s1_ManipulationNPC.speed = 0.8f;
@@ -144,7 +157,7 @@ public class S1_Tower : MonoBehaviour
         camera_Tower.enabled = true;//鏡頭切換
         camera_NPC.enabled = false;
         yield return new WaitForSeconds(2);
-        print("輸出:" + 3);
+        //print("輸出:" + 3);
         dialongueSystem.StopAllCoroutines();
         dialongueSystem.StartDialogue(dataDalogues[3].conversationContent);//對話資料讀取
         dialongueSystem.NameEnter(dataDalogues[3].talkName);

@@ -21,7 +21,8 @@ public class ImageSwitcher : MonoBehaviour
     public bool lodingtoNext;
     [Header("防止重複")]
     public bool repeat;
-
+    [Header("接關")]
+    public string nextScene="關卡1 城市";
     public float moveDistance = 100.0f; // 移动的距离
     public float moveTime = 1.0f; // 移动的时间
 
@@ -102,7 +103,7 @@ public class ImageSwitcher : MonoBehaviour
         // 如果是最後一張圖片，就切換到下一個場景
         if (currentIndex == images.Length - 1)
         {
-            AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("關卡1 城市");
+            AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(nextScene);
             asyncLoad.completed += LoadNextScene;
         }
     }
